@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>하이퍼링크태그 공부</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+    </head>
+    <body>
+        <h1>&lt;a&gt; 링크태그</h1>
+        <p>a는 블록, 인라인이 모두 될 수 있다</p>
+        <p>a는 절대경로, 상대경로로 href 필수속성을 가진다.</p>
+        <p>a는 외부사이트(새창)를 띄울 경우만 target을 사용한다.</p>
+        <hr>
+        <h2>절대경로</h2>
+        <p><a href="https://papago.naver.com/" target="_blank">파파고 바로가기</a></p>
+        <!-- block, 왜? h1, p가 모두 block이고 바로 아래 위치하고 있기 때문에 -->
+        <hr>
+        <h2>상대경로</h2>
+        <p>절대적 웹 주소가 아닌, 현재 작업중인 파일을 기준으로
+        <br>해당 폴더와 같은 폴더 또는 하위 폴더 또는 상위 폴더로 원하는 파일의 위치를 상대적으로 지정하는 경로</p>
+        <p>절대경로 웹주소 작성 시 시작 : http</p>
+        <p>상대경로 작성 시 시작 : ./ (현재 위치부터 시작하라는 명령)</p>
+        <h3>상대경로 작성 순서</h3>
+        <p>1. 현재 작업중인 파일의 위치를 확인한다.</p>
+        <p>2. 위 1을 기준으로 연결하고 싶은 파일의 위치를 확인한다.</p>
+        <p>3. ./로 경로를 시작하며 원하는 상대경로를 완성한다.</p>
+        <!-- 예시 -->
+        <a href="./start.html">시작 파일 보기 (같은위치)</a>
+        <hr>
+        <a href="./hyperlink_신윤아/mainroom/doll.jpg">인형 찾기 (하위경로)</a>
+        <hr>
+        <a href="./hyperlink_신윤아/mainroom/laptop.jpg">노트북찾기</a>
+        <hr>
+        <a href="./hyperlink_신윤아/bathroom/paper.jpg">휴지찾기</a>
+        <hr>
+        <a href="./hyperlink_신윤아/mainroom/case/eraser.jpg">지우개찾기</a>
+        <hr>
+        <h3>상위경로</h3>
+        <p>현재 작업파일 기준으로 연결하고자 하는 파일이 폴더 상위에 있는 경우</p>
+        <p>같은 위치 또는 하위 경로일 경우 시작 명령어 ./</p>
+        <p>상위 위치일 경우 시작 명령어 ../</p>
+    </body>
+</html>
