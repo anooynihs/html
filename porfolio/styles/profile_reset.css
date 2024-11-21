@@ -1,0 +1,14 @@
+/* block */ body, html, h1, h2, h3, h4, h5, h6,
+/* inline */ p, div, dl, dt, dd, ul, ol, li, video, blockquote, hr, a, address, span, em, strong, img, sub, sup, del, s, q, mark, code
+{
+    line-height:1.0;
+    font-size:1.0em;
+    font-weight:normal; 
+    margin:0;
+    padding:0;
+    font-style:normal;
+    font-family:;
+    letter-spacing:-0.02em;
+}
+ol, li, ul {list-style:none;}
+a {color:#000; text-decoration:none;}
