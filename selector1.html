@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>선택자공부1</title>
+    <style>
+        /* 내부스타일시트 */
+        /* 장점 : HTML 파일 내에 작성되기 때문에 HTML과 동시에 작성이 간편하다 */
+        /* 단점 : 내부에 작성된 HTML 파일에만 종속되기 때문에 다른 HTML에서 사용할 수 없다 */
+    </style>
+    <!-- ★초기화 파일은 외부스타일 시트 연결 중 가장 위쪽에 작성되어있어야 한다! -->
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/selector1.css" rel="stylesheet">
+    <!-- 외부 스타일 시트 -->
+    <!-- 장점 : CSS파일을 별도로 관리하기 때문에 개수제한없이 다자인이 동일한 모든 HTML에 적용할 수 있다-->
+    <!-- 단점 : 폴더 및 파일 관리를 제대로 하지 않으면 관리가 어렵다 -->
+</head>
+<body>
+    <h1>외부 스타일 시트 작성 후 적용 순서</h1>
+    <ol>
+        <li>styles폴더 내에 파일명 .css로 css파일을 생성한다.</li>
+        <li>연결하려는 html파일에 head태그 내에 link 태그로 위 1번 파일을 연결한다.</li>
+        <li>포토샵 및 피그마에 맞춰서 HTML을 작성완료하고 저장한다.</li>
+        <li>1번 css파일로 돌아가서 원하는 선택자와 속성을 작성하며 디자인하고 저장한다.</li>
+        <li>html로 돌아가서 한번 더 저장 후 Go Live 이용하여 실시간 미리보기한다.</li>
+    </ol>
+    <div class="wrap">
+        <h2>CSS</h2>
+        <p>CSS는 HTML을 꾸미는 <em>디자인 언어</em>이다.</p>
+        <p id="content"><span>HTML->CSS</span> 순서로 작성해야한다.</p>
+        <h3>head안 link태그</h3>
+        <p>외부스타일시트를 연결하는 link태그는 head안에 작성해야한다.</p>
+        <p class="details">주요 속성으로는 <em>href, rel</em>이 있다.</p>
+    </div>
+    <div class="all_box">
+        <div class="title">
+            <h2>CSS</h2>
+            <p>CSS 속성과 값 작성방법</p>
+        </div>
+        <div class="contents">
+            <h3>속성 주의사항</h3>
+            <ul class="txt1">
+                <li>영문소문자 작성</li>
+                <li>공백불가, 특수문자 불가</li>
+            </ul>
+            <h3>값 주의사항</h3>
+            <p class="txt2">속성 값 끝날 시 <em>;(세미콜론)</em>작성필수</p>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h2>CSS 속성-<span>색상</span></h2>
+        <p>css에서 작성할 수 있는 색상 값의 종류</p>
+        <div class="container">
+            <h2>color, background-color</h2>
+            <ul class="list_wrap">
+                <li><span>헥사코드</span></li>
+                <li>#으로 시작하는 6자리 RGB코드 <em>ex)#ffff00</em></li>
+            </ul>
+            <dl class="define_wrap">
+                <dt><span>RGBA코드</span></dt>
+                <dd>RGB와 Alpha(A) 투명도를 함께 적용할 수 있는 코드</dd>
+                <dd>ex) rgba(255,0,0,0.2) 빨강색 20%</dd>
+            </dl>
+        </div>
+    </div>
+    <h1>선택자 적용 우선순위</h1>
+    <dl>
+        <dt>인라인 > ID > Class > Tag</dt>
+        <dd>위 순서대로 우선순위가 적용된다.</dd>
+        <dd>서로 다른 선택자 간의 동일한 속성이 서로 다른 값으로 되어있을 때 우선순위에 따라 순위가 높은 대상의 값이 적용된다.</dd>
+    </dl>
+    <h3 class="name1" id="name2" style="background-color: coral;">우선순위 연습대상</h3>
+    <a href="#">test</a>
+</body>
+</html>
