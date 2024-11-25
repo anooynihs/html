@@ -1,0 +1,104 @@
+#wrap {background-color: gray;}
+#wrap header {
+    background-color: aqua;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    background-color: yellow;
+}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {
+    font-size: 1.125em;
+    font-weight: 600;
+}
+#wrap header .right_menu {
+    background-color: lime;
+}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+#wrap main {
+    background-color: beige;
+}
+#wrap main .path {
+    background-color: #f9f9f9;
+    font-size: 0.875em;
+}
+#wrap main .path a {}
+#wrap main .path em {
+    font-weight: 600;
+}
+#wrap main h1 {
+    font-size: 3.125em;
+    font-weight: 700;
+}
+#wrap main > p {
+    font-size: 1.125em;
+}
+#wrap .bg {
+    background-color: #f9f9f9;
+}
+#wrap .bg p {
+    font-size: 1.125em;
+    line-height:150%;
+}
+#wrap .bg h2 {
+    font-size: 1.375em;
+    font-weight: 600;
+}
+#wrap .bg p em {
+    font-size: 1.875em;
+    font-weight: 500;
+    line-height:150%;
+}
+#wrap .bg .goal_contents {
+    background-color: yellow;
+}
+#wrap .bg .goal_contents li {}
+#wrap .bg .goal_contents li img {}
+#wrap .bg .goal_contents li span {
+    font-size: 1.625em;
+    font-weight: 500;
+    line-height:150%;
+}
+#wrap .bg .strategy_contents {
+    background-color: lime;
+}
+#wrap .bg .strategy_contents dl {
+    background-color: #eee;
+    line-height:150%;
+}
+#wrap .bg .strategy_contents dl dt {
+    font-size: 1.125;
+    font-weight: 500;
+}
+#wrap .bg .strategy_contents dl dd {}
+#wrap footer {
+    background-color: aqua;
+}
+#wrap footer .ft_left {
+    background-color: violet;
+}
+#wrap footer .ft_left .ft_menu {
+    background-color: springgreen;
+}
+#wrap footer .ft_left .ft_menu a {}
+#wrap footer .ft_left .ft_menu a em {}
+#wrap footer .ft_left .ft_menu a img {}
+#wrap footer .ft_left address {
+    background-color: cyan;
+}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left p {}
+#wrap footer .ft_right {
+    background-color: coral;
+}
+#wrap footer .ft_right .family {}
+#wrap footer .ft_right .family img {}
+#wrap footer .ft_right .site {}
+#wrap footer .ft_right .site img {}
