@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이 작성 연습</title>
+    <style>
+        /* 내부스타일시트 작성 위치(연습 때만 내부진행) */
+        .box1 {
+            background-color: rgb(255, 86, 199);
+            padding:0 0 0 20px;
+            margin:0 0 0 50px;
+            border:5px solid black;
+        }
+        .box1 h1 {
+            background-color: rgb(155, 255, 247);
+            height: 80px; width: 200px;
+            visibility: visible;
+            border-bottom:2px solid black;
+            border-right:1px solid blue;
+        }
+        .box1 p {
+            background-color: lightgoldenrodyellow;
+            display: inline-block;
+            padding: 10px 20px 30px 40px;
+        }
+        .box1 p:nth-child(3) {
+            margin:0 0 0 -15px;
+        }
+        /* 선택자(태그, #아이디, .클래스, 자손, >자식) */
+        /* 수열선택자(형제 중에 몇번째를 선택하는가) */
+        .box1 h1:nth-child(1) {background-color: chartreuse;}
+        .box1 p:nth-child(2) {background-color: rgb(255, 145, 0);}
+        .box1 p:nth-child(3) {background-color: white;}
+        /* 수열선택자(요소 기준) 자식 p 중에 몇번째? */
+        /* 같은 부모 안에 배치된 자식 요소 종류가 많을 때 사용 */
+        .box1 p:nth-of-type(1) {height: 100px;}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>제목</h1>
+        <p>내용1</p>
+        <p>내용2</p>
+    </div>
+</body>
+</html>

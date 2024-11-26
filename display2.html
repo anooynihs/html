@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 연습</title>
+    <style> /* 연습상 선택자 내부 작성 */
+        main {
+            background-color: rgb(127, 236, 255);
+            padding:50px 0 20px 40px;
+            border-radius:20px;
+            text-align: center;
+        }
+        main h1 {
+            background-color: rgb(255, 255, 138);
+            border-top:5px solid black;
+            border-left:10px solid red;
+            padding-bottom: 50px;
+            text-align:center;
+        }
+        main .box {
+            background-color: rgb(253, 168, 253);
+            border-top: 5px solid red;
+        }
+        main .box p {
+            background-color: rgb(170, 255, 85);
+            display:inline-block;
+            border-right:5px solid blue;
+            border-radius: 5px;
+        }
+        main .box p:nth-child(1) {}
+        main .box p:nth-child(2) {
+            border-right:5px solid red;
+        }
+        main .box p:nth-child(3) {}
+        main > p {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>TITLE</h1>
+        <div class="box">
+            <p>내용1</p>
+            <p>내용2</p>
+            <p>내용3</p>
+        </div>
+        <p>내용4</p>
+    </main>
+</body>
+</html>
