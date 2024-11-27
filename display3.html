@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>241127 css복습</title>
+    <style>
+        #wrap {
+            background-color: lightgray;
+            padding:30px 20px 0 0;
+        }
+        #wrap .contents {
+            background-color: lightpink;
+            text-align: right;
+            padding-right:20px;
+        }
+        #wrap .contents h1 {
+            text-align: center;
+            width:200px; height:200px;
+            background-color: rgb(101, 0, 126); color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        #wrap .contents .menu {
+            background-color: yellow;
+            text-align: center;
+        }
+        #wrap .contents .menu li {
+        }
+        #wrap .contents .menu li:nth-child(1) {
+            border-bottom: 5px dashed red;
+        }
+        #wrap .contents .menu li:nth-child(2) {}
+        #wrap .contents p {
+            background-color: aquamarine;
+            display: inline-block;
+            padding: 15px;
+        }
+        #wrap .contents p:nth-of-type(1) {}
+        #wrap .contents p:nth-of-type(2) {}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="contents">
+            <h1>제목</h1>
+            <ul class="menu">
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+            </ul>
+            <p>보조메뉴1</p>
+            <p>보조메뉴2</p>
+        </div>
+    </div>
+</body>
+</html>
