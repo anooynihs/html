@@ -1,0 +1,62 @@
+#wrap {}
+/* #wrap header {} */
+#wrap main {}
+#wrap main .path {background-color:#f9f9f9; text-align:right; padding:10px 80px 10px 0;}
+#wrap main .path a {font-size:0.875rem; letter-spacing:-0.2px; color:#555;}
+#wrap main .path img {margin:0 12px;}
+#wrap main .path em {font-size:0.875rem; letter-spacing:-0.2px; color:#555; font-weight:600;}
+#wrap main h1 {
+    font-size:3.125rem; font-weight:700; letter-spacing:-0.2px;
+    text-align:center; margin:158px 0 25px 0;
+}
+#wrap main > p {
+    font-size:1.188rem; font-weight:500; letter-spacing:-0.2px;
+    text-align:center; margin-bottom:80px;
+}
+#wrap main .bg {}
+#wrap main .bg .corporate {background-color:hotpink;
+    width:1140px; margin:0 auto;
+}
+#wrap main .bg .corporate li {background-color:rgb(165, 255, 225);
+    width:250px; height:250px;
+    border:1px solid #888;
+    background-repeat:no-repeat;
+    background-position:85% 95%;
+    background-size:100px auto;
+    background-image:url(../images/ir/cr01.png);
+    padding:30px;
+    display:inline-block;
+    margin-right:42.5px;
+}
+#wrap main .bg .corporate li:nth-child(1) {}
+#wrap main .bg .corporate li:nth-child(2) {background-image:url(../images/ir/cr02.png);}
+#wrap main .bg .corporate li:nth-child(3) {background-image:url(../images/ir/cr03.png);}
+#wrap main .bg .corporate li:nth-child(4) {margin-right:0;}
+/* #wrap main .bg .corporate li:nth-child(1) {
+    background-image:url(../images/ir/cr01.png);
+    background-repeat:no-repeat;
+    background-position:80% 90%;
+}
+#wrap main .bg .corporate li:nth-child(2) {
+    background-image:url(../images/ir/cr02.png);
+    background-repeat:no-repeat;
+    background-size:100px auto;
+    background-position:80% 90%;
+}
+#wrap main .bg .corporate li:nth-child(3) {
+    background-image:url(../images/ir/cr03.png);
+    background-repeat:no-repeat;
+    background-size:100px auto;
+    background-position:80% 90%;
+}
+#wrap main .bg .corporate li:nth-child(4) {
+    background:rgb(0, 174, 255) url(../images/ir/cr01.png) no-repeat 80% 90%;
+} */
+#wrap main .bg .corporate li h2 {
+    font-size:1.375rem; font-weight:600; letter-spacing:-0.2px;
+    margin-bottom:20px;
+}
+#wrap main .bg .corporate li p {
+    font-size:1.125rem; line-height:1.5;
+}
+/* #wrap footer {} */
