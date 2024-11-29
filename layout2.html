@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style>
+        .all {position:relative;}
+        .all .box {overflow:hidden; padding:30px;}
+        .all .box p {
+            border:1px solid #000;
+            width:100px; height:100px;
+            float:left; font-size:2rem;
+        }
+        .all .a {
+            background-color: aquamarine;
+        }
+        .all .a p {position:relative; background-color: aliceblue;}
+        .all .a p:nth-child(2) {left:50px; top:50px; z-index:100;}
+        .all .a p:nth-child(3) {left:25px; top:50px; z-index:90;}
+        .all .a p:nth-child(4) {left:50px; bottom:50px;}
+        /* relative(자기 자신 위치 기준) */
+        /* 원래 태그가 배치된 위치에서 약간의 상하좌우 이동이 필요할 경우 */
+        .all .b {background-color: pink;}
+        .all .b p {}
+        .all .b p:nth-child(3) {position:absolute; right:50px; bottom:0;}
+        .all .c {background-color: orange;}
+        .all .c p {}
+        .all .c p:nth-child(1) {
+            position:fixed; right:50px; top:100px;
+        }
+        /* absolute 레이아웃 연습 (예시_마켓컬리) */
+        header {
+            background-color:gray;
+            width:1000px; margin:0 auto; padding:20px 0;
+        }
+        header::after {clear:both; display:block; content:'';}
+        header h1 {
+            background-color:hotpink;
+            float:left;
+        }
+        header .menu {
+            background-color:greenyellow;
+            float:right;
+            position:relative;
+        }
+        header .menu a {
+            background-color:rgb(99, 237, 255);
+            display:inline-block;
+        }
+        header .menu .cs_popup {
+            background-color: aliceblue;
+            border:1px solid #000;
+            width:150px;
+            position:absolute; right:0;
+        }
+        header .menu .cs_popup a {
+            display:block;
+            padding:5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <!-- class 이름 띄우고 쓰는 것=이름 2개 주는 거 -->
+        <div class="box a">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="box b">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="box c">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+    <header>
+        <h1>로고</h1>
+        <div class="menu">
+            <a href="#">회원가입</a>
+            <a href="#">로그인</a>
+            <a href="#">고객센터</a>
+            <!-- 고객센터 마우스 올렸을 시 -->
+            <div class="cs_popup">
+                <a href="#">공지사항</a>
+                <a href="#">자주하는 질문</a>
+                <a href="#">1:1 문의</a>
+                <a href="#">대량주문 문의</a>
+            </div>
+        </div>
+    </header>
+    </div>
+</body>
+</html>

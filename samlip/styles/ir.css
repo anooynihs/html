@@ -16,6 +16,7 @@
 #wrap main .bg {}
 #wrap main .bg .corporate {background-color:hotpink;
     width:1140px; margin:0 auto;
+    overflow:hidden; 
 }
 #wrap main .bg .corporate li {background-color:rgb(165, 255, 225);
     width:250px; height:250px;
@@ -24,9 +25,8 @@
     background-position:85% 95%;
     background-size:100px auto;
     background-image:url(../images/ir/cr01.png);
-    padding:30px;
-    display:inline-block;
-    margin-right:42.5px;
+    padding:30px; float:left; 
+    margin-right:46.5px;
 }
 #wrap main .bg .corporate li:nth-child(1) {}
 #wrap main .bg .corporate li:nth-child(2) {background-image:url(../images/ir/cr02.png);}

@@ -1,0 +1,63 @@
+#wrap {background-color:brown;}
+#wrap header {background-color:rgba(0,0,0,0.1);
+    padding:21px 80px;
+    /* header는 모든 사이트에서 높이 고정되는 경우가 90프로 이상이다 */
+    height:80px;
+}
+#wrap header h1 {background-color: aquamarine; 
+    float:left; padding-top:3px;
+}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {background-color: orange;
+    float:right;
+}
+#wrap header nav ul {
+    overflow:hidden;
+}
+#wrap header nav ul li {
+    float:left; padding:10px 0; margin-right:80px;
+}
+#wrap header nav ul li:nth-child(4) {margin-right:0; padding:0;}
+#wrap header nav ul li a {font-size:1.3em; font-weight:600; color:#fff;}
+#wrap header nav ul li:nth-child(4) a {
+    border:1px solid #fff;
+    padding:10px 20px; border-radius:25px;
+    /*인라인은 여백 인식을 잘 못하기 때문에 블럭처리 해 주는 것이 좋음*/
+    display:inline-block;
+}
+/* 메인시작===================================1~4행 공통선택자 */
+#wrap main {background-color:violet;}
+#wrap main .container {background-color:springgreen}
+#wrap main .container .contents {background-color: orangered;
+
+}
+#wrap main .container .contents .txt {background-color: deepskyblue;
+
+}
+#wrap main .container .contents .txt h1 {}
+#wrap main .container .contents .txt h1 span {}
+#wrap main .container .contents .txt p {}
+/* 메인_pay */
+#wrap main .pay {
+    backgrond-image:url(../image/row1.jpg);
+}
+#wrap main .pay .contents {}
+#wrap main .pay .contents .txt {}
+#wrap main .pay .contents .txt h1 {}
+#wrap main .pay .contents .txt h1 span {}
+#wrap main .pay .contents .txt p {}
+#wrap main .pay .contents .txt .bnr_btn_wrap {background-color: springgreen;
+
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .next {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
+#wrap main .pay .contents .scroll {background-color: crimson;}
+#wrap main .pay .contents .scroll span:nth-child(1) {}
+#wrap main .pay .contents .scroll .scroll_bg {}
+#wrap main .pay .contents .scroll .scroll_bg .bar {}

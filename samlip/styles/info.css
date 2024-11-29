@@ -31,7 +31,7 @@
 }
 #wrap main .path a {font-size: 0.875em;}
 #wrap main .path em {font-size: 0.875em; font-weight: 600;}
-#wrap main .path > img {margin:0 12px;}
+#wrap main .path > img {margin:0 12px; position:relatve; top:10px;}
 #wrap main h1 {
     font-size: 3.125em; font-weight: 700;
     margin:47px 0 49px 0;
@@ -64,7 +64,7 @@
 #wrap .bg p em {
     font-size: 1.875em; font-weight: 500; line-height:1.5;
 }
-#wrap .bg .goal_contents {margin-bottom: 60px;}
+#wrap .bg .goal_contents {margin-bottom: 60px; }
 #wrap .bg .goal_contents li {
     display: inline-block;
     width: 250px; height: 250px;
@@ -82,16 +82,22 @@
 #wrap .bg .goal_contents li:nth-child(2) {background-color: #fff;}
 #wrap .bg .goal_contents li:nth-child(2) span {color: #000;}
 #wrap .bg .goal_contents li:nth-child(3) {background-color: #F3C300;}
-#wrap .bg .strategy_contents {}
+#wrap .bg .strategy_contents {
+    background-color: blueviolet;
+    display:inline-block;
+    width:max-content; marging:0 auto;
+}
+#wrap .bg .strategy_contents:after {content:''; display:block; clear:both;}
 #wrap .bg .strategy_contents dl {
     background-color: #eee;
     line-height:150%;
     width: 180px; height: 180px;
-    display: inline-block; border-radius: 50%;
+    border-radius: 50%;
     margin:-10px;
     /* padding-top:47.5px; */
     padding:47.5px 15px 0 15px;
     box-shadow:0 0 10px rgba(0,0,0,0.2);
+    float:left;
 }
 #wrap .bg .strategy_contents dl:nth-child(5) {padding-top:34px;}
 #wrap .bg .strategy_contents dl * {line-height: 1.5;}
