@@ -1,4 +1,4 @@
-#wrap {background-color:brown;}
+#wrap {}
 #wrap header {background-color:rgba(0,0,0,0.1);
     padding:21px 80px;
     /* header는 모든 사이트에서 높이 고정되는 경우가 90프로 이상이다 */
@@ -26,38 +26,175 @@
     /*인라인은 여백 인식을 잘 못하기 때문에 블럭처리 해 주는 것이 좋음*/
     display:inline-block;
 }
+/*======================================================================*/
+#wrap main {}
+#wrap main .container {}
+#wrap main .container .contents {
+    width:1440px; margin:0 auto; height:100vh;
+}
+#wrap main .container .contents .txt {}
+#wrap main .container .contents .txt .sub_title {
+    font-size:1.56rem; font-weight:600; letter-spacing: -0.02em; margin-bottom:20px; color:#fff;
+}
+#wrap main .container .contents .txt h1 {
+    font-size:4.375rem; font-weight:700; line-height:1.3;
+    color:#fff;
+}
+#wrap main .container .contents .txt h1 span {
+    font-size:4.375rem; font-weight:700; line-height:1.3;
+    color:#5EE1FF;
+}
+#wrap main .container .contents .txt p {
+    font-size:1.563rem; font-weight:500; line-height:1.5; letter-spacing:-0.2px;
+    color:#fff;}
 /* 메인시작===================================1~4행 공통선택자 */
-#wrap main {background-color:violet;}
-#wrap main .container {background-color:springgreen}
-#wrap main .container .contents {background-color: orangered;
-
-}
-#wrap main .container .contents .txt {background-color: deepskyblue;
-
-}
-#wrap main .container .contents .txt h1 {}
-#wrap main .container .contents .txt h1 span {}
-#wrap main .container .contents .txt p {}
-/* 메인_pay */
 #wrap main .pay {
-    backgrond-image:url(../image/row1.jpg);
+    background-image:url(../image/row1.jpg);
+    background-size:cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .contents .txt {}
+#wrap main .pay .contents {position:relative;}
+#wrap main .pay .contents .txt {
+    padding-top:231px;
+}
 #wrap main .pay .contents .txt h1 {}
 #wrap main .pay .contents .txt h1 span {}
 #wrap main .pay .contents .txt p {}
-#wrap main .pay .contents .txt .bnr_btn_wrap {background-color: springgreen;
-
-}
+#wrap main .pay .contents .txt .bnr_btn_wrap {}
+#wrap main .pay .contents .txt .bnr_btn_wrap > * {margin-right:10px;}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display:inline-block; 
+    width:100px; height:2px;
+    background-color:rgba(255,255,255,0.3);
+    position:relative; bottom:12px;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-child(4){
+    background-color:rgba(255,255,255,1);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
-#wrap main .pay .contents .scroll {background-color: crimson;}
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll {
+    position:absolute;
+    right:0; bottom:43px;
+}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform:uppercase; /*모두 대문자*/
+    font-size:0.88rem; line-height:1.3; font-weight:500; color:#fff;
+    position:relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display:inline-block;
+    width:12px; height:30px; border-radius:6px;
+    background-color:#555;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display:inline-block;
+    width:8px; height:8px; border-radius:50%;
+    background-color:#fff;
+    position:relative; left:2px; top:-5px;
+}
+/* ==================================================2행*/
+#wrap main .service {
+    background-image:url(../image/row2.jpg);
+    background-size:cover;
+}
+#wrap main .service .contents {overflow:hidden;}
+#wrap main .service .contents .txt {float:left; padding-top:311px;}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .txt h1+p {}
+#wrap main .service .contents .right_contents {float:right;}
+#wrap main .service .contents .right_contents .card {
+    width:331px;
+    border-radius:25px; overflow:hidden;
+    display:inline-block; position:relative;
+}
+#wrap main .service .contents .right_contents .card .group {
+    background-color:#fff; padding:30px 20px;
+}
+#wrap main .service .contents .right_contents .card .group h2 {
+    font-size:1.56rem; font-weight:600; letter-spacing: -0.02em; margin:0 0 35px 0;
+}
+#wrap main .service .contents .right_contents .card .group p {
+    line-height:1.5; letter-spacing: -0.02em; color:#555; margin:0 0 35px 0;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view {
+    overflow:hidden; display:block;
+    border-top:1px solid #000; padding:10px 0;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view span {
+    float:left; line-height:1.5; letter-spacing: -0.02em; font-weight:600;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view img {float:right;}
+#wrap main .service .contents .right_contents .card1 {
+    background-image:url(../images/card_bg1.jpg);
+    background-size:100%;
+    background-position:center top;
+    padding-top:200px; top:157px; margin-right:20px;
+}
+#wrap main .service .contents .right_contents .card1 .group {}
+#wrap main .service .contents .right_contents .card1 .group h2 {}
+#wrap main .service .contents .right_contents .card1 .group p {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view span {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view img {}
+#wrap main .service .contents .right_contents .card2 {
+    background-image:url(../images/card_bg2.jpg);
+    background-size:100%;
+    background-position:center top;
+    padding-top:200px;
+    top:311px;
+    opacity:0.6;
+}
+#wrap main .service .contents .right_contents .card2 .group {}
+#wrap main .service .contents .right_contents .card2 .group h2 {}
+#wrap main .service .contents .right_contents .card2 .group p {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view span {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view img {}
+/* ===============================================================================3행 */
+#wrap main .diffrent {
+    background-image:url(../image/row3.jpg);
+    background-size:cover;
+}
+#wrap main .diffrent .contents {}
+#wrap main .diffrent .contents .txt {text-align:center; padding:162px}
+#wrap main .diffrent .contents .txt .sub_title {}
+#wrap main .diffrent .contents .txt .sub_title h1 {}
+#wrap main .diffrent .contents .txt .sub_title h1 span {}
+#wrap main .diffrent .contents .txt .sub_title h1+p {}
+#wrap main .diffrent .contents ol {overflow:hidden;}
+#wrap main .diffrent .contents ol li {
+    background-color:;
+    width:290px; height:290px; border-radius:50%;
+    border:20px solid rgba(255,255,255,0.5);
+    position:relative;
+    float:left;
+    margin-right:93.33px;
+    padding-top:67px;
+}
+#wrap main .diffrent .contents ol li::after {
+    content:'';
+    display:block;
+    background-color:#fff;  
+    width:250px; height:250px;
+    border-radius:50%;
+    position:absolute; left:0; top:0;
+    z-index:40;
+}
+#wrap main .diffrent .contents ol li:nth-child(4) {margin-right:0;}
+#wrap main .diffrent .contents ol li > * {
+    position:relative; z-index:50;
+    font-weight:600; font-size:1.56rem;
+    text-align:center;
+}
+#wrap main .diffrent .contents ol li .num {
+    background-color:#5E91FF; color:#fff;
+    padding:8.5px 20px; border-radius:20px;
+    margin-bottom:10px;
+}
+#wrap main .diffrent .contents ol li .num h2 {
+    line-height: 1.3; letter-spacing:-0.2px;
+}
