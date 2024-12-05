@@ -4,11 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>입력 및 선택 컨트롤 양식 | form | HTML</title>
-    <style>
-        
-    </style>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style></style>
 </head>
 <body>
-    
+    <h1>사용자 컨트롤양식 FORM 연습</h1>
+    <form action="#" method="get" id="studyFrm">
+        <fieldset>
+            <legend>양식 제목</legend>
+            <ul> <!--type 연습-->
+                <li><input type="text"></li>
+                <li><input type="password"></li>
+                <li><input type="number"></li>
+                <li><input type="email"></li>
+                <li><input type="search"></li>
+                <li><input type="date"></li>
+                <li><input type="time"></li>
+                <li><input type="url"></li>
+            </ul>
+            <hr>
+            <dl> <!--name, value 연습-->
+                <dt>아이디</dt>
+                <dd><input type="text" name="user_id" class="user_id"></dd>
+                <dt>비밀번호</dt>
+                <dd><input type="password" name="user_pw"></dd>
+                <dt>주민등록번호</dt>
+                <dd><input type="number" name="user_regist_front"</dd>
+                <dd><input type="password" name="user_regist_back"</dd>
+                <dt>호텔 예약일</dt>
+                <dd><input type="date" name="booking_date"</dd>
+                <dt>도착 예정 시간</dt>
+                <dd><input type="time" name="arrival_time"</dd>
+                <dt>검색</dt>
+                <dd><input type="search" name="search"></dd>
+                <dt>포트폴리오 주소</dt>
+                <dd><input type="url" name="portfolio_url"></dd>
+                <dt>상품 구매 수량</dt>
+                <dd><input type="number" name="quantity" value="1"></dd>
+                <dt>가입자 메일아이디</dt>
+                <dd><input type="email" name="user_email_id"></dd>
+            </dl>
+            <hr>
+            <dl> <!--size, maxlength, required, readonly, disabled 연습-->
+                <dt>상품 구매 수량</dt>
+                <dd><input type="number" name="product_num" value="1"></dd>
+                <dt>이름</dt>
+                <dd><input type="text" name="user_name" size="20" maxlength="10"></dd>
+                <dt>활동 아이디</dt>
+                <dd><input type="text" name="user_nickname" maxlength="5" required></dd>
+                <dt>가입 시 주의사항</dt>
+                <dd><input type="text" name="join_law" value="개인정보는 1년동안 보관됩니다." readonly size="30" disabled></dd>
+                <dt>검색어 입력</dt>
+                <dd><input type="search" name="search_txt" maxlength="20" autocomplete="on"></dd>
+                <dt>파일첨부</dt>
+                <dd><input type="file" name="user_photo" accept="image/jpg, image/png"></dd>
+                <dt>받는 사람 이메일</dt>
+                <dd><input type="email" name="recipient_email" multiple></dd>
+                <dt>상품 리뷰</dt>
+                <dd><textarea name="user_review" rows="6" cols="100" placeholder="리뷰를 50자 이상 남겨주세요."></textarea></dd>
+            </dl>
+            <hr>
+            <h1>선택양식 FORM</h1> <!--radio, checkbox, select, label 연습-->
+            <dl>
+                <!-- radio -->
+                <dt>성별</dt> <!--label이 형제로 존재-->
+                <dd>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">남</label>
+                </dd>
+                <dd>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">여</label>
+                </dd>
+                <dd>
+                    <input type="radio" name="gender" value="none" id="none">
+                    <label for="none">비공개</label>
+                </dd>
+                <dt>메일 수신 여부</dt> <!--label이 부모로 존재-->
+                <dd>
+                    <label>
+                        <input type="radio" name="receipt_mail" value="receipt_agree">
+                        <span>수신함</span>
+                    </label>
+                </dd>
+                <dd>
+                    <label>
+                        <input type="radio" name="receipt_mail" value="receipt_disagree">
+                        <span>수신안함</span>
+                    </label>
+                </dd>
+                <!-- checkbox --> 
+                <dt>관심사</dt>
+                <dd><input type="checkbox" name="interests" value="illustrator">일러스트레이터</dd>
+                <dd><input type="checkbox" name="interests" value="photoshop">포토샵</dd>
+                <dd><input type="checkbox" name="interests" value="html">HTML</dd>
+                <dd><input type="checkbox" name="interests" value="css">CSS</dd>
+                <dd><input type="checkbox" name="interests" value="javascript">Javascript</dd>
+                <!-- select -->
+                <dt>통신사</dt>
+                <dd>
+                    <select name="agency">
+                        <option value="skt">SKT</option>
+                        <option value="kt">KT</option>
+                        <option value="lg">LG</option>
+                    </select>
+                </dd>
+            </dl>
+            <hr>
+            <!-- button 연습 -->
+            <div class="btn_gr">
+                <button type="submit" class="join_btn">확인</button>
+                <button type="reset" class="join_reset_btn">취소</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>

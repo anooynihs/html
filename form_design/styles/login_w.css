@@ -1,0 +1,45 @@
+#wrap {
+    background-color:#fff;
+    width:500px; margin:0 auto;
+    padding:84px 0 115px 0;
+}
+#wrap h1 {
+    font-size:4.38em; font-weight:900;
+    letter-spacing:-0.02em;
+    margin-bottom:25px;
+}
+#wrap p {
+    font-size:1.25em; letter-spacing:-0.02em;
+    margin-bottom:57px;
+}
+#wrap #login_page {height:800px;}
+#wrap #login_page fieldset {}
+#wrap #login_page fieldset h2 {
+    font-size:1.88em; font-weight:700;
+    letter-spacing:-0.02em;
+    margin-bottom:18px;
+}
+#wrap #login_page fieldset h2:nth-child(3) {margin-bottom:32px;}
+#wrap #login_page fieldset input {
+    background-color:#fff;
+    width:100%; height:53px;
+    border:1px solid #aaa; border-radius:10px;
+    padding:15px;
+}
+#wrap #login_page fieldset .forgot_btn button {
+    font-weight:700;
+    width:100%; height:53px;
+    border:1px solid #aaa; border-radius:10px;
+    padding:15px;
+}
+#wrap #login_page fieldset .forgot_btn .login_btn {
+    background-color:#222; color:#fff;
+    margin-bottom:18px;
+}
+#wrap #login_page fieldset .forgot_btn .sign_google_btn {
+    background-color:#fff;
+    margin-bottom:62px;
+}
+#wrap #login_page .join {text-align:center;}
+#wrap #login_page .join span {margin:5px; color:#555;}
+#wrap #login_page .join a {font-weight:700;}

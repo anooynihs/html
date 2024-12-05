@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | WELCOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/login_w.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>welcome back! Please enter your details.</p>
+        <form action="#" method="post" id="login_page">
+            <fieldset>
+                <legend>로그인 또는 회원가입</legend>
+                <h2>Email</h2>
+                <p class="email"><input type="email" name="user_email" placeholder="Enter your email or id" required></p>
+                <h2>Password</h2>
+                <p class="password"><input type="password" name="user_pw" placeholder="Enter your Password" required></p>
+                <h2>Forgot password</h2>
+                <div class="forgot_btn">
+                    <button type="button" class="login_btn">Login</button>
+                    <button type="button" class="sign_google_btn">Sign in with Google</button>
+                </div>
+            </fieldset>
+            <p class="join"><span>Don't have on account?</span><a href="#">Sign up for free</a></p>
+        </form>
+    </div>
+</body>
+</html>
