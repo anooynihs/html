@@ -1,0 +1,12 @@
+body, html, h1, h2, h3, h4, h5, h6,
+p, div, dl, dt, dd, ul, ol, li, video, blockquote, hr, 
+a, address, span, em, strong, img, sub, sup, del, s, q, mark, code,
+header, nav, main, footer, article, section, aside 
+{
+    line-height:1.0; font-size:16px; font-weight:normal;
+    margin:0; padding:0; font-style:normal;
+    font-family:'Noto+Sans+KR', sans-serif;
+    box-sizing:border-box;
+}
+ol, li, ul {list-style:none;}
+a {color:#000; text-decoration:none;}
