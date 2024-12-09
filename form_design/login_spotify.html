@@ -2,33 +2,89 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 | Spotify</title>
+    <title>LOGIN | spotify</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./spotify/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./spotify/spotify_logo.png" type="image/x-icon">
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/login_s.css" rel="stylesheet">
+    <style>
+        /* 속성선택자연습용 (주로 input에서 많이 사용) */
+        /* input[name^=user] {background-color:aqua;} */
+
+    </style>
 </head>
 <body>
-    <div id="wrap">
-        <form action="#" method="post" id="loginPage">
-            <h1><a href="#"><img src="./spotify/Logo.png" alt=""></a></h1>
-            <fieldset>
-                <legend>spotify login page</legend>
-                <h1><a href="#"><img src="" alt=""></a></h1>
-            <div class="topBtn">
-                <button type="button" class="in">SIGN IN</button>
-                <button type="button" class="up">SIGN UP</button>
-            </div>
-            <p class="username">
-                <input type="text" name="userName" placeholder="Username" required>                
-            </p>
-            <p class="password">
-                <input type="password" name="userPw" placeholder="Password" required>
-            </p>
-            <p><input type="checkbox" name="stay" value="staySignedin"></p>
-            </fieldset>
-            <p><</p>
-        </form>
-    </div>
+    <main>
+        <h1><a href="#"><img src="./spotify/Logo.png" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#">SIGN IN</a>
+            <a href="#" class="active">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget password ?</a>
+            </form>
+            <!-- SIGN UP 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="upFrm">
+                <div class="id_wrap">
+                    <h2>ID</h2>
+                    <ul class="id">
+                        <li><input type="text" name="user_id" placeholder="Id" required></li>
+                        <li class="s_btn"><button type="submit" class="duplication">Duplication</li>
+                    </ul>
+                    <p class="explain">4-12 characters/English lowercase letters (number combination available)</p>
+                </div>
+                <div class="pw_wrap">
+                    <h2>PASSWORD</h2>
+                    <ul class="pw">
+                        <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                        <li><input type="password" name="user_pwc" placeholder="Password Check" required></li>
+                    </ul>
+                    <p class="explain">8-20 characters/a combination of  two or more<br>
+                        uppercase, lowercase, numbers, and special characters</p>
+                </div>
+                <div class="email_wrap">
+                    <h2>EMAIL</h2>
+                    <ul class="email">
+                        <li><input type="email" name="user_mail" placeholder="Email" requried></li>
+                        <li><span>@</span></li>
+                        <li>
+                            <select name="user_domain">
+                                <option value="choice">choice</option>
+                                <option value="directly">Enter directly</option>
+                                <option value="naver">naver.com</option>
+                                <option value="goole">gmail.com</option>
+                                <option value="daum">daum.net</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="explain">To increase the security of your account, sign up at<br>
+                        [My Information > Modify Member Information] and proceed with email authentication.</p>
+                </div>
+                <div class="phone_wrap">
+                    <h2>PHONE</h2>
+                    <ul class="phone">
+                        <li><input type="tel" name="user_phone" placeholder="Phone Numeber" requried></li>
+                        <li class="s_btn"><button type="submit" class="certification">Certification</li>
+                    </ul>
+                </div>
+                <p class="btn"><button type="submit" class="sign_up_btn">SIGN UP</button></p>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

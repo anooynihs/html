@@ -1,0 +1,126 @@
+body {background-color:#222;}
+main {
+    width:500px;
+    /* 부모의 너비값 고정이 되어 있을 경우 그 자식, 자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로 크기를 인식한다.*/
+    margin:97px auto 0; 
+}
+main h1 {text-align:center; margin:0 0 87px;}
+main h1 a {}
+main h1 a img {}
+main .tab_menu {text-align:center;}
+main .tab_menu a {;
+    display:inline-block;
+    padding:5px 10px; color:#fff;
+    font-size:1.25rem; letter-spacing:-0.02em;
+}
+/* first-child, last-child */
+main .tab_menu a:first-child {margin-right:136px;}
+main .tab_menu .active {border-bottom:3px solid #1ED760;}
+main .tab_wrap {}
+main .tab_wrap #inFrm {display:none;}
+main .tab_wrap #inFrm ul {margin:52px 0 31px 0;}
+main .tab_wrap #inFrm ul li {
+    background-color:#fff;
+    border-radius:36.5px;
+    padding:25px 40px;
+}
+main .tab_wrap #inFrm ul li:first-child {margin-bottom:14px;}
+main .tab_wrap #inFrm ul li {}
+main .tab_wrap #inFrm ul li input {width:100%; letter-spacing:-0.02em;}
+/* 입력 시 나오는 텍스트 말고 placeholder에 따로 CSS 주는 법 */
+main .tab_wrap #inFrm ul li input::placeholder {color:#aaa; letter-spacing:-0.02em;}
+main .tab_wrap #inFrm ul li input[name$=name] {}
+main .tab_wrap #inFrm ul li input[name$=pw] {}
+main .tab_wrap #inFrm .stay_in {margin:0 0 33px;}
+/* html에서 넣은 checkbox, radio는 css에서 세부디자인이 불가능하기 때문에 reset에서 apearance:none으로 숨겨놓고 
+포토샵, 피그마 등을 이용한 별도의 아이콘 디자인을 준비하여 background-image로 넣어야 한다. 
+숨겨놓은 checkbox, radio는 그 대상과 연결한 label을 통해 선택이 가능하게 하고 배경이미지 또한 label에 대부분 선언해준다. */
+/* 단, label 형제일 때만 해당되며 다른 때에는 span으로 묶어준 뒤 span에 선언해야함*/
+/* 상태선택자(a, form에서 주로 사용) */
+main .tab_wrap #inFrm .stay_in #stay_on {}
+main .tab_wrap #inFrm .stay_in #stay_on:checked+label {
+    background-image:url(../spotify/check_y.png);
+}
+main .tab_wrap #inFrm .stay_in label {
+    color:#fff; letter-spacing:-.0.02em;
+    background-image:url(../spotify/check_n.png);
+    background-repeat:no-repeat;
+    background-position:0 3px;
+    padding-left:34px;
+}
+main .tab_wrap #inFrm .btn {}
+main .tab_wrap #inFrm .btn .sign_in_btn {
+    background-color: #1ED760; color:#fff;
+    width:100%;
+    border-radius:36.5px;
+    padding:25px 0; margin-bottom:14px;
+    font-weight:700; letter-spacing:-0.02em;
+}
+main .tab_wrap #inFrm .forget_pw {
+    letter-spacing:-0.02em; color:#fff;
+    text-align:center; display:block;
+}
+/* Sign up 클릭 시 나오는 내용 스타일 */
+main .tab_wrap #upFrm {background-color:rgb(138, 57, 0); margin-top:66px;}
+main .tab_wrap #upFrm h2 {
+    color:#fff; font-weight:600; margin-bottom:10px;
+}
+main .tab_wrap #upFrm .explain {
+    color:#fff;
+    font-size:0.75rem; line-height:130%;
+}
+main .tab_wrap #upFrm ul {width:100%;}
+main .tab_wrap #upFrm li {
+    height:70px; padding:24px 33px 23px;
+    margin-bottom:10px;
+    border-radius:36.5px;
+    background-color: #38e0ae;
+}
+main .tab_wrap #upFrm .s_btn * {color:#fff; text-align:center;}
+main .tab_wrap #upFrm input::placeholder * {color:#555;}
+main .tab_wrap #upFrm .id_wrap {background-color: rgb(82, 28, 133); margin-bottom:40px;}
+main .tab_wrap #upFrm .id_wrap h2 {}
+main .tab_wrap #upFrm .id_wrap .id {}
+main .tab_wrap #upFrm .id_wrap .id li {display:inline-block;}
+main .tab_wrap #upFrm .id_wrap .id li:nth-child(1) {width:320px; margin-right:8px;}
+main .tab_wrap #upFrm .id_wrap .id li:nth-child(2) {width:167px; background-color: #555;}
+main .tab_wrap #upFrm .id_wrap .id li input {width:100%;}
+main .tab_wrap #upFrm .id_wrap .id .s_btn {}
+main .tab_wrap #upFrm .id_wrap .id .s_btn .duplication {width:100%;}
+main .tab_wrap #upFrm .id_wrap .explain {}
+main .tab_wrap #upFrm .pw_wrap {margin-bottom:40px;}
+main .tab_wrap #upFrm .pw_wrap h2 {}
+main .tab_wrap #upFrm .pw_wrap .pw {}
+main .tab_wrap #upFrm .pw_wrap .pw li {}
+main .tab_wrap #upFrm .pw_wrap .pw li input {width:100%;}
+main .tab_wrap #upFrm .pw_wrap .explain {}
+main .tab_wrap #upFrm .email_wrap {background-color: crimson; margin-bottom:40px;}
+main .tab_wrap #upFrm .email_wrap h2 {}
+main .tab_wrap #upFrm .email_wrap .email {}
+main .tab_wrap #upFrm .email_wrap .email li {display:inline-block;}
+main .tab_wrap #upFrm .email_wrap .email li:nth-child(1) {width:235px;}
+main .tab_wrap #upFrm .email_wrap .email li:nth-child(2) {
+    background-color:transparent; color:#fff;
+    width:16px; height:23px; padding:0;
+    margin:0 2.5px;
+}
+main .tab_wrap #upFrm .email_wrap .email li:nth-child(3) {width:235px;}
+main .tab_wrap #upFrm .email_wrap .email li input {width:100%;}
+main .tab_wrap #upFrm .email_wrap .email li select {width:100%; color:#555;}
+main .tab_wrap #upFrm .email_wrap .email li select option {color: #555;}
+main .tab_wrap #upFrm .email_wrap .explain {}
+main .tab_wrap #upFrm .phone_wrap {background-color:rgb(232, 116, 255); margin-bottom:50px;}
+main .tab_wrap #upFrm .phone_wrap h2 {}
+main .tab_wrap #upFrm .phone_wrap .phone {}
+main .tab_wrap #upFrm .phone_wrap .phone li {display:inline-block;}
+main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(1) {width:320px; margin-right:8px;}
+main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(2) {width:167px}
+main .tab_wrap #upFrm .phone_wrap .phone li input {width:100%}
+main .tab_wrap #upFrm .phone_wrap .phone .s_btn {background-color: #555;}
+main .tab_wrap #upFrm .phone_wrap .phone .s_btn .certification {width:100%}
+main .tab_wrap #upFrm .btn {
+    background-color: #1ED760; 
+    width:100%; height:70px; border-radius:36.5px;
+    padding:23px 218px 24px 218px;
+}
+main .tab_wrap #upFrm .btn .sign_up_btn {color: #fff; font-weight:700;}
