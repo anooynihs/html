@@ -61,66 +61,73 @@ main .tab_wrap #inFrm .forget_pw {
     text-align:center; display:block;
 }
 /* Sign up 클릭 시 나오는 내용 스타일 */
-main .tab_wrap #upFrm {background-color:rgb(138, 57, 0); margin-top:66px;}
-main .tab_wrap #upFrm h2 {
-    color:#fff; font-weight:600; margin-bottom:10px;
-}
-main .tab_wrap #upFrm .explain {
-    color:#fff;
-    font-size:0.75rem; line-height:130%;
-}
-main .tab_wrap #upFrm ul {width:100%;}
+main .tab_wrap #upFrm {margin-top:66px;}
+main .tab_wrap #upFrm h2 {color:#fff; font-weight:600; margin-bottom:10px;}
+main .tab_wrap #upFrm .explain {color:#fff; font-size:0.75rem; line-height:130%;}
+main .tab_wrap #upFrm ul {background-color: chartreuse; width:100%;}
 main .tab_wrap #upFrm li {
-    height:70px; padding:24px 33px 23px;
-    margin-bottom:10px;
-    border-radius:36.5px;
-    background-color: #38e0ae;
+    background-color: #fff;
+    height:70px; padding:24px 33px;
+    border-radius:36.5px; margin-bottom:10px;
 }
-main .tab_wrap #upFrm .s_btn * {color:#fff; text-align:center;}
+main .tab_wrap #upFrm .s_btn {background-color:#555; padding:24px 42px;}
 main .tab_wrap #upFrm input::placeholder * {color:#555;}
-main .tab_wrap #upFrm .id_wrap {background-color: rgb(82, 28, 133); margin-bottom:40px;}
+main .tab_wrap #upFrm .id_wrap {margin-bottom:40px;}
 main .tab_wrap #upFrm .id_wrap h2 {}
 main .tab_wrap #upFrm .id_wrap .id {}
-main .tab_wrap #upFrm .id_wrap .id li {display:inline-block;}
-main .tab_wrap #upFrm .id_wrap .id li:nth-child(1) {width:320px; margin-right:8px;}
-main .tab_wrap #upFrm .id_wrap .id li:nth-child(2) {width:167px; background-color: #555;}
+main .tab_wrap #upFrm .id_wrap .id li {display:inline-block; overflow:hidden;}
+main .tab_wrap #upFrm .id_wrap .id li:nth-child(1) {width:325px;}
+main .tab_wrap #upFrm .id_wrap .id li:nth-child(2) {width:167px; float:right;}
 main .tab_wrap #upFrm .id_wrap .id li input {width:100%;}
 main .tab_wrap #upFrm .id_wrap .id .s_btn {}
-main .tab_wrap #upFrm .id_wrap .id .s_btn .duplication {width:100%;}
+main .tab_wrap #upFrm .id_wrap .id .s_btn .duplication {color:#fff;}
 main .tab_wrap #upFrm .id_wrap .explain {}
 main .tab_wrap #upFrm .pw_wrap {margin-bottom:40px;}
 main .tab_wrap #upFrm .pw_wrap h2 {}
 main .tab_wrap #upFrm .pw_wrap .pw {}
-main .tab_wrap #upFrm .pw_wrap .pw li {}
+main .tab_wrap #upFrm .pw_wrap .pw li {display:inline-block; overflow:hidden; width:100%}
 main .tab_wrap #upFrm .pw_wrap .pw li input {width:100%;}
 main .tab_wrap #upFrm .pw_wrap .explain {}
-main .tab_wrap #upFrm .email_wrap {background-color: crimson; margin-bottom:40px;}
+main .tab_wrap #upFrm .email_wrap {margin-bottom:40px;}
 main .tab_wrap #upFrm .email_wrap h2 {}
 main .tab_wrap #upFrm .email_wrap .email {}
-main .tab_wrap #upFrm .email_wrap .email li {display:inline-block;}
-main .tab_wrap #upFrm .email_wrap .email li:nth-child(1) {width:235px;}
-main .tab_wrap #upFrm .email_wrap .email li:nth-child(2) {
-    background-color:transparent; color:#fff;
-    width:16px; height:23px; padding:0;
-    margin:0 2.5px;
+main .tab_wrap #upFrm .email_wrap .email p {display:inline-block;}
+main .tab_wrap #upFrm .email_wrap .email p:nth-child(1) {width:235px; height:70px; background-color:#fff;}
+main .tab_wrap #upFrm .email_wrap .email p:nth-child(3) {width:235px; height:70px; background-color:#fff;}
+main .tab_wrap #upFrm .email_wrap .email p input {
+    width:100%; 
+    padding:24px 33px;
+    color:#555;
 }
-main .tab_wrap #upFrm .email_wrap .email li:nth-child(3) {width:235px;}
+main .tab_wrap #upFrm .email_wrap .email p span {}
+main .tab_wrap #upFrm .email_wrap .email p select {}
+main .tab_wrap #upFrm .email_wrap .email p select option {}
+main .tab_wrap #upFrm .email_wrap .email li:nth-child(2) {width:15px; padding:0;}
+main .tab_wrap #upFrm .email_wrap .email li:nth-child(3) {
+    float:right;
+    background-image:url(../images/keyboard_arrow_down.png);
+    background-repeat:no-repeat;
+    background-position:193px center;
+}
+main .tab_wrap #upFrm .email_wrap .email li span {
+    background-color:rgb(255, 0, 0); margin-top:24px;
+}
 main .tab_wrap #upFrm .email_wrap .email li input {width:100%;}
-main .tab_wrap #upFrm .email_wrap .email li select {width:100%; color:#555;}
+main .tab_wrap #upFrm .email_wrap .email li select {color:#555;}
 main .tab_wrap #upFrm .email_wrap .email li select option {color: #555;}
 main .tab_wrap #upFrm .email_wrap .explain {}
-main .tab_wrap #upFrm .phone_wrap {background-color:rgb(232, 116, 255); margin-bottom:50px;}
+main .tab_wrap #upFrm .phone_wrap {margin-bottom:50px;}
 main .tab_wrap #upFrm .phone_wrap h2 {}
 main .tab_wrap #upFrm .phone_wrap .phone {}
-main .tab_wrap #upFrm .phone_wrap .phone li {display:inline-block;}
-main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(1) {width:320px; margin-right:8px;}
-main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(2) {width:167px}
+main .tab_wrap #upFrm .phone_wrap .phone li {display:inline-block; overflow:hidden;}
+main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(1) {width:325px;}
+main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(2) {width:167px; float:right;}
 main .tab_wrap #upFrm .phone_wrap .phone li input {width:100%}
-main .tab_wrap #upFrm .phone_wrap .phone .s_btn {background-color: #555;}
-main .tab_wrap #upFrm .phone_wrap .phone .s_btn .certification {width:100%}
+main .tab_wrap #upFrm .phone_wrap .phone .s_btn {}
+main .tab_wrap #upFrm .phone_wrap .phone .s_btn .certification {color:#fff;}
 main .tab_wrap #upFrm .btn {
     background-color: #1ED760; 
     width:100%; height:70px; border-radius:36.5px;
-    padding:23px 218px 24px 218px;
+    padding:24px 218px;
 }
 main .tab_wrap #upFrm .btn .sign_up_btn {color: #fff; font-weight:700;}

@@ -1,6 +1,7 @@
 body {background-color:#f5f5f5;}
-main {background-color:rgb(122, 74, 253);
+main {
     width:612px; margin:41px auto 0;
+    padding:0 0 100px;
 }
 main h1 {text-align:center; margin-bottom:41px;}
 main h1 a {}
@@ -21,20 +22,18 @@ main .join_law p {margin-bottom:20px; line-height:1.4;}
 /* ============================================================================= 가입양식 시작 */
 main #joinFrm {}
 /* ============================================================================= 공통디자인 */
-main #joinFrm dl {background-color: rgb(238, 255, 0);
-    overflow:hidden;
-}
-main #joinFrm dl dt {background-color:deepskyblue;
+main #joinFrm dl {overflow:hidden;}
+main #joinFrm dl dt {
     width:156px; float:left;
     /* 앞 형제의 float 방향을 제거하고(방해X) 해당 위치에서 새로 방향 적용하기 */
     clear:both;
     padding-top:11px;
 }
 main #joinFrm dl dt .essential {color:#f00;}
-main #joinFrm dl dd {background-color:tomato;
+main #joinFrm dl dd {
     /* CSS 계산기 */
-    width:calc(100% - 156px); float:right;
-    margin-bottom:10px;
+    width:calc(100% - 156px);
+    float:right; margin-bottom:10px;
 }
 main #joinFrm dl dd input[name^=user] {background-color:#fff;
     width:300px; height:40px; padding:10px;
@@ -55,20 +54,68 @@ main #joinFrm dl dd input[name$=pw_re] {}
 main #joinFrm dl dd input[name$=name] {}
 main #joinFrm dl dd input[name$=email] {}
 main #joinFrm dl dd .mail_redundancy_btn {}
-main #joinFrm dl dd select[name=telecom] {}
-main #joinFrm dl dd select[name=telecom] option {}
-main #joinFrm dl dd input[name$=tel] {}
+main #joinFrm dl dd select[name=telecom] {
+    width:50px; height:40px;
+    padding:9px;
+    background-image:url(../images/kurly/arrow_drop_down.png);
+    background-repeat:no-repeat;
+    background-position:29px center;
+    /* 살짝 틀어진 위치 잡기 */
+    position:relative; bottom:1px;
+    border:1px solid #aaa; border-radius:5px;
+    font-size:0.75rem;
+}
+main #joinFrm dl dd select[name=telecom] option {font-size:0.75rem;}
+main #joinFrm dl dd input[name$=tel] {width:245px;}
 main #joinFrm dl dd .authen_get_btn {background-color:#ccc;}
-main #joinFrm dl dd .address_search {}
-main #joinFrm dl dd .address_search+p {} /*address_search 옆에 있는 형제 p*/
-main #joinFrm dl dd label {}
+main #joinFrm dl dd .address_search {
+    /* CSS에서 a(링크)는 inline으로 인식해서 크기적용이 잘 안 되기 때문에 block처리 필요 */
+    display:block; width:300px;
+    background-color:#fff; border:1px solid #9E00B7; border-radius:5px;
+    padding:10px 0; text-align:center;
+}
+main #joinFrm dl dd .address_search+p {
+    font-size:0.88rem; color:#aaa;
+    margin-top:8px;
+} /*address_search 옆에 있는 형제 p*/
+main #joinFrm dl dd label {
+    padding:10px 0;
+    margin-right:30px;
+    display:inline-block;
+}
+main #joinFrm dl dd label:nth-child(1) {margin-left:37px}
 main #joinFrm dl dd label input[name=gender] {}
-main #joinFrm dl dd label span {}
+main #joinFrm dl dd label span {
+    background-image:url(../images/kurly/gender_unchecked.png);
+    background-repeat:no-repeat;
+    background-position:0 center;
+    /* 배경으로 넣은 이미지와 텍스트가 겹치지 않게 하기 */
+    padding-left:21px;
+}
 /* ============================================================================= 성별 활성화 기준 */
-main #joinFrm dl dd label input[name=gender]:checked+span {} /*input이 체크됐을 때 형제 span에 적용하겠다*/
+/*input이 체크됐을 때 형제 span에 적용하겠다*/
+main #joinFrm dl dd label input[name=gender]:checked+span {
+    background-image:url(../images/kurly/gender_checked.png);
+}
 /* ============================================================================= 생년월일 */
-main #joinFrm dl dd .birthday_g {}
-main #joinFrm dl dd .birthday_g input {}
+main #joinFrm dl dd .birthday_g {
+    background-color:#fff;
+    border:1px solid #9E00B7; border-radius:5px;
+    width:300px; height:40px; padding:10px 0; text-align:center;
+}
+main #joinFrm dl dd .birthday_g input {
+    display:inline-block; width: 29px;
+    font-size:0.88rem;
+}
+main #joinFrm dl dd .birthday_g input::placeholder {color:#aaa; text-align:center;}
+main #joinFrm dl dd .birthday_g input span {}
+main #joinFrm dl dd .birthday_g input span img {}
 /* ============================================================================= 가입하기 */
-main #joinFrm .btn {}
-main #joinFrm .btn .join_btn {}
+main #joinFrm .btn {text-align:center; margin-top:54px;}
+main #joinFrm .btn .join_btn {
+    background-color:#9E00B7;
+    color:#fff;
+    border-radius:10px;
+    width:200px; padding:15px 0;
+    font-size:0.88rem;
+}

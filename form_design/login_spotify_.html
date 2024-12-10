@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /* 속성선택자연습용 (주로 input에서 많이 사용) */
+        /* input[name^=user] {background-color:aqua;} */
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/Logo.png" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#">SIGN IN</a>
+            <a href="#" class="active">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget password ?</a>
+            </form>
+            <!-- SIGN UP 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="upFrm">
+                <dl>
+                    <dt>ID</dt>
+                    <dd>
+                        <input type="text" name="user_id" placeholder="Id" required>
+                        <button type="button" class="duplication">Duplication</button>
+                        <span class="explain">4-12 characters/English lowercase letters (number combination available)</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>PASSWORD</dt>
+                    <dd>
+                        <input type="password" name="user_pw" placeholder="Password" required>
+                        <input type="password" name="user_pw_re" placeholder="Password Check" required>
+                        <span class="explain">8-20 characters/a combination of two or more<br>
+                            ppercase, lowercase, numbers, and special characters</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>EMAIL</dt>
+                    <dd>
+                        <input type="text" name="user_email" placeholder="Email" required>
+                        <span>@</span>
+                        <select name="domain">
+                            <option value="selection">selection</option>
+                            <option value="directly">enter directly</option>
+                            <option value="naver">naver.com</option>
+                            <option value="google">gmail.com</option>
+                            <option value="daum">daum.net</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>PHONE</dt>
+                    <dd>
+                        <input type="tel" name="user_tel" placeholder="Phone Number" required>
+                        <button type="button" class="certification">Certification</button>
+                    </dd>
+                </dl>
+                <div class="sign_up_btn">
+                    <button type="button" name="sign_up">SIGN UP</button>
+                </div>
+            </form>
+
