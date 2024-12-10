@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
     <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
     <link href="./styles/reset.css" rel="stylesheet">
-    <link href="./styles/login_s.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
     <style>
         /* 속성선택자연습용 (주로 input에서 많이 사용) */
         /* input[name^=user] {background-color:aqua;} */
@@ -40,51 +40,48 @@
             </form>
             <!-- SIGN UP 클릭 시 출력 내용 -->
             <form action="#" method="post" id="upFrm">
-                <div class="id_wrap">
-                    <h2>ID</h2>
-                    <ul class="id">
-                        <li><input type="text" name="user_id" placeholder="Id" required></li>
-                        <li class="s_btn"><button type="submit" class="duplication">Duplication</button></li>
-                    </ul>
-                    <p class="explain">4-12 characters/English lowercase letters (number combination available)</p>
+                <dl>
+                    <dt>ID</dt>
+                    <dd>
+                        <input type="text" name="user_id" placeholder="Id" required>
+                        <button type="button" class="duplication">Duplication</button>
+                        <span class="explain">4-12 characters/English lowercase letters (number combination available)</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>PASSWORD</dt>
+                    <dd>
+                        <input type="password" name="user_pw" placeholder="Password" required>
+                        <input type="password" name="user_pw_re" placeholder="Password Check" required>
+                        <span class="explain">8-20 characters/a combination of two or more<br>
+                            ppercase, lowercase, numbers, and special characters</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>EMAIL</dt>
+                    <dd>
+                        <input type="text" name="user_email" placeholder="Email" required>
+                        <span>@</span>
+                        <select name="domain">
+                            <option value="selection">selection</option>
+                            <option value="directly">enter directly</option>
+                            <option value="naver">naver.com</option>
+                            <option value="google">gmail.com</option>
+                            <option value="daum">daum.net</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>PHONE</dt>
+                    <dd>
+                        <input type="tel" name="user_tel" placeholder="Phone Number" required>
+                        <button type="button" class="certification">Certification</button>
+                    </dd>
+                </dl>
+                <div class="sign_up_btn">
+                    <button type="button" class="up_btn">SIGN UP</button>
                 </div>
-                <div class="pw_wrap">
-                    <h2>PASSWORD</h2>
-                    <ul class="pw">
-                        <li><input type="password" name="user_pw" placeholder="Password" required></li>
-                        <li><input type="password" name="user_pwc" placeholder="Password Check" required></li>
-                    </ul>
-                    <p class="explain">8-20 characters/a combination of  two or more<br>
-                        uppercase, lowercase, numbers, and special characters</p>
-                </div>
-                <div class="email_wrap">
-                    <h2>EMAIL</h2>
-                    <div id="email">
-                        <p><input type="email" name="user_mail" placeholder="Email" required></p>
-                        <p><span>@</span></p>
-                        <p>
-                            <select>
-                                <option value="choice">choice</option>
-                                <option value="directly">Enter directly</option>
-                                <option value="naver">naver.com</option>
-                                <option value="goole">gmail.com</option>
-                                <option value="daum">daum.net</option>
-                            </select>
-                        </p>
-                    </div>
-                    <p class="explain">To increase the security of your account, sign up at<br>
-                        [My Information > Modify Member Information] and proceed with email authentication.</p>
-                </div>
-                <div class="phone_wrap">
-                    <h2>PHONE</h2>
-                    <ul class="phone">
-                        <li><input type="tel" name="user_phone" placeholder="Phone Numeber" required></li>
-                        <li class="s_btn"><button type="submit" class="certification">Certification</button></li>
-                    </ul>
-                </div>
-                <p class="btn"><button type="submit" class="sign_up_btn">SIGN UP</button></p>
             </form>
         </div>
     </main>
 </body>
-</html>

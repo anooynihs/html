@@ -1,0 +1,39 @@
+main {}
+main h1 {height:; padding:21px 80px 25px}
+main h1 a {}
+main h1 a img {}
+/* =============================================== 시작 */
+main .container {width:360px; margin:0 auto;}
+main .container .top {border-bottom:1px solid #ededed;}
+main .container .top h2 {font-size:1.25rem; font-weight:600; margin-bottom:14px;}
+main .container .top p {text-align:center; margin-bottom:14px;}
+main .container .top p span {font-size:0.87rem; color:#777}
+main .container .top p img:nth-child(2) {margin:0 30px;}
+/* =============================================== 2 */
+main .container dl {background-color: chocolate;}
+main .container dl dt {background-color: yellowgreen;
+font-size:1.06rem; font-weight:500px;
+margin-bottom:10px;
+}
+main .container dl dd {background-color: violet;
+    margin-bottom:10px;
+    display:inline-block; overflow:hidden;
+}
+main .container dl dd input {background-color:#fff;
+    width:100%; height:39px; padding:10px;
+    border:1px solid #ddd; border-radius:3px;
+}
+main .container dl dd input[name$=email] {width:170px;}
+main .container dl dd select {background-color:#fff; width:170px; height:39px; padding:10px; float:right;}
+main .container dl dd select option {}
+main .container dl dd button {}
+main .container dl dd p {}
+main .container .terms {background-color:cornflowerblue;}
+main .container .terms .all {}
+main .container .terms li {}
+main .container .terms li em {}
+main .container .terms li span {}
+main .container .sign_btn {background-color: yellow;}
+main .container .sign_btn .sign_in {}
+main .container > p {background-color: tomato;}
+main .container > p a {}

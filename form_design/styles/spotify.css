@@ -2,7 +2,7 @@ body {background-color:#222;}
 main {
     width:500px;
     /* 부모의 너비값 고정이 되어 있을 경우 그 자식, 자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로 크기를 인식한다.*/
-    margin:97px auto 0; 
+    margin:97px auto 122px;
 }
 main h1 {text-align:center; margin:0 0 87px;}
 main h1 a {}
@@ -39,11 +39,11 @@ main .tab_wrap #inFrm .stay_in {margin:0 0 33px;}
 /* 상태선택자(a, form에서 주로 사용) */
 main .tab_wrap #inFrm .stay_in #stay_on {}
 main .tab_wrap #inFrm .stay_in #stay_on:checked+label {
-    background-image:url(../spotify/check_y.png);
+    background-image:url(../images/check_y.png);
 }
 main .tab_wrap #inFrm .stay_in label {
     color:#fff; letter-spacing:-.0.02em;
-    background-image:url(../spotify/check_n.png);
+    background-image:url(../images/check_n.png);
     background-repeat:no-repeat;
     background-position:0 3px;
     padding-left:34px;
@@ -62,72 +62,53 @@ main .tab_wrap #inFrm .forget_pw {
 }
 /* Sign up 클릭 시 나오는 내용 스타일 */
 main .tab_wrap #upFrm {margin-top:66px;}
-main .tab_wrap #upFrm h2 {color:#fff; font-weight:600; margin-bottom:10px;}
-main .tab_wrap #upFrm .explain {color:#fff; font-size:0.75rem; line-height:130%;}
-main .tab_wrap #upFrm ul {background-color: chartreuse; width:100%;}
-main .tab_wrap #upFrm li {
-    background-color: #fff;
-    height:70px; padding:24px 33px;
-    border-radius:36.5px; margin-bottom:10px;
+main .tab_wrap #upFrm dl {
+    width:500px; margin-bottom:40px;
 }
-main .tab_wrap #upFrm .s_btn {background-color:#555; padding:24px 42px;}
-main .tab_wrap #upFrm input::placeholder * {color:#555;}
-main .tab_wrap #upFrm .id_wrap {margin-bottom:40px;}
-main .tab_wrap #upFrm .id_wrap h2 {}
-main .tab_wrap #upFrm .id_wrap .id {}
-main .tab_wrap #upFrm .id_wrap .id li {display:inline-block; overflow:hidden;}
-main .tab_wrap #upFrm .id_wrap .id li:nth-child(1) {width:325px;}
-main .tab_wrap #upFrm .id_wrap .id li:nth-child(2) {width:167px; float:right;}
-main .tab_wrap #upFrm .id_wrap .id li input {width:100%;}
-main .tab_wrap #upFrm .id_wrap .id .s_btn {}
-main .tab_wrap #upFrm .id_wrap .id .s_btn .duplication {color:#fff;}
-main .tab_wrap #upFrm .id_wrap .explain {}
-main .tab_wrap #upFrm .pw_wrap {margin-bottom:40px;}
-main .tab_wrap #upFrm .pw_wrap h2 {}
-main .tab_wrap #upFrm .pw_wrap .pw {}
-main .tab_wrap #upFrm .pw_wrap .pw li {display:inline-block; overflow:hidden; width:100%}
-main .tab_wrap #upFrm .pw_wrap .pw li input {width:100%;}
-main .tab_wrap #upFrm .pw_wrap .explain {}
-main .tab_wrap #upFrm .email_wrap {margin-bottom:40px;}
-main .tab_wrap #upFrm .email_wrap h2 {}
-main .tab_wrap #upFrm .email_wrap .email {}
-main .tab_wrap #upFrm .email_wrap .email p {display:inline-block;}
-main .tab_wrap #upFrm .email_wrap .email p:nth-child(1) {width:235px; height:70px; background-color:#fff;}
-main .tab_wrap #upFrm .email_wrap .email p:nth-child(3) {width:235px; height:70px; background-color:#fff;}
-main .tab_wrap #upFrm .email_wrap .email p input {
-    width:100%; 
-    padding:24px 33px;
-    color:#555;
+main .tab_wrap #upFrm dl dt {
+    font-weight:600; color:#fff;
+    margin-bottom:10px;
 }
-main .tab_wrap #upFrm .email_wrap .email p span {}
-main .tab_wrap #upFrm .email_wrap .email p select {}
-main .tab_wrap #upFrm .email_wrap .email p select option {}
-main .tab_wrap #upFrm .email_wrap .email li:nth-child(2) {width:15px; padding:0;}
-main .tab_wrap #upFrm .email_wrap .email li:nth-child(3) {
+main .tab_wrap #upFrm dl dd {
+    overflow:hidden;
+}
+main .tab_wrap #upFrm dl dd input {
+    background-color:#fff;
+    width:100%; height:70px; padding:24px 33px; border-radius:36.5px;    
+}
+main .tab_wrap #upFrm dl dd input[name$=id] {width:325px;}
+main .tab_wrap #upFrm dl dd input[name$=pw] {margin-bottom:10px;}
+main .tab_wrap #upFrm dl dd input[name$=email] {width:235px;}
+main .tab_wrap #upFrm dl dd input[name$=tel] {width:325px;}
+main .tab_wrap #upFrm dl dd input::placeholder {color:#aaa;}
+main .tab_wrap #upFrm dl dd button {
+    background-color:#555; color:#fff;
+    width:167px; height:70px;
+    border-radius:36.5px;
     float:right;
+}
+main .tab_wrap #upFrm dl dd button.duplication {}
+main .tab_wrap #upFrm dl dd button.certification {}
+main .tab_wrap #upFrm dl dd span {color:#fff; margin:0 5px;}
+main .tab_wrap #upFrm dl dd span.explain {
+    display:block;
+    color:#fff; font-size:0.75rem; line-height:130%;
+    margin-top:10px;
+}
+main .tab_wrap #upFrm dl dd select {
+    background-color:#fff; color: #aaa;
+    width:235px; height:70px;
+    border-radius:36.5px;
+    float:right; padding:24px 33px;
     background-image:url(../images/keyboard_arrow_down.png);
     background-repeat:no-repeat;
     background-position:193px center;
 }
-main .tab_wrap #upFrm .email_wrap .email li span {
-    background-color:rgb(255, 0, 0); margin-top:24px;
+main .tab_wrap #upFrm dl dd select option {color:#000;}
+main .tab_wrap #upFrm .sign_up_btn {
+    background-color:#1ED760; 
+    width:500px; height:70px;
+    padding:24px; border-radius:36.5px; margin-top:60px;
+    text-align:center;
 }
-main .tab_wrap #upFrm .email_wrap .email li input {width:100%;}
-main .tab_wrap #upFrm .email_wrap .email li select {color:#555;}
-main .tab_wrap #upFrm .email_wrap .email li select option {color: #555;}
-main .tab_wrap #upFrm .email_wrap .explain {}
-main .tab_wrap #upFrm .phone_wrap {margin-bottom:50px;}
-main .tab_wrap #upFrm .phone_wrap h2 {}
-main .tab_wrap #upFrm .phone_wrap .phone {}
-main .tab_wrap #upFrm .phone_wrap .phone li {display:inline-block; overflow:hidden;}
-main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(1) {width:325px;}
-main .tab_wrap #upFrm .phone_wrap .phone li:nth-child(2) {width:167px; float:right;}
-main .tab_wrap #upFrm .phone_wrap .phone li input {width:100%}
-main .tab_wrap #upFrm .phone_wrap .phone .s_btn {}
-main .tab_wrap #upFrm .phone_wrap .phone .s_btn .certification {color:#fff;}
-main .tab_wrap #upFrm .btn {
-    background-color: #1ED760; 
-    width:100%; height:70px; border-radius:36.5px;
-    padding:24px 218px;
-}
-main .tab_wrap #upFrm .btn .sign_up_btn {color: #fff; font-weight:700;}
+main .tab_wrap #upFrm .sign_up_btn .up_btn {color:#fff; font-weight:700;}

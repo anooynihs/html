@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>오늘의집 | 회원가입</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/login.css" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <h1><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+        <div class="container">
+            <div class="top">
+                <h2>회원가입</h2>
+                <p><span>SNS계정으로 간편하게 회원가입</span></p>
+                <p class="sns_logo">
+                    <img src="./images/facebook.png" alt="facebook">
+                    <img src="./images/kakao.png" alt="kakao">
+                    <img src="./images/naver.png" alt="naver">
+                </p>
+            </div>
+            <dl>
+                <dt>이메일</dt>
+                <dd>
+                    <input type="text" name="user_email" placeholder="이메일" required>
+                    <select name="domain">
+                        <option value="selection">선택해주세요</option>
+                        <option value="directly">직접 입력</option>
+                        <option value="naver">naver.com</option>
+                        <option value="daum">daum.net</option>
+                        <option value="google">gmail.com</option>
+                    </select>
+                    <button type="button" class="authentication">이메일 인증하기</button>
+                </dd>
+                <dt>비밀번호</dt>
+                <dd>
+                    <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+                    <input type="password" name="user_pw" placeholder="비밀번호" required>
+                </dd>
+                <dt>비밀번호 확인</dt>
+                <dd>
+                    <input type="password" name="user_pw_re" placeholder="비밀번호" required>
+                </dd>
+                <dt>닉네임</dt>
+                <dd>
+                    <p>다른 유저와 겹치지 않도록 입력해주세요.(2-20자)</p>
+                    <input type="text" name="user_nickname" placeholder="별명 (2~20자)" required>
+                </dd>
+            </dl>
+            <ul class="terms">
+                <li class="all">
+                    <input type="checkbox" name="all" value="all_agree">
+                    전체동의<span>선택항목에 대한 동의 포함</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="" value="">
+                    만 14세 이상입니다 <em>(필수)</em>
+                </li>
+                <li>
+                    <input type="checkbox" name="" value="">
+                    이용약관 <em>(필수)</em>
+                </li>
+                <li>
+                    <input type="checkbox" name="" value="">
+                    개인정보수집 및 이용동의 <em>(필수)</em>
+                </li>
+                <li>
+                    <input type="checkbox" name="" value="">
+                    개인정보 마케팅 활용 동의 <span>(선택)</span>
+                </li>
+                <li>
+                    <input type="checkbox" name="" value="">
+                    이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span>(선택)</span>
+                </li>
+            </ul>
+            <div class="sign_btn">
+                <button type="button" class="sign_in">회원가입하기</button>
+            </div>
+            <p>이미 아이디가 있으신가요? <a href="#">로그인</a></p>
+        </div>
+    </main>
 </body>
 </html>
