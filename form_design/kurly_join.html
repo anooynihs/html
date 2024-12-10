@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 마켓컬리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/kurly.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/kurly/kurly_logo.png" alt="마켓컬리"></a></h1>
+        <div class="join_law">
+            <h2>인터넷 쇼핑몰 『웹컬리 사이버 몰』회원 약관</h2>
+            <h3>제1조(목적)</h3>
+            <p>이 약관은 웹컬리 회사(전자상거래 사업자)가 운영하는 웹컬리 사이버 몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+            <p>* 「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」</p>
+            <h3>제2조(정의)</h3>
+            <p>①"몰"이란 웹컬리 회사가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 컴퓨터등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</p>
+            <p>②"이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</p>
+        </div>
+        <form action="#" method="post" id="joinFrm">
+            <dl>
+                <dt>아이디<span class="essential">*</span></dt>
+                <dd>
+                    <input type="text" name="user_id" required placeholder="아이디를 입력해주세요">
+                    <button type="button" class="redundancy_btn common_btn">중복확인</button>
+                </dd>
+                <!--  -->
+                <dt>비밀번호<span class="essential">*</span></dt>
+                <dd><input type="password" name="user_pw" required placeholder="비밀번호를 입력해주세요"></dd>
+                <!--  -->
+                <dt>비밀번호 확인<span class="essential">*</span></dt>
+                <dd><input type="password" name="user_pw_re" required placeholder="비밀번호를 한번 더 입력해주세요"></dd>
+                <!--  -->
+                <dt>이름<span class="essential">*</span></dt>
+                <dd><input type="text" name="user_name" required placeholder="이름을 입력해주세요"></dd>
+                <!--  -->
+                <dt>이메일<span class="essential">*</span></dt>
+                <dd>
+                    <input type="email" name="user_email" required placeholder="예)abc@web.com">
+                    <button type="button" class="mail_redundancy_btn common_btn">중복확인</button>
+                </dd>
+                <!--  -->
+                <dt>휴대폰<span class="essential">*</span></dt>
+                <dd>
+                    <select name="telecom">
+                        <option value="kt">KT</option>
+                        <option value="skt">SKT</option>
+                        <option value="lg">LG</option>
+                        <option value="affordable">알뜰폰</option>
+                    </select>
+                    <input type="tel" name="user_tel" required placeholder="숫자만 입력해주세요 예)01012345678">
+                    <button type="button" class="authen_get_btn common_btn">인증번호받기</button>
+                </dd>
+                <!--  -->
+                <dt>주소<span class="essential">*</span></dt>
+                <dd>
+                    <a href="#" class="address_search">주소 검색</a>
+                    <p>배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+                </dd>
+                <!--  -->
+                <dt>성별</dt>
+                <dd>
+                    <label><input type="radio" name="gender" value="male"><span>남자</span></label>
+                    <label><input type="radio" name="gender" value="female"><span>여자</span></label>
+                    <label><input type="radio" name="gender" value="none"><span>선택안함</span></label>
+                </dd>
+                <!-- 라벨을 부모로 쓸 때는 span으로 글자를 한번 꼭 묶어서 넣어야 한다 -->
+                <dt>생년월일</dt>
+                <dd>
+                    <div class="birthday_g">
+                        <input type="number" name="year" placeholder="YYYY">
+                        <input type="number" name="month" placeholder="MM">
+                        <input type="number" name="day" placeholder="DD">
+                    </div> 
+                </dd>
+            </dl>
+            <div class="btn">
+                <button type="submit" class="join_btn">가입하기</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

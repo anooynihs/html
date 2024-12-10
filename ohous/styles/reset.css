@@ -6,7 +6,7 @@ form, fieldset, legend, input, textarea, label, select, option, button {
     line-height:1.0; font-size:16px; font-weight:normal;
     margin:0; padding:0; font-style:normal;
     box-sizing:border-box;
-    font-family:'';
+    font-family:"Pretendard Variable", Pretendard, sans-serif;
 }
 ol, li, ul {list-style:none;}
 a {color:#000; text-decoration:none;}
