@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style>
+        table,tr,td, th {border:1px solid #000;}
+        table {padding:10px; margin:10px;}
+        td, th {padding:5px;}
+        .t1 {background-color: aquamarine;}
+        .t2 {width:300px;}
+        .t3 {width:400px;}
+        /* t3의 첫번째 행의 첫번째 열의 가로크기를 50으로 적용하기 */
+        .t3 tr:first-child td:first-child {width:50px;}
+        /* 또는 .t3 tr td:first-child {width:50px;} */
+        /* t3의 두번째 행의 마지막 열의 배경색 변경하기 */
+        .t3 tr:nth-child(2) td:nth-child(4) {background-color: tomato;}
+        /* 또는 .t3 tr:last-child td:last-child {background-color:;} */
+        .t3 tr:first-child {border-bottom:3px solid crimson;}
+        .t5 {border:5px solid black; border-left:0; border-right:0;}
+        .t5 tr th {width:150px;}
+        .t5 tr td {width:100px;}
+        .t5 tr td:last-child {width:50px;}
+    </style>
+</head>
+<body>
+    <h1>테이블 공부</h1>
+    <hr>
+    <h2>1행 3열 표</h2>
+    <table class="t1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <h2>3행 1열 표</h2>
+    <table class="t2">
+        <tr>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+    </table>
+    <h2>2행 4열 표</h2>
+    <table class="t3">
+        <tr>
+            <td>111</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <h2>3행 2열 표(1행 전체 제목열)</h2>
+    <table class="t4">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+        <tr>
+            <td>가</td>
+            <td>나</td>
+        </tr>
+        <tr>
+            <td>가</td>
+            <td>나</td>
+        </tr>
+    </table>
+    <h2>5행 4열 표(각 행의 첫번째 열이 제목)</h2>
+    <table class="t5">
+        <tr>
+            <th>제목</th>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th>제목</th>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th>제목</th>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th>제목</th>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th>제목</th>
+            <td>내용</td>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+    </table>
+</body>
+</html>

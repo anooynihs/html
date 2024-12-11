@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,7 @@
                 <dt>이메일</dt>
                 <dd>
                     <input type="text" name="user_email" placeholder="이메일" required>
+                    <span>@</span>
                     <select name="domain">
                         <option value="selection">선택해주세요</option>
                         <option value="directly">직접 입력</option>
@@ -49,32 +50,35 @@
                     <input type="text" name="user_nickname" placeholder="별명 (2~20자)" required>
                 </dd>
             </dl>
-            <ul class="terms">
-                <li class="all">
-                    <input type="checkbox" name="all" value="all_agree">
-                    전체동의<span>선택항목에 대한 동의 포함</span>
-                </li>
-                <li>
-                    <input type="checkbox" name="" value="">
-                    만 14세 이상입니다 <em>(필수)</em>
-                </li>
-                <li>
-                    <input type="checkbox" name="" value="">
-                    이용약관 <em>(필수)</em>
-                </li>
-                <li>
-                    <input type="checkbox" name="" value="">
-                    개인정보수집 및 이용동의 <em>(필수)</em>
-                </li>
-                <li>
-                    <input type="checkbox" name="" value="">
-                    개인정보 마케팅 활용 동의 <span>(선택)</span>
-                </li>
-                <li>
-                    <input type="checkbox" name="" value="">
-                    이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span>(선택)</span>
-                </li>
-            </ul>
+            <div class="terms_gr">
+                <h3>약관동의</h3>
+                <ul class="terms">
+                    <li class="all">
+                        <input type="checkbox" name="all" value="all_agree">
+                        전체동의<span>선택항목에 대한 동의 포함</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="">
+                        만 14세 이상입니다 <em>(필수)</em>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="">
+                        이용약관 <em>(필수)</em>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="">
+                        개인정보수집 및 이용동의 <em>(필수)</em>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="">
+                        개인정보 마케팅 활용 동의 <span>(선택)</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" value="">
+                        이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span>(선택)</span>
+                    </li>
+                </ul>
+            </div>
             <div class="sign_btn">
                 <button type="button" class="sign_in">회원가입하기</button>
             </div>

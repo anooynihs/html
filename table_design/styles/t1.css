@@ -1,0 +1,22 @@
+.book {margin:200px auto 0; border-radius:20px; overflow:hidden;}
+.book tr {background-color:#f2f2f2;}
+.book tr:first-child {background-color:#FF0066;}
+.book tr:first-child th {
+    color:#fff;
+    font-weight:700; font-size:1.13rem;
+    text-align:center;
+    padding:20px 0;
+}
+.book tr:nth-child(3) {
+    background-color:#e8e8e8;
+    border:2px solid #FF0066;
+}
+.book tr:nth-child(5) {background-color:#e8e8e8;}
+.book tr th {padding:16px 0; font-weight:500;}
+.book tr th em {color:#FF0066; font-weight:500;}
+.book tr th:first-child {width:250px; padding-left:16px;}
+.book tr td {
+    text-align:center; width:100px;
+    padding:16px 0; font-weight:500;
+}
+.book tr td em {color:#FF0066; font-weight:500;}
