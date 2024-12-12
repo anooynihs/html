@@ -45,18 +45,24 @@ main .container dl dd p {
     font-size:0.88rem; color:#777;
     margin-bottom:10px;
 }
-main .container .terms_gr {background-color:cornflowerblue;}
+main .container .terms_gr {}
 main .container .terms_gr h3 {
     font-size:1.06rem; font-weight:500;
 }
 main .container .terms_gr .terms {
+    background-color: springgreen;
     margin-top:10px; width:100%;
-
+    border:1px solid #ddd;
+    border-radius:3px;
+    padding:10px;
 }
-main .container .terms .all {}
-main .container .terms li {}
-main .container .terms li em {}
-main .container .terms li span {}
+main .container .terms_gr .terms .all {background-color: rgb(224, 64, 184);
+}
+main .container .terms_gr .terms .all input {}
+main .container .terms_gr .terms .all span {}
+main .container .terms_gr .terms li {}
+main .container .terms_gr .terms li em {}
+main .container .terms_gr .terms li span {}
 main .container .sign_btn {background-color: yellow;}
 main .container .sign_btn .sign_in {}
 main .container > p {background-color: tomato;}
