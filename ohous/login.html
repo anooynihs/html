@@ -57,26 +57,32 @@
             <div class="terms_gr">
                 <h2>약관동의</h2>
                 <ul>
-                    <li>전체동의 <span>선택항목에 대한 동의 포함</span></li>
                     <li>
-                        <input type="checkbox" id="terms_age" name="terms" value="age">
-                        <label>만 14세 이상입니다 <em>(필수)</em></label>
+                        <input type="checkbox" name="terms" value="all" id="all">
+                        <label for="all"><em>전체동의</em> <span>선택항목에 대한 동의 포함</span></label>
                     </li>
                     <li>
-                        <input type="checkbox" id="terms_use" name="terms" value="use">
-                        <label>이용약관 <em>(필수)</em></label>
+                        <input type="checkbox" name="terms" value="age" id="age">
+                        <label for="age">만 14세 이상입니다 <em class="blue">(필수)</em></label>
                     </li>
                     <li>
-                        <input type="checkbox" id="terms_collect" name="terms" value="collect">
-                        <label>개인정보수집 및 이용동의 <em>(필수)</em></label>
+                        <input type="checkbox" name="terms" value="use" id="use">
+                        <label for="use">이용약관 <em class="blue">(필수)</em></label>
+                        <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                     </li>
                     <li>
-                        <input type="checkbox" id="terms_marketing" name="terms" value="marketing">
-                        <label>개인정보 마케팅 활용 동의 <span>(선택)</span></label>
+                        <input type="checkbox" name="terms" value="collect" id="collect">
+                        <label for="collect">개인정보수집 및 이용동의 <em class="blue">(필수)</em></label>
+                        <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
                     </li>
                     <li>
-                        <input type="checkbox" id="terms_event" name="terms" value="event">
-                        <label>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span>(선택)</span></label>
+                        <input type="checkbox" name="terms" value="marketing" id="marketing">
+                        <label for="marketing">개인정보 마케팅 활용 동의 <span class="grey">(선택)</span></label>
+                        <a href="#"><img src="./images/arrow_forward_ios.png" alt=""></a>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="terms" value="event" id="event">
+                        <label for="event">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span class="grey">(선택)</span></label>
                     </li>
                 </ul>
             </div>

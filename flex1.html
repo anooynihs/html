@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 공부 1</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style>
+        .box {background-color: aquamarine; margin:10px}
+        .box li {width:50px; height:50px; background-color:lightskyblue;}
+        .box li:nth-child(even) {background-color: coral;}
+        /* 짝수선택:even , 홀수선택:odd */
+        /* display:inline-block, float는 정렬하는 요소에 적용하는 정렬속성이다. */
+        /* flex(값)는 정렬하는 요소의 '부모'에게 적용하는 정렬속성이다. */
+        .a {
+            display:flex;
+            /*flex의 기본값 : 자식(자손X)요소 옆으로 정렬*/
+            /*flex-direction:column-reverse;*/
+            width:150px; height:400px;
+            /*flex-wrap:nowrap;*/
+            flex-flow:row wrap;
+            align-content:center;
+        }
+        .b {
+            width:100px; height:300px;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            /*align-content:stretch;*/
+            align-items:flex-end;
+        }
+        .b li:last-child {align-self:flex-start;}
+        .c {
+            /*필수*/ display:flex;
+            width:500px; padding:20px;
+
+        }
+        .c li {flex:1;}
+        .c li:nth-child(1) {order:2; flex:2;}
+        .c li:nth-child(2) {order:3;}
+        .c li:nth-child(3) {order:1;}
+        .d {
+            width: 300px; height: 300px;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .d li:first-child {align-self:flex-start;}
+        .d li:nth-child(2) {}
+        .d li:nth-child(3) {}
+        .d li:nth-child(4) {}
+        .d li:nth-child(5) {}
+    </style>
+</head>
+<body>
+    <ul class="box a">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <hr>
+    <ul class="box b">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <hr>
+    <ul class="box c">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <hr>
+    <ul class="box d">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

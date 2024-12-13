@@ -15,19 +15,18 @@ main .container .top p img:nth-child(2) {margin:0 30px;}
 /*============================================================= form*/
 #wrap main #userInfo {}
 #wrap main #userInfo dl {margin-top:20px;}
-#wrap main #userInfo dl dt {
-    margin-bottom:10px;
-    font-size:1.06rem; font-weight:700px;
-}
+#wrap main #userInfo dl dt {margin-bottom:10px; font-size:1.06rem; font-weight:500;}
 #wrap main #userInfo dl dd {margin-bottom:22px;}
 #wrap main #userInfo dl dd input {
     width:100%; height:39px; padding:10px;
     border:1px solid #ddd; border-radius:3px;
 }
 #wrap main #userInfo dl dd input[name$=email] {width:170px;}
+#wrap main #userInfo dl dd input[name$=pw] {margin-top:10px;}
+#wrap main #userInfo dl dd input[name$=nickname] {margin-top:10px;}
 #wrap main #userInfo dl dd input::placeholder {}
 #wrap main #userInfo dl dd span {}
-#wrap main #userInfo dl dd .explain {font-size:0.88rem; color:#777; margin-bottom:10px;}
+#wrap main #userInfo dl dd .explain {font-size:0.88rem; color:#777;}
 #wrap main #userInfo dl dd select {
     width:170px; height:39px; padding:10px;float:right;
     border:1px solid #ddd; border-radius:3px;
@@ -40,18 +39,35 @@ main .container .top p img:nth-child(2) {margin:0 30px;}
 }
 /*============================================================= terms_gr*/
 #wrap main .terms_gr {}
-#wrap main .terms_gr h2 {}
-#wrap main .terms_gr ul {}
-#wrap main .terms_gr ul li {}
-#wrap main .terms_gr ul li+span {}
+#wrap main .terms_gr h2 {margin-bottom:10px; font-size:1.06rem; font-weight:500;}
+#wrap main .terms_gr ul {border:1px solid #ddd; border-radius:3px; padding:10px 10px;}
+#wrap main .terms_gr ul li {margin:10px 0;}
+#wrap main .terms_gr ul li:first-child {border-bottom:1px solid #ddd; padding-bottom:5px;}
+#wrap main .terms_gr ul li:first-child label em {font-size:1rem; font-weight:600;}
+#wrap main .terms_gr ul li:first-child label span {font-size:0.88rem; color:#777;}
+#wrap main .terms_gr ul li:last-child {margin-bottom:0;}
 #wrap main .terms_gr ul li input {}
-#wrap main .terms_gr ul li label {}
-#wrap main .terms_gr ul li label > em {}
-#wrap main .terms_gr ul li label > span {}
+#wrap main .terms_gr ul li label {
+    padding-left:34px; font-size:0.81rem; letter-spacing:-.0.02em;
+    background:url(../images/check_box_n.png) no-repeat;
+}
+#wrap main .terms_gr ul li label .blue {font-size:0.81rem; color:#3292FF;}
+#wrap main .terms_gr ul li label .grey {font-size:0.81rem; color:#777;}
+#wrap main .terms_gr ul li a {float:right;}
+/*============================================================= 체크박스*/
+#wrap main .terms_gr ul li #all:checked+label,
+#wrap main .terms_gr ul li #age:checked+label,
+#wrap main .terms_gr ul li #use:checked+label,
+#wrap main .terms_gr ul li #collect:checked+label,
+#wrap main .terms_gr ul li #marketing:checked+label,
+#wrap main .terms_gr ul li #event:checked+label {background:url(../images/check_box_y.png) no-repeat;}
 /*============================================================= btn*/
-#wrap main .btn {}
-#wrap main .btn .sign_in {}
+#wrap main .btn {
+    background-color:#3292FF; margin:22px 0;
+    padding:15px 10px; border-radius:5px; text-align:center;
+}
+#wrap main .btn .sign_in {letter-spacing:-0.02em; color:#fff;}
 /*============================================================= login*/
-#wrap main .login {}
-#wrap main .login p {}
-#wrap main .login p a {}
+#wrap main .login {text-align:center; margin-bottom:70px;}
+#wrap main .login p {font-size:0.88rem;}
+#wrap main .login p a {font-size:0.88rem; font-weight:600; border-bottom:1px solid #000;}
