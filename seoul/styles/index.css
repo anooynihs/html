@@ -4,7 +4,7 @@ header {
 /* ================================================== header top */
 header .top {
     height:48px;
-    /* lnb와 mu_lnb를 정렬하기 위한 flex적용 부모 */
+    /* lnb와 mu_lnb를 정렬하기 위한 flex적용 부모.. */
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
