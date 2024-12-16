@@ -48,14 +48,103 @@ header .bottom #searchFrm .search_btn {}
 header .bottom #searchFrm .search_btn img {}
 header .bottom .lang {display:flex; align-items:center;}
 header .bottom .lang select[name*=lang] {
-    border:1px solid #1E6CB3; font-size:0.81rem; letter-spacing:-0.02em;
-    width:93px; height:29px; padding-left:10px;
+    border:1px solid #1E6CB3; font-size:0.813rem; letter-spacing:-0.02em;
+    width:93px; height:29px; padding-left:10px; margin-right:2px;
 }
 header .bottom .lang select[name*=lang] option {}
 header .bottom .lang .lang_btn {
     background-color:#1E6CB3; color:#fff;
-    font-size:0.81rem; letter-spacing:-0.02em;
+    font-size:0.813rem; letter-spacing:-0.02em;
     width:30px; height:29px;
 }
 /* ================================================== main */
+/* ================================================== main_visual container */
+main {background-color:hotpink;}
+main .visual_container {
+    width:1152px; margin:0 auto;
+    /* 좌(거리두기)-우(현황, 교통) 자식정렬 부모 flex 대상 */
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .visual_container .covid_notice {position:relative;}
+main .visual_container .covid_notice img {}
+main .visual_container .covid_notice .close {
+    background-color: #1E6CB3; color:#fff;
+    border-radius:5px; padding:10px;
+    position:absolute; right:10px; bottom:10px; display:block;
+    font-weight:500; letter-spacing:-0.02em;
+}
+main .visual_container .right_container {width:360px;}
+main .visual_container .right_container .covid_situation {position:relative;}
+main .visual_container .right_container .covid_situation img {}
+main .visual_container .right_container .covid_situation span {
+    position:absolute; display:block;
+    letter-spacing:-0.02em;
+}
+main .visual_container .right_container .covid_situation .date {
+    width:160px; top:11px; right:20px; text-align:right;
+}
+main .visual_container .right_container .covid_situation .data {text-align:center; color:#fff;}
+main .visual_container .right_container .covid_situation .data1 {width:140px; left:30px; top:83px;}
+main .visual_container .right_container .covid_situation .data2 {width:140px; right:30px; top:83px;}
+main .visual_container .right_container .covid_situation .data3 {width:94px; left:30px; bottom:56px;}
+main .visual_container .right_container .covid_situation .data4 {width:94px; right:121px; bottom:56px;}
+main .visual_container .right_container .covid_situation .data5 {width:59px; right:33px; bottom:56px;}
+main .visual_container .right_container .traffic_info {margin-top:9px;}
+main .visual_container .right_container .traffic_info a {}
+main .visual_container .right_container .traffic_info a img {}
+/* ================================================== 2~5 공통제목디자인 */
+main > * .title {
+    background-color: aquamarine;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding-bottom:20px;
+    border-bottom:1px solid #ccc;
+}
+main > * .title h1 {font-size:1.438rem; font-weight:500; letter-spacing:-0.02em;}
+main > * .title .more_view {
+    border:1px solid #aaa; padding:10px;
+    background-color:#fff; letter-spacing:-0.02em;
+}
+/* ================================================== 2.service_container */
+main .service_container {width:1152px; margin:0 auto;}
+main .service_container .title {}
+main .service_container .title h1 {}
+main .service_container .title .more_view {}
+main .service_container .contents {
+    background-color: yellow;
+    width:100%;
+}
+main .service_container .contents a {
+    display:flex;
+    flex-flow:column nowrap;
+    align-content:space-around;
+}
+main .service_container .contents a span {
+    background-color: rgb(255, 186, 121);
+    width:60px; height:60px;
+    background-image:url(../images/service.png);
+}
+main .service_container .contents a em {
+    font-size:0.813rem; letter-spacing:-0.02em;
+    display:inline-block;
+}
+main .service_container .contents a:nth-child(1) span {}
+main .service_container .contents a:nth-child(2) span {background-position-x:-60px;}
+main .service_container .contents a:nth-child(3) span {background-position-x:-120px;}
+main .service_container .contents a:nth-child(4) span {background-position-x:-180px;}
+main .service_container .contents a:nth-child(5) span {background-position-x:-240px;}
+main .service_container .contents a:nth-child(6) span {background-position-x:-300px;}
+main .service_container .contents a:nth-child(7) span {background-position-x:300px}
+main .service_container .contents a:nth-child(8) span {background-position-x:240px}
+main .service_container .contents a:nth-child(9) span {background-position-x:180px}
+main .service_container .contents a:nth-child(10) span {background-position-x:120px}
+main .service_container .contents a:nth-child(11) span {background-position-x:60px;}
+/* ================================================== 3.신청, 행사, 서비스 */
+/* ================================================== 3-1. 이벤트신청 */
+/* ================================================== 3-2. 이달의 행사 및 축제 */
+/* ================================================== 3-3. 자주 찾은 서비스 */
+/* ================================================== 4.분야정보 */
+/* ================================================== 5. 새소식*/
 /* ================================================== footer */ 
