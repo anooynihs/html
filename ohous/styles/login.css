@@ -48,8 +48,9 @@ main .container .top p img:nth-child(2) {margin:0 30px;}
 #wrap main .terms_gr ul li:last-child {margin-bottom:0;}
 #wrap main .terms_gr ul li input {}
 #wrap main .terms_gr ul li label {
-    padding-left:34px; font-size:0.81rem; letter-spacing:-.0.02em;
-    background:url(../images/check_box_n.png) no-repeat;
+    font-size:0.81rem; letter-spacing:-.0.02em;
+    background:url(../images/check_box_n.png) no-repeat 0 center;
+    padding:5px 0 5px 34px;
 }
 #wrap main .terms_gr ul li label .blue {font-size:0.81rem; color:#3292FF;}
 #wrap main .terms_gr ul li label .grey {font-size:0.81rem; color:#777;}
@@ -60,7 +61,10 @@ main .container .top p img:nth-child(2) {margin:0 30px;}
 #wrap main .terms_gr ul li #use:checked+label,
 #wrap main .terms_gr ul li #collect:checked+label,
 #wrap main .terms_gr ul li #marketing:checked+label,
-#wrap main .terms_gr ul li #event:checked+label {background:url(../images/check_box_y.png) no-repeat;}
+#wrap main .terms_gr ul li #event:checked+label {
+    background:url(../images/check_box_y.png) no-repeat 0 center;
+    padding:5px 0 5px 34px;
+}
 /*============================================================= btn*/
 #wrap main .btn {
     background-color:#3292FF; margin:22px 0;

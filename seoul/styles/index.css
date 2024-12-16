@@ -1,35 +1,61 @@
-header {
-    width:1152px; margin:0 auto;
-}
+header {width:1152px; margin:0 auto;}
 /* ================================================== header top */
 header .top {
     height:48px;
-    /* lnb와 mu_lnb를 정렬하기 위한 flex적용 부모.. */
+    /* lnb와 mu_lnb를 정렬하기 위한 flex적용부모 */
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
+    align-items:center;
 }
-header .top .lnb {background-color:aqua;}
+header .top .lnb {
+    /* 서울특별시 h1~응답소 a 정렬하기 위한 flex적용부모 */
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+}
 header .top .lnb h1 {}
 header .top .lnb h1 a {}
 header .top .lnb h1 a img {}
-header .top .lnb > a {}
-header .top .my_lnb {background-color: violet;}
-header .top .my_lnb a {}
+header .top .lnb > a {letter-spacing:-0.02em; margin-left:20px;}
+header .top .my_lnb {}
+header .top .my_lnb a {letter-spacing:-0.02em;}
+header .top .my_lnb a:nth-child(2) {margin:0 20px;}
 /* ================================================== header bottom */
 header .bottom {
     height:119px;
+    /* 로고h1~언어div 자식을 묶는 flex적용부모 */
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
 }
 header .bottom h1 {}
 header .bottom h1 a {}
 header .bottom h1 a img {}
-header .bottom #searchFrm {background-color: orange;}
+header .bottom #searchFrm {
+    background-color:#fff;
+    width:369px; height:46px;
+    border:2px solid #1E6CB3; padding:0 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
 header .bottom #searchFrm input[name*=search] {}
-header .bottom #searchFrm .search_btn {}
+header .bottom #searchFrm input[name*=search]::placeholder {color:#1E6CB3; letter-spacing:-0.02em;}
+header .bottom #searchFrm .search_btn {} 
 header .bottom #searchFrm .search_btn img {}
-header .bottom .lang {background-color:springgreen;}
-header .bottom .lang select[name*=lang] {}
+header .bottom .lang {display:flex; align-items:center;}
+header .bottom .lang select[name*=lang] {
+    border:1px solid #1E6CB3; font-size:0.81rem; letter-spacing:-0.02em;
+    width:93px; height:29px; padding-left:10px;
+}
 header .bottom .lang select[name*=lang] option {}
-header .bottom .lang .lang_btn {}
+header .bottom .lang .lang_btn {
+    background-color:#1E6CB3; color:#fff;
+    font-size:0.81rem; letter-spacing:-0.02em;
+    width:30px; height:29px;
+}
 /* ================================================== main */
 /* ================================================== footer */ 
