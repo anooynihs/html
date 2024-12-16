@@ -114,12 +114,12 @@ main .service_container .title h1 {}
 main .service_container .title .more_view {}
 main .service_container .contents {
     background-color: yellow;
-    width:100%;
+    width:100%; height:125px;
 }
 main .service_container .contents a {
-    display:flex;
+    display:flex; 
     flex-flow:column nowrap;
-    align-content:space-around;
+    align-items:space-around;
 }
 main .service_container .contents a span {
     background-color: rgb(255, 186, 121);
@@ -128,7 +128,6 @@ main .service_container .contents a span {
 }
 main .service_container .contents a em {
     font-size:0.813rem; letter-spacing:-0.02em;
-    display:inline-block;
 }
 main .service_container .contents a:nth-child(1) span {}
 main .service_container .contents a:nth-child(2) span {background-position-x:-60px;}
