@@ -59,7 +59,7 @@ header .bottom .lang .lang_btn {
 }
 /* ================================================== main */
 /* ================================================== main_visual container */
-main {background-color:hotpink;}
+main {}
 main .visual_container {
     width:1152px; margin:0 auto;
     /* 좌(거리두기)-우(현황, 교통) 자식정렬 부모 flex 대상 */
@@ -95,7 +95,7 @@ main .visual_container .right_container .traffic_info a {}
 main .visual_container .right_container .traffic_info a img {}
 /* ================================================== ★★ 2~5 공통제목디자인 */
 main > * {width:1152px; margin:50px auto 0;}
-main > * .title {background-color:honeydew;
+main > * .title {
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
     padding-bottom:20px; border-bottom:1px solid #ccc;
 }
@@ -148,7 +148,7 @@ main .event_container .contents .title h1 {}
 main .event_container .contents .title .more {}
 main .event_container .contents .title .more img {}
 main .event_container .contents .list {margin-top:15px;}
-main .event_container .contents .list li {display:flex; letter-spacing:-0.02em; margin-bottom:25px;}
+main .event_container .contents .list li {display:flex; flex-flow:row nowrap; margin-bottom:25px; letter-spacing:-0.02em;}
 main .event_container .contents .list li:last-child {margin-bottom:0;}
 main .event_container .contents .list li .category {width:40px;}
 main .event_container .contents .list li a {
@@ -164,7 +164,7 @@ main .event_container .contents .list li .housing {color:#C35C3C;} /*주택*/
 main .event_container .contents .list li .culture {color:#9B64D3;} /*문화*/
 main .event_container .contents .list li .economy {color:#069363;} /*경제*/
 /* ================================================== 3-1. 이벤트신청 */
-main .event_container .event_apply {background-color:thistle;}
+main .event_container .event_apply {}
 main .event_container .event_apply .title {}
 main .event_container .event_apply .title h1 {}
 main .event_container .event_apply .title .more {}
@@ -174,7 +174,7 @@ main .event_container .event_apply .list li {}
 main .event_container .event_apply .list li .category {}
 main .event_container .event_apply .list li a {}
 /* ================================================== 3-2. 이달의 행사 및 축제 */
-main .event_container .month_event {background-color: greenyellow;}
+main .event_container .month_event {}
 main .event_container .month_event .title {}
 main .event_container .month_event .title h1 {}
 main .event_container .month_event .title .more {}
@@ -198,5 +198,69 @@ main .event_container .service_visit .list li:nth-child(9),
 main .event_container .service_visit .list li:nth-child(10) {margin-bottom:0;}
 main .event_container .service_visit .list li a {}
 /* ================================================== 4.분야정보 */
+main .info_container {}
+main .info_container .title {}
+main .info_container .title h1 {}
+main .info_container .contents {
+    display:flex; flex-flow:row nowrap; justify-content:space-around; padding:20px 0;}
+main .info_container .contents a {display:flex; flex-flow:column nowrap; flex:1; align-items:center;}
+main .info_container .contents a span {background-image:url(../images/category_info.png); width:104px; height:111px;}
+main .info_container .contents a:nth-child(2) span {background-position-x:-104px;}
+main .info_container .contents a:nth-child(3) span {background-position-x:-208px;}
+main .info_container .contents a:nth-child(4) span {background-position-x:-312px;}
+main .info_container .contents a:nth-child(5) span {background-position-x:-416px;}
+main .info_container .contents a:nth-child(6) span {background-position-x:312px;}
+main .info_container .contents a:nth-child(7) span {background-position-x:208px}
+main .info_container .contents a:nth-child(8) span {background-position-x:104px;}
+main .info_container .contents a em {letter-spacing:-0.02em;}
 /* ================================================== 5. 새소식*/
-/* ================================================== footer */ 
+main .news_container {padding-bottom:50px;}
+main .news_container .title {}
+main .news_container .title h1 {}
+main .news_container .title .more_view {}
+main .news_container .contents {display:flex; flex-flow:row wrap; justify-content:space-between; margin-top:44px;}
+/* calc((100% - 총여백) / 한 줄에 들어오는 열 개수) */
+main .news_container .contents li {width:calc((100% - 39px) / 4);}
+main .news_container .contents li:nth-child(1),
+main .news_container .contents li:nth-child(2),
+main .news_container .contents li:nth-child(3),
+main .news_container .contents li:nth-child(4) {margin-bottom:30px;}
+main .news_container .contents li a {}
+main .news_container .contents li a img {width:100%; margin-bottom:10px;}
+main .news_container .contents li a span {font-size:0.875rem; letter-spacing:-0.02em; line-height:150%;}
+/* ================================================== footer */
+footer {width:1152px; margin:0 auto; padding-bottom:50px;}
+footer .top {background-color: tomato;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+
+    padding:20px 0;
+    border:1px solid #ccc; border-left:0; border-right:0;
+}
+footer .top .menu {background-color: aquamarine;
+}
+footer .top .menu a {letter-spacing:-.0.02em; }
+footer .top .menu a::after {}
+footer .top .sns {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+footer .top .sns a {
+    background-image:url(../images/sns_sprite.png);
+    width:25px; height:25px; margin-right:10px;
+}
+footer .top .sns a:nth-child(1) {}
+footer .top .sns a:nth-child(2) {background-position-x:-25px;}
+footer .top .sns a:nth-child(3) {background-position-x:-50px;}
+footer .top .sns a:nth-child(4) {background-position-x:-75px;}
+footer .top .sns a:nth-child(5) {background-position-x:-100px;}
+footer .top .sns a:nth-child(6) {background-position-x:-125px; margin-right:0;}
+footer .top .sns a span {
+    /*글자 숨기기*/ display:none;}
+footer .bottom {background-color: yellow;
+    padding:30px 0;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+footer .bottom address {background-color: dodgerblue;
+    line-height:180%; letter-spacing:-0.02em;
+}
+footer .bottom address a {border-bottom:1px solid #000;}
+footer .bottom .mark {}
+footer .bottom .mark a {}
+footer .bottom .mark a img {}
