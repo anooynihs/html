@@ -230,37 +230,44 @@ main .news_container .contents li a img {width:100%; margin-bottom:10px;}
 main .news_container .contents li a span {font-size:0.875rem; letter-spacing:-0.02em; line-height:150%;}
 /* ================================================== footer */
 footer {width:1152px; margin:0 auto; padding-bottom:50px;}
-footer .top {background-color: tomato;
+footer .top {
     display:flex; flex-flow:row nowrap; justify-content:space-between;
-
     padding:20px 0;
     border:1px solid #ccc; border-left:0; border-right:0;
 }
-footer .top .menu {background-color: aquamarine;
+footer .top .menu {display:flex;}
 }
 footer .top .menu a {letter-spacing:-.0.02em; }
-footer .top .menu a::after {}
-footer .top .sns {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+footer .top .menu a::after {
+    /* 글자 사이에 있는 | 표시 넣기, 가상요소 만들어서 넣는 방법! */
+    content:''; display:inline-block;
+    width:1px; height:10px; background-color:#000;
+    margin:0 10px;
+    position:relative; top:-1px;
+}
+footer .top .menu a:last-child::after {display:none;}
+footer .top .sns {display:flex; flex-flow:row nowrap;}
 footer .top .sns a {
     background-image:url(../images/sns_sprite.png);
     width:25px; height:25px; margin-right:10px;
 }
+footer .top .sns a:hover {background-position-y:-25px;} /*마우스를 올렸을 때*/
 footer .top .sns a:nth-child(1) {}
 footer .top .sns a:nth-child(2) {background-position-x:-25px;}
 footer .top .sns a:nth-child(3) {background-position-x:-50px;}
 footer .top .sns a:nth-child(4) {background-position-x:-75px;}
 footer .top .sns a:nth-child(5) {background-position-x:-100px;}
 footer .top .sns a:nth-child(6) {background-position-x:-125px; margin-right:0;}
-footer .top .sns a span {
-    /*글자 숨기기*/ display:none;}
-footer .bottom {background-color: yellow;
+footer .top .sns a span {/*글자 숨기기*/ display:none;}
+footer .bottom {
     padding:30px 0;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-footer .bottom address {background-color: dodgerblue;
+footer .bottom address {
     line-height:180%; letter-spacing:-0.02em;
 }
 footer .bottom address a {border-bottom:1px solid #000;}
 footer .bottom .mark {}
 footer .bottom .mark a {}
+footer .bottom .mark a:first-child {margin-right:10px;}
 footer .bottom .mark a img {}
