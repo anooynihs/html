@@ -93,42 +93,34 @@ main .visual_container .right_container .covid_situation .data5 {width:59px; rig
 main .visual_container .right_container .traffic_info {margin-top:9px;}
 main .visual_container .right_container .traffic_info a {}
 main .visual_container .right_container .traffic_info a img {}
-/* ================================================== 2~5 공통제목디자인 */
-main > * .title {
-    background-color: aquamarine;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:space-between;
-    padding-bottom:20px;
-    border-bottom:1px solid #ccc;
+/* ================================================== ★★ 2~5 공통제목디자인 */
+main > * {width:1152px; margin:50px auto 0;}
+main > * .title {background-color:honeydew;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    padding-bottom:20px; border-bottom:1px solid #ccc;
 }
-main > * .title h1 {font-size:1.438rem; font-weight:500; letter-spacing:-0.02em;}
-main > * .title .more_view {
-    border:1px solid #aaa; padding:10px;
-    background-color:#fff; letter-spacing:-0.02em;
-}
+main > * .title h1 {font-size:1.44rem; font-weight:500; letter-spacing:-0.02em;}
+main > * .title .more_view {border:1px solid #aaa; padding:10px; letter-spacing:-0.02em;}
 /* ================================================== 2.service_container */
-main .service_container {width:1152px; margin:0 auto;}
+main .service_container {}
 main .service_container .title {}
 main .service_container .title h1 {}
 main .service_container .title .more_view {}
 main .service_container .contents {
-    background-color: yellow;
-    width:100%; height:125px;
+    width:100%; display:flex; flex-flow:row nowrap;
 }
 main .service_container .contents a {
-    display:flex; 
-    flex-flow:column nowrap;
-    align-items:space-around;
+    display:flex; flex-flow:column nowrap;
+    /* 모든 a가 동일한 비율을 가지게 하는 방법 */
+    flex:1;  /* 또는 width:calc(100% / 11); */
+    align-items:center; padding:20px 0;
+    
 }
 main .service_container .contents a span {
-    background-color: rgb(255, 186, 121);
-    width:60px; height:60px;
+    width:60px; height:60px; margin-bottom:15px;
     background-image:url(../images/service.png);
 }
-main .service_container .contents a em {
-    font-size:0.813rem; letter-spacing:-0.02em;
-}
+main .service_container .contents a em {font-size:0.81rem; letter-spacing:-0.02em;}
 main .service_container .contents a:nth-child(1) span {}
 main .service_container .contents a:nth-child(2) span {background-position-x:-60px;}
 main .service_container .contents a:nth-child(3) span {background-position-x:-120px;}
@@ -140,10 +132,71 @@ main .service_container .contents a:nth-child(8) span {background-position-x:240
 main .service_container .contents a:nth-child(9) span {background-position-x:180px}
 main .service_container .contents a:nth-child(10) span {background-position-x:120px}
 main .service_container .contents a:nth-child(11) span {background-position-x:60px;}
-/* ================================================== 3.신청, 행사, 서비스 */
+/* ================================================== 배너 */
+main .covid_container {background-color:#EFF4F8; width:100%;}
+main .covid_container .contents {
+    width:1152px; margin:0 auto; padding:50px 0px;
+    display:flex; flex-flow:row nowrap;
+}
+main .covid_container .contents a {flex:1;}
+main .covid_container .contents a img {width:100%;} /*부모에 꽉차서 정확한 비율로 나뉘어져있을 경우*/
+/* ================================================== 3. ★★신청, 행사, 서비스 */
+main .event_container {display:flex; flex-flow:row nowrap;}
+main .event_container .contents {width:calc(100% / 3); margin-right:22px;}
+main .event_container .contents .title {}
+main .event_container .contents .title h1 {}
+main .event_container .contents .title .more {}
+main .event_container .contents .title .more img {}
+main .event_container .contents .list {margin-top:15px;}
+main .event_container .contents .list li {display:flex; letter-spacing:-0.02em; margin-bottom:25px;}
+main .event_container .contents .list li:last-child {margin-bottom:0;}
+main .event_container .contents .list li .category {width:40px;}
+main .event_container .contents .list li a {
+    /* 글자 줄이기 처리 방법*/
+    width:calc(100% - 40px);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+/* ================================================== 3. 카테고리별 색상 */
+main .event_container .contents .list li .admin {color:#028AB6;} /*행정*/
+main .event_container .contents .list li .environment {color:#599100;} /*환경*/
+main .event_container .contents .list li .welfare {color:#D76000;} /*복지*/
+main .event_container .contents .list li .housing {color:#C35C3C;} /*주택*/
+main .event_container .contents .list li .culture {color:#9B64D3;} /*문화*/
+main .event_container .contents .list li .economy {color:#069363;} /*경제*/
 /* ================================================== 3-1. 이벤트신청 */
+main .event_container .event_apply {background-color:thistle;}
+main .event_container .event_apply .title {}
+main .event_container .event_apply .title h1 {}
+main .event_container .event_apply .title .more {}
+main .event_container .event_apply .title .more img {}
+main .event_container .event_apply .list {}
+main .event_container .event_apply .list li {}
+main .event_container .event_apply .list li .category {}
+main .event_container .event_apply .list li a {}
 /* ================================================== 3-2. 이달의 행사 및 축제 */
+main .event_container .month_event {background-color: greenyellow;}
+main .event_container .month_event .title {}
+main .event_container .month_event .title h1 {}
+main .event_container .month_event .title .more {}
+main .event_container .month_event .title .more img {}
+main .event_container .month_event .list {}
+main .event_container .month_event .list li {}
+main .event_container .month_event .list li .category {}
+main .event_container .month_event .list li a {}
 /* ================================================== 3-3. 자주 찾은 서비스 */
+main .event_container .service_visit {margin-right:0;}
+main .event_container .service_visit .title {}
+main .event_container .service_visit .title h1 {}
+main .event_container .service_visit .title .more {}
+main .event_container .service_visit .title .more img {}
+main .event_container .service_visit .list {
+    background-color:#EFF4F8; padding:13px;
+    display:flex; flex-flow:row wrap;
+}
+main .event_container .service_visit .list li {width:calc(100% / 2);}
+main .event_container .service_visit .list li:nth-child(9),
+main .event_container .service_visit .list li:nth-child(10) {margin-bottom:0;}
+main .event_container .service_visit .list li a {}
 /* ================================================== 4.분야정보 */
 /* ================================================== 5. 새소식*/
 /* ================================================== footer */ 
