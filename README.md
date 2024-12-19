@@ -111,3 +111,11 @@
 * `background-image:url();`
 * `background-repeat:;`
 * `background-position:;`
+## 코드를 빠르게 작성하게 해주는 VS code의 보조기능 Emmet
+* 기본 단축키 Tab : 원하는 태그 꺽쇠없이 단어만 작성하고 Tab 누르면 OK!
+* 필수속성이 존재한다면 함께 나타남 (일부 표시 안 될 수도 있으니 반드시 체크주의! (예를들어 form의 method는 form:post 까지, input:속성)
+* 부모-자식 구조로 항상 함께 묶여있어야 하는 태그를 작성시에는 >를 사용한다. (예시: ul>li, dl>dt>dd)
+* 특정 태그를 한번에 여러개 만들고 싶다면 *를 이용한다. (예시: ul>li *5)
+* 2개 이상의 형제 태그를 만들고 싶다면 +를 이용한다. (예시: h1+p)
+* 클래스, 아이디를 적용한 태그를 만들고 싶다면 #, .을 이용한다. (예시: div#wrap, div.more)
+* head 부분 link 쓸 때 : link만 쓰고 Tab 누르면 OK!

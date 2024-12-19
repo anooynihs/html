@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그마와 함께 반응형웹 구성하기</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* desktop */
+        main {background-color: dimgrey;
+        max-width:1320px; min-width:320px;
+        margin:0 auto;
+        }
+        main h1 {
+            font-family:'나눔고딕', san-serif;
+            font-size:2.5rem; font-weight:700; letter-spacing:-0.02em;
+        }
+        main .wrap {
+            display:flex; flex-flow:row nowrap;
+            justify-content:space-between;
+        }
+        main .wrap li {
+            width:calc((100% - (14px * 3)) / 4);
+            height:250px;
+        }
+        main .wrap li:nth-child(1) {background-color:aquamarine;}
+        main .wrap li:nth-child(2) {background-color:skyblue;}
+        main .wrap li:nth-child(3) {background-color:salmon;}
+        main .wrap li:nth-child(4) {background-color:yellow;}
+        /* @media 태블릿: 특정 해상도 시 수정되는 선택자와 값만 작성 */
+        /* 반응형 시작과 동시에 적용되는 여백 등은 컨텐츠 너비를 @media 조건으로 사용하여 입력한다. */
+        @media screen and (max-width:1320px) {
+            main {padding:0 80px;}
+        }
+        @media screen and (max-width:1024px) {
+            main h1 {font-size:1.875rem}
+            main .wrap {flex-flow:row wrap;}
+            main .wrap li {width:calc((100% - 14px) / 2); margin-bottom:25px;}
+        }
+        /* @media 모바일: 특정 해상도 시 수정되는 선택자와 값만 작성 */
+        @media screen and (max-width:402px) {
+            main {padding:0 15px;}
+            main h1 {font-size:1.563rem;}
+            main .wrap li {width:100%;}
+            /* row 방향 그대로, li만 width:100%;로 자동 줄바꿈/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BEST</h1>
+        <ul class="wrap">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </main>
+</body>
+</html>

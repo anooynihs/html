@@ -1,0 +1,46 @@
+/* 미디어쿼리 조건 작성 위치 */
+@media screen and (max-width:1250px) {
+    /* ======================================================== 공통 선택자 + 1행 반응형 디자인(tablet) */
+    #wrap .container > * {padding:0 80px;}
+    #wrap .container .main_title {font-size:3.13rem;}
+    #wrap .container .sponsor_btn {
+        font-size:1.38rem;
+        padding:15px 0; width:270px;
+        display:flex; align-items:center; justify-content:center;
+    }
+    #wrap .container .sponsor_btn img {width:22px; top:2px;}
+    #wrap .container .sponsor_q_btn {font-size:1.38rem;}
+    #wrap .container .sponsor_q_btn img {width:22px;}
+    #wrap .container .sponsor_q_btn img:nth-child(1) {display:none;}
+    #wrap .container .sponsor_q_btn img:nth-child(2) {position:relative; top:1px;}
+    /* ======================================================== 2행 반응형 디자인(tablet) */
+    /* ======================================================== 3행 반응형 디자인(tablet) */
+    /* ======================================================== 4행 반응형 디자인(tablet) */
+    /* ======================================================== 5행 반응형 디자인(tablet) */
+    /* ======================================================== 6행 반응형 디자인(tablet) */
+    /* ======================================================== 7행 반응형 디자인(tablet) */
+    /* ======================================================== 8행 반응형 디자인(tablet) */
+    /* ======================================================== 9행 반응형 디자인(tablet) */
+    /* ======================================================== 10행 반응형 디자인(tablet) */
+} /*1250 end*/
+@media screen and (max-width:680px) {
+    /* ======================================================== 공통 선택자 + 1행 반응형 디자인(mobile) */
+    #wrap .container > * {padding:0 15px;}
+    #wrap .container .main_title {font-size:1.88rem;}
+    #wrap .bg1 .gradient .contents > * {margin-bottom:40px;}
+    #wrap .bg1 .gradient .contents h1:nth-child(1) a img {width:57px;}
+    #wrap .container .sponsor_btn {font-size:1.13rem; width:187px; height:50px; padding:15px 0;}
+    #wrap .container .sponsor_btn img {display:none;}
+    #wrap .container .sponsor_q_btn {font-size:0.88rem;}
+    #wrap .bg1 .gradient .contents .sponsor_q_btn {align-self:center;}
+    #wrap .container .sponsor_q_btn img:nth-child(2) {display:none;}
+    /* ======================================================== 2행 반응형 디자인(mobile) */
+    /* ======================================================== 3행 반응형 디자인(mobile) */
+    /* ======================================================== 4행 반응형 디자인(mobile) */
+    /* ======================================================== 5행 반응형 디자인(mobile) */
+    /* ======================================================== 6행 반응형 디자인(mobile) */
+    /* ======================================================== 7행 반응형 디자인(mobile) */
+    /* ======================================================== 8행 반응형 디자인(mobile) */
+    /* ======================================================== 9행 반응형 디자인(mobile) */
+    /* ======================================================== 10행 반응형 디자인(mobile) */
+} /*680 end*/

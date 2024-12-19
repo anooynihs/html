@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>북극곰 보호 캠페인</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <link href="./styles/reset.css" rel="stylesheet">
-    <link href="./styles/index.css" rel="stylesheet">
+    <!-- 외부스타일시트 연결 순서 1.reset, 2.개별디자인CSS, 3.반응형CSS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <div id="wrap">
+        <!-- 1행 제목, 후원 -->
         <div class="bg1 container">
             <div class="gradient">
                 <div class="contents">
                     <h1><a href="#"><img src="./images/logo.jpg" alt="WWF"></a></h1>
-                    <h1>생존의 벼랑 끝에 서 있는<br><span>북극곰을 지켜주세요</span></h1>
+                    <h1 class="main_title">생존의 벼랑 끝에 서 있는<br><span>북극곰을 지켜주세요</span></h1>
                     <a href="#" class="sponsor_btn">북극곰 후원하기<img src="./images/arrow.png" alt=""></a>
                     <a href="#" class="sponsor_q_btn"><img src="./images/sms.png" alt="">후원관련 자주 묻는 질문 보기<img src="./images/arrow.png" alt=""></a>
                 </div>
             </div>
         </div>
+        <!-- 2행 퀴즈 -->
+         <div class="bg2 container">
+            <div class="contents">
+                <div class="quiz_contents">
+                    <h2>Quiz</h2>
+                    <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
+                    <form action="#" method="get">
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong30" id="wrong30">
+                            <span>30%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong40" id="wrong40">
+                            <span>40%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong50" id="wrong50">
+                            <span>50%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="correct60" id="correct60">
+                            <span>60%</span>
+                        </label>
+                        <button type="button" class="answer_btn">정답 확인하기</button>
+                    </form>
+                </div>
+                <div class="quiz_status">
+                    <img src="./images/quiz.png" alt="퀴즈 참여 현황 38387명 참여">
+                    <span>*퀴즈 참여 현황은 매주 업데이트 됩니다</span>
+                </div>
+            </div>
+         </div>
     </div>
 </body>
 </html>

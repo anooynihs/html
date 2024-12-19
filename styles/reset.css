@@ -4,7 +4,7 @@ hr, a, address, span, em, strong, img, sub, sup, del, s, q, mark, code,
 header, nav, main, footer, article, section, aside,
 form, fieldset, legend, input, textarea, label, select, option, button,
 th,td {
-    line-height:1.0; font-size:16px; font-weight:normal;
+    line-height:1.0; font-size:1.0em; font-weight:normal;
     margin:0; padding:0; font-style:normal;
     box-sizing:border-box;
     font-family:'';
