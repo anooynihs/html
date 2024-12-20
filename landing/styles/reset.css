@@ -7,7 +7,7 @@ th,td {
     line-height:1.0; font-size:1.0em; font-weight:normal;
     margin:0; padding:0; font-style:normal;
     box-sizing:border-box;
-    font-family:'Noto Sans KR', sans-serif; letter-spacing:-0.02em;
+    font-family:'Noto Sans KR', sans-serif;
 }
 ol, li, ul {list-style:none;}
 a {color:#000; text-decoration:none;}

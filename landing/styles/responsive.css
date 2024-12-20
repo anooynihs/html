@@ -3,30 +3,76 @@
     /* ======================================================== 공통 선택자 + 1행 반응형 디자인(tablet) */
     #wrap .container > * {padding:0 80px;}
     #wrap .container .main_title {font-size:3.13rem;}
+    #wrap .container h2 { /*T 부제목 40*/ font-size:2.5rem;}
+    #wrap .container p { /*T 내용 16 레귤러 스타일*/ font-size:1rem; letter-spacing:-0.02em; line-height:1.7;}
     #wrap .container .sponsor_btn {
-        font-size:1.38rem;
-        padding:15px 0; width:270px;
+        font-size:1.375rem; line-height:1.5; padding:15px 0; width:270px;
         display:flex; align-items:center; justify-content:center;
     }
     #wrap .container .sponsor_btn img {width:22px; top:2px;}
-    #wrap .container .sponsor_q_btn {font-size:1.38rem;}
+    #wrap .container .sponsor_q_btn {font-size:1.375rem; line-height:1.5;}
     #wrap .container .sponsor_q_btn img {width:22px;}
     #wrap .container .sponsor_q_btn img:nth-child(1) {display:none;}
     #wrap .container .sponsor_q_btn img:nth-child(2) {position:relative; top:1px;}
     /* ======================================================== 2행 반응형 디자인(tablet) */
+    #wrap .bg2 .contents .quiz_contents {width:395px;}
+    #wrap .bg2 .contents .quiz_contents form label {height:28px;}
+    #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
+        font-size:1rem; letter-spacing:-0.02em; padding-top:1px;
+    }
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {width:307px; font-size:1rem; line-height:1.7;}
+    #wrap .bg2 .contents .quiz_status img {width:300px;}
+    #wrap .bg2 .contents .quiz_status span {font-size:1rem; line-height:1.7;}
     /* ======================================================== 3행 반응형 디자인(tablet) */
-    /* ======================================================== 4행 반응형 디자인(tablet) */
+    /* ======================================================== 4행, 6행 반응형 디자인(tablet) */
+    #wrap .bg4 .contents h2 em,
+    #wrap .bg6 .contents h2 em {font-size:2.5rem; font-weight:500; letter-spacing:-0.02em;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:1.375rem; margin:40px 0;}
     /* ======================================================== 5행 반응형 디자인(tablet) */
-    /* ======================================================== 6행 반응형 디자인(tablet) */
     /* ======================================================== 7행 반응형 디자인(tablet) */
     /* ======================================================== 8행 반응형 디자인(tablet) */
     /* ======================================================== 9행 반응형 디자인(tablet) */
     /* ======================================================== 10행 반응형 디자인(tablet) */
-} /*1250 end*/
-@media screen and (max-width:680px) {
+} /*799~1250 end*/
+@media screen and (max-width:800px) {
+    /* ======================================================== 2행(max-w 840px) */
+    #wrap .bg2 {padding:100px 0;}
+    #wrap .bg2 .contents {flex-flow:column nowrap;}
+    #wrap .bg2 .contents .quiz_contents {}
+    #wrap .bg2 .contents .quiz_contents h2 {font-size:1.5rem; margin-bottom:20px;}
+    #wrap .bg2 .contents .quiz_contents p {
+        font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;
+        margin-bottom:22px; text-align:center;}
+    #wrap .bg2 .contents .quiz_contents form {flex-flow:row wrap; justify-content:center; }
+    #wrap .bg2 .contents .quiz_contents form label {
+        width:calc((100% - 120px) / 4); margin:0 auto;
+        justify-content:center; margin-bottom:40px;
+    }
+    #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
+        padding-left:0; padding-top:50px;
+        font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;
+    }
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {
+        width:187px; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;
+    }
+    #wrap .bg2 .contents .quiz_status {
+        display:flex; flex-flow:column nowrap; align-items:center; margin-top:20px;
+    }
+    #wrap .bg2 .contents .quiz_status img {width:187px;}
+    #wrap .bg2 .contents .quiz_status span {
+        font-size:0.88rem; letter-spacing:-0.02em; line-height:1.2;
+    }
+    /* ======================================================== 3행(max-w 840px) */
+    #wrap .bg3 .contents iframe {height:400px;}
+} /*701~800 end*/
+@media screen and (max-width:700px) {
     /* ======================================================== 공통 선택자 + 1행 반응형 디자인(mobile) */
     #wrap .container > * {padding:0 15px;}
     #wrap .container .main_title {font-size:1.88rem;}
+    #wrap .container h2 { /*m 부제목 24 medium*/ font-size:1.5rem;}
+    #wrap .container h2 em { /*m 부제목 24 medium*/ font-size:1.5rem;}
+    #wrap .container p { /*m 내용 14 레귤러 스타일*/ font-size:0.88rem; line-height:1.6;}
     #wrap .bg1 .gradient .contents > * {margin-bottom:40px;}
     #wrap .bg1 .gradient .contents h1:nth-child(1) a img {width:57px;}
     #wrap .container .sponsor_btn {font-size:1.13rem; width:187px; height:50px; padding:15px 0;}
@@ -36,11 +82,18 @@
     #wrap .container .sponsor_q_btn img:nth-child(2) {display:none;}
     /* ======================================================== 2행 반응형 디자인(mobile) */
     /* ======================================================== 3행 반응형 디자인(mobile) */
-    /* ======================================================== 4행 반응형 디자인(mobile) */
+    #wrap .bg3 {padding:100px 0;}
+    #wrap .bg3 .contents iframe {margin:30px 0;}
+    /* ======================================================== 4행, 6행 반응형 디자인(mobile) */
+    #wrap .bg4,
+    #wrap .bg6 {padding:100px 0;}
+    #wrap .bg4 .contents h2 em,
+    #wrap .bg6 .contents h2 em {font-size:1.5rem;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:0.88rem; margin:30px 0;}
     /* ======================================================== 5행 반응형 디자인(mobile) */
-    /* ======================================================== 6행 반응형 디자인(mobile) */
     /* ======================================================== 7행 반응형 디자인(mobile) */
     /* ======================================================== 8행 반응형 디자인(mobile) */
     /* ======================================================== 9행 반응형 디자인(mobile) */
     /* ======================================================== 10행 반응형 디자인(mobile) */
-} /*680 end*/
+} /*320~700 end*/
