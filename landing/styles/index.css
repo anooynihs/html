@@ -140,6 +140,7 @@
     font-size:2.69rem; font-weight:700; line-height:1.2;
     color:#fff; text-align:center;
     position:relative; z-index:20;
+    margin-bottom:11px;
 }
 #wrap .bg5 .contents ul li .title > p {color:#fff; position:relative; z-index:20;}
 #wrap .bg5 .contents ul li .content {
