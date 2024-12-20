@@ -9,6 +9,8 @@
 #wrap .container .contents {max-width:1250px; min-width:360px; margin:0 auto;}
 #wrap .container .main_title {font-size:4.38rem; letter-spacing:-0.02em; line-height:1.3; color:#fff; text-align:center;} /*대제목 70 */
 #wrap .container .main_title span {font-weight:700;}
+#wrap .container h2 {font-size:3.44rem; font-weight:500; letter-spacing:-0.01em; line-height:1.2; text-align:center;} /*부제목 55*/
+#wrap .container p {font-size:1.25rem; line-height:1.7;}  /*내용 20*/ 
 #wrap .container .sponsor_btn {
     background:linear-gradient(90deg, #FE9300, #FF7300);
     padding:15px 70px; border-radius:50px;
@@ -27,8 +29,6 @@
 #wrap .container .sponsor_q_btn img {width:24px;}
 #wrap .container .sponsor_q_btn img:nth-child(1) {margin-right:10px;}
 #wrap .container .sponsor_q_btn img:nth-child(2) {margin-left:10px;}
-#wrap .container h2 {font-size:3.44rem; font-weight:500; letter-spacing:-0.01em; line-height:1.2; text-align:center;} /*부제목 55*/
-#wrap .container p {font-size:1.25rem; line-height:1.7;}  /*내용 20*/ 
 #wrap .container .answer_btn {background-color:#050505; color:#fff; padding:10px 0; border-radius:50px;}
 #wrap .container .answer_btn:hover {box-shadow:0 0 5px rgba(255,255,255,0.5);}
 /* ======================================================== 1행 제목+후원 */
@@ -86,7 +86,7 @@
 #wrap .bg3 .contents iframe {max-width:900px; width:100%; height:600px; margin:70px 0;}
 #wrap .bg3 .contents .sponsor_btn {}
 #wrap .bg3 .contents .sponsor_btn img {}
-/* ======================================================== 4행, 6행 */
+/* ====ㅉ==================================================== 4행, 6행 */
 #wrap .bg4,
 #wrap .bg6 {background-image:url(../images/50_bg.png); padding:200px 0;}
 #wrap .bg4 .contents,
@@ -106,6 +106,46 @@
 #wrap .bg4 .contents .img img,
 #wrap .bg6 .contents .img img {width:100%;}
 /* ======================================================== 5행 빙하 인류재앙3*/
+#wrap .bg5 {background-color:#f5f5f5; padding:200px 0;}
+#wrap .bg5 .contents {}
+#wrap .bg5 .contents > * {margin-bottom:55px;}
+#wrap .bg5 .contents h2 {}
+#wrap .bg5 .contents p {text-align:center;}
+#wrap .bg5 .contents ul {display:flex; flex-flow:row nowrap; margin-bottom:0;}
+#wrap .bg5 .contents ul li {flex:1;}
+#wrap .bg5 .contents ul li .title {
+    height:320px; padding:48px 59px; 
+    position:relative;
+    background-size:cover;
+}
+#wrap .bg5 .contents ul li:nth-child(2) {margin:0 20px;}
+#wrap .bg5 .contents ul li:nth-child(1) .title {
+    background-image:url(../images/332.png);
+    background-position-y:70%;
+}
+#wrap .bg5 .contents ul li:nth-child(2) .title {
+    background-image:url(../images/bg1.png);
+    background-position:center 90%;
+}
+#wrap .bg5 .contents ul li:nth-child(3) .title {
+    background-image:url(../images/wwf.jpg);
+}
+#wrap .bg5 .contents ul li .title::after {
+    content:''; display:block;
+    position:absolute; left:0; top:0; width:100%; height:100%;
+    background:linear-gradient(360deg, transparent, rgba(0,0,0,0.8) 50%);
+    z-index:10;
+}
+#wrap .bg5 .contents ul li .title h3 {
+    font-size:2.69rem; font-weight:700; line-height:1.2;
+    color:#fff; text-align:center;
+    position:relative; z-index:20;
+}
+#wrap .bg5 .contents ul li .title > p {color:#fff; position:relative; z-index:20;}
+#wrap .bg5 .contents ul li .content {
+    background-color: #fff; height:250px; padding:20px 20px;
+    font-size:1.25rem; line-height:1.7;
+}
 /* ======================================================== 7행 WWF소개 */
 /* ======================================================== 8행 다양한 활동 */
 /* ======================================================== 9행 감사선물 */
