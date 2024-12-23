@@ -30,9 +30,37 @@
     #wrap .bg4 .contents h2+p,
     #wrap .bg6 .contents h2+p {font-size:1.375rem; margin:40px 0;}
     /* ======================================================== 5행 반응형 디자인(tablet) */
+    #wrap .bg5 .contents > * {margin-bottom:40px;}
+    #wrap .bg5 .contents ul {margin-bottom:0;}
+    #wrap .bg5 .contents ul li .title {padding:43px 58px;}
+    #wrap .bg5 .contents ul li .title p {font-size:1rem; letter-spacing:-0.02em; line-height:1.7;}
+    #wrap .bg5 .contents ul li .content {height:auto; font-size:1rem; letter-spacing:-0.02em; line-height:1.7;}
     /* ======================================================== 7행 반응형 디자인(tablet) */
+    #wrap .bg7 .contents h1 {font-size:3.125rem; letter-spacing:-0.02em; line-height:1.3; margin-bottom:40px;}
+    #wrap .bg7 .contents p {font-size:1.375rem; line-height:1.5;}
+    #wrap .bg7 .contents p:nth-of-type(1) {margin-bottom:40px;}
     /* ======================================================== 8행 반응형 디자인(tablet) */
+    #wrap .bg8 .contents .activity {flex-flow:column nowrap;}
+    #wrap .bg8 .contents .activity li {width:100%;}
+    #wrap .bg8 .contents .activity li:last-child {
+        padding-top:189px; margin-top:22px;
+    }
+    #wrap .bg8 .contents .activity li .list1,
+    #wrap .bg8 .contents .activity li .list2 {
+        height:auto; padding-top:189px;
+    }
+    #wrap .bg8 .contents .activity li .text {
+        width:100%; position:relative; bottom:0;
+    }
+    #wrap .bg8 .contents .activity li .text h3 {font-size:1.38rem;}
+    #wrap .bg8 .contents .activity li .text p {font-size:1.0rem;}
     /* ======================================================== 9행 반응형 디자인(tablet) */
+    #wrap .bg9 .contents .present_list {flex-flow:row wrap;}
+    #wrap .bg9 .contents .present_list li {width:calc((100% - 22px) / 2)}
+    #wrap .bg9 .contents .present_list li:nth-child(3) {width:100%;}
+    #wrap .bg9 .contents .benefit {
+        float:none; display:block; width:max-content; margin:0 auto; margin-top:40px;
+    }
     /* ======================================================== 10행 반응형 디자인(tablet) */
 } /*799~1250 end*/
 @media screen and (max-width:800px) {
@@ -92,8 +120,36 @@
     #wrap .bg4 .contents h2+p,
     #wrap .bg6 .contents h2+p {font-size:0.88rem; margin:30px 0;}
     /* ======================================================== 5행 반응형 디자인(mobile) */
+    #wrap .bg5 {padding:100px 0;}
+    #wrap .bg5 .contents ul {display:flex; flex-flow:column nowrap;}
+    #wrap .bg5 .contents ul li {width:100%; margin-bottom:20px;}
+    #wrap .bg5 .contents ul li:nth-child(2) {margin:0 0 20px 0;}
+    #wrap .bg5 .contents ul li .title {height:auto;}
+    #wrap .bg5 .contents ul li .title h3 {font-size:1.125rem; letter-spacing:-0.02em; margin-bottom:5px;}
+    #wrap .bg5 .contents ul li .content {font-size:0.88rem; line-height:1.6;}
     /* ======================================================== 7행 반응형 디자인(mobile) */
+    #wrap .bg7 .contents h1 {font-size:1.5rem; line-height:1.2;}
+    #wrap .bg7 .contents p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
     /* ======================================================== 8행 반응형 디자인(mobile) */
+    #wrap .bg8 .contents {padding-top:70px; padding-bottom:70px;}
+    #wrap .bg8 .contents .activity li:last-child {padding-top:84px;}
+    #wrap .bg8 .contents .activity li .list1,
+    #wrap .bg8 .contents .activity li .list2 {padding-top:84px;}
+    #wrap .bg8 .contents .activity li .text p {font-size:0.81rem;}
     /* ======================================================== 9행 반응형 디자인(mobile) */
+    #wrap .bg9 {padding:100px 0;}
+    #wrap .bg9 .contents .title {flex-flow:column nowrap; justify-content:center; margin-bottom:30px; align-items:center;}
+    #wrap .bg9 .contents .title h2 {text-align:center; margin-bottom:20px;}
+    #wrap .bg9 .contents .present_list {flex-flow:column nowrap;}
+    #wrap .bg9 .contents .present_list li {width:100%; margin-bottom:20px;}
+    #wrap .bg9 .contents .present_list li::before {height:250px;}
+    #wrap .bg9 .contents .present_list li:nth-child(3) {margin:0;}
+    #wrap .bg9 .contents .present_list li .text {text-align:center;}
+    #wrap .bg9 .contents .present_list li .text p {color:#fff; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
+    #wrap .bg9 .contents .present_list li .text p:nth-of-type(1) {margin-top:5px;}
+    #wrap .bg9 .contents .benefit {margin-top:30px; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
     /* ======================================================== 10행 반응형 디자인(mobile) */
+    #wrap .bg10 .contents h3 {font-size:1.5rem; letter-spacing:-0.02em; line-height:1.2;}
+    #wrap .bg10 .contents ul {}
+    #wrap .bg10 .contents ul li {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
 } /*320~700 end*/

@@ -142,12 +142,114 @@
     position:relative; z-index:20;
     margin-bottom:11px;
 }
-#wrap .bg5 .contents ul li .title > p {color:#fff; position:relative; z-index:20;}
+#wrap .bg5 .contents ul li .title p {color:#fff; position:relative; z-index:20;}
 #wrap .bg5 .contents ul li .content {
     background-color: #fff; height:250px; padding:20px 20px;
     font-size:1.25rem; line-height:1.7;
 }
 /* ======================================================== 7행 WWF소개 */
-/* ======================================================== 8행 다양한 활동 */
-/* ======================================================== 9행 감사선물 */
-/* ======================================================== 10행 안내사항 */
+#wrap .bg7 {
+    padding:200px 0;
+    background:url(../images/wwf.jpg); background-size:cover; background-position:center;
+    position:relative;
+}
+#wrap .bg7::after {
+    background-color:rgba(255,255,255,0.8);
+    content:''; display:block; width:100%; height:100%;
+    position:absolute; left:0; top:0; z-index:10;
+}
+#wrap .bg7 .contents {position:relative; z-index:20;}
+#wrap .bg7 .contents .main_title {}
+#wrap .bg7 .contents .main_title span {color:#000;}
+#wrap .bg7 .contents p {text-align:center; font-size:2.13rem; line-height:1.2;}
+#wrap .bg7 .contents p:nth-of-type(1) {margin:80px 0;}
+#wrap .bg8 {background-color:#f5f5f5;}
+#wrap .bg8 .contents {
+    /* padding:200px 0; */
+    padding-top:200px;
+    padding-bottom:200px;
+}
+#wrap .bg8 .contents h2 {
+    text-align:center; margin-bottom:83px;
+}
+#wrap .bg8 .contents .activity {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+#wrap .bg8 .contents .activity li {
+    width:calc((100% - 40px) / 2);
+}
+/* 8행 배경 통합 선택자 */
+#wrap .bg8 .contents .activity li:last-child,
+#wrap .bg8 .contents .activity li .list1,
+#wrap .bg8 .contents .activity li .list2 {
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+#wrap .bg8 .contents .activity li:last-child {
+    background-image:url(../images/50.png);
+}
+#wrap .bg8 .contents .activity li .list1 {
+    background-image:url(../images/28.png); height:300px;
+    background-position-y:40%;
+    margin-bottom:22px;
+}
+#wrap .bg8 .contents .activity li .list2 {
+    background-image:url(../images/wwf.jpg); height:300px;
+}
+#wrap .bg8 .contents .activity li .list1 .text,
+#wrap .bg8 .contents .activity li .list2 .text {}
+#wrap .bg8 .contents .activity li .list1 .text h3,
+#wrap .bg8 .contents .activity li .list2 .text h3 {}
+#wrap .bg8 .contents .activity li .list1 .text p,
+#wrap .bg8 .contents .activity li .list2 .text p {}
+/* =====================================8행 li 공통 text선택자 */
+#wrap .bg8 .contents .activity li .text {
+    background-color:rgba(5,5,5,0.5); /*#050505*/
+    display:inline-block; width:70%;
+    position:absolute; left:0; bottom:31px;
+    padding:20px;
+}
+#wrap .bg8 .contents .activity li .text h3 {
+    color:#fff; margin-bottom:18px;
+    font-size:2.13rem; line-height:1.2; font-weight:700; 
+}
+#wrap .bg8 .contents .activity li .text p {
+    color:#fff;
+    font-size:1.25rem; line-height:1.7;
+}
+/* =====================================9행 감사선물 */
+#wrap .bg9 {
+    background-image:url(../images/50_bg.png);
+    background-size:cover; background-position:center;
+    padding:200px 0;
+}
+#wrap .bg9 .contents {overflow:hidden;}
+#wrap .bg9 .contents .title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    align-items:flex-end; margin-bottom:69px;
+}
+#wrap .bg9 .contents .title h2 {color:#fff; text-align:left;}
+#wrap .bg9 .contents .title .sponsor_btn {}
+#wrap .bg9 .contents .present_list {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+#wrap .bg9 .contents .present_list li {width:calc((100% - 90px) / 3);}
+#wrap .bg9 .contents .present_list li::before {
+    content:''; display:block; width:100%; height:300px;
+    background-size:cover; background-position:center;
+}
+#wrap .bg9 .contents .present_list li:nth-child(1)::before {background-image:url(../images/freebie2.jpg);}
+#wrap .bg9 .contents .present_list li:nth-child(2)::before {background-image:url(../images/freebie1.jpg);}
+#wrap .bg9 .contents .present_list li:nth-child(3)::before {background-image:url(../images/freebie3.jpg);}
+#wrap .bg9 .contents .present_list li .text {text-align:center;}
+#wrap .bg9 .contents .present_list li .text p {color:#fff; font-size:1.25rem; line-height:1.7;}
+#wrap .bg9 .contents .present_list li .text p:nth-of-type(1) {margin-top:13px;}
+#wrap .bg9 .contents .benefit {
+    display:inline-block; float:right; background-color: #fff; margin-top:69px;
+    font-size:1.25rem; line-height:1.7;
+}
+/* =====================================10행 안내사항 */
+#wrap .bg10 {background-color:#E4E5EA; padding:100px 0;}
+#wrap .bg10 .contents {}
+#wrap .bg10 .contents h3 {font-size:2.13rem; font-weight:700; line-height:1.5;}
+#wrap .bg10 .contents ul {}
+#wrap .bg10 .contents ul li {font-size:1.25rem; line-height:1.7;}
