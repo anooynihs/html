@@ -101,6 +101,8 @@
     #wrap .container h2 { /*m 부제목 24 medium*/ font-size:1.5rem;}
     #wrap .container h2 em { /*m 부제목 24 medium*/ font-size:1.5rem;}
     #wrap .container p { /*m 내용 14 레귤러 스타일*/ font-size:0.88rem; line-height:1.6;}
+    #wrap .bg1 .gradient {padding:100px 15px;}
+    #wrap .bg1 .gradient .contents {height:auto;}
     #wrap .bg1 .gradient .contents > * {margin-bottom:40px;}
     #wrap .bg1 .gradient .contents h1:nth-child(1) a img {width:57px;}
     #wrap .container .sponsor_btn {font-size:1.13rem; width:187px; height:50px; padding:15px 0;}
@@ -128,9 +130,11 @@
     #wrap .bg5 .contents ul li .title h3 {font-size:1.125rem; letter-spacing:-0.02em; margin-bottom:5px;}
     #wrap .bg5 .contents ul li .content {font-size:0.88rem; line-height:1.6;}
     /* ======================================================== 7행 반응형 디자인(mobile) */
+    #wrap .bg7 {padding:100px 0;}
     #wrap .bg7 .contents h1 {font-size:1.5rem; line-height:1.2;}
     #wrap .bg7 .contents p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
     /* ======================================================== 8행 반응형 디자인(mobile) */
+    #wrap .bg8 {padding:100px 0;}
     #wrap .bg8 .contents {padding-top:70px; padding-bottom:70px;}
     #wrap .bg8 .contents .activity li:last-child {padding-top:84px;}
     #wrap .bg8 .contents .activity li .list1,
