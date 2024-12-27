@@ -6,7 +6,7 @@
     /* header 서브(S)의 부모에 주는 값 */ position:relative;
 }
 .h_bg header {
-    width:1420px; margin:0 auto; height:125px;
+    width:1400px; margin:0 auto; height:125px;
     /* h1+h_right 좌우 동일라인 정렬 */ display:flex; flex-flow:row nowrap; align-items:center;
 }
 .h_bg header h1 {}
@@ -15,10 +15,10 @@
 .h_bg header .h_right {width:calc(100% - 150px); padding-left:20px;}
 .h_bg header .h_right .h_top {
     float:right; display:flex; flex-flow:row nowrap;
-    font-size:0.88rem; margin-bottom:25px;
+    margin-bottom:25px;
 }
 .h_bg header .h_right .h_top .search {}
-.h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search > a {font-size:0.88rem;}
 .h_bg header .h_right .h_top .search > a img {}
 .h_bg header .h_right .h_top > a {margin-left:16px;}
 /* ============================================================================= header 검색팝업(S) */
@@ -65,39 +65,40 @@
 .h_bg header .h_right .h_btm {
     clear:both; /* 형제(h_top)의 float를 나에게는 적용제거하는 명령 */
     display:flex; flex-flow:row nowrap; justify-content:space-between;
-    font-size:1.25rem; font-weight:500;
 }
 .h_bg header .h_right .h_btm .h_b_left {}
-.h_bg header .h_right .h_btm .h_b_left a {margin-right:20px;}
+.h_bg header .h_right .h_btm .h_b_left a {font-size:1.25rem; font-weight:500; margin-right:20px;}
 .h_bg header .h_right .h_btm .h_b_left a:last-child {margin-right:0px;}
 .h_bg header .h_right .h_btm nav {}
-.h_bg header .h_right .h_btm nav > a {margin-left:30px;}
+.h_bg header .h_right .h_btm nav > a {margin-left:20px; font-size:1.25rem; font-weight:500;}
 .h_bg header .h_right .h_btm nav > a:first-child {margin-left:0px;}
 /* ============================================================================= header 서브(S) + depth1 */
-.h_bg header .h_right .h_btm nav .sub_bg {border:5px solid red;
-    /* display:none; */
+.h_bg header .h_right .h_btm nav .sub_bg {
+    display:none;
     background-color:#111;
     position:absolute; left:0; top:125px;
     /* absolute, fixed 작성 시에는 반드시 좌표, width 속성도 함께 작성해야한다 */ width:100%;
 }
-.h_bg header .h_right .h_btm nav .sub_bg .sub_contents {border:5px solid chartreuse;
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
     width:1400px; margin:0 auto; height:240px; padding-top:40px;
     display:flex; flex-flow:row nowrap;
 }
-.h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * {width:200px; padding-left:20px;
-    font-size:1rem; font-weight:500;
-}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * {width:200px; padding-left:20px;}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 {}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active {border-bottom:2px solid #fff;}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li {margin-bottom:20px;}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li:last-child {margin:0px;}
-.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {display:block; padding-bottom:5px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {
+    display:block; padding-bottom:5px; font-size:1rem; font-weight:500;
+}
 /* ============================================================================= header 서브(S) depth2 */
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 {}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_face {}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_face li {margin-bottom:20px;}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_face li:last-child {margin:0;}
-.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_face li a {display:block; padding-bottom:5px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_face li a {
+    display:block; padding-bottom:5px; font-size:1rem; font-weight:500;
+}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_eyes {display:none;}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_eyes li {}
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_eyes li a {}
@@ -106,5 +107,3 @@
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub_lips li a {}
 /* ============================================================================= header 서브(E) */
 /* ============================================================================= main */
-/* ============================================================================= */
-/* ============================================================================= */
