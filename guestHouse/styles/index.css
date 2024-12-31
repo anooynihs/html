@@ -1,12 +1,13 @@
 #wrap {}
 /* ============================================================== header */
-#wrap header {background-color: turquoise;
+#wrap header {
     margin:0 auto; height:500px;
     padding:28px 80px;
+    background:url(../images/header.jpg);
 }
 
 #wrap header > * {color:#fff;}
-#wrap header .top {background-color: violet;
+#wrap header .top {
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
 }
@@ -20,8 +21,7 @@
 #wrap header .title h1 {font-weight:200; font-size:4.06rem; letter-spacing:-0.02em; margin:90px 0 15px;}
 #wrap header .title h2 {font-weight:500; font-size:1.88rem;}
 /* ============================================================== main 공통선택자 */
-#wrap main {background-color: blanchedalmond;
-    width:1260px; margin:0 auto; text-align:center;}
+#wrap main {width:1260px; margin:0 auto;text-align:center;}
 #wrap main > * {margin-bottom:180px;}
 #wrap main h2 {font-weight:600; font-size:1.88rem; margin-bottom:15px;}
 #wrap main p {font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em; margin-bottom:55px;}
@@ -37,43 +37,114 @@
 #wrap main .guesthouse h2 {}
 #wrap main .guesthouse p {}
 #wrap main .guesthouse .room {display:flex; flex-flow:row nowrap; justify-content:space-between;}
-#wrap main .guesthouse .room .info {background-color:springgreen;
-    width:625px; height:380px; padding:70px 56px;
-    text-align:left;
+#wrap main .guesthouse .room .info {
+    background-color:#eeeeee;
+    width:625px; height:380px; padding:70px 56px; text-align:left;
 }
-#wrap main .guesthouse .room .info h3 {font-weight:600; font-size:1.63rem; letter-spacing:-0.02em;}
-#wrap main .guesthouse .room .info .room_type {font-size:1.06ren;}
+#wrap main .guesthouse .room .info h3 {font-weight:600; font-size:1.63rem; letter-spacing:-0.02em; margin-bottom:10px;}
+#wrap main .guesthouse .room .info .room_type {font-size:1.06rem; margin-bottom:30px;}
 #wrap main .guesthouse .room .info .explain {font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em;}
-#wrap main .guesthouse .room #btnGr {}
-#wrap main .guesthouse .room #btnGr #reservaion {}
-#wrap main .guesthouse .room #btnGr #more {}
-#wrap main .guesthouse .room > p {background-color: tomato;
-    width:625px; height:380px;
+#wrap main .guesthouse .room .btn {margin-top:70px;}
+#wrap main .guesthouse .room .btn .reservation {
+    background-color:#606060; color:#fff; border-radius:5px;
+    padding:8px 18px;
 }
+#wrap main .guesthouse .room .btn .more {
+    border:1px solid #000; border-radius:5px;
+    padding:8px 18px; margin-left:8px;
+}
+#wrap main .guesthouse .room > p {width:625px; height:380px;}
 #wrap main .guesthouse .room p img {}
 /* ============================================================== main-guest*/
-#wrap main .guesthouse .standard {}
+#wrap main .guesthouse .standard {margin-bottom:10px;}
 #wrap main .guesthouse .standard .info {}
 #wrap main .guesthouse .standard .info h3 {}
 #wrap main .guesthouse .standard .info .room_type {}
 #wrap main .guesthouse .standard .info .explain {}
-#wrap main .guesthouse .standard .info #btnGr {}
-#wrap main .guesthouse .standard .info #btnGr #reservaion {}
-#wrap main .guesthouse .standard .info #btnGr #more {}
-#wrap main .guesthouse .standard > p {}
+#wrap main .guesthouse .standard .info .btn {}
+#wrap main .guesthouse .standard .info .btn .reservation {}
+#wrap main .guesthouse .standard .info .btn .more {}
+#wrap main .guesthouse .standard > p {margin:0px;}
 #wrap main .guesthouse .standard > p img {}
 #wrap main .guesthouse .vip {}
 #wrap main .guesthouse .vip .info {}
 #wrap main .guesthouse .vip .info h3 {}
 #wrap main .guesthouse .vip .info .room_type {}
 #wrap main .guesthouse .vip .info .explain {}
-#wrap main .guesthouse .vip #btnGr {}
-#wrap main .guesthouse .vip #btnGr #reservaion {}
-#wrap main .guesthouse .vip #btnGr #more {}
+#wrap main .guesthouse .vip .btn {}
+#wrap main .guesthouse .vip .btn .reservation {}
+#wrap main .guesthouse .vip .btn .more {}
 #wrap main .guesthouse .vip > p {}
 #wrap main .guesthouse .vip > p img {}
-/* ============================================================== main-travel*/
+/* ============================================================== main-travel 공통선택자*/
 #wrap main .travels {}
+#wrap main .travels h2 {}
+#wrap main .travels a {margin:23px 0 15px; float:right; display:flex;}
+#wrap main .travels a img {margin-left:8px;}
+#wrap main .travels .contents {
+    width:100%; 
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+#wrap main .travels .contents {text-align:left;}
+#wrap main .travels .contents span {}
+#wrap main .travels .contents span img {}
+#wrap main .travels .contents h4 {
+    background:url(../images/line.png) no-repeat;
+    font-weight:600; font-size:1.3rem; letter-spacing:-0.02em; 
+    margin:20px 0 10px; padding-left:15px;
+}
+#wrap main .travels .contents p {font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em;}
+/* ============================================================== main-travel 개별선택자*/
+#wrap main .travels .contents .spot1
+#wrap main .travels .contents .spot1 span {}
+#wrap main .travels .contents .spot1 span img {}
+#wrap main .travels .contents .spot1 h4 {}
+#wrap main .travels .contents .spot1 p {}
+#wrap main .travels .contents .spot2 {}
+#wrap main .travels .contents .spot2 span {}
+#wrap main .travels .contents .spot2 span img {}
+#wrap main .travels .contents .spot2 h4 {}
+#wrap main .travels .contents .spot2 p {}
+#wrap main .travels .contents .spot3 {}
+#wrap main .travels .contents .spot3 span {}
+#wrap main .travels .contents .spot3 span img {}
+#wrap main .travels .contents .spot3 h4 {}
+#wrap main .travels .contents .spot3 p {}
 /* ============================================================== main-location*/
-#wrap main .location {}
+#wrap main .location {width:850px; margin:0 auto;}
+#wrap main .location h2 {margin-bottom:55px;}
+#wrap main .location span {}
+#wrap main .location span img {}
+#wrap main .location .address {
+    margin-top:30px; text-align:left;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+#wrap main .location .address .left {}
+#wrap main .location .address .left p {font-weight:700; font-size:1.06rem; letter-spacing:-0.02em; margin-bottom:20px;}
+#wrap main .location .address .left a {
+    background-color:#606060; color:#fff; border-radius:5px;
+    padding:8px 18px; font-weight:600; font-size:1.06rem;
+}
+#wrap main .location .address .right {border-left:2px solid #d9d9d9; padding-left:33px; height:292px;}
+#wrap main .location .address .right .bus {}
+#wrap main .location .address .right .bus h4 {font-weight:600; font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em; margin-bottom:20px;}
+#wrap main .location .address .right .bus p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6; margin-top:20px; margin:20px 0 15px;}
+#wrap main .location .address .right .bus p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
+#wrap main .location .address .right .subway {margin-top:50px;}
+#wrap main .location .address .right .subway h4 {font-weight:600; font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em;}
+#wrap main .location .address .right .subway p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6; margin-top:20px;}
+#wrap main .location .address .right .subway p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
 /* ============================================================== footer */
+#wrap footer {
+    height:360px; padding:46px 104px ; margin-top:200px;
+    background-color:#eeeeee;
+}
+#wrap footer .row1 {display:flex; flex-flow:row nowrap; margin-bottom:45px;}
+#wrap footer .row1 p {font-size:0.88rem; letter-spacing:-0.02em; margin-right:30px;}
+#wrap footer .row1 p:last-child {margin:0;}
+#wrap footer .row2 {margin-bottom:20px;}
+#wrap footer .row2 p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+#wrap footer .row2 p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+#wrap footer .row3 {}
+#wrap footer .row3 p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+#wrap footer .row3 p:last-child {font-size:0.88rem; letter-spacing:-0.02em; margin-top:66px;}

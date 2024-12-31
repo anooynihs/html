@@ -15,7 +15,7 @@ semibold 17 (font-weight:600; font-size:1.06rem;) 강조 버튼
 <!-- 관광지 -->
 semibold 20 (font-weight:600; font-size:1.3rem; letter-spacing:-0.02em;) 관광지 타이틀
 <!-- 주소 -->
-bold 17 (font-weight:700; font-size:1.06rem letter-spacing:-0.02em;) 주소 강조
+bold 17 (font-weight:700; font-size:1.06rem; letter-spacing:-0.02em;) 주소 강조
 semibold 14 (font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;) 장소 강조
 regular 14 (font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;) 주소 내용
 <!-- footer -->
