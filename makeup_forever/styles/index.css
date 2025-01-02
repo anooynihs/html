@@ -109,24 +109,20 @@
 main {}
 /* ============================================================================= main */
 main .slides_wrap {
-    background-color:aqua;
     position:relative;/* 버튼, 스크롤바 기준설정 */
     height:650px; /* 배너 높이 고정(광고배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동높이 설정 시 높낮이가 배너에 따라 달라지는 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야 하는 경우들이 많다. 그 외엔 자동높이 설정 권장!!) */
 }
 main .slides_wrap .slides_container {
-    background-color:lime;
     height:100%;/* slides_wrap와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide {
     height:100%;/* slides_container와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    border:5px solid red;
     width:1400px; margin:0 auto; overflow:hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
-    border:5px solid blue;
-    width:50%; float:right; padding-top:144px;
+    width:40%; float:right; padding-top:144px;
 }
 main .slides_wrap .slides_container .slide .contents .title img {}
 main .slides_wrap .slides_container .slide .contents .title .bnr_link {
@@ -135,10 +131,7 @@ main .slides_wrap .slides_container .slide .contents .title .bnr_link {
     display:block; margin-top:41px; width:min-content;
 }
 main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {}
-main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
-    background-color:yellow;
-    position:absolute; top:45%;
-}
+main .slides_wrap .prev_btn, main .slides_wrap .next_btn {position:absolute; top:45%;}
 main .slides_wrap .prev_btn img, main .slides_wrap .next_btn img {}
 main .slides_wrap .prev_btn {left:190px;}
 main .slides_wrap .prev_btn img {}
@@ -153,7 +146,7 @@ main .slides_wrap .scroll_bg .scrollbar {
     background-color:#111;
     width:200px; height:100%;
 }
-/* ==========================main1.광고배너(개별 배너) */
+/* ============================================================================= main1.광고배너(개별 배너) */
 main .slides_wrap .slides_container .slide1 {
     background-image:url(../images/bnr1.jpg);
     display:none;/* 초기 숨기기 */
@@ -169,3 +162,38 @@ main .slides_wrap .slides_container .slide2 .contents {}
 main .slides_wrap .slides_container .slide2 .contents .title {}
 main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
+/* ============================================================================= main2.베스트셀러 상품 */
+main .best_seller {width:1400px; margin:0 auto; margin-top:145px;;}
+main .best_seller .title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:end;
+    margin-bottom:20px;
+}
+main .best_seller .title h2 {
+    font-size:1.88rem; font-weight:700; letter-spacing:-0.02em;
+}
+main .best_seller .title a {font-size:1.25rem; font-weight:500;}
+main .best_seller .contents {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .best_seller .contents li {width:calc((100% - 27px) / 3);}
+main .best_seller .contents li .product {position:relative;}
+main .best_seller .contents li .product .label {
+    background-color:#000; color:#fff;
+    position:absolute; top:0; left:0; padding:5px 10px;
+}
+main .best_seller .contents li .product > a {}
+main .best_seller .contents li .product > a img {width:100%;}
+/*============================================================================= S: 2행 상품 마우스호버 출력대상*/
+main .best_seller .contents li .product:hover .icon {display:block;}
+main .best_seller .contents li .product .icon {
+    position:absolute; left:0; bottom:175px;
+    width:100%; text-align:center;
+    display:none; /*초기 숨기기*/
+}
+main .best_seller .contents li .product .icon a {opacity:0.5;}
+main .best_seller .contents li .product .icon a:hover {opacity:1;}
+main .best_seller .contents li .product .icon a:first-of-type {margin-right:30px;}
+main .best_seller .contents li .product .icon a img {}
+/*============================================================================= E: 2행 상품 마우스호버 출력대상*/
+main .best_seller .contents li .txt {margin-top:22px;}
+main .best_seller .contents li .txt .category {font-size:1.38rem; font-weight:700; letter-spacing:-0.02em;}
+main .best_seller .contents li .txt h3 {font-size:1rem; letter-spacing:-0.02em; margin-top:10px;}
+main .best_seller .contents li .txt .price {font-size:1.38rem; font-weight:700; letter-spacing:-0.02em; margin-top:35px;}

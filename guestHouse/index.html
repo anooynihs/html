@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <div id="wrap">
-        <header>
-            <div class="top">
-                <h1><a href="#"><img src="./images/logo.png" alt="호랑가시나무언덕"></a></h1>
-                <nav>
-                    <a href="#">ABOUT</a>
-                    <a href="#">ROOMS</a>
-                    <a href="#">RESERVATION</a>
-                    <a href="#">TRAVELS</a>
-                    <a href="#">RESIDENCE</a>
-                    <a href="#">COMMUNITY</a>
-                </nav>
-            </div>
-            <div class="title">
-                <h2>WELCOME</h2>
-                <h1>호랑가시나무언덕</h1>
-                <h2>GUESTHOUSE & RESIDENCE</h2>
-            </div>
-        </header>
-        <main>
+    <header>
+        <h1><a href="#"><img src="./images/logo.png" alt="호랑가시나무언덕"></a></h1>
+        <nav>
+            <a href="#">ABOUT</a>
+            <a href="#">ROOMS</a>
+            <a href="#">RESERVATION</a>
+            <a href="#">TRAVELS</a>
+            <a href="#">RESIDENCE</a>
+            <a href="#">COMMUNITY</a>
+        </nav>
+    </header>
+    <main>
+        <div class="bnr">
+            <h2>WELCOME</h2>
+            <h1>호랑가시나무언덕</h1>
+            <h2>GUESTHOUSE & RESIDENCE</h2>
+        </div>
+        <div class="contents_wrap">
             <div class="about">
-                <h2>ABOUT</h2>
-                <p>광주의 근대역사가 살아 숨쉬는 <span>문화마을 양림동과 호랑가시나무언덕</span>
+                <h2 class="title">ABOUT</h2>
+                <p class="txt">광주의 근대역사가 살아 숨쉬는 <span>문화마을 양림동과 호랑가시나무언덕</span>
                     <br>서구식 건축물들과 전통 한옥이 공존하고 있어 광주에서 가장 이국적인 분위기를 느낄 수 있습니다.
                 </p>
                 <p><img src="./images/main_img.png" alt=""></p>
             </div>
             <div class="guesthouse">
-                <h2>게스트하우스</h2>
-                <p><span>호랑가시나무언덕 게스트하우스</span>는 1층에 5개, 2층에 2개(VIP실), 총 7개의 객실이 있으며
+                <h2 class="title">게스트하우스</h2>
+                <p class="txt"><span>호랑가시나무언덕 게스트하우스</span>는 1층에 5개, 2층에 2개(VIP실), 총 7개의 객실이 있으며
                     <br>그 외에 3개의 화장실과 부엌, 거실, 컴퓨터실, 세미나실, 발코니, 옥상 등의 부대 공간을 갖추고 있습니다.
                 </p>
                 <div class="room standard">
@@ -48,8 +46,8 @@
                         <p class="explain">아늑하고 포근한 느낌이 도는 방으로
                             <br>혼자 숙박하시는데 무리가 없도록 항상 쾌적한 상태를 유지하고 있습니다.</p>
                         <div class="btn">
-                            <button type="button" class="reservation">예약하기</button>
-                            <button type="button" class="more">더보기</button>
+                            <a href="#" class="reservation">예약하기</a>
+                            <a href="#" class="more">더보기</a>
                         </div>
                     </div>
                     <p><img src="./images/main_visual6.jpg" alt="standard 포사이드룸"></p>
@@ -69,29 +67,29 @@
                 </div>
             </div>
             <div class="travels">
-                <h2>주변 관광지</h2>
+                <h2 class="title">주변 관광지</h2>
                 <a href="#">더보기<img src="./images/arrow.png" alt="더보기"></a>
                 <div class="contents">
                     <div class="spot1">
-                        <span><img src="./images/t1.jpg" alt="양파정"></span>
+                        <p><img src="./images/t1.jpg" alt="양파정"></p>
                         <h4>양파정</h4>
-                        <p>광주광역시 남구 사동에 있는 일제강점기에 건립된 정자</span>
+                        <p>광주광역시 남구 사동에 있는 일제강점기에 건립된 정자</p>
                     </div>
                     <div class="spot2">
-                        <span><img src="./images/t2.jpg" alt="호랑가시나무"></span>
+                        <p><img src="./images/t2.jpg" alt="호랑가시나무"></p>
                         <h4>호랑가시나무</h4>
                         <p>광주광역시 남구 양림동에 있는 호랑가시나무</p>
                     </div>
                     <div class="spot3">
-                        <span><img src="./images/t3.jpg" alt="우일선 선교사 사택"></span>
+                        <p><img src="./images/t3.jpg" alt="우일선 선교사 사택"></p>
                         <h4>우일선 선교사 사택</h4>
                         <p>광주광역시 남구 양림동에 있는 1920년대에 지어진 주택</p>
                     </div>
                 </div>
             </div>
             <div class="location">
-                <h2>찾아오시는길</h2>
-                <span><img src="./images/map_img.jpg" alt="지도"></span>
+                <h2 class="title">찾아오시는길</h2>
+                <p><img src="./images/map_img.jpg" alt="지도"></p>
                 <div class="address">
                     <div class="left">
                         <p>광주광역시 남구 제중로47번길 18</p>
@@ -113,26 +111,26 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="row1">
-                <p>개인정보보호정책</p>
-                <p>이용약관</p>
-                <p>사이트맵</p>
-            </div>
-            <div class="row2">
-                <p><em>호랑가시나무언덕 게스트하우스</em>
-                    <br>주소 : 503-822 광주광역시 남구 양림동 230-1
-                    <br>전화 : 062-682-0976   |   휴대전화 : 010-2056-4832   |   팩스 : 062-653-0978
-                </p>
-            </div>
-            <div class="row3">
-                <p>법인(단체명) : (주)아트주   |   대표자 : 정헌기
-                    <br>사업자등록번호 : 408-81-88664   |   통신판매신고번호 : 2015-광주남구-0127   |   사업자 주소 : 광주광역시 남구 제중로 47번길 11(양림동, 2층)
-                </p>
-                <p>&copy; 호랑가시나무언덕 게스트하우스. All right reserved.</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row1">
+            <a href="#">개인정보보호정책</a>
+            <a href="#">이용약관</a>
+            <a href="#">사이트맵</a>
+        </div>
+        <div class="row2">
+            <p><em>호랑가시나무언덕 게스트하우스</em>
+                <br>주소 : 503-822 광주광역시 남구 양림동 230-1
+                <br>전화 : 062-682-0976   |   휴대전화 : 010-2056-4832   |   팩스 : 062-653-0978
+            </p>
+        </div>
+        <div class="row3">
+            <p>법인(단체명) : (주)아트주   |   대표자 : 정헌기
+                <br>사업자등록번호 : 408-81-88664   |   통신판매신고번호 : 2015-광주남구-0127   |   사업자 주소 : 광주광역시 남구 제중로 47번길 11(양림동, 2층)
+            </p>
+            <p>&copy; 호랑가시나무언덕 게스트하우스. All right reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

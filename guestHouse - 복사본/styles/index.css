@@ -1,8 +1,9 @@
 /* ============================================================== header */
-header {background-color:blueviolet;
-    padding:28px 80px;
+header {
+    width:100%; padding:28px 80px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
+    position:absolute; left:0; top:0;
 }
 header h1 {}
 header h1 a {}
@@ -13,11 +14,9 @@ header nav a:last-child {margin:0px;}
 /* ============================================================== main */
 main {}
 main .bnr {
-    background-image:url(../images/header.jpg);
-    background-size:cover;
-    width:100%; height:500px;
-    text-align:center;
-    color:#fff;
+    background-image:url(../images/header.jpg); background-size:cover;
+    text-align:center; color:#fff;
+    padding:135px 80px;
     margin-bottom:200px;
 }
 main .bnr h1 {font-weight:200; font-size:4.06rem; letter-spacing:-0.02em; margin:90px 0 15px;}
@@ -33,7 +32,7 @@ main .about {}
 main .about .title {}
 main .about .txt {}
 main .about .txt span {}
-main .about p img {/*width:;*/}
+main .about p img {width:67%;}
 /* ============================================================== main-guest 공통선택자*/
 main .guesthouse {}
 main .guesthouse .title {}
@@ -51,12 +50,14 @@ main .guesthouse .room .btn .reservation {
     background-color:#606060; color:#fff; border-radius:5px;
     padding:8px 18px;
 }
+main .guesthouse .room .btn .reservation:hover {background-color:#000;}
 main .guesthouse .room .btn .more {
     border:1px solid #000; border-radius:5px;
     padding:8px 18px; margin-left:8px;
 }
-main .guesthouse .room > p {width:625px; height:380px;}
-main .guesthouse .room p img {}
+main .guesthouse .room .btn .more:hover {background-color:#000; color:#fff;}
+main .guesthouse .room > p {}
+main .guesthouse .room p img {width:100%;}
 /* ============================================================== main-guest*/
 main .guesthouse .standard {margin-bottom:10px;}
 main .guesthouse .standard .info {}
@@ -84,39 +85,35 @@ main .travels h2 {}
 main .travels a {margin:23px 0 15px; float:right; display:flex;}
 main .travels a img {margin-left:8px;}
 main .travels .contents {
-    width:100%; 
+    width:100%; text-align:left;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-main .travels .contents {text-align:left;}
-main .travels .contents span {}
-main .travels .contents span img {}
 main .travels .contents h4 {
     background:url(../images/line.png) no-repeat;
     font-weight:600; font-size:1.3rem; letter-spacing:-0.02em; 
     margin:20px 0 10px; padding-left:15px;
 }
 main .travels .contents p {font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em;}
+main .travels .contents p img {width:100%;}
 /* ============================================================== main-travel 개별선택자*/
-main .travels .contents .spot1
-main .travels .contents .spot1 span {}
-main .travels .contents .spot1 span img {}
+main .travels .contents .spot1 {}
 main .travels .contents .spot1 h4 {}
 main .travels .contents .spot1 p {}
+main .travels .contents .spot1 p img {}
 main .travels .contents .spot2 {}
-main .travels .contents .spot2 span {}
-main .travels .contents .spot2 span img {}
 main .travels .contents .spot2 h4 {}
 main .travels .contents .spot2 p {}
+main .travels .contents .spot2 p img {}
 main .travels .contents .spot3 {}
-main .travels .contents .spot3 span {}
-main .travels .contents .spot3 span img {}
 main .travels .contents .spot3 h4 {}
 main .travels .contents .spot3 p {}
+main .travels .contents .spot3 p img {}
 /* ============================================================== main-location*/
-main .location {width:850px; margin:0 auto;}
+main .location {max-width:850px; margin:0 auto;}
+/* 너비값을 고정작성할 경우 반응형을 고려하여 max-width로 해야한다. */
 main .location h2 {margin-bottom:55px;}
-main .location span {}
-main .location span img {}
+main .location p {}
+main .location p img {width:100%;}
 main .location .address {
     margin-top:30px; text-align:left;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
@@ -127,7 +124,8 @@ main .location .address .left a {
     background-color:#606060; color:#fff; border-radius:5px;
     padding:8px 18px; font-weight:600; font-size:1.06rem;
 }
-main .location .address .right {border-left:2px solid #d9d9d9; padding-left:33px; height:292px;}
+main .location .address .left a:hover {background-color: #000;}
+main .location .address .right {border-left:2px solid #d9d9d9; padding-left:33px;}
 main .location .address .right .bus {}
 main .location .address .right .bus h4 {font-weight:600; font-size:1.06rem; line-height:1.4; letter-spacing:-0.02em; margin-bottom:20px;}
 main .location .address .right .bus p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6; margin-top:20px; margin:20px 0 15px;}
@@ -137,13 +135,13 @@ main .location .address .right .subway h4 {font-weight:600; font-size:1.06rem; l
 main .location .address .right .subway p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6; margin-top:20px;}
 main .location .address .right .subway p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
 /* ============================================================== footer */
-#wrap footer {
+footer {
     height:360px; padding:46px 104px ; margin-top:200px;
     background-color:#eeeeee;
 }
 footer .row1 {display:flex; flex-flow:row nowrap; margin-bottom:45px;}
-footer .row1 p {font-size:0.88rem; letter-spacing:-0.02em; margin-right:30px;}
-footer .row1 p:last-child {margin:0;}
+footer .row1 a {font-size:0.88rem; letter-spacing:-0.02em; margin-right:30px;}
+footer .row1 a:last-child {margin:0;}
 footer .row2 {margin-bottom:20px;}
 footer .row2 p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
 footer .row2 p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
