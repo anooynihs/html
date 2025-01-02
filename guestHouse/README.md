@@ -30,3 +30,6 @@ medium 20 (font-weight:500; font-size:1.3rem; letter-spacing:-0.02em;) 헤더 �
 semibold 40 (font-weight:600; font-size:2.5rem; letter-spacing:-0.02em; line-height:1.3;) 메인 타이틀 강조
 extralight 40 (font-weight:200; font-size:2.5rem; letter-spacing:-0.02em; line-height:1.3;) 메인 타이틀 영문
 regular 17 (font-size:1.06rem; line-height:2.0; letter-spacing:-0.02em;)
+<!-- 서브페이지 -->
+semibold 40 (font-weight:600; font-size:2.5rem; letter-spacing:-0.02em;) 본문 한글 타이틀
+extralight 40 (font-weight:200; font-size:4.06rem; letter-spacing:-0.02em;) 본문 영문 타이틀

@@ -1,0 +1,48 @@
+/* ============================================================== header */
+header {
+    width:100%; padding:28px 80px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    position:absolute; left:0; top:0;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {}
+header nav a {margin-right:22px; font-weight:500; font-size:0.88rem; color:#000;}
+header nav a:last-child {margin:0px;}
+/* ============================================================== main */
+main {margin-bottom:200px;}
+main .head {
+    background-image:url(../images/sub_page_head.jpg);
+    background-size:cover;
+    color:#fff;
+    padding:203px 80px 61px; margin-bottom:200px;
+}
+main .head h1 {font-weight:600; font-size:4.06rem; letter-spacing:-0.02em; margin:63px 0 15px 0;}
+main .head h2 {font-weight:500; font-size:1.88rem;}
+main .head > p {font-weight:500; font-size:1.3rem; letter-spacing:-0.02em;}
+main .contents {width:1260px; margin:0 auto;}
+main .contents .title {border-left:2px solid #000;}
+main .contents .title h3 {font-weight:600; font-size:2.5rem; letter-spacing:-0.02em; margin-bottom:5px; margin-left:26px;}
+main .contents .title h4 {font-weight:200; font-size:2.5rem; letter-spacing:-0.02em; color:#606060; margin-left:26px;}
+main .contents > p {font-size:1.06rem; line-height:2.0; letter-spacing:-0.02em; margin-top:122px;}
+main .contents > p:nth-of-type(2) {margin:39px 0 134px;}
+main .contents .img_gr {}
+main .contents .img_gr > p {}
+main .contents .img_gr > p:nth-child(2) {margin:30px 0;}
+main .contents .img_gr > p img {}
+/* ============================================================== footer */
+footer {
+    height:360px; padding:46px 104px ; margin-top:200px;
+    background-color:#eeeeee;
+}
+footer .row1 {display:flex; flex-flow:row nowrap; margin-bottom:45px;}
+footer .row1 a {font-size:0.88rem; letter-spacing:-0.02em; margin-right:30px;}
+footer .row1 a:last-child {margin:0;}
+footer .row2 {margin-bottom:20px;}
+footer .row2 p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+footer .row2 p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+footer .row3 {}
+footer .row3 p {font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5;}
+footer .row3 p:last-child {font-size:0.88rem; letter-spacing:-0.02em; margin-top:66px;}

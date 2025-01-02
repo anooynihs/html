@@ -12,7 +12,7 @@ header nav {}
 header nav a {margin-right:22px; font-weight:500; font-size:0.88rem; color:#fff;}
 header nav a:last-child {margin:0px;}
 /* ============================================================== main */
-main {}
+main {margin-bottom:200px;}
 main .bnr {
     background-image:url(../images/header.jpg); background-size:cover;
     text-align:center; color:#fff;
@@ -136,7 +136,7 @@ main .location .address .right .subway p {font-size:0.88rem; letter-spacing:-0.0
 main .location .address .right .subway p em {font-weight:600; font-size:0.88rem; letter-spacing:-0.02em; line-height:1.6;}
 /* ============================================================== footer */
 footer {
-    height:360px; padding:46px 104px ; margin-top:200px;
+    height:360px; padding:46px 104px;
     background-color:#eeeeee;
 }
 footer .row1 {display:flex; flex-flow:row nowrap; margin-bottom:45px;}
