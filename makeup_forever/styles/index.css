@@ -6,7 +6,7 @@
     /* header 서브(S)의 부모에 주는 값 */ position:relative;
 }
 .h_bg header {
-    width:1400px; margin:0 auto; height:125px;
+    max-width:1400px; margin:0 auto; height:125px;
     /* h1+h_right 좌우 동일라인 정렬 */ display:flex; flex-flow:row nowrap; align-items:center;
 }
 .h_bg header h1 {}
@@ -17,9 +17,34 @@
     float:right; display:flex; flex-flow:row nowrap;
     margin-bottom:25px;
 }
-.h_bg header .h_right .h_top .search {}
+.h_bg header .h_right .h_top .search {position:relative; z-index:10;}
 .h_bg header .h_right .h_top .search > a {font-size:0.88rem;}
 .h_bg header .h_right .h_top .search > a img {}
+/* ============================================================================= 모바일 버젼 */
+.h_bg header .h_right .h_top .search .m_all_nav {display:none;}
+.h_bg header .h_right .h_top .search .m_nav {
+    /*display:none;*/
+    background-color:#fff; width:600px;
+    position:fixed; left:0; top:125px; z-index:20;
+    padding:35px 30px 50px;
+}
+.h_bg header .h_right .h_top .search .m_nav .for_user {
+    display:flex; flex-flow:row nowrap;
+}
+.h_bg header .h_right .h_top .search .m_nav .for_user li {margin-bottom:65px;}
+.h_bg header .h_right .h_top .search .m_nav .for_user li a{
+    color:#000; font-size:0.88rem; letter-spacing:-0.02em;
+    margin-right:15px;
+}
+.h_bg header .h_right .h_top .search .m_nav .for_user li a:nth-last-child {margin-right:0;}
+.h_bg header .h_right .h_top .search .m_nav nav .category {}
+.h_bg header .h_right .h_top .search .m_nav nav .category > li {margin-bottom:35px;}
+.h_bg header .h_right .h_top .search .m_nav nav .category > li > a {color:#000; font-size:1rem; font-weight:500; letter-spacing:-0.02em;}
+.h_bg header .h_right .h_top .search .m_nav nav .category .act {width:380px;}
+.h_bg header .h_right .h_top .search .m_nav nav .category .act > a {padding-bottom:5px; border-bottom:2px solid #000; width:100%;}
+.h_bg header .h_right .h_top .search .m_nav nav .category > li .face_sub {margin-top:15px; padding-left:11px;}
+.h_bg header .h_right .h_top .search .m_nav nav .category > li .face_sub > li {margin-bottom:10px;}
+.h_bg header .h_right .h_top .search .m_nav nav .category > li .face_sub > li a {color:#6F6F6F; font-size:0.88rem; letter-spacing:-0.02em;}
 .h_bg header .h_right .h_top > a {margin-left:16px;}
 /* ============================================================================= header 검색팝업(S) */
 .h_bg header .h_right .h_top .search .search_popup {
@@ -80,7 +105,7 @@
     /* absolute, fixed 작성 시에는 반드시 좌표, width 속성도 함께 작성해야한다 */ width:100%;
 }
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
-    width:1400px; margin:0 auto; height:240px; padding-top:40px;
+    max-width:1400px; margin:0 auto; height:240px; padding-top:40px;
     display:flex; flex-flow:row nowrap;
 }
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * {width:200px; padding-left:20px;}
@@ -119,7 +144,7 @@ main .slides_wrap .slides_container .slide {
     height:100%;/* slides_container와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    width:1400px; margin:0 auto; overflow:hidden;
+    max-width:1400px; margin:0 auto; overflow:hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
     width:40%; float:right; padding-top:144px;
@@ -139,7 +164,7 @@ main .slides_wrap .next_btn {right:190px;}
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color:#ccc;
-    width:1400px; height:2px; margin:0 auto;
+    max-width:1400px; height:2px; margin:0 auto;
     position:relative; bottom:34px;
 }
 main .slides_wrap .scroll_bg .scrollbar {
@@ -163,7 +188,7 @@ main .slides_wrap .slides_container .slide2 .contents .title {}
 main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
 /* ============================================================================= main2.베스트셀러 상품 */
-main .best_seller {width:1400px; margin:0 auto; margin-top:145px;;}
+main .best_seller {max-width:1400px; margin:0 auto; margin-top:145px;;}
 main .best_seller .title {
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:end;
     margin-bottom:20px;

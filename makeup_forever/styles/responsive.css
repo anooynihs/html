@@ -1,0 +1,33 @@
+@media screen and (max-width:1400px){
+    /* ======================================== 태블릿(너비1400 이하) */
+    .h_bg {padding:0 80px;}
+}
+@media screen and (max-width:850px){
+    /* ======================================== 태블릿(너비850 이하) */
+    .h_bg {padding:0 80px;}
+    .h_bg header {
+        flex-flow:column nowrap; align-items:flex-start; justify-content:center; 
+        position:relative;
+    }
+    .h_bg header h1 {position:absolute; top:20px;}
+    .h_bg header h1 a img {width:100px;}
+    .h_bg header .h_right {width:100%; padding:0;}
+}
+@media screen and (max-width:730px){
+    /* ======================================== 모바일(너비730 이하) */
+    .h_bg {padding:0 15px;}
+    .h_bg header .h_right .h_top > a,
+    .h_bg header .h_right .h_btm .h_b_left a,
+    .h_bg header .h_right .h_btm nav > a {font-size:0.88rem;}
+}
+@media screen and (max-width:600px){
+    /* ======================================== 모바일(너비600 이하) */
+    .h_bg header {
+        flex-flow:row nowrap; align-items:center;
+    }
+    .h_bg header h1 {position:relative; top:0px;}
+    .h_bg header .h_right .h_top > a,
+    .h_bg header .h_right .h_btm {display:none;}
+    .h_bg header .h_right .h_top .search > a img {width:23px;}
+    .h_bg header .h_right .h_top .search .m_all_nav {display:inline-block;}
+}
