@@ -23,8 +23,8 @@
 /* ============================================================================= 모바일 버젼 */
 .h_bg header .h_right .h_top .search .m_all_nav {display:none;}
 .h_bg header .h_right .h_top .search .m_nav {
-    /*display:none;*/
-    background-color:#fff; width:600px;
+    display:none;
+    background-color:#fff; width:100%; height:calc(100vh - 125px);
     position:fixed; left:0; top:125px; z-index:20;
     padding:35px 30px 50px;
 }
@@ -158,9 +158,9 @@ main .slides_wrap .slides_container .slide .contents .title .bnr_link {
 main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {}
 main .slides_wrap .prev_btn, main .slides_wrap .next_btn {position:absolute; top:45%;}
 main .slides_wrap .prev_btn img, main .slides_wrap .next_btn img {}
-main .slides_wrap .prev_btn {left:190px;}
+main .slides_wrap .prev_btn {left:50px;}
 main .slides_wrap .prev_btn img {}
-main .slides_wrap .next_btn {right:190px;}
+main .slides_wrap .next_btn {right:50px;}
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color:#ccc;

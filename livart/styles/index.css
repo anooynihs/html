@@ -1,0 +1,208 @@
+/* =================================================== header */
+.h_bg {}
+.h_bg header {width:1400px; margin:0 auto; padding:47px 0 25px;}
+.h_bg header .h_top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-bottom:13px;
+}
+.h_bg header .h_top h1 {}
+.h_bg header .h_top h1 a {}
+.h_bg header .h_top h1 a img {}
+.h_bg header .h_top .user_page {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_top .user_page li {margin-left:16px;}
+.h_bg header .h_top .user_page li:first-child {margin:0;}
+.h_bg header .h_top .user_page li a {font-size:0.81rem; font-weight:500;}
+.h_bg header .h_btm {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+.h_bg header .h_btm nav {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_btm nav .category1 {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_btm nav .category1 .active {padding-bottom:5px; border-bottom:2px solid #000;}
+.h_bg header .h_btm nav .category1 .active a {}
+.h_bg header .h_btm nav .category1 li {margin-left:18px;}
+.h_bg header .h_btm nav .category1 li:first-child {margin:0;}
+.h_bg header .h_btm nav .category1 li a {font-size:1rem; font-weight:500;}
+.h_bg header .h_btm nav .category2 {display:flex; flex-flow:row nowrap; margin-left:39px;}
+.h_bg header .h_btm nav .category2 li {margin-left:16px;}
+.h_bg header .h_btm nav .category2 li:first-child {margin:0;}
+.h_bg header .h_btm nav .category2 li a {font-size:1rem; font-weight:500; color:#015578;}
+.h_bg header .h_btm .search_wrap {padding-bottom:5px; border-bottom:2px solid #000;}
+.h_bg header .h_btm .search_wrap input[name$=search] {background:none;}
+.h_bg header .h_btm .search_wrap input[name$=search]::placeholder {font-size:0.81rem; font-weight:200px; color:#B1B1B1;}
+.h_bg header .h_btm .search_wrap a {}
+.h_bg header .h_btm .search_wrap a img {}
+/* =================================================== main */
+main {}
+/* =================================================== main 1행 슬라드형 배너 */
+main .slide_bnr {
+    background-image:url(../images/bnr_001.jpg);
+    background-size:cover;
+    height:600px;
+}
+main .slide_bnr .contents {width:1400px; margin:0 auto; height:100%;}
+main .slide_bnr .contents a {}
+main .slide_bnr .contents a img {}
+main .slide_bnr .scroll_bg {
+    background-color:#B1B1B1;
+    width:1400px; margin:0 auto; height:2px;
+    position:relative; bottom:36px;
+}
+main .slide_bnr .scroll_bg .scrollbar {
+    background-color:#000; width:350px; height:100%;
+}
+/* =================================================== main 2행, 3행 공통선택자 */
+main .product {width:1400px; margin:0 auto;}
+main .product h2 {font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:30px;}
+main .product .product_wrap {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main .product .product_wrap .prd {width:calc(100% - 60px) / 4;}
+main .product .product_wrap .prd a {}
+main .product .product_wrap .prd a img {width:100%; border-radius:8px;}
+main .product .product_wrap .prd .brand_name {margin-top:15px; margin-bottom:5px;}
+main .product .product_wrap .prd .brand_name a {font-size:1rem; letter-spacing:-0.02em; color:#5A5A5A;}
+main .product .product_wrap .prd .prd_name {}
+main .product .product_wrap .prd .prd_name a {font-size:1rem; letter-spacing:-0.02em; font-weight:500;}
+main .product .product_wrap .prd .price {
+    width:100%; margin-top:32px; 
+    display:flex; flex-flow:row nowrap; justify-content:end;
+}
+main .product .product_wrap .prd .price p {font-size:1.25rem;}
+main .product .product_wrap .prd .price p:first-child {margin-right:14px;}
+main .product .product_wrap .prd .price p span {font-size:0.81rem; color:#B1B1B1;}
+main .product .product_wrap .prd .price p em {font-weight:700;}
+/* =================================================== main 2행 새로나온상품 개별선택자*/
+main .new {margin-top:200px;}
+main .new .product_wrap {}
+main .new .product_wrap .prd:nth-child(1),
+main .new .product_wrap .prd:nth-child(2),
+main .new .product_wrap .prd:nth-child(3),
+main .new .product_wrap .prd:nth-child(4) {margin-bottom:57px;}
+/* =================================================== main 3행 인기상품 개별선택자 */
+main .best {margin-top:143px;}
+main .best .prd_category {display:flex; flex-flow:row nowrap; margin-bottom:15px;}
+main .best .prd_category .active {background-color:#015578; color:#fff;}
+main .best .prd_category .active a {color:#fff;}
+main .best .prd_category li {background-color:#eee; padding:10px 25px; border-radius:5px; margin-right:9px;}
+main .best .prd_category li:last-child {margin:0;}
+main .best .prd_category li a{font-size:1rem;}
+/* =================================================== main 4행 라인배너 */
+main .line_bnr {
+    background-image:url(../images/bnr_002.jpg);
+    background-size:cover;
+    height:370px; margin-top:200px;
+}
+main .line_bnr .text_wrap {text-align:center; padding:134px 0;}
+main .line_bnr .text_wrap h1 {font-size:4rem; font-weight:700; color:#fff; margin-bottom:15px;}
+main .line_bnr .text_wrap p {font-size:1.5rem; letter-spacing:-0.02em; color:#fff;}
+main .line_bnr .text_wrap p em {font-size:1.5rem; letter-spacing:-0.02em; color:#fff; font-weight:700;}
+/* =================================================== main 5행 혜택&이벤트 */
+main .benefit {width:1400px; margin:0 auto; margin-top:200px; text-align:center;}
+main .benefit h2 {font-size:2.25rem; font-weight:700; letter-spacing:-0.02em; margin:5px 0 50px;}
+main .benefit p {font-size:1rem; font-weight:600;}
+main .benefit .contents {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .benefit .contents a {width:calc((100% - 36px) / 3);}
+main .benefit .contents a img {width:100%; border-radius:8px;}
+/* =================================================== main 6행 리바트이야기, 공통선택자 */
+main .story_wrap {width:1400px; margin:0 auto; margin-top:200px;}
+main .story_wrap h2 {
+    font-size:2.25rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:50px;
+    text-align:center;
+}
+main .story_wrap .contents {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .story_wrap .contents .story {
+    width:calc((100% - 36px) / 3); height:575px; 
+    padding:50px 45px; border-radius:8px;
+}
+main .story_wrap .contents .story .text {height:100%; display:flex; flex-flow:column nowrap; justify-content:end;}
+main .story_wrap .contents .story .text h3 {z-index:20;
+    font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; 
+    color:#fff; margin-bottom:8px;
+}
+main .story_wrap .contents .story .text p {font-size:1rem; letter-spacing:-0.02em; color:#fff; z-index:20;}
+/* =================================================== main 6행 개별선택자 */
+main .story_wrap .contents .office {
+    background-image:url(../images/story_001.jpg);
+    background-size:cover; position:relative;
+}
+main .story_wrap .contents .office::after {
+    display:block; content:'';
+    width:100%; height:575px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute; left:0; top:0; z-index:10;
+    border-radius:8px;
+}
+main .story_wrap .contents .office .text {}
+main .story_wrap .contents .office .text h3 {}
+main .story_wrap .contents .office .text p {}
+main .story_wrap .contents .furn {
+    background-image:url(../images/story_002.jpg);
+    background-size:cover; position:relative;
+}
+main .story_wrap .contents .furn::after {
+    display:block; content:'';
+    width:100%; height:575px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute; left:0; top:0; z-index:10;
+    border-radius:8px;
+}
+main .story_wrap .contents .furn .text {}
+main .story_wrap .contents .furn .text h3 {}
+main .story_wrap .contents .furn .text p {}
+main .story_wrap .contents .class {
+    background-image:url(../images/story_003.jpg);
+    background-size:cover; position:relative;
+}
+main .story_wrap .contents .class::after {
+    display:block; content:'';
+    width:100%; height:575px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute; left:0; top:0; z-index:10;
+    border-radius:8px;
+}
+main .story_wrap .contents .class .text{}
+main .story_wrap .contents .class .text h3 {}
+main .story_wrap .contents .class .text p {}
+/* =================================================== footer 공통선택자 */
+footer {
+    margin-top:200px; padding:80px 80px;
+    border-top:2px solid #ddd;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+footer h2 {}
+footer p {}
+footer p em{}
+footer p a {}
+/* =================================================== footer */
+footer .f_left {color:#8E8E8E; font-size:0.81rem;}
+footer .f_left .row1 {margin-bottom:20px;}
+footer .f_left .row1 a {color:#8E8E8E; margin-right:17px;}
+footer .f_left .row1 a:last-child {margin:0;}
+footer .f_left .row2 {margin-bottom:20px;}
+footer .f_left .row2 > p {line-height:175%;}
+footer .f_left .row2 p em {font-weight:700;}
+footer .f_left .row2 p a {color:#8E8E8E; font-weight:700;}
+footer .f_left .row3 {}
+footer .f_left .row3 p {}
+/* =================================================== footer 오른쪽 공통선택자*/
+footer .f_right {display:flex; flex-flow:row nowrap; font-size:0.81rem;}
+footer .f_right > * {margin-right:75px;}
+footer .f_right h2 {font-weight:700; margin-bottom:17px;}
+footer .f_right p {margin-bottom:17px;}
+footer .f_right p a {}
+/* =================================================== footer 오른쪽 개별선택자*/
+footer .f_right .about {}
+footer .f_right .about h2 {}
+footer .f_right .about p {}
+footer .f_right .about p a {}
+footer .f_right .cs {}
+footer .f_right .cs h2 {}
+footer .f_right .cs p {}
+footer .f_right .cs p a {}
+footer .f_right .cs p em {font-weight:700;}
+footer .f_right .social {display:flex; flex-flow:column nowrap;}
+footer .f_right .social h2 {}
+footer .f_right .social a {margin-bottom:17px;}
+footer .f_right .social a img {width:20px; height:20px;}
+footer .f_right .family_site {margin:0; display:flex;}
+footer .f_right .family_site h2 {margin-right:7px;}
+footer .f_right .family_site a {}
+footer .f_right .family_site a img {}
