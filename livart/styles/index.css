@@ -39,7 +39,7 @@ main .slide_bnr {
     background-size:cover;
     height:600px;
 }
-main .slide_bnr .contents {width:1400px; margin:0 auto; height:100%;}
+main .slide_bnr .contents {width:1400px; margin:0 auto; height:100%; padding-top:179px;}
 main .slide_bnr .contents a {}
 main .slide_bnr .contents a img {}
 main .slide_bnr .scroll_bg {
