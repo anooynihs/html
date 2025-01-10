@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | 자바스크립트</title>
+    <!-- script태그에 defer속성 삽입하면 head에 넣어도 body->태그 순으로 읽기 가능 -->
+    <script src="./script/data4.js" defer></script>
+</head>
+<body>
+    <h1>제목1-1</h1> <!-- h1은 객체  -->
+    <h1>제목1-2</h1>
+    <h2>부제목2-2</h2>
+    <h2>부제목2-2</h2>
+    <h2>부제목2-3</h2>
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+    </ul>
+    <ul>
+        <li><a href="#">링크목록1</a></li>
+        <li><a href="#">링크목록2</a></li>
+    </ul>
+    <h3 class="sub_title">제목3</h3>
+    <ul class="menu">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+    <p id="notice">공지사항</p>
+    <div id="container">
+        <div id="title">
+            <a href="#">제목1</a>
+            <a href="#">제목2</a>
+        </div>
+        <div id="contents">
+            <a href="#">내용1</a>
+            <a href="#">내용2</a>
+        </div>
+    </div>
+    <hr>
+    <nav>
+        <ul class="gnb">
+            <li>
+                <a href="#">메뉴1</a>
+                <ul class="lnb">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">메뉴2</a></li>
+        </ul>
+    </nav>
+    <!-- HTML태그를 모두 읽은 후 script태그를 읽는 위치 설정 -->
+</body>
+</html>
