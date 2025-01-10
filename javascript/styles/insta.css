@@ -1,0 +1,34 @@
+.instagram {
+    max-width:360px; margin:30px auto 0;
+    background-color:#f1f1f1 ;
+}
+/* =============================== 프로필 */
+.instagram .profile {display:flex; align-items:center; justify-content:space-between; height:40px; padding:0 10px;}
+.instagram .profile .user {display:flex; align-items:center;}
+.instagram .profile .user img {width:24px; border-radius:50%;}
+.instagram .profile .user span {padding-left:4px;}
+.instagram .profile .more {}
+/* =============================== 메인 */
+.instagram main {height:430px; overflow:hidden;}
+.instagram main img {width:100%}
+/* =============================== 컨테이너 */
+.instagram .container {}
+/* =============================== 컨테이너 아이콘 */
+.instagram .container .icons {display:flex; align-items:center; justify-content:space-between; height:40px; padding:0 10px;}
+.instagram .container .icons .left {display:flex; align-items:center;}
+.instagram .container .icons .left a {width:24px; margin-right:6px;}
+.instagram .container .icons .left a img {width:100%;}
+.instagram .container .icons .left .like {}
+.instagram .container .icons .left .comment {}
+.instagram .container .icons .left .paper {}
+.instagram .container .icons .left .like img {}
+.instagram .container .icons .left .comment img {}
+.instagram .container .icons .left .paper img {}
+.instagram .container .icons .interest {}
+/* =============================== 컨테이너 콘텐츠 */
+.instagram .container .contents {padding:10px;}
+.instagram .container .contents p {line-height:1.7;}
+.instagram .container .contents .like_number {}
+.instagram .container .contents .user {font-weight:700;}
+.instagram .container .contents .content {}
+.instagram .container .contents .date {}
