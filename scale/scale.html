@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적중 체중 구하기</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/scale.css">
+    <script src="./script/scale.js" defer></script>
+</head>
+<body>
+    <div id="bg">
+        <div class="container">
+            <h1>적정 체중 구하기</h1>
+            <div class="custom">
+                <div class="height box">
+                    <h2>키</h2>
+                    <div class="input">
+                        <input type="text" name="height" id="user_height" placeholder="숫자만 입력해 주세요.">
+                        <p>CM</p>
+                    </div>
+                </div>
+                <div class="weight box">
+                    <h2>체중</h2>
+                    <div class="input">
+                        <input type="text" name="weight" id="user_weight" placeholder="숫자만 입력해 주세요.">
+                        <p>KG</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn">결과보기</button>
+            <div class="normal status">
+                <h2>당신의 적정 체중은</h2>
+                <div class="txt">
+                    <p><em class="normal_weight"></em> KG 이며</p>
+                </div>
+            </div>
+            <div class="current status">
+                <h2>현재 체중에서</h2>
+                <div class="txt">
+                    <p><em class="weight_result"></em> KG <span>초과</span>되었습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 가족관계 생성/제거/디자인 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/dom2.js" defer></script>
+    <style>
+        .child {padding:10px; background-color: yellow;}
+        .child:nth-child(even) {background-color: pink;}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+    </div>
+</body>
+</html>

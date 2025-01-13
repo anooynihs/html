@@ -1,0 +1,67 @@
+#bg {
+    background-image:url(../images/bg.jpg);
+    width:440px; margin:0 auto; height:893px;
+    padding:201px 50px 156px;
+}
+#bg .container {}
+#bg .container h1 {font-size:2rem; font-weight:700; text-align:center; margin-bottom:100px;}
+/* ================================ 키, 체중 입력 행 공통 선택자 */
+#bg .container .custom {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-bottom:40px;
+}
+#bg .container .custom .box {width:calc((100% - 36px) / 2);}
+#bg .container .custom .box h2 {font-size:1.25rem; font-weight:700; margin-bottom:18px;}
+#bg .container .custom .box .input {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+    padding-bottom:8px; border-bottom:1.5px solid #000;
+}
+#bg .container .custom .box .input input {font-size:0.88rem; width:123px;}
+#bg .container .custom .box .input input::placeholder {color:#d9d9d9; font-size:0.88rem;}
+#bg .container .custom .box .input p {font-size:0.88rem;}
+/* ================================ 키 입력 행 */
+#bg .container .custom .height {margin-right:36px;}
+#bg .container .custom .height h2 {}
+#bg .container .custom .height .input {}
+#bg .container .custom .height .input input {}
+#bg .container .custom .height .input input::placeholder {}
+#bg .container .custom .height .input p {}
+/* ================================ 체중 입력 행 */
+#bg .container .custom .weight {}
+#bg .container .custom .weight h2 {}
+#bg .container .custom .weight .input {}
+#bg .container .custom .weight .input input {}
+#bg .container .custom .weight .input input::placeholder {}
+#bg .container .custom .weight .input p {}
+/* ================================ 버튼 */
+#bg .container .btn {
+    width:100%; background-color: #000;
+    color:#fff; font-size:1.25rem;
+    padding:15px 25px; border-radius:14px; margin-bottom:100px;
+}
+/* ================================ 적정 체중, 과체중 표시 행 공통 선택자 */
+#bg .container .status {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+}
+#bg .container .status h2 {font-size:1.25rem; font-weight:700;}
+#bg .container .status .txt {}
+#bg .container .status .txt p {}
+#bg .container .status .txt p em {font-size:1.5rem; font-weight:700;}
+/* ================================ 적정 체중 표시 행 */
+#bg .container .normal {margin-bottom:40px;}
+#bg .container .normal h2 {}
+#bg .container .normal .txt {
+    background-color:#f12d2d; color:#fff; 
+    border-radius:14px; padding:10px 0;
+    width:175px;
+}
+#bg .container .normal .txt p {margin-left:26px;}
+#bg .container .normal .txt p em {}
+/* ================================ 과체중 표시 행 */
+#bg .container .current {}
+#bg .container .current h2 {font-weight:400;}
+#bg .container .current .txt {}
+#bg .container .current .txt p  {color: #f12d2d; text-align:right;}
+#bg .container .current .txt p em {}
+#bg .container .current .txt p span {font-weight:700;}
