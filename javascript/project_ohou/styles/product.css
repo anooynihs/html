@@ -1,0 +1,85 @@
+main {width:1136px; margin:0 auto;}
+main .path {margin-bottom:26px;}
+main .path a {font-size:0.88rem;}
+main .path span {}
+/* ================================= 왼쪽 썸네일 */
+main .container {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .container .photos {
+    display:flex; flex-flow:row nowrap;
+    width:630px; margin-right:24px;
+}
+main .container .photos .thumnail {}
+main .container .photos .thumnail a {width:56px; margin-right:15px; display:block; margin-bottom:10px;}
+main .container .photos .thumnail a img {width:100%; border-radius:5px;}
+main .container .photos .big {width:559px;}
+main .container .photos .big img {width:100%; border-radius:5px;}
+/* ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 썸네일 이미지 (JS 클래스 전용) */
+main .container .photos .thumnail a.active {border:3px solid #59AFFF; border-radius:5px;}
+/* ================================= 오른쪽 상품 정보, 구매 */
+main .container .contents {width:calc(100% - 654px);}
+main .container .contents > * {margin-bottom:25px;}
+main .container .contents .brand {font-size:0.88rem;}
+main .container .contents h1 {font-size:1.38rem;}
+main .container .contents .review {font-size:0.81rem;}
+main .container .contents .price_nonesale {font-size:1rem;}
+main .container .contents .price_nonesale del {color:#777;}
+main .container .contents .price_sale {font-size:2rem;}
+main .container .contents .price_sale em {font-weight:700;}
+/* ================================= 배송 관련 정보 */
+main .container .contents dl {display:flex; flex-flow:row wrap;}
+main .container .contents dl dt {width:80px; margin-bottom:25px;}
+main .container .contents dl dd {
+    width:calc(100% - 80px); display:flex; flex-flow:column nowrap;
+}
+main .container .contents dl dd:nth-of-type(1) {display:flex; flex-flow:row nowrap;}
+main .container .contents dl dd > * {margin-bottom:10px;}
+main .container .contents dl dd > em {font-weight:700;}
+main .container .contents dl dd .ship_schedule {
+    padding:15px 10px; background-color:#eee; border-radius:7px;
+}
+main .container .contents dl dd .ship_schedule em {font-weight:700;}
+main .container .contents dl dd .open_schedule {
+    display:flex; flex-flow:column wrap;
+    padding:15px 10px; background-color:#eee; border-radius:7px;
+}
+main .container .contents dl dd .open_schedule p {
+    margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #777;
+    font-size:0.81rem;
+}
+main .container .contents dl dd .open_schedule p em {font-weight:700;}
+main .container .contents dl dd .open_schedule p span {color:#aaa;}
+main .container .contents dl dd .open_schedule > span {font-size:0.81rem; color: #aaa; margin:0; line-height:1.5;}
+/* ================================= 색상, 사이즈 선택 */
+main .container .contents .order_contents {}
+main .container .contents .order_contents .select_contents {display:flex; flex-flow:column nowrap;}
+main .container .contents .order_contents .select_contents #color {
+    font-size:0.88rem; padding:10px 17px;  margin-bottom:25px;
+    border:1px solid #59AFFF; border-radius:5px;
+}
+main .container .contents .order_contents .select_contents #color option {}
+main .container .contents .order_contents .select_contents #size {
+    font-size:0.88rem; padding:10px 17px; margin-bottom:25px;
+    border:1px solid #aaa; border-radius:5px;
+}
+main .container .contents .order_contents .select_contents #size option {}
+/* ================================= 주문가격 */
+main .container .contents .order_price {
+    margin-bottom:25px;
+    display:flex; flex-flow:row nowrap; 
+    justify-content:space-between; align-items:center;
+}
+main .container .contents .order_price h2 {font-size:0.88rem;}
+main .container .contents .order_price .price {font-size:1.06rem; font-weight:700;}
+main .container .contents .order_price .price em {font-size:1.25rem; font-weight:700;}
+/* ================================= 주문버튼 */
+main .container .contents .order_btn {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .container .contents .order_btn #cart_btn {
+    border:1px solid #59AFFF; border-radius:5px;
+    padding:20px 0; width:calc(100% - 10px); margin-right:10px; 
+    font-size:1.06rem; color:#59AFFF;
+}
+main .container .contents .order_btn #buy_btn {
+    background-color:#59AFFF; border-radius:5px;
+    padding:20px 0; width:calc(100% - 10px);
+    font-size:1.06rem; color:#fff;
+}
