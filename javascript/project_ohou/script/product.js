@@ -117,9 +117,11 @@ console.log(cartPopup, cartBtn, shoppingBtn);
 cartPopup.style.display = 'none';
 cartBtn.addEventListener('click',()=>{
     cartPopup.style.display = 'block'; //태그의 원래 속성을 작성해준다.
+    document.body.style.overflow = 'hidden';
 })
 shoppingBtn.addEventListener('click', ()=>{
     cartPopup.style.display = 'none';
+    document.body.style.overflow = 'auto';
 })
 
 /*
