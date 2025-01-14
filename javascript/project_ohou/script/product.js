@@ -105,3 +105,30 @@ minusBtn.addEventListener('click',()=>{
 
 //================================= 장바구니 팝업 JS
 //1. 초기값 : 팝업 숨기기
+//2. 장바구니 클릭 시
+//3. 팝업 보이기
+//4. 팝업 내 <쇼핑 계속하기> 클릭 시
+//5. 팝업 숨기기
+const cartPopup = document.querySelector('.cart_open_bg'); //초기값(팝업숨기기)
+const cartBtn = document.querySelector('#cart_btn'); //장바구니담기
+const shoppingBtn = document.querySelector('.link a:nth-child(1)'); //쇼핑계속하기 버튼
+console.log(cartPopup, cartBtn, shoppingBtn);
+
+cartPopup.style.display = 'none';
+cartBtn.addEventListener('click',()=>{
+    cartPopup.style.display = 'block'; //태그의 원래 속성을 작성해준다.
+})
+shoppingBtn.addEventListener('click', ()=>{
+    cartPopup.style.display = 'none';
+})
+
+/*
+classList와 style속성 구분 적용하기 
+객체.classList 사용
+- CSS 속성 2~3개 이상 사용할 경우
+- toggle, remove 교체, 삭제 등으로 다양한 경우에 사용할 경우
+
+객체.style 사용
+- CSS 속성 1~3개 정도 적게 사용할 경우
+- 객체에 CSS를 단순히 적용만 할 경우
+*/
