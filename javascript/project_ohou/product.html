@@ -73,17 +73,31 @@
                         </select>
                     </div>
                 </div>
+                <div class="num">
+                    <input type="number" name="product_num" id="product_num">
+                    <button type="button" id="minus">-</button>
+                    <button type="button" id="plus">+</button>
+                </div>
                 <div class="order_price">
                     <h2>주문금액</h2>
-                    <p class="price"><em>0</em>원</p>
+                    <p><em class="price"><!--0--></em>원</p>
                 </div>
                 <div class="order_btn">
                     <button type="button" id="cart_btn">장바구니</button>
                     <button type="button" id="buy_btn">바로구매</button>
-                    </div>
                 </div>
             </div>
         </div>
+        <!-- 장바구니 클릭 시 실행되는 팝업 -->
+         <div class="cart_open_bg">
+            <div class="cart_container">
+                <p><em class="prd_name">몽셸 패딩 하네스 올인원 39,900원</em> 상품이 담겼습니다.</p>
+                <div class="link">
+                    <a href="#">쇼핑 계속하기</a>
+                    <a href="#">장바구니 가기</a>
+                </div>
+            </div>
+         </div>
     </main>
 </body>
 </html>
