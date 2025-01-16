@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 | 자바스크립트</title>
+    <script src="./script/function1.js" defer></script>
+</head>
+<body>
+    <!-- 목표: 접속 사용자에게 인사하는 버튼 만들기 -->
+    <button type="button" id="btn1">클릭하세요!</button>
+    <!-- 목표: 버튼 클릭 시 1+1에 대한 답 입력창 제공하기 -->
+    <button type="button" id="btn2">1+1은?</button>
+    <hr>
+    <!-- 목표: +버튼을 클릭할 때마다 input의 value가 1씩 증가하기 -->
+    <h1>쇼핑몰 상품 수량 증감처리</h1>
+    <div class="box">
+        <button type="button" id="numMinus">-</button>
+        <input type="number" name="num" id="num" value="1">
+        <button type="button" id="numPlus">+</button>
+    </div>
+    <hr>
+    <!-- 목표1. input 2개 무시하고 prompt이용 월급, 보너스를 입력하게 하고 총 수입 계산기 버튼을 클릭하면 prompt에 입력한 월급+보너스 결과 출력하기 -->
+    <h1>직장인 수입 계산기</h1>
+    <div class="calc">
+        <input type="number" name="price1" id="price1" placeholder="이번 달 월급 입력" value="0">
+        <input type="number" name="price2" id="price2" placeholder="이번 달 보너스 입력" value="0">
+        <button type="button" id="total">총 수입 계산하기</button>
+    </div>
+</body>
+</html>

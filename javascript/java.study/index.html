@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 기초</title>
+    <!-- 외부스크립트(아래)는 script태그 사이에 프로그래밍을 작성하지 않는다. -->
+    <script src="./script/start.js"></script>
+    <script>
+        // 내부 자바스크립트 작성 위치(head)
+        // 컴퓨터 처리 순서에 따라 head에 작성한 스크립트언어는 body태그를 읽기 전이기 때문에 태그에 동적결과를 적용할 수 없다.
+    </script>
+</head>
+<body>
+    <h1>자바스크립트 기초</h1>
+    <p>자바스크립트는 절차적+객체지향언어이다.</p>
+    <p>자바스크립트는 먼저 객체, 속성, 이벤트, 메소드부터 이해해야한다.</p>
+    <script>
+        // 내부 자바스크립트 작성 위치(body)
+        // 컴퓨터 처리 순서에 따라 body에 작성한 스크립트언어는 body태그를 읽은 후로 태그에 동적결과를 적용할 수 있다.
+        // </body> 태그 닫히기 바로 직전 script 태그를 작성해야 한다.
+    </script>
+    <!-- 외부 자바스크립트 작성 위치(body), 실제 프로그래밍은 js 파일안에서만 작성하기! -->
+    <script src="./script/start.js"></script>
+</body>
+</html>
