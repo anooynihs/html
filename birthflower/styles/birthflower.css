@@ -1,0 +1,49 @@
+#wrap {
+    width:440px; margin:0 auto;
+    background-color:#FFFCF3;
+    padding:129px 40px 54px 40px;
+}
+#wrap h1 {
+    text-align:center;
+    color:#3D1A00; font-size:1.75rem; font-weight:700;
+    margin-bottom:49px;
+}
+#wrap .contents {width:100%; position:relative; height:100vh;}
+#wrap .contents .input_btn {display:flex;}
+#wrap .contents .input_btn .input_box {
+    background-color:#FFDF60;
+    border-top-left-radius:30px; border-top-right-radius:30px;
+    padding:30px 26.5px 50px 26.5px;
+    width:210px;
+}
+#wrap .contents .input_btn .input_box #month {
+    width:100%; 
+    background-color:transparent; color:#375E11; 
+}
+#wrap .contents .input_btn .input_box #month::placeholder {color:#375E11;}
+#wrap .contents .input_btn #btn {
+    background-color:#375E11; color:#FFFCF3;
+    border-top-left-radius:30px; border-top-right-radius:30px;
+    width:150px;
+    padding:30px 60px 50px 60px;
+}
+#wrap .contents .result {
+    background-color:#FFB1DC; color:#3D1A00;
+    border-top-left-radius:30px; border-top-right-radius:30px;
+    padding:38px 44px; width:100%; height:177px;
+    position:absolute; left:0; top:75px;
+}
+#wrap .contents .result h2 {font-size:1.13rem; margin-bottom:19px;}
+#wrap .contents .result h2 > em {font-weight:600;}
+#wrap .contents .result p {font-size:0.88rem;}
+#wrap .contents .result p > em {font-weight:600;}
+#wrap .contents .image {
+    position:absolute; left:0; top:220px;
+}
+#wrap .contents .image img {width:100%; height:408px; border-radius:30px;}
+#wrap .poster {
+    background-color:#375E11;
+    text-align:center; padding:20px 30px;
+    border-radius:50px;
+}
+#wrap .poster a {color:#FFB1DC; font-size:0.88rem;}
