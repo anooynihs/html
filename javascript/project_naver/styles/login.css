@@ -152,7 +152,7 @@
 }
 #login_wrap main form .login_container .disp_login .login_btn {}
 /* ======================================== 내용3. QR코드*/
-#login_wrap main form .login_container .qr_login {text-align:center;}
+#login_wrap main form .login_container .qr_login {}
 #login_wrap main form .login_container .qr_login .qr {
     display:flex; flex-flow:row nowrap; justify-content: center;
 }
@@ -160,9 +160,12 @@
 #login_wrap main form .login_container .qr_login .qr .time {align-self:end; display:flex; flex-flow:column nowrap;}
 #login_wrap main form .login_container .qr_login .qr .time span {margin-bottom:5px;}
 #login_wrap main form .login_container .qr_login .qr .time em {color:#09aa5c; font-weight:700;}
-#login_wrap main form .login_container .qr_login .notice {line-height:130%; margin:30px 0 5px 0;}
-#login_wrap main form .login_container .qr_login .qr_depth {font-size:0.88rem; color: #3d3d3d;}
-#login_wrap main form .login_container .qr_login .qr_depth span {}
+#login_wrap main form .login_container .qr_login .notice {
+    line-height:130%; margin:30px 0 5px 0; text-align:center;
+}
+#login_wrap main form .login_container .qr_login .qr_depth {
+    font-size:0.88rem; color:#3d3d3d; text-align:center;
+}
 #login_wrap main form .login_container .qr_login .qr_depth em {
     background-color:#000; color:#fff;
     padding:0 7px; border-radius:10px;
