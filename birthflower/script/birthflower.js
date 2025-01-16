@@ -1,6 +1,11 @@
-//const birthFlower = document.querySelector('');
-const month = prompt('태어난 달을 숫자만 입력해 주세요.');
-if(month >= 1 && month <= 12){
+const month = document.querySelector('#month');
+const btn = document.querySelector('#btn');
+console.log(month, btn);
+
+
+
+
+/*if(month >= 1 && month <= 12){
     if(month == 1){alert('1월의 탄생화는 수선화입니다. 수선화는 자기애, 자존심, 외로움을 상징합니다.');}
     else if(month == 2){alert('2월의 탄생화는 제비꽃입니다. 제비꽃은 겸손, 양보를 상징합니다.');}
     else if(month == 3){alert('3월의 탄생화는 수선화입니다. 수선화는 자기애, 자존심, 외로움을 상징합니다.');}
@@ -12,7 +17,5 @@ if(month >= 1 && month <= 12){
     else if(month == 9){alert('9월의 탄생화는 물망초입니다. 물망초는 진실한 사랑을 상징합니다.');}
     else if(month == 10){alert('10월 탄생화는 금잔화입니다. 금잔화는 실망, 비애를 상징합니다.');}
     else if(month == 11){alert('11월의 탄생화는 국화입니다. 국화는 성실, 진실을 상징합니다.');}
-    else(month == 12){alert('12월의 탄생화는 포인세티아입니다. 포인세티아는 축하, 감사를 상징합니다.';)}
-}else{
-    alert('1부터 12 사이의 숫자를 입력해 주세요.');
-}
+    else(month == 12){alert('12월의 탄생화는 포인세티아입니다. 포인세티아는 축하, 감사를 상징합니다.');}
+    }else{alert('1부터 12 사이의 숫자를 입력해 주세요.');}*/
