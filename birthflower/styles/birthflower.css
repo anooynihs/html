@@ -34,13 +34,9 @@
     position:absolute; left:0; top:75px;
 }
 #wrap .contents .result h2 {font-size:1.13rem; margin-bottom:19px;}
-#wrap .contents .result h2 > em {font-weight:600;}
+/* #wrap .contents .result h2 > em {font-weight:600;} */
 #wrap .contents .result p {font-size:0.88rem;}
-#wrap .contents .result p > em {font-weight:600;}
-#wrap .contents .image {
-    position:absolute; left:0; top:220px;
-}
-#wrap .contents .image img {width:100%; height:408px; border-radius:30px;}
+/* #wrap .contents .result p > em {font-weight:600;} */
 #wrap .poster {
     background-color:#375E11;
     text-align:center; padding:20px 30px;

@@ -76,11 +76,13 @@
     border:1px solid #cdcdce; border-top:0;
 }
 #login_wrap main form .login_container .login_btn {
-    background-color:#09aa5c; color:#fff;
+    background-color:#09aa5c;
     border:1px solid #cdcdce; border-radius:7px;
-    padding:15px 0; text-align:center;
+    width:100%; padding:13px 0; text-align:center;
 }
-#login_wrap main form .login_container .login_btn #login {color:#fff; font-size:1.3rem;}
+#login_wrap main form .login_container .login_btn #login {
+    color:#fff; font-family:AppleSDGothicNeoB, sans-serif;
+}
 /* ======================================== 내용1. ID 로그인*/
 #login_wrap main form .login_container .id_login {}
 #login_wrap main form .login_container .id_login ul {}
@@ -111,23 +113,45 @@
 #login_wrap main form .login_container .id_login ul li #user_pw{}
 /* ======================================== 내용1. 로그인 보안 관련 선택자*/
 #login_wrap main form .login_container .id_login .state_gr {
-    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    display:flex; justify-content:space-between;
 }
+/* ======================================== 내용1. 로그인상태유지 */
 #login_wrap main form .login_container .id_login .state_gr .login_state {
-    /* 로그인상태유지 */
+    position:relative; top:-7px;
 }
 #login_wrap main form .login_container .id_login .state_gr .login_state #login_state_y {}
-#login_wrap main form .login_container .id_login .state_gr .login_state label {}
-#login_wrap main form .login_container .id_login .state_gr .ip_state {
-    /* IP보안 */
+#login_wrap main form .login_container .id_login .state_gr .login_state #login_state_y:checked+label {}
+#login_wrap main form .login_container .id_login .state_gr .login_state #login_state_y:checked+label::before {background-position-y:-209px;}
+#login_wrap main form .login_container .id_login .state_gr .login_state label::before {
+    content:''; display:inline-block;
+    background-image:url(../images/m_sp_login.png);
+    background-position:-307px -108px;
+    width:25px; height:25px; margin-right:6px;
 }
-#login_wrap main form .login_container .id_login .state_gr .ip_state a {}
-#login_wrap main form .login_container .id_login .state_gr .ip_state input#ip_on {}
-#login_wrap main form .login_container .id_login .state_gr .ip_state label {}
-#login_wrap main form .login_container .id_login .state_gr .ip_state label .swith {}
-#login_wrap main form .login_container .id_login .state_gr .ip_state label .swith_state {}
+#login_wrap main form .login_container .id_login .state_gr .login_state label {display:flex; align-items:center;}
+/*======================================== 내용1. IP보안 ON OFF */
+#login_wrap main form .login_container .id_login .state_gr .ip_state {display:flex; align-items:center;}
+#login_wrap main form .login_container .id_login .state_gr .ip_state a {margin-right:6px;}
+#login_wrap main form .login_container .id_login .state_gr .ip_state #ip_on {}
+#login_wrap main form .login_container .id_login .state_gr .ip_state #ip_on:checked+label {background-color:#09aa5c;}
+#login_wrap main form .login_container .id_login .state_gr .ip_state #ip_on:checked+label .switch {left:2px}
+#login_wrap main form .login_container .id_login .state_gr .ip_state #ip_on:checked+label .switch_state {left:auto; right:5px;}
+#login_wrap main form .login_container .id_login .state_gr .ip_state label {
+    background-color:#cdcdce; 
+    display:inline-block; width:45px; height:20px;
+    border-radius:12px; position:relative;
+}
+#login_wrap main form .login_container .id_login .state_gr .ip_state label .switch {
+    background-color:#fff; width:16px; height:16px; border-radius:50%;
+    display:block; position:absolute; top:2px; right:2px;
+}
+#login_wrap main form .login_container .id_login .state_gr .ip_state label .switch_state {
+    position:absolute; top:5.3px; left:5px;
+    color:#fff; font-size:0.7rem;
+    font-family:AppleSDGothicNeoB, sans-serif;
+}
 /* ======================================== 내용1. 로그인 버튼*/
-#login_wrap main form .login_container .id_login .login_btn {}
+#login_wrap main form .login_container .id_login .login_btn {margin-top:40px;}
 #login_wrap main form .login_container .id_login .login_btn #login {}
 /* ======================================== 내용2. 일회용 번호*/
 #login_wrap main form .login_container .disp_login {}
@@ -143,7 +167,7 @@
     position:absolute; left:44px; top:-1px;
     background-position:-109px -218px;
 }
-#login_wrap main form .login_container .disp_login .disp_depth a{}
+#login_wrap main form .login_container .disp_login .disp_depth a {}
 #login_wrap main form .login_container .disp_login .disp_depth a img{width:12px; height:12px;}
 #login_wrap main form .login_container .disp_login input#disap_num {
     background-color:#fff; color:#cdcdce;

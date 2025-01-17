@@ -1,8 +1,18 @@
+// 'month' 태어난 월 '숫자'로 입력 후
+// 'btn' 확인버튼을 누르면
+// 'resultFlower' 태어난 월에 따른 꽃이 출력된다 
+// 'resultSymbol' 태어난 월에 따른 상징이 출력된다
 const month = document.querySelector('#month');
 const btn = document.querySelector('#btn');
-console.log(month, btn);
+const resultFlower = document.querySelector('.result h2');
+const resultSymbol = document.querySelector('.result p');
+console.log(month, btn, resultFlower, resultSymbol);
 
-
+btn.addEventListener('click', ()=>{
+    if(month >= 1 && month <= 12){
+        if(month == 1) resultFlower.textContent = '1월의 탄생화는 수선화입니다.';
+        else{resultSymbol.textContent = '1~12 사이의 숫자를 입력해 주세요.'}
+}})
 
 
 /*if(month >= 1 && month <= 12){
