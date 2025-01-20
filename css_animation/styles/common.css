@@ -1,0 +1,11 @@
+/* 통합CSS */
+/* 주로 일반 웹사이트의 header, footer 관련 CSS */
+/* main 관련 CSS는 개별 관리 */
+body {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+hr {
+    margin:30px 0; opacity:0.2;
+    border-color:#ccc;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 2 | 자바스크립트</title>
+    <script src="./script/for2.js" defer></script>
+    <style>
+        main {
+            border:1px solid #eee;
+            border-radius:10px; padding:20px;
+            max-width:1400px; margin:0 auto;
+        }
+        main .tab_title {display:flex;}
+        main .tab_title a {
+            width:calc(100% / 4); text-align:center;
+            text-decoration:none; color:#000;
+            line-height:40px; background-color:#f5f5f5;
+        }
+        main .tab_title a em {}
+        main .tab_title .active {
+            background-color:#222; color:#fff;
+        }
+        main .tab_contents {}
+        main .tab_contents > div {
+            height:400px; background-color:#f5f5f5;
+            padding:50px; border-bottom:1px solid #eee;
+        }
+        main .tab_contents > .info {}
+        main .tab_contents > .review {}
+        main .tab_contents > .qa {}
+        main .tab_contents > .return {}
+        </style>
+</head>
+<body>
+    <ul class="list1">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+    </ul>
+    <div class="contents"> <!--forEach 접근할 두 번째 요소-->
+        <p>내용1</p> <!--forEach 기존 인덱스와 동일하게 접근하기 위한 요소 4개 준비(요소 종류(li, p) 2개 이상일 때 인덱스 개수 일치 필수!)-->
+        <p>내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+    <main>
+        <div class="tab_title">
+            <a href="#" class="active">상세정보</a>
+            <a href="#" >리뷰 <em>10</em></a>
+            <a href="#" >Q&A <em>0</em></a>
+            <a href="#" >반품/교환정보</a>
+        </div>
+        <div class="tab_contents">
+            <div class="info">상품정보</div>
+            <div class="review">리뷰내용</div>
+            <div class="qa">질문답변</div>
+            <div class="return">반품 관련정보</div>
+        </div>
+    </main>
+    <div class="dan99"><!--구구단 JS 출력 위치--></div>
+    <div class="test"><!--새로운 태그 출력 위치--></div>
+</body>
+</html>
