@@ -32,9 +32,7 @@
         
         main #deco {position:relative; width:500px;height:350px; /* border:1px solid red; */}
         main #deco .obj {position:absolute;}
-        /* 
-        1(주황선) 2(책) 3(문어) 4(벌) 5(꽃병) 6(별1) 7(별2)
-        */
+        /* 1(주황선) 2(책) 3(문어) 4(벌) 5(꽃병) 6(별1) 7(별2) */
         main #deco .obj1 {z-index:9; right:0;}
         main #deco .obj2 {z-index:10; top:-100px; left:-50px;}
         main #deco .obj3 {z-index:9; right:190px; top:0;}
@@ -43,8 +41,41 @@
         main #deco .obj6 {z-index:12; left:-50px; bottom:100px;}
         main #deco .obj7 {z-index:12; right:50px; top:-30px;}
         
+        /* 애니메이션 공통 적용 */
+        /* 주황선, 꽃병 */
+        main #deco .obj1,
+        main #deco .obj5 {animation:rotate 1s infinite alternate;}
+        /* 책 */
+        main #deco .obj2 {animation:translateX 1s ease both;}
+        /* 문어 */
+        main #deco .obj3 {animation:tranlateY 1s ease both; animation-delay:1s;}
+        /* 별 */
+        main #deco .obj6,
+        main #deco .obj7 {animation:scale 0.5s linear infinite alternate;}
+        /* 벌 */
+        main #deco .obj4 {animation:bee 0.5s ease both;}
+
         /* 애니메이션 */
-        
+        @keyframes rotate { /* 주황선, 꽃병 */
+            0% {transform:rotate(0)}
+            100% {transform:rotate(20deg)}
+        }
+        @keyframes tranlateY { /* 문어 */
+            0% {transform:translateY(0)}
+            100% {transform:translateY(-130px)}
+        }
+        @keyframes translateX { /* 책 */
+            0% {transform:translateX(100px)}
+            100% {transform:translateX(0)}
+        }
+        @keyframes scale { /* 별 */
+            0% {transform:scale(1)}
+            100% {transform:scale(1.2)}
+        }
+        @keyframes bee {
+            0%{transform:translate(0, 0) rotate(0)}
+            100%{transform:translate(-350px, 100px) rotate(60deg)}
+        }
 
     </style>
 </head>

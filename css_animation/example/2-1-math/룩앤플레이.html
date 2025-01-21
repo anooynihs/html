@@ -25,30 +25,38 @@
 
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
+            animation:rotate 4s linear infinite alternate;
         }
         main #visual #deco .obj2 {
             left:0; top:150px;
+            animation:scale 1s linear infinite alternate;
         }
         main #visual #deco .obj3 {
             left:100px; top:250px;
+            animation:rotate 1s linear infinite alternate;
         }
         main #visual #deco .obj4 {
             left:150px; top:350px;
+            animation:scale 1s linear infinite alternate;
         }
         main #visual #deco .obj5 {
             right:0; top:150px;
+            animation:scale 1s linear infinite alternate;
         }
         main #visual #deco .obj6 {
             right:200px; top:250px;
+            animation:rotate 1s linear infinite alternate;
         }
         main #visual #deco .obj7 {
             right:200px; top:240px;
         }
         main #visual #deco .obj8 {
             left:270px; top:440px;
+            animation:scale 1s linear infinite alternate;
         }
         main #visual #deco .obj9 {
             right:0; top:440px;
+            animation:rotate 1s linear infinite alternate;
         }
 
         main #book_center {
@@ -69,7 +77,14 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        @keyframes rotate {
+            0% {transform:rotate(0)}
+            100% {transform:rotate(20deg)}
+        }
+        @keyframes scale {
+            0% {transform:scale(1)}
+            100% {transform:scale(1.2)}
+        }
     </style>
 </head>
 <body>

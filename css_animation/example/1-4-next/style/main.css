@@ -41,19 +41,29 @@ header nav > ul > li > .sub li a {}
 header nav > ul > li > .sub li a:hover {color:#ddd;}
 /*section*/
 section {}
-section .sec1 {background-image:url(../images/main_bg_01.jpg)}
-section .sec2 {background-image:url(../images/main_bg_02_3.jpg)}
-section .sec3 {background-image:url(../images/main_bg_03.jpg)}
 section > div {
     background-size:cover; background-position:center;
     text-align:center; height:100vh; width:100%; 
     display:flex; flex-flow:column wrap; justify-content:center; color:#fff;
+    background-attachment: fixed;
 }
-section > div:nth-child(2) {
+section .sec1 {background-image:url(../images/main_bg_01.jpg)}
+section .sec3 {background-image:url(../images/main_bg_03.jpg)}
+section .sec2 {
+    /* background-image는 하나의 요소에 여러 장 삽입 가능! 순서대로 삽입 */
+    background-image:
+    url(../images/person.png),
+    url(../images/palnet.png),
+    url(../images/bg.jpg);
+    background-size:auto, auto, cover; /* 개별값 줄 경우 배경삽입 순서대로 작성 */
+    background-repeat:no-repeat; /* 공통값 줄 경우 1개만 삽입하면 된다 */
+    background-attachment:scroll, scroll, fixed;
+}
+/* section > div:nth-child(2) {
     background-repeat:no-repeat;
     background-size:cover, cover;
     background-position:40% center, center;
-}
+} */
 section > div h1 {
     font-family: 'Pattaya', sans-serif;
     font-size:3.0em; line-height:1.5;

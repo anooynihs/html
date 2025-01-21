@@ -1,0 +1,27 @@
+/* ==================================== animation */
+.ball {
+    width:100px; height:100px;
+    border-radius:50%;
+    background-color:springgreen;
+    /* animation:불러올 프레임명 */
+    animation:move1 2s ease 3 alternate both;
+}
+.basketball {
+    width:100px;
+    animation:move1 3s ease 3 alternate both;
+}
+.basketball img {
+    width:100%;
+    animation:rotate360 1s linear infinite;
+}
+/* ==================================== @keyframes */
+/* 애니메이션 프레임이 많을 경우 keyframes.css로 별도 파일 관리하기도 함 */
+/* @keyframes 애니메이션이름 {분기별 애니메이션 제작} */
+@keyframes move1 {
+    0% {transform:translateX(0)}
+    100% {transform:translateX(300px)}
+}
+@keyframes rotate360 {
+    0% {transform:rotate(0)}
+    100% {transform:rotate(180deg)}
+}

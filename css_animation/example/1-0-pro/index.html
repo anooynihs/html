@@ -12,7 +12,9 @@
         header {text-align:center; padding:25px 0;}
         nav {
             width:1000px; margin:0 auto; 
-            display:flex; justify-content:space-around; 
+            display:flex; justify-content:space-around;
+            /* nav요소가 스크롤 상단에 닿았을 때 고정되게 만드는 CSS */
+            position:sticky; top:0;
         }
         nav a {
             padding:30px 20px; color:#fff;
