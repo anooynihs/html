@@ -22,8 +22,17 @@
             display:flex; justify-content:space-between;
             flex-flow:column wrap;
         }
-        main section a .img img {width:100%; border-radius:3px;}
-        main section a:hover .img img {}
+        main section a .img {
+            overflow:hidden; height:250px; border-radius:3px;
+        }
+        main section a .img img {
+            width:100%; border-radius:3px;
+            transition:transform 0.3s;
+        }
+        /* 마우스호버 효과 적용 */
+        main section a:hover .img img {
+            transform:scale(1.05); filter:grayscale(100);
+        }
         /* 상품 내용 디자인 상세 */
         main a > span {font-size:0.91rem; letter-spacing:-0.5px; line-height:1.5;}
         main a .name {padding:0 0 5px; margin:0 0 5px; border-bottom:1px solid #ccc;}
