@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태양의 도시 솔라시도</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body, html {
+            font-family:'Noto Serif KR', serif;
+            width:100%; height:100%; overflow:hidden;
+        }
+        /* design */
+        .h_bg {background:#fff; position:fixed; left:0; top:0; width:100%; z-index:999;}
+        .h_bg header {width:1200px; margin:0 auto;}
+        .h_bg header img {width:100%;}
+        .slide_wrap {}
+        .slide_wrap .slide_c {position:relative;}
+        .slide_wrap .slide_c .slide {
+            position:absolute; left:0; top:0;
+            width:100%; height:100vh;
+            background-position:center;
+            opacity:0; transition:opacity 0.5s;
+        }
+        .slide_wrap .slide_c .slide1 {background-image:url(images/bg1.jpg); opacity:1}
+        .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg);}
+        .slide_wrap .slide_c .slide3 {background-image:url(images/bg3.jpg);}
+        .slide_wrap .slide_c .slide p {
+            text-align:center; color:#fff;
+            font-size:3rem; letter-spacing:-1px;
+            position:relative; top:400px;
+        }
+        /* class */
+
+        /* animation */
+
+    </style>
+    <script>
+        window.onload=function(){
+
+            
+
+        }//e:onload
+    </script>
+</head>
+<body>
+    <div class="h_bg">
+        <header>
+            <img src="images/header.jpg" alt="">
+        </header>
+    </div>
+    <div class="slide_wrap">
+        <div class="slide_c">
+            <div class="slide slide1"><p>SOLASEADO</p></div>
+            <div class="slide slide2"><p>햇빛과 함께 행복을 꿈꾸는,</p></div>
+            <div class="slide slide3"><p>솔라시도의 도전이 시작됩니다.</p></div>
+        </div>
+    </div>
+</body>
+</html>

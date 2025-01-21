@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이키</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        header, #v_c {width:1400px; margin:0 auto;}
+        header img {width:100%;}
+        #visual {
+            background:url(images/nike_bg.jpg) no-repeat center; 
+            width: 1400px; height: 750px; margin:0 auto;
+            background-size: auto 100%;
+            position:relative; overflow:hidden;
+        }
+        #v_img {
+            position: absolute;
+            right: 0px;
+            bottom: 150px;
+            
+            transform: rotate(15deg);
+        }
+        #v_btn {
+            position:absolute; left:0; bottom:50px; width:100%;
+            display:flex; justify-content: center;
+        }
+        #v_btn a {
+            width:100px; margin:0 10px; 
+            display:flex; align-items:flex-end;
+        }
+        #v_btn a img {width:100%;}
+    </style>
+    <script>
+        window.onload=function(){
+
+            
+
+        }//e:onload
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header><img src="images/nike_header.jpg" alt=""></header>
+    </div>
+    <div id="visual">
+        <div id="v_img">
+            <img src="images/nike1.png" alt="" id="nike_img">
+        </div>
+        <div id="v_btn">
+            <a href="#"><img src="images/nike1.png" alt=""></a>
+            <a href="#"><img src="images/nike2.png" alt=""></a>
+            <a href="#"><img src="images/nike3.png" alt=""></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body, html {background:#da1e27;}
+        header, main {width:1400px; margin:0 auto;}
+        header {padding:30px 0;}
+        header img {width:100%;}
+        main {height:800px; position:relative; display:flex; justify-content:space-between; padding:50px 0 0;}
+        main .txt #order {
+            background:#fff; border-radius:50px; text-align:center; padding:20px 0;
+            display:inline-block; margin-top:50px; font-weight:600;
+            width:200px; color:#000;
+        }
+        #sns {position:absolute; left:0; bottom:100px;}
+        #sns a {
+            display:inline-block; width:40px; margin:0 10px;
+            position:relative; top:0;
+        }
+        #sns a img {width:100%;}
+        #dynamic #btn {display:flex; position:absolute; right:0; bottom:100px;}
+        #dynamic #btn a {margin:0 5px;}
+        #dynamic #btn a#prev {}
+        #dynamic #btn a#next {}
+    </style>
+    <script>
+        window.onload=function(){
+
+            
+
+        }//e:onload
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header><img src="images/kfc_header.png" alt=""></header>
+        <main>
+            <div class="txt">
+                <p><img src="images/sub_title.png" alt=""></p>
+                <a href="#" id="order">Order Now</a>
+            </div>
+            <div id="sns">
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+                <a href="#"><img src="images/twitter.png" alt=""></a>
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+            </div>
+            <div id="dynamic">
+                <div id="img">
+                    <img src="images/menu1.png" alt="" id="big">
+                </div>
+                <div id="btn">
+                    <a href="#" id="prev"><img src="images/prev_next.png" alt=""></a>
+                    <a href="#" id="next"><img src="images/prev_next.png" alt=""></a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

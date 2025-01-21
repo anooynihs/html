@@ -1,0 +1,63 @@
+body, html {background:rgb(9,13,43)}
+/* design */
+header {
+    height:80px; width:1400px; margin:0 auto;
+    display:flex; justify-content:space-between;
+    align-items:center; z-index:999;
+    position:fixed; left:50%; top:0; margin-left:-700px;
+}
+header nav a {margin:0 7px;}
+header .right a {
+    position:relative; padding:5px 5px 5px 27px;
+    border:1px dashed rgba(255,255,255,0.6); 
+    font-size:0.875rem; border-radius:3px;
+}
+header .right a::before {
+    content:''; display:block;
+    position:absolute; left:2px; top:3px;
+    width:20px; height:20px;
+    background-image:url(../images/ic_sp_store.png);
+}
+header .right a:first-child::before {background-position:0 0;}
+header .right a:last-child::before {background-position:-20px 0;}
+.mobile_nav_icon {display:none;}
+/* main */
+main {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    top: 80px;
+    text-align: center;
+}
+main > * {max-width:1400px; margin:0 auto;}
+/* 중첩순서 처리 배경(10) 그라디언트(20) 나머지(30) */
+main .bg_wrap {position:absolute; z-index:10;}
+main .txt, main .car_list, main .car, main .scroll {
+    width:1400px; margin:0 auto; position:relative; z-index:30;
+}
+/* 메인배경 */
+main .bg_wrap .bg {width:1400px; margin:0 auto;}
+main .bg_wrap .bg1 {
+    height:100px; 
+    background:url(../images/bg_cloud.png) repeat-x;
+}
+main .bg_wrap .bg2 {
+    height:200px; 
+    background:url(../images/bg_city1.png) repeat-x;
+}
+main .bg_wrap .bg3 {
+    height:100px; position:relative; top:-96px;
+    background:url(../images/bg_city2.png) repeat-x;
+}
+/* 메인제목 */
+main .txt {}
+/* 메인 자동차 위 리스트3 */
+/* 메인 자동차 */
+main .car {margin-top:150px; text-align:center; width:600px;}
+main .car #car {width:100%;}
+main .car #left_tire, main .car #right_tire {
+    position:absolute; bottom:25px; width:67px;
+}
+main .car #left_tire {left:102px;}
+main .car #right_tire {right:91px;}
+

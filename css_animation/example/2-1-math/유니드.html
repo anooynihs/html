@@ -1,0 +1,174 @@
+<!-- 1025-unid-index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)유니드</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* #0f6e38 , w1200px*/
+        /* header */
+        #h_bg {
+            background:rgba(255,255,255,0.8);
+            position:fixed; left:0; top:0; z-index:999; width:100%;
+            animation:top_ani 0.5s ease both;
+        }
+        #h_bg header {
+            width:1200px; height:100px; margin:0 auto;
+            display:flex; justify-content:space-between; align-items:center;
+        }
+        /* header-nav */
+        #h_bg header nav a {letter-spacing:-0.5px;}
+        #h_bg header nav .main {display:flex; justify-content:space-between; align-items:center;}
+        #h_bg header nav .main > li > a {
+            display: block; padding: 0 60px 0 20px; height: 100px;
+            font-weight:bold; line-height: 100px;
+        }
+        /* header-nav-.dep1 */
+        #h_bg header nav .main > li > .dep1 {
+            position:absolute; width:100%; height:0; transition:height 0.5s;
+            background:#fff; padding-left:20px; z-index:800; overflow:hidden;
+        }
+        #h_bg header nav .main > li > .dep1 > li {}
+        #h_bg header nav .main > li > .dep1 > li > a {display:block; padding:20px 0;}
+        /* header-nav-.dep2 */
+        #h_bg header nav .main > li > .dep1 > li > .dep2 {}
+        #h_bg header nav .main > li > .dep1 > li > .dep2 li {}
+        #h_bg header nav .main > li > .dep1 > li > .dep2 li a {
+            font-size:0.875rem; border-bottom:1px dashed #ddd; color:#888;
+            padding:15px 0 15px 20px; display:block;
+        }
+        #h_bg header nav .main > li > .dep1 a:hover {color:#0f6e38 !important;}
+        /* header-nav-nav_bg */
+        #h_bg header nav .nav_bg {
+            background:#fff; position:absolute; z-index:700; left:0;
+            width:100%; height:0; transition:height 0.5s;
+            top:99px;
+            border-top:1px solid #ddd;
+        }
+        /* header-all-nav */
+        #h_bg header .all_nav {
+            width:35px; height:23px;
+            display:flex; flex-flow:column nowrap; justify-content:space-between;
+        }
+        #h_bg header .all_nav span {background:#0f6e38; width:100%; height:5px;}
+        /* main */
+        main {background:url(images/unid/bg.jpg) center top;background-size:cover; height:100vh;}
+        main .center {
+            width:1200px; height:100vh; margin: 0 auto;
+            display:flex; justify-content: space-between; align-items:center;
+        }
+        main .center h1 {color:#fff; display:flex; flex-flow:column nowrap; justify-content: space-between;}
+        main .center h1 span {font-size:3.5rem; letter-spacing:-2.5px; padding:10px 0;}
+        main .center .right {
+            position:relative; right:174px; top:-100px;
+        }
+        main .center .right span {
+            position:absolute; width:174px; height:174px;
+        }
+        main .center .right span:nth-child(1) {}
+        main .center .right span:nth-child(2) {text-align:center; line-height:174px;}
+        /* animation */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="h_bg">
+            <header>
+                <h1><a href="#"><img src="images/unid/logo.png" alt="유니드"></a></h1>
+                <nav>
+                    <ul class="main"><!--global navigation bar == gnb명도 많이 사용-->
+                        <li><a href="#">회사소개</a>
+                            <ul class="dep1"><!--서브메뉴의 깊이에 따라 depth처리 ex)dep1, dep2, dep1-1등-->
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">2030 VISION</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사업부소개</a>
+                            <ul class="dep1">
+                                <li><a href="#">화학사업부(CA)</a>
+                                    <ul class="dep2"><!--두번째 서브메뉴 dep2-->
+                                        <li><a href="#">수산화칼륨</a></li>
+                                        <li><a href="#">탄산칼륨</a></li>
+                                        <li><a href="#">염산</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">보드사업부(BT)</a>
+                                    <ul class="dep2">
+                                        <li><a href="#">MDF</a></li>
+                                        <li><a href="#">LPM</a></li>
+                                        <li><a href="#">제재목</a></li>
+                                        <li><a href="#">GOSSPAN</a></li>
+                                        <li><a href="#">ECOPAN</a></li>
+                                        <li><a href="#">올고다 마루</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">투자정보</a>
+                            <ul class="dep1">
+                                <li><a href="#">경영정보</a></li>
+                                <li><a href="#">재무정보</a></li>
+                                <li><a href="#">주가정보</a></li>
+                                <li><a href="#">공시자료</a></li>
+                                <li><a href="#">IR자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">지속가능경영</a>
+                            <ul class="dep1">
+                                <li><a href="#">윤리경영</a></li>
+                                <li><a href="#">안전환경경영</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">채용</a>
+                            <ul class="dep1">
+                                <li><a href="#">채용사이트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="dep1">
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">홍보동영상</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav_bg"><!--서브배경--></div>
+                </nav>
+                <a href="#" class="all_nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </header>
+        </div><!--e:#h_bg-->
+        <main>
+            <div class="center">
+                <h1>
+                    <span>고객이 필요한 것을</span>
+                    <span>먼저 생각합니다.</span>
+                </h1>
+                <div class="right">
+                    <span><img src="images/unid/play_line_bg_small.png" alt=""></span>
+                    <span><img src="images/unid/play_icon.png" alt=""></span>
+                </div>
+            </div>
+        </main>
+    </div><!--e:#wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

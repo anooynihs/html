@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Pattaya&display=swap');
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,p,div,
+header,nav,aside,footer,main,article,section,
+ul,ol,li,dl,dt,dd,span,table,tr,td,th,
+strong,em,q,blockquote,sub,sup,del,s,code,address,
+form,input,fieldset,legend,label,select,option,button,
+textarea,summary,hr {
+    margin:0; padding:0; line-height:1.0;
+    font-family:'Noto Sans KR',sans-serif;
+    letter-spacing:1.0; font-size:1.0rem;
+    font-style:normal; font-weight:normal;
+    border:0; color:#000;
+}
+ul,ol,li {list-style:none;}
+table,tr,td,th {border-collapse:collapse;}
+a {text-decoration:none; color:#000;}
+fieldset {border:0;}
+legend {display:none;}
+button {cursor:pointer;}
+.skip {display:none;}

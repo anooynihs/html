@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새로운 동아출판 초등교과서</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            background:url(images4/main-bg5.png) no-repeat center top;
+            background-size:1920px auto;
+        }
+        header {
+            width:1200px; margin:0 auto; padding:30px 0;
+            display:flex; justify-content:space-between; align-items:center;
+        }
+        header nav a {
+            letter-spacing:-1.3px; color:#fff; font-size:1.2rem;
+            text-decoration:none; margin-left:30px; font-weight:800;
+        }
+        /* 메인 */
+        main {margin-top:150px; }
+        main #visual {
+            width:1200px; margin:0 auto; position:relative;
+            display:flex; justify-content:space-between;
+        }
+        main #sub_title {
+            display:flex; flex-flow:column wrap;
+        }
+        main #sub_title span:nth-child(2) {margin:20px 0 50px;}
+        
+        main #deco {position:relative; width:500px;height:350px; /* border:1px solid red; */}
+        main #deco .obj {position:absolute;}
+        /* 
+        1(주황선) 2(책) 3(문어) 4(벌) 5(꽃병) 6(별1) 7(별2)
+        */
+        main #deco .obj1 {z-index:9; right:0;}
+        main #deco .obj2 {z-index:10; top:-100px; left:-50px;}
+        main #deco .obj3 {z-index:9; right:190px; top:0;}
+        main #deco .obj4 {z-index:11; right:0; bottom:0;}
+        main #deco .obj5 {z-index:11; right:150px; bottom:0;}
+        main #deco .obj6 {z-index:12; left:-50px; bottom:100px;}
+        main #deco .obj7 {z-index:12; right:50px; top:-30px;}
+        
+        /* 애니메이션 */
+        
+
+    </style>
+</head>
+<body>
+        <header>
+            <h1><a href="#"><img src="images4/logo-top.png" alt="동아출판 초등교과서"></a></h1>
+            <nav>
+                <a href="#">초등 수학</a>
+                <a href="#">초등 사회</a>
+                <a href="#">초등 과학</a>
+            </nav>
+        </header>
+        <main>
+            <div id="visual">
+                <div id="sub_title">
+                    <span><img src="images4/main-top-banner5-txt1.png" alt="쉽고 재미있고"></span>
+                    <span><img src="images4/main-top-banner5-txt2.png" alt="초등 과학"></span>
+                    <!--  <div class="loading">
+                        <span>01</span>
+                        <span class="bar"></span>
+                        <span class="btn play"><img src="images4/ico-play.png" alt=""></span>
+                        <span class="btn left"><img src="images4/ico-left3.png" alt=""></span>
+                        <span class="btn right"><img src="images4/ico-right3.png" alt=""></span>
+                    </div> -->
+                </div>
+                <div id="deco">
+                    <span class="obj obj1"><img src="images4/main-top-banner5-obj1.png" alt=""></span>
+                    <span class="obj obj2"><img src="images4/main-top-banner5-obj2.png" alt=""></span>
+                    <span class="obj obj3"><img src="images4/main-top-banner5-obj3.png" alt=""></span>
+                    <span class="obj obj4"><img src="images4/main-top-banner5-obj4.png" alt=""></span>
+                    <span class="obj obj5"><img src="images4/main-top-banner5-obj5.png" alt=""></span>
+                    <span class="obj obj6"><img src="images4/main-top-banner4-obj6.png" alt=""></span>
+                    <span class="obj obj7"><img src="images4/main-top-banner4-obj7.png" alt=""></span>
+                </div>
+            </div>
+        </main>
+</body>
+</html>

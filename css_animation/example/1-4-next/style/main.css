@@ -1,0 +1,67 @@
+/*popup*/
+.popup {z-index:999;position:fixed; right:0; top:0; height:100vh; width:50px; text-align:center;}
+.popup .page_num {
+    position:absolute; width:70%; top:30%;
+    display:flex; flex-flow:column wrap;
+}
+.popup .page_num span {color:#fff; padding:5px 0;}
+.popup .page_num .current_num {}
+.popup .page_num .all_num {border-top:1px solid #aaa;}
+.popup .page_pst {position:absolute; width:100%; bottom:20px; display: flex; flex-flow: column wrap;}
+.popup .page_pst a {}
+.popup .page_pst a.page_top {}
+.popup .page_pst a.page_btm {margin-top:-2px;}
+/*header*/
+header {
+    position:fixed; left:0; top:0; width:100%; height:80px;
+    background:rgba(0,0,0,0.2);
+}
+header .h_container {max-width:1200px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center; height: 100%;
+    } 
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav a {color:#fff; font-size:0.875rem; letter-spacing:-0.5px;}
+header nav > ul {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header nav > ul > li {padding:0 10px; position:relative;}
+header nav > ul > li > a {}
+header nav > ul > li > .sub {
+    position:absolute; 
+}
+header nav > ul > li > .sub li {width:100px; padding: 10px 0 0;}
+header nav > ul > li > .sub li a {}
+header nav > ul > li > .sub li a:hover {color:#ddd;}
+/*section*/
+section {}
+section .sec1 {background-image:url(../images/main_bg_01.jpg)}
+section .sec2 {background-image:url(../images/main_bg_02_3.jpg)}
+section .sec3 {background-image:url(../images/main_bg_03.jpg)}
+section > div {
+    background-size:cover; background-position:center;
+    text-align:center; height:100vh; width:100%; 
+    display:flex; flex-flow:column wrap; justify-content:center; color:#fff;
+}
+section > div:nth-child(2) {
+    background-repeat:no-repeat;
+    background-size:cover, cover;
+    background-position:40% center, center;
+}
+section > div h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size:3.0em; line-height:1.5;
+}
+section > div p {font-size:0.875em; letter-spacing:-0.2px; line-height:1.7;}
+/*footer*/
+footer {
+    position:fixed; left:0; bottom:0; height:100px;
+    width:100%; color:#fff; font-size:0.875em; letter-spacing:-0.5px; padding:15px 0;
+}
+footer p {max-width:1200px; line-height:1.5; margin:0 auto;}

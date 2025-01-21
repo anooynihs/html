@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새로운 동아출판 초등교과서</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        header {
+            z-index:999; 
+            position:fixed; left:50%; top:0; width:1200px; margin-left:-600px;
+            display:flex; justify-content:space-between; align-items:center;
+            padding:30px 0;
+        }
+        header nav a {
+            letter-spacing:-1.3px; color:#fff; font-size:1.2rem;
+            text-decoration:none; margin-left:30px; font-weight:800;
+        }
+        /* 메인 */
+        main {height:150vh; }
+        main #visual {background:#26bad7; min-width:1200px; margin:0 auto; height:550px; position:relative;}
+        main #visual #deco {position:relative; width:1200px; margin:0 auto;}
+        main #visual #deco .obj {position:absolute;}
+
+        main #visual #deco .obj1 {
+            top:170px; left:50%; margin-left:-342px;
+        }
+        main #visual #deco .obj2 {
+            left:0; top:150px;
+        }
+        main #visual #deco .obj3 {
+            left:100px; top:250px;
+        }
+        main #visual #deco .obj4 {
+            left:150px; top:350px;
+        }
+        main #visual #deco .obj5 {
+            right:0; top:150px;
+        }
+        main #visual #deco .obj6 {
+            right:200px; top:250px;
+        }
+        main #visual #deco .obj7 {
+            right:200px; top:240px;
+        }
+        main #visual #deco .obj8 {
+            left:270px; top:440px;
+        }
+        main #visual #deco .obj9 {
+            right:0; top:440px;
+        }
+
+        main #book_center {
+            position:absolute; 
+            left:50%; bottom:-50px; margin-left:-181px;
+            display:flex;
+        }
+        /* 카테고리 */
+        main .category {
+            display:flex; justify-content:space-between;
+            width:1200px; margin:150px auto 0;
+        }
+        main .category a {
+            text-decoration:none; width:170px;
+            border-radius:50px; padding:20px 0; letter-spacing:-0.9px; font-weight:600;
+            text-align:center; background:#f1f1f1; color:#222;
+        }
+        main .category a.active {background:#26bad7; color:#fff;}
+
+        /* 애니메이션 */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="images3/logo-top-sub.png" alt="LOOK & PLAY"></a></h1>
+        <nav>
+            <a href="#">초등 수학</a>
+            <a href="#">초등 사회</a>
+            <a href="#">초등 과학</a>
+        </nav>
+    </header>
+    <main>
+        <div id="visual">
+            <div id="deco">
+                <span class="obj obj1"><img src="images3/sub-top-obj1.png" alt=""></span>
+                <span class="obj obj2"><img src="images3/sub3-top-obj1.png" alt=""></span>
+                <span class="obj obj3"><img src="images3/sub3-top-obj2.png" alt=""></span>
+                <span class="obj obj4"><img src="images3/sub3-top-obj3.png" alt=""></span>
+                <span class="obj obj5"><img src="images3/sub3-top-obj4.png" alt=""></span>
+                <span class="obj obj6"><img src="images3/sub3-top-obj5.png" alt=""></span>
+                <span class="obj obj7"><img src="images3/sub3-top-obj6.png" alt=""></span>
+                <span class="obj obj8"><img src="images3/sub3-top-obj7.png" alt=""></span>
+                <span class="obj obj9"><img src="images3/sub3-top-obj8.png" alt=""></span>
+            </div>
+            <div id="book_center">
+                <!-- <span><img src="images3/society-1-3-2-left.png" alt=""></span> -->
+                <span><img src="images3/society-1-3-2.png" alt=""></span>
+            </div>
+        </div>
+        <div class="category">
+            <a href="#" class="active">집필진 소개</a>
+            <a href="#">교과서 특장점</a>
+            <a href="#">전자 저작물</a>
+            <a href="#">수업자료 소개</a>
+            <a href="#">브로슈어</a>
+            <a href="#">선정 평가표</a>
+        </div>
+    </main>
+</body>
+</html>

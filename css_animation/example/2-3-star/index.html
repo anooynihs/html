@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음료 | 스타벅스 코리아</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* design */
+        #h_bg {background:#f6f5ef;}
+        #h_bg header {width:1100px; margin:0 auto; padding:10px 0;}
+        #h_bg header img {width:100%;}
+        /* 메인 */
+        main {width:1100px; margin:50px auto 0;}
+        main .title img {width:100%;}
+        main .sub_title {padding:0 0 20px; font-size:0.91rem; font-weight:600; letter-spacing:-0.5px;}
+        /* 콜드브루~프라푸치노 카테고리메뉴  */
+        main .category_menu {
+            display:flex; justify-content:flex-start;
+            padding:20px 0;
+        }
+        main .category_menu a {position:relative; font-size:0.91rem; letter-spacing:-0.5px;}
+        main .category_menu a:nth-child(even) {margin:0 20px;}
+        /* 커피메뉴리스트 */
+        #menu_title {
+            margin-bottom:20px; padding:10px;
+            background: #f6f5ef; font-size:0.875rem; letter-spacing:-1px;
+            display:flex; align-items:center;
+        }
+        #menu_title span {font-weight:800;}
+        #menu_title img {padding:0 10px;}
+        /* 메뉴내용 */
+        .menu_contents {position:relative;}
+        .menu_contents .menu {
+            display:flex; justify-content:space-between;
+            position:absolute; left:0; top:0;
+        }
+        .menu_contents .menu a {
+            margin-right:10px; overflow:hidden; position:relative;
+            border-radius:10px; 
+        }
+        .menu_contents .menu a:last-child {margin-right:0}
+        .menu_contents .menu a img {width:100%;}
+        /* 커피정보 */
+        .menu_contents .menu .info {
+            background:rgba(0,102,51,0.8); /*#006633 == rgb(0,102,051)*/
+            color:#fff;
+            width:100%; height:100%; display:block;
+            position:absolute; left:0; top:0;
+            text-align:center;
+        }
+        .menu_contents .menu .info span:first-child {padding-top:40%;}
+        .menu_contents .menu .info span {
+            display:block; font-weight: 600;
+            line-height:1.5;
+        }
+        /* active class + animation */
+        .active {font-weight:800;}
+        .active::after {
+            content:''; display:block;
+            width:100%; height:2px; background:#006633;
+            position:absolute; bottom:-10px; left:0;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+
+            
+
+        }//e:onload
+    </script>
+</head>
+<body>
+    <div id="h_bg">
+        <header><img src="images/header.jpg" alt=""></header>
+    </div>
+    <main>
+        <div class="title"><img src="images/category.jpg" alt=""></div>
+        <div class="sub_title">분류 보기</div>
+        <a href="#" class="category"><img src="images/category_title.jpg" alt=""></a>
+        <div class="category_menu">
+            <a href="#" class="active">콜드브루커피</a>
+            <a href="#">에스프레소</a>
+            <a href="#">프라푸치노</a>
+        </div>
+        <div id="menu_title"><!-- javascript --></div>
+        <div class="menu_contents">
+            <div class="menu menu1">
+                <a href="#">
+                    <img src="images/menu1-1.jpg" alt="">
+                    <span class="info">
+                        <span>콜드브루커피</span>
+                        <span>50kcal</span>
+                    </span>
+                </a>
+                <a href="#"><img src="images/menu1-2.jpg" alt=""><span class="info"><span>콜드브루커피</span><span>80kcal</span></span></a>
+                <a href="#"><img src="images/menu1-3.jpg" alt=""><span class="info"><span>콜드브루커피</span><span>150kcal</span></span></a>
+                <a href="#"><img src="images/menu1-4.jpg" alt=""><span class="info"><span>콜드브루커피</span><span>40kcal</span></span></a>
+            </div>
+            <div class="menu menu2">
+                <a href="#">
+                    <img src="images/menu2-1.jpg" alt="">
+                    <span class="info">
+                        <span>에스프레소</span>
+                        <span>50kcal</span>
+                    </span>
+                </a>
+                <a href="#"><img src="images/menu2-2.jpg" alt=""><span class="info"><span>에스프레소</span><span>80kcal</span></span></a>
+                <a href="#"><img src="images/menu2-3.jpg" alt=""><span class="info"><span>에스프레소</span><span>150kcal</span></span></a>
+                <a href="#"><img src="images/menu2-4.jpg" alt=""><span class="info"><span>에스프레소</span><span>40kcal</span></span></a>
+            </div>
+            <div class="menu menu3">
+                <a href="#">
+                    <img src="images/menu3-1.jpg" alt="">
+                    <span class="info">
+                        <span>프라푸치노</span>
+                        <span>50kcal</span>
+                    </span>
+                </a>
+                <a href="#"><img src="images/menu3-2.jpg" alt=""><span class="info"><span>프라푸치노</span><span>80kcal</span></span></a>
+                <a href="#"><img src="images/menu3-3.jpg" alt=""><span class="info"><span>프라푸치노</span><span>150kcal</span></span></a>
+                <a href="#"><img src="images/menu3-4.jpg" alt=""><span class="info"><span>프라푸치노</span><span>40kcal</span></span></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
