@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수 | 자바스크립트</title>
+    <script src="./script/timer1.js" defer></script>
+    <style>
+        .box {
+            width:50px; height:50px; background-color:springgreen;
+            border-radius:50%;
+            animation:move 1s ease alternate infinite;
+        }
+        .container {}
+        .container .txt {font-size:3rem; font-weight:700;}
+        .container .cursor {
+            display:inline-block;
+            width:7px; height:40px;
+            background-color:tomato; margin-left:2px;
+            animation:caret 0.5s infinite;
+        }
+        .container2 {}
+        .container2 .txt {font-size:3rem; font-weight:700; color: blue;}
+        .container2 .cursor {
+            display:inline-block;
+            width:7px; height:40px;
+            background-color:tomato; margin-left:2px;
+            animation:caret 0.5s infinite;
+        }
+        @keyframes caret {
+            from, to {background: transparent;}
+            50% {background: tomato;}
+        }
+        @keyframes move {
+            0% {transform:translateX(0)}
+            100% {transform:translateX(300px)}
+        }
+    </style>
+</head>
+<body>
+    <div class="timer"></div>
+    <hr>
+    <div class="box"></div>
+    <div class="box_timer">진행시간 : 0초</div>
+    <button type="button" id="stop">STOP!</button>
+    <button type="button" id="play">PLAY!</button>
+    <hr>
+    <div class="container">
+        <span class="txt"></span>
+        <span class="cursor"></span>
+    </div>
+    <hr>
+    <div class="container2">
+        <span class="txt"></span>
+        <span class="cursor"></span>
+    </div>
+</body>
+</html>
