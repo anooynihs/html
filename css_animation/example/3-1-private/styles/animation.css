@@ -1,0 +1,58 @@
+/* 헤더 오른쪽 글자 보이기 */
+header {}
+header .right {}
+header .right a {color:#fff;}
+/* 배경 양쪽 그라데이션 효과 */
+main {
+    width:1400px; margin:0 auto;
+    position:relative; z-index:30;
+}
+main::after,
+main::before {
+    content:''; display:block;
+    position:absolute; top:0; width:50%; height:100%;
+    z-index:20;
+}
+main::after {
+    right:0; background:linear-gradient(90deg, transparent 0%, rgba(9, 13, 43, 1) 60%);
+}
+main::before {
+    left:0; background:linear-gradient(-90deg, transparent 0%, rgba(9, 13, 43, 1) 60%);
+}
+/* 배경(3개) 움직이는 애니메이션 */
+main .bg_wrap {}
+main .bg_wrap .bg {width:1400px; margin:0 auto; background-repeat:repeat; background-size:cover;}
+main .bg_wrap .bg1 {
+    background-image:url(../images/bg_cloud.png);
+    animation:bg 30s linear infinite;
+}
+main .bg_wrap .bg2 {
+    background-image:url(../images/bg_city1.png);
+    animation:bg 20s linear infinite;
+}
+main .bg_wrap .bg3 {
+    background-image:url(../images/bg_city2.png);
+    animation:bg 10s linear infinite;
+}
+/* 자동차 바퀴 굴러가는 애니메이션 */
+main .car {}
+main .car #car {/* 자동차는 고정 */}
+main .car #left_tire,
+main .car #right_tire {animation:rotate 1s linear infinite;}
+
+/* 스크롤아이콘 위-아래 움직이는 애니메이션 */
+main .scroll {animation:scroll 1s linear infinite alternate;}
+
+/* keyframes */
+@keyframes bg {
+    from {background-position-x:0;}
+    to {background-position-x:1000px;}
+}
+@keyframes rotate {
+    0% {transform:rotate(0)}
+    100% {transform:rotate(360deg)}
+}
+@keyframes scroll {
+    0% {transform:translateY(0px)}
+    100% {transform:translateY(15px)}
+}
