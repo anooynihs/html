@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수 2 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/timer2.js" defer></script>
+    <style>
+        .news_container {
+            width:800px; margin:50px; height:40px;
+            border:1px solid #ccc; border-radius:5px;
+            overflow:hidden; /*.list가 news_container 안에서만 보이도록*/
+        }
+        .news_container .list {
+            background-color: #eee;
+            /* transform:translateY(-40px); */
+            /* position:absolute; width:100%; left:0; top:-40px; (부모태그에 position:relative) */
+            position:relative; top:-40px;
+        }
+        .news_container .list li{
+            line-height:40px; padding:0 10px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">STOP!</button>
+    <hr>
+    <div class="news_container">
+        <ul class="list">
+            <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여 바랍니다.</li>
+            <li>공지사항 4 : 고객지원팀이 강화되었습니다.</li>
+        </ul>
+    </div>
+</body>
+</html>
