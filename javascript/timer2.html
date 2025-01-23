@@ -14,13 +14,22 @@
         }
         .news_container .list {
             background-color: #eee;
-            transform:translateY(0); /*공지1부터 보여야해서 0*/
+            transform:translateX(0); /*공지1부터 보여야해서 0*/
             /* position:absolute; width:100%; left:0; top:-40px; (부모태그에 position:relative) */
             /* position:relative; top:-40px; */
         }
-        .news_container .list li{
-            line-height:40px; padding:0 10px;
+        .news_container .list li{line-height:40px; padding:0 10px;}
+        .notice_container {
+            width:800px; margin:50px; height:40px;
+            border:1px solid #ccc; border-radius:5px;
+            overflow:hidden; position:relative;
         }
+        .notice_container .notice {
+            background-color:#eee;
+            width:max-content; display:flex;
+            transform:translateX(0);
+        }
+        .notice_container .notice li {width:100px; line-height:40px; padding:0 10px;}
     </style>
 </head>
 <body>
@@ -32,7 +41,20 @@
             <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
             <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여 바랍니다.</li>
             <li>공지사항 4 : 고객지원팀이 강화되었습니다.</li>
-            <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li>
+            <!-- <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li> -->
+        </ul>
+    </div>
+    <hr>
+    <div class="notice_container">
+        <ul class="notice">
+            <li>알림 1</li>
+            <li>알림 2</li>
+            <li>알림 3</li>
+            <li>알림 4</li>
+            <li>알림 1</li>
+            <li>알림 2</li>
+            <li>알림 3</li>
+            <li>알림 4</li>
         </ul>
     </div>
 </body>

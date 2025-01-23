@@ -1,0 +1,1 @@
+const slide1 = new Swiper('.slide1');
