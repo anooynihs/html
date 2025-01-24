@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper 2. 옵션추가</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper2.js" defer></script>
+    <style>
+        .best_swiper {width:100%; height:100vh; margin:0 auto;}
+        .best_swiper .swiper-wrapper {}
+        /* ============================================ 공통선택자 */
+        .best_swiper .swiper-wrapper .swiper-slide {
+            background-size:cover; background-position:center; position:relative;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide .contents {
+            /* absolute 적용 시 margin:0 auto가 적용되지 않음 */
+            width:1200px; padding:0 32px;
+            position:absolute; left:50%; transform:translateX(-50%);
+            color:#fff;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide .contents .sub_title {
+            font-size:1.36rem; margin-bottom:18px;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide .contents h1 {
+            font-size:3.13rem; font-weight:600; margin-bottom:33px;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide .contents p {line-height:1.5;}
+        /* ===================================================================== */
+        .best_swiper .swiper-wrapper .slide1 {background-image: url(./images/bnr1.jpg);}
+        .best_swiper .swiper-wrapper .slide1 .contents {bottom:200px;}
+        /* ===================================================================== */
+        .best_swiper .swiper-wrapper .slide2 {background-image:url(./images/bnr2.jpg);}
+        .best_swiper .swiper-wrapper .slide2 .contents {top:130px}
+        .best_swiper .swiper-wrapper .slide2 .contents .sub_title{}
+        .best_swiper .swiper-wrapper .slide2 .contents h1 {}
+        .best_swiper .swiper-wrapper .slide2 .contents p {}
+        /* ===================================================================== */
+        .best_swiper .swiper-wrapper .slide3 {background-image:url(./images/bnr3.jpg); position:relative;}
+        .best_swiper .swiper-wrapper .slide3::after {
+            display:block; content:''; width:100%; height:100%; position:absolute; left:0; top:0;
+            background:linear-gradient(180deg, transparent, rgba(0,0,0,0.6) 98%); z-index:10;
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents {bottom:200px; text-align:right; z-index:20;}
+        .best_swiper .swiper-wrapper .slide3 .contents .sub_title{}
+        .best_swiper .swiper-wrapper .slide3 .contents h1 {}
+        .best_swiper .swiper-wrapper .slide3 .contents p {}
+    </style>
+</head>
+<body>
+    <!-- 슬라이드가 보이는 가장 바깥쪽 overflow:hidden 부모 영역 -->
+    <div class="swiper best_swiper">
+        <!-- 실제 움직이는 슬라이드 부모 대상 -->
+        <div class="swiper-wrapper">
+            <!-- 개별 슬라이드(개별클래스 작성 권장) (자식, 자손 태그 작성 자유) -->
+            <div class="swiper-slide slide1">
+                <!-- bnr1-->
+                 <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                 </div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                 </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는 곳</p>
+                    <h1>경복궁에서 만나는 시간여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요.</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

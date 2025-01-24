@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper 1. 기본구성</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper1.js" defer></script>
+    <style>
+        .best_swiper {
+            width:1200px; height:600px; margin:0 auto;
+        }
+        .best_swiper .swiper-wrapper {}
+        .best_swiper .swiper-wrapper .swiper-slide {}
+        .best_swiper .swiper-wrapper .slide1 {background-color: yellow;}
+        .best_swiper .swiper-wrapper .slide2 {background-color:palevioletred;}
+        .best_swiper .swiper-wrapper .slide3 {background-color: paleturquoise;}
+    </style>
+</head>
+<body>
+    <h1>Swiper 자바스크립트 슬라이드 제작 플러그인</h1>
+    <p>1. swiper 사용을 위한 css, js 외부파일 경로 연결</p>
+    <p>2. 정해진 클래스와 가족관계를 주의하면서 HTML 작성하기</p>
+    <p>2-1. (위) 요소에 사용자 정의 클래스 별도로 설정하기</p>
+    <p>3. swiper의 가장 바깥쪽 부모에 width, height CSS 설정하기</p>
+    <p>3-1. swiper 자식, 자손으로 정해진 요소들의 CSS는 함부로 설정하지 않기! 특히 레이아웃에 대한 CSS</p>
+    <p>4. swiper 대입될 변수 생성, new Swiper 함수명으로 2-1에서 설정한 사용자 정의 클래스(가장 바깥쪽 swiper 기준) 대입하기</p>
+    <p>5. 필요에 따라 Swiper 자바스크립트 속성:값 추가 가능</p>
+    <hr>
+    <!-- 슬라이드가 보이는 가장 바깥쪽 overflow:hidden 부모 영역 -->
+    <div class="swiper best_swiper">
+        <!-- 실제 움직이는 슬라이드 부모 대상 -->
+        <div class="swiper-wrapper">
+            <!-- 개별 슬라이드(개별클래스 작성 권장) (자식, 자손 태그 작성 자유) -->
+            <div class="swiper-slide slide1">Slide 1</div>
+            <div class="swiper-slide slide2">Slide 2</div>
+            <div class="swiper-slide slide3">Slide 3</div>
+        </div>
+    </div>
+</body>
+</html>
