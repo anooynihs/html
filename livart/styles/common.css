@@ -1,0 +1,78 @@
+/* =================================================== header */
+.h_bg {}
+.h_bg header {width:1400px; margin:0 auto; padding:47px 0 25px;}
+.h_bg header .h_top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-bottom:13px;
+}
+.h_bg header .h_top h1 {}
+.h_bg header .h_top h1 a {}
+.h_bg header .h_top h1 a img {}
+.h_bg header .h_top .user_page {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_top .user_page li {margin-left:16px;}
+.h_bg header .h_top .user_page li:first-child {margin:0;}
+.h_bg header .h_top .user_page li a {font-size:0.81rem; font-weight:500;}
+.h_bg header .h_btm {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+.h_bg header .h_btm nav {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_btm nav .category1 {display:flex; flex-flow:row nowrap;}
+.h_bg header .h_btm nav .category1 .active {padding-bottom:5px; border-bottom:2px solid #000;}
+.h_bg header .h_btm nav .category1 .active a {}
+.h_bg header .h_btm nav .category1 li {margin-left:18px;}
+.h_bg header .h_btm nav .category1 li:first-child {margin:0;}
+.h_bg header .h_btm nav .category1 li a {font-size:1rem; font-weight:500;}
+.h_bg header .h_btm nav .category2 {display:flex; flex-flow:row nowrap; margin-left:39px;}
+.h_bg header .h_btm nav .category2 li {margin-left:16px;}
+.h_bg header .h_btm nav .category2 li:first-child {margin:0;}
+.h_bg header .h_btm nav .category2 li a {font-size:1rem; font-weight:500; color:#015578;}
+.h_bg header .h_btm .search_wrap {padding-bottom:5px; border-bottom:2px solid #000;}
+.h_bg header .h_btm .search_wrap input[name$=search] {background:none;}
+.h_bg header .h_btm .search_wrap input[name$=search]::placeholder {font-size:0.81rem; font-weight:200px; color:#B1B1B1;}
+.h_bg header .h_btm .search_wrap a {}
+.h_bg header .h_btm .search_wrap a img {}
+/* =================================================== footer 공통선택자 */
+footer {
+    margin-top:200px; padding:80px 80px;
+    border-top:2px solid #ddd;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+footer h2 {}
+footer p {}
+footer p em{}
+footer p a {}
+/* =================================================== footer 왼쪽 */
+footer .f_left {color:#8E8E8E; font-size:0.81rem;}
+footer .f_left .row1 {margin-bottom:20px;}
+footer .f_left .row1 a {color:#8E8E8E; margin-right:17px;}
+footer .f_left .row1 a:last-child {margin:0;}
+footer .f_left .row2 {margin-bottom:20px;}
+footer .f_left .row2 > p {line-height:175%;}
+footer .f_left .row2 p em {font-weight:700;}
+footer .f_left .row2 p a {color:#8E8E8E; font-weight:700;}
+footer .f_left .row3 {}
+footer .f_left .row3 p {}
+/* =================================================== footer 오른쪽 공통선택자*/
+footer .f_right {display:flex; flex-flow:row nowrap; font-size:0.81rem;}
+footer .f_right > * {margin-right:75px;}
+footer .f_right h2 {font-weight:700; margin-bottom:17px;}
+footer .f_right p {margin-bottom:17px;}
+footer .f_right p a {}
+/* =================================================== footer 오른쪽 개별선택자*/
+footer .f_right .about {}
+footer .f_right .about h2 {}
+footer .f_right .about p {}
+footer .f_right .about p a {}
+footer .f_right .cs {}
+footer .f_right .cs h2 {}
+footer .f_right .cs p {}
+footer .f_right .cs p a {}
+footer .f_right .cs p em {font-weight:700;}
+footer .f_right .social {display:flex; flex-flow:column nowrap;}
+footer .f_right .social h2 {}
+footer .f_right .social a {margin-bottom:17px;}
+footer .f_right .social a img {width:20px; height:20px;}
+footer .f_right .family_site {margin:0; display:flex;}
+footer .f_right .family_site h2 {margin-right:7px;}
+footer .f_right .family_site a {}
+footer .f_right .family_site a img {}
