@@ -28,7 +28,7 @@
 .h_bg header .h_btm nav .category2 li a {font-size:1rem; font-weight:500; color:#015578;}
 .h_bg header .h_btm .search_wrap {padding-bottom:5px; border-bottom:2px solid #000;}
 .h_bg header .h_btm .search_wrap input[name$=search] {background:none;}
-.h_bg header .h_btm .search_wrap input[name$=search]::placeholder {font-size:0.81rem; font-weight:200px; color:#B1B1B1;}
+.h_bg header .h_btm .search_wrap input[name$=search]::placeholder {font-size:0.81rem; font-weight:200; color:#B1B1B1;}
 .h_bg header .h_btm .search_wrap a {}
 .h_bg header .h_btm .search_wrap a img {}
 /* =================================================== footer 공통선택자 */

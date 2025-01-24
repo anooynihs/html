@@ -21,7 +21,7 @@ main .slide_bnr .scroll_bg .scrollbar {
 main .product {width:1400px; margin:0 auto;}
 main .product h2 {font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:30px;}
 main .product .product_wrap {display:flex; flex-flow:row wrap; justify-content:space-between;}
-main .product .product_wrap .prd {width:calc(100% - 60px) / 4;}
+main .product .product_wrap .prd {width:calc((100% - 60px) / 4);}
 main .product .product_wrap .prd a {}
 main .product .product_wrap .prd a img {width:100%; border-radius:8px;}
 main .product .product_wrap .prd .brand_name {margin-top:15px; margin-bottom:5px;}

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>리바트몰</title>
+    <title>커리어 상부선반 책상 | 리바트몰</title>
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap">
     <link  rel="stylesheet" href="./styles/reset.css">
     <link  rel="stylesheet" href="./styles/common.css">
-    <link  rel="stylesheet" href="./styles/index.css">
+    <link  rel="stylesheet" href="./styles/product.css">
 </head>
 <body>
     <div class="h_bg">
@@ -43,7 +43,122 @@
         </header>
     </div>
         <main>
-            <!-- 메인 -->
+            <!-- 뎁스 + 상품 이미지 + 정보 -->
+            <div class="product_container">
+                <!-- 상품 카테고리 경로 -->
+                <div class="depth_wrap">
+                    <ul class="depth">
+                        <li>
+                            <a href="#">쇼핑</a>
+                            <img src="./images/arrow_forward.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#">가구</a>
+                            <img src="./images/arrow_forward.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#">오피스가구</a>
+                            <img src="./images/arrow_forward.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#">책상</a>
+                            <img src="./images/arrow_forward.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#">사무용 책상</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 상품 썸네일 + 정보 -->
+                <div class="product_wrap">
+                    <div class="thumnail">
+                        <div class="thum_big">
+                            <img src="./images/thum_big.jpg" alt="커리어 상부선반 책상 이미지">
+                        </div>
+                        <div class="thum_small">
+                            <a href="#" class="active"><img src="./images/thum_big.jpg" alt="커리어 상부선반 책상"></a>
+                            <a href="#"><img src="./images/thum_small_001.jpg" alt="커리어 상부선반 책상 이미지"></a>
+                            <a href="#"><img src="./images/thum_small_002.jpg" alt="커리어 상부선반 책상 이미지"></a>
+                            <a href="#"><img src="./images/thum_small_003.jpg" alt="커리어 상부선반 책상 이미지"></a>
+                            <a href="#"><img src="./images/thum_small_004.jpg" alt="커리어 상부선반 책상 이미지"></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="#" class="brand">리바트하움</a>
+                        <h2>커리어 상부선반 책상 (4 Colors)</h2>
+                        <div class="review">
+                            <div class="review_star">
+                                <img src="./images/icon_star_001.png" alt="">
+                                <img src="./images/icon_star_001.png" alt="">
+                                <img src="./images/icon_star_001.png" alt="">
+                                <img src="./images/icon_star_001.png" alt="">
+                                <img src="./images/icon_star_002.png" alt="">
+                            </div>
+                            <div class="review_count">
+                                <a href="#">254개 리뷰</a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <p><del>225,000원</del></p>
+                            <div class="result_price">
+                                <p><em>7%</em></p>
+                                <h3>210,000원</h3>
+                            </div>
+                        </div>
+                        <div class="span_info">
+                            <dl>
+                                <dt>추가혜택</dt>
+                                <dd>
+                                    <span>무이자혜택</span>
+                                    <span>결제혜택</span>
+                                    <span>H.POINT 적립</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>배송정보</dt>
+                                <dd>
+                                    <em>무료배송/설치</em>
+                                    (제주도 포함/도서산간 제외)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>상품코드</dt>
+                                <dd>P200012386</dd>
+                            </dl>
+                        </div>
+                        <div class="select_wrap">
+                            <select name="color" id="color">
+                                <option value="">색상</option>
+                                <option value="Walnut_white">월넛+화이트 상판</option>
+                                <option value="Walnut_beige">월넛+베이지 상판</option>
+                                <option value="natural_white">내추럴+화이트 상판</option>
+                                <option value="natural_beige">내추럴+베이지 상판</option>
+                            </select>
+                            <select name="size" id="size">
+                                <option value="">사이즈</option>
+                                <option value="1400">1400</option>
+                                <option value="1600">1600</option>
+                                <option value="1800">1800</option>
+                            </select>
+                        </div>
+                        <div class="order_btn">
+                            <button type="button" id="cart_btn">장바구니</button>
+                            <button type="button" id="buy_btn">바로주문</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- 배너 -->
+            <div class="bnr_wrap">
+                <div class="bnr_left">
+                    <h2>오피스가구 다이렉트 서비스</h2>
+                    <p>온라인 쇼룸부터 패키지 구매까지</p>
+                </div>
+                <div class="bnr_right">
+                    <h2>대량구매 안내</h2>
+                    <p>구매 금액에 따라 높아지는 할인</p>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="f_left">
