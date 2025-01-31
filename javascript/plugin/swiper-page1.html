@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper페이지번호</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper-page1.js" defer></script>
+    <style>
+        main {
+            background-color: thistle;
+            position:relative; padding:100px;
+            /* pagination에는 기본적으로 absolute가 내장돼있다. */
+        }
+        .event-swiper {width:1000px; height:400px; margin:0 auto;}
+        .event-swiper .swiper-slide {font-size:4rem; line-height:400px; text-align:center;}
+        .event-swiper .event1 {background-color: aqua;}
+        .event-swiper .event2 {background-color: lime;}
+        .event-swiper .event3 {background-color: yellow;}
+        .event-swiper .event4 {background-color: pink;}
+        /* 페이지번호(기본) */
+        .event-swiper .swiper-pagination-bullet {
+            background-color: crimson; opacity:0.3;
+        }
+        .event-swiper .swiper-pagination-bullet-active {
+            background-color: blueviolet; opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="swiper event-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide event1">slide 1</div>
+                <div class="swiper-slide event2">slide 2</div>
+                <div class="swiper-slide event3">slide 3</div>
+                <div class="swiper-slide event4">slide 4</div>
+            </div>
+            <!-- 페이지번호 기본 작성위치(디자인에 따라 다른 위치 설정 가능) -->
+            <!-- 페이지번호를 아래와 같이 기본 형태로 작성할 때는 Swiper의 기본제공을 그대로 사용하는 것이기 때문에 함께 제공되는 JS, CSS 외에 다른 코드를 자유롭게 입력해선 안된다. 자유로운 디자인을 원할 때는 사용자 커스텀 버전으로 별도의 태그와 CSS, JS를 구현해야한다.(내비게이션도 동일) -->
+        </div>
+        <div class="swiper-pagination"><!--내용작성금지--></div>
+    </main>
+</body>
+</html>

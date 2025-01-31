@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper진행 스크롤</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper-scroll1.js" defer></script>
+    <style>
+        main {
+            background-color: thistle;
+            position:relative; padding:100px;
+            /* pagination에는 기본적으로 absolute가 내장돼있다. */
+        }
+        .event-swiper {width:1000px; height:400px; margin:0 auto;}
+        .event-swiper .swiper-slide {font-size:4rem; line-height:400px; text-align:center;}
+        .event-swiper .event1 {background-color: aqua;}
+        .event-swiper .event2 {background-color: lime;}
+        .event-swiper .event3 {background-color: yellow;}
+        .event-swiper .event4 {background-color: pink;}
+        /* 진행스크롤 디자인 */
+        main .event-scrollbar {
+            width:800px; height:5px; background-color: blue;
+            position:relative; margin:0 auto;
+        }
+        main .event-scrollbar .active-scrollbar {
+            width:1%; height:5px;
+            background:coral; position:absolute; left-; top:to;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="swiper event-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide event1">slide 1</div>
+                <div class="swiper-slide event2">slide 2</div>
+                <div class="swiper-slide event3">slide 3</div>
+                <div class="swiper-slide event4">slide 4</div>
+            </div>
+        </div>
+        <div class="event-scrollbar">
+            <div class="active-scrollbar"></div>
+        </div>
+    </main>
+</body>
+</html>
