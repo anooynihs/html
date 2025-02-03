@@ -1,3 +1,10 @@
+font type
+font-family:'Nuosu SIL';
+
 font size
-13 font-size:0.813rem;
+13 font-size:0.81rem;
 20 font-size:1.25rem;
+30 font-size:1.88rem;
+
+color code
+color:#7C7C7C;

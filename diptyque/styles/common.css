@@ -1,6 +1,9 @@
 /* header, footer 통합 CSS */
 /* =================================================== header */
-header {width:1600px; margin:0 auto; position:relative;}
+header {
+    width:1600px; margin:0 auto; 
+    position:absolute; top:0; left:160px;
+}
 header .top_wrap {
     display:flex; justify-content:space-between; align-items:center;
     padding:40px 0 35px;
@@ -10,22 +13,23 @@ header .top_wrap .search_wrap {
     display:flex; justify-content:space-between;
     padding-bottom:5px;
 }
-header .top_wrap .search_wrap #search {width:100%; font-size:0.813rem;}
-header .top_wrap .search_wrap #search::placeholder {color:#7C7C7C; font-size:0.813rem;}
+header .top_wrap .search_wrap #search {width:100%; font-size:0.81rem;}
+header .top_wrap .search_wrap #search::placeholder {color:#7C7C7C; font-size:0.81rem;}
 header .top_wrap .search_wrap a {}
 header .top_wrap .search_wrap a img {width:12px; height:12px;}
 header .top_wrap .logo {}
 header .top_wrap .logo h1 {}
-header .top_wrap .logo h1 img {}
+header .top_wrap .logo h1 a {}
+header .top_wrap .logo h1 a img {}
 header .top_wrap .user_wrap {}
-header .top_wrap .user_wrap a {font-size:0.813rem;}
+header .top_wrap .user_wrap a {font-size:0.81rem;}
 header .top_wrap .user_wrap a:first-child {margin-right:20px;}
 header .nav {text-align:center;}
 header .nav a {margin-right:45px; font-family:'Nuosu SIL';}
 header .nav a:last-child {margin:0;}
 /* =================================================== footer */
 footer {width:100%; padding:80px 160px; border-top:1px solid #000;}
-footer > * {font-size:0.813rem; letter-spacing:-0.02em;}
+footer > * {font-size:0.81rem; letter-spacing:-0.02em;}
 footer .ft_container {}
 footer .ft_container .ft_top {
     display:flex; flex-flow:row nowrap; justify-content:space-between;
@@ -54,9 +58,9 @@ footer .ft_container .ft_top .left .news_social .news .input_email {
     border:1px solid #000;
     display:flex; flex-flow:row nowrap; justify-content:space-between;}
 footer .ft_container .ft_top .left .news_social .news .input_email #mail {margin-left:10px;}
-footer .ft_container .ft_top .left .news_social .news .input_email #mail::placeholder {font-size:0.813rem; color:#7C7C7C;}
+footer .ft_container .ft_top .left .news_social .news .input_email #mail::placeholder {font-size:0.81rem; color:#7C7C7C;}
 footer .ft_container .ft_top .left .news_social .news .input_email .join_btn {
-    font-size:0.813rem; font-weight:600;
+    font-size:0.81rem; font-weight:600;
     padding:10px 20px; color:#fff; background:#000;
 }
 footer .ft_container .ft_top .left .news_social .social {}

@@ -1,8 +1,25 @@
-main {}
+main {margin:0 auto;}
+main > * {margin-bottom:160px;}
+/* =================================================== 공통 CSS */
+main h2 {font-family:'Nuosu SIL'; font-size:1.88rem; margin-bottom:40px;}
+/* =================================================== 상품 썸네일 및 정보 */
+main .products {}
+main .products .item {}
+main .products .item a {}
+main .products .item a img {width:100%;}
+main .products .item .item_name {}
+main .products .item .item_info {color:#7C7C7C; font-family:'Nuosu SIL'; font-size:0.81rem;}
+main .products .item .price {font-weight:600;}
 /* =================================================== 메인배너 */
 main .bnr {}
+main .bnr h1 {}
+main .bnr h1 img {width:100%;}
 /* =================================================== 베스트셀러 */
 main .best_container {}
+main .best_container h2 {}
+main .best_container h2 .category {}
+main .best_container h2 .category a {}
+main .best_container h2 .category .active {}
 /* =================================================== 취향콘텐츠 */
 main .taste_container {}
 /* =================================================== 기프트배너 */
