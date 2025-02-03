@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll2 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/scroll2.js" defer></script>
+    <style>
+        .box1, .box3 {height:100vh; background:yellow; font-size:5rem;}
+        .box2 {}
+        .box2 .bg {/* 고정 대상의 부모는 고정 자식들보다 높이값이 커야한다. */
+            height:calc((500px * 3) + 500px);
+            width:max-content; margin:0 auto;
+        }
+        .box2 .bg .card {/* 스크롤 화면 고정 대상 */
+            position:sticky; /* 설정한 좌표에 도착 시 이미지 고정 및 아래 이미지 겹치기 */
+            top:100px; margin-top:100px;
+        }
+        .box2 .bg .card img {width:380px; height:500px;}
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">
+        <div class="bg">
+            <div class="card"><img src="https://i.pinimg.com/736x/77/fc/0c/77fc0cf37e967bf85352286a1af60350.jpg" alt=""></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/48/7c/d8/487cd8ec788fa4f5553d0f8d0813317f.jpg" alt=""></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/e8/24/f7/e824f75d28feebee8a7578687b01e474.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="box box3">3</div>
+</body>
+</html>

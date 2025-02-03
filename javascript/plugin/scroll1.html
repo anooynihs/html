@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/scroll1.js" defer></script>
+    <style>
+        body, html {
+            /* height:300vh; */
+            background: linear-gradient(aqua, lime, yellow, pink);
+            scroll-behavior:smooth;
+        }
+        .circle {
+            pointer-events:none;
+            position:fixed; top:0; left:0;
+            width:50px; height:50px; border-radius:50%;
+            background-color:#000;
+            /* transition:left 0.2s linear, top 0.2s linear; */
+        }
+        .top {
+            width:100px; height:100px; background-color: royalblue;
+            text-align: center; line-height: 100px;
+            cursor:pointer;
+            position:fixed; z-index:999; right:-70px; bottom:50px;
+            transition:right 0.5s ease;
+        }
+        .box {height:100vh; border:5px solid #000; font-size:10rem}
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="top">위로</div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</body>
+</html>

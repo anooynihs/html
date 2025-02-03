@@ -1,8 +1,8 @@
 /* 외부 글꼴 연결 */
-@font-face{
+/* @font-face{
     font-family: 'BookkMyungjo-Bd';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-}
+} */
 body, html, h1, h2, h3, h4, h5, h6,
 p, div, dl, dt, dd, ul, ol, li, video, blockquote, 
 hr, a, address, span, em, strong, img, sub, sup, del, s, q, mark, code,
@@ -12,7 +12,8 @@ th,td {
     line-height:1.0; font-size:1.0em; font-weight:normal;
     margin:0; padding:0; font-style:normal;
     box-sizing:border-box;
-    font-family: 'BookkMyungjo-Bd', sans-serif;
+    /* font-family: 'BookkMyungjo-Bd', sans-serif; */
+    font-family:'';
 }
 ol, li, ul {list-style:none;}
 a {color:#000; text-decoration:none;}
