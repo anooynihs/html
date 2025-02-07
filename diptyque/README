@@ -2,6 +2,8 @@ font type
 font-family:'Nuosu SIL';
 
 font size
+11 font-size:0.69rem;
+12 font-size:0.75rem;
 13 font-size:0.81rem;
 14 font-size:0.88rem;
 15 font-size:0.94rem; //more view 버튼

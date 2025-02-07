@@ -9,12 +9,12 @@ header .top_wrap {
     padding:40px 0 35px;
 }
 header .top_wrap .search_wrap {
-    width:142px; border-bottom:1px solid #000;
+    width:142px; border-bottom:1px solid #fff;
     display:flex; justify-content:space-between;
     padding-bottom:5px;
 }
-header .top_wrap .search_wrap #search {width:100%; font-size:0.81rem;}
-header .top_wrap .search_wrap #search::placeholder {color:#7C7C7C; font-size:0.81rem;}
+header .top_wrap .search_wrap #search {width:100%; font-size:0.81rem; background:transparent; color:#fff;}
+header .top_wrap .search_wrap #search::placeholder {color:#fff; font-size:0.81rem;}
 header .top_wrap .search_wrap a {}
 header .top_wrap .search_wrap a img {width:12px; height:12px;}
 header .top_wrap .logo {}
@@ -22,10 +22,10 @@ header .top_wrap .logo h1 {}
 header .top_wrap .logo h1 a {}
 header .top_wrap .logo h1 a img {}
 header .top_wrap .user_wrap {}
-header .top_wrap .user_wrap a {font-size:0.81rem;}
+header .top_wrap .user_wrap a {font-size:0.81rem; color:#fff;}
 header .top_wrap .user_wrap a:first-child {margin-right:20px;}
 header .nav {text-align:center;}
-header .nav a {margin-right:45px; font-family:'Nuosu SIL';}
+header .nav a {margin-right:45px; font-family:'Nuosu SIL'; color:#fff;}
 header .nav a:last-child {margin:0;}
 /* =================================================== footer */
 footer {width:100%; padding:80px 160px; border-top:1px solid #000;}
