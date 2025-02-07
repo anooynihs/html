@@ -1,8 +1,9 @@
 /* header, footer 통합 CSS */
 /* =================================================== header */
 header {
-    width:1600px; margin:0 auto; 
+    width:1600px; margin:0 auto;
     position:absolute; top:0; left:160px;
+    position:fixed;
 }
 header .top_wrap {
     display:flex; justify-content:space-between; align-items:center;
@@ -28,12 +29,12 @@ header .nav {text-align:center;}
 header .nav a {margin-right:45px; font-family:'Nuosu SIL'; color:#fff;}
 header .nav a:last-child {margin:0;}
 /* =================================================== footer */
-footer {width:100%; padding:80px 160px; border-top:1px solid #000;}
+footer {width:100%; padding:60px 160px; border-top:1px solid #000;}
 footer > * {font-size:0.81rem; letter-spacing:-0.02em;}
 footer .ft_container {}
 footer .ft_container .ft_top {
     display:flex; flex-flow:row nowrap; justify-content:space-between;
-    margin-bottom:40px;
+    margin-bottom:20px;
 }
 footer .ft_container .ft_top .legar {}
 footer .ft_container .ft_top .legar .row1 {margin-bottom:40px;}

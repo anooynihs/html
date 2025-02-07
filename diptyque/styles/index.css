@@ -1,14 +1,14 @@
 /* =================================================== 메인배너 */
 main {margin:0 auto;}
-main .bnr {}
+main .bnr {height:100vh;}
 main .bnr video {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
-main h2 {font-family:'Nuosu SIL'; font-size:1.88rem;}
+main h2 {font-family:'Nuosu SIL'; font-size:1.88rem; text-align:center;}
 main .container {width:1600px; margin:0 auto;}
 /* =================================================== 상품 썸네일 및 정보 */
 main .products {display:flex; flex-flow:row nowrap; justify-content:space-between;}
-main .products .item {background-color: violet;}
+main .products .item {}
 main .products .item .item_thum {position:relative;}
 main .products .item .item_thum .image {}
 main .products .item .item_thum .image img {width:100%; margin-bottom:20px;}
@@ -28,8 +28,8 @@ main .products .item .item_info {
 }
 main .products .item .price {font-weight:600;}
 /* =================================================== 베스트셀러 */
-main .best {width:1600px; margin-top:160px; background-color:chartreuse;}
-main .best > h2 {text-align:center; margin-bottom:40px;}
+main .best {width:1600px; margin-top:160px;}
+main .best > h2 {margin-bottom:40px;}
 main .best .category {text-align:center; margin-bottom:40px;}
 main .best .category a {color:#7C7C7C; margin-right:30px;}
 main .best .category :last-child {margin:30px;}
@@ -47,7 +47,7 @@ main .best .products .item .item_name_add_btn .add_btn img {}
 main .best .products .item .item_info {}
 main .best .products .item .price {}
 /* =================================================== 취향콘텐츠 */
-main .prefer {width:1600px; text-align:center; margin-top:160px; background-color:coral;}
+main .prefer {width:1600px; text-align:center; margin-top:160px;}
 main .prefer .title_wrap {}
 main .prefer .title_wrap h2 {}
 main .prefer .title_wrap h3 {font-size:1.125rem; margin:15px 0 40px;}
@@ -65,9 +65,9 @@ main .prefer .contents .type .btn_discover {
 }
 main .prefer .contents .type .btn_discover a {font-size:0.81rem; color:#fff;}
 /* =================================================== 기프트배너 */
-main .gifts_bnr {text-align:center; margin-top:160px; background-color: aqua;}
+main .gifts_bnr {margin-top:160px;}
 main .gifts_bnr h2 {}
-main .gifts_bnr h3 {font-size:1.125rem; margin:15px 0 40px;}
+main .gifts_bnr h3 {font-size:1.125rem; margin:15px 0 40px; text-align:center;}
 main .gifts_bnr .bnr_image {}
 main .gifts_bnr .bnr_image img {width:100%;}
 /* =================================================== 바디, 홈 콘텐츠 공통 CSS */
@@ -114,7 +114,7 @@ main .special_layout .products_container .products .item .item_name_add_btn .add
 main .special_layout .products_container .products .item .item_info {}
 main .special_layout .products_container .products .item .price {}
 /* =================================================== 바디&배쓰 제품 */
-main .body_bath {background-color:gold;}
+main .body_bath {}
 main .body_bath .bnr_container {background-image:url(../images/bnr_body.jpg);}
 main .body_bath .bnr_container p {}
 main .body_bath .bnr_container .click_popup {left:200px; top:170px;}
@@ -140,7 +140,7 @@ main .body_bath .products_container .products .item .item_name_add_btn .add_btn 
 main .body_bath .products_container .products .item .item_info {}
 main .body_bath .products_container .products .item .price {}
 /* =================================================== 캔들&홈프래그런스 제품 */
-main .candles_homefragrances {background-color: yellowgreen;}
+main .candles_homefragrances {}
 main .candles_homefragrances .bnr_container {background-image:url(../images/bnr_home.jpg);}
 main .candles_homefragrances .bnr_container p {}
 main .candles_homefragrances .bnr_container .click_popup {}
@@ -171,25 +171,24 @@ main .candles_homefragrances .products_container .products .item .item_name_add_
 main .candles_homefragrances .products_container .products .item .item_info {}
 main .candles_homefragrances .products_container .products .item .price {}
 /* =================================================== 뉴스레터 콘텐츠 */
-main .letter {background-color:aquamarine;}
-main .letter h2 {}
-main .letter .letter_wrap {}
-main .letter .letter_wrap .contents {}
-main .letter .letter_wrap .contents a {}
-main .letter .letter_wrap .contents a img {}
-main .letter .letter_wrap .contents .active {}
-main .letter .letter_wrap .contents .active img {}
-main .letter .letter_wrap .arrows {}
-main .letter .letter_wrap .arrows a {}
-main .letter .letter_wrap .arrows a img {}
-/* =================================================== 컬렉션 콘텐츠 */
-main .collection {}
+main .newsletter {margin-top:160px; background-color: mediumslateblue;}
+main .newsletter h2 {}
+/* =================================================== 컬렉션 소개 */
+main .collection {margin-top:160px; margin-bottom:160px; background-color:aquamarine;}
 main .collection h2 {}
-main .collection .contents {}
-main .collection .contents .coll {}
-main .collection .contents .coll a {}
-main .collection .contents .coll a img {}
-main .collection .contents .coll .texts {}
-main .collection .contents .coll .texts .kr {}
-main .collection .contents .coll .texts .en {}
-main .collection .contents .coll .texts span {}
+main .collection .contents {
+    width:100%; display:flex; justify-content:space-between;
+    margin-top:40px;
+}
+main .collection .contents .card {width:calc((100% - 99px) / 4);}
+main .collection .contents .card a {}
+main .collection .contents .card a img {width:100%; margin-bottom:20px;}
+main .collection .contents .card .texts {background-color:yellow;}
+main .collection .contents .card .texts .kr_name {margin-bottom:5px;}
+main .collection .contents .card .texts .en_name {font-family:'Nuosu SIL'; font-size:0.88rem; margin-bottom:10px;}
+main .collection .contents .card .texts .collection_explain {
+    font-size:0.94rem; line-height:1.5; color:#7C7C7C;
+}
+/* =================================================== 블랙 띠 배너 */
+main .black_line_bnr {padding:15px 0; background-color:#1A1A18; text-align:center;}
+main .black_line_bnr h3 {font-family:'Nuosu SIL'; font-size:1.25rem; letter-spacing:0; color:#fff;}
