@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오스크롤</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .bg {background:#222; height:100vh;}
+        .bg h1 {color:#fff; text-align:center; line-height:100vh;}
+        .video {
+            height:calc(100vh * (131 / 50));
+        }
+        .video img {
+            width:100%;
+            position:sticky; top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"><h1>새롭게 선보이는 iphone16</h1></div>
+    <div class="video">
+        <img src="./image_video/u1.jpg" alt="">
+    </div>
+    <div class="bg"></div>
+    <script>
+        const totalFrames = 131; //비디오 총 프레임 개수
+        const imgElement = document.querySelector('.video img'); //비디오(이미지) 요소
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY; // 현재 스크롤 위치
+            let docHeight = document.documentElement.scrollHeight - window.innerHeight; // 전체 스크롤 가능 높이
+            let progress = scrollTop / docHeight; // 스크롤 진행도 (0 ~ 1)
+
+            let frame = Math.round(progress * (totalFrames - 1)) + 1; // 1~100 프레임 계산
+            frame = Math.max(1, Math.min(frame, totalFrames)); // 1~100 사이 값 유지
+
+            imgElement.src = `./image_video/u${frame}.jpg`;
+        });
+    </script>
+</body>
+</html>

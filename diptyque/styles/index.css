@@ -1,6 +1,6 @@
 /* =================================================== 메인배너 */
 main {margin:0 auto;}
-main .bnr {height:100vh;}
+main .bnr {height:100vh; overflow:hidden;}
 main .bnr video {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
@@ -171,8 +171,29 @@ main .candles_homefragrances .products_container .products .item .item_name_add_
 main .candles_homefragrances .products_container .products .item .item_info {}
 main .candles_homefragrances .products_container .products .item .price {}
 /* =================================================== 뉴스레터 콘텐츠 */
-main .newsletter {margin-top:160px; background-color: mediumslateblue;}
-main .newsletter h2 {}
+main .newsletter {margin-top:160px;}
+main .newsletter h2 {margin-bottom:40px;}
+main .newsletter .card_wrap {}
+main .newsletter .swiper {}
+main .newsletter .swiper .swiper-wrapper {}
+main .newsletter .swiper .swiper-wrapper .swiper-slide {width:452px; height:567px;}
+main .newsletter .swiper .swiper-wrapper .swiper-slide a {}
+main .newsletter .swiper .swiper-wrapper .swiper-slide a img {}
+main .newsletter .swiper .swiper-wrapper .card1 {}
+main .newsletter .swiper .swiper-wrapper .card2 {}
+main .newsletter .swiper .swiper-wrapper .card3 {}
+main .newsletter .swiper .swiper-wrapper .card4 {}
+main .newsletter .swiper .slide_btn {
+    width:1600px; margin:0 auto; display:flex; justify-content:space-between;
+    margin-top:30px;
+}
+main .newsletter .swiper .slide_btn .prev img,
+main .newsletter .swiper .slide_btn .next img {}
+main .newsletter .swiper .swiper-scrollbar {
+    width:1500px; height:2px; background-color:#d9d9d9;
+    left:50%; transform:translateX(-50%); bottom:2.5%;
+}
+main .newsletter .swiper .swiper-scrollbar-drag {background-color:#1A1A18;}
 /* =================================================== 컬렉션 소개 */
 main .collection {margin-top:160px; margin-bottom:160px; background-color:aquamarine;}
 main .collection h2 {}

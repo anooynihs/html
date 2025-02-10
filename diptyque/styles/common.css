@@ -3,7 +3,7 @@
 header {
     width:1600px; margin:0 auto;
     position:absolute; top:0; left:160px;
-    position:fixed;
+    position:fixed; z-index:10;
 }
 header .top_wrap {
     display:flex; justify-content:space-between; align-items:center;

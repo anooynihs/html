@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 쿠폰 할인 적용 예제</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <style>
+    .message {font-size: 1.2em;margin-top: 10px;}
+    /* 할인 적용 성공 메시지 스타일 */
+    .ok {color:green;}
+    /* 오류 메시지 스타일 */
+    .error {color:red;}
+  </style>
+</head>
+<body>
+  <h1>결제 금액 할인 적용</h1>
+  <!-- 현재 결제 금액 표시 -->
+  <p>현재 결제 금액: <span id="currentPrice">32000</span>원</p>
+  
+  <!-- 쿠폰 입력 및 적용 버튼 -->
+  <div class="result">
+    <input type="text" id="couponInput" placeholder="쿠폰 코드를 입력하세요">
+    <button type="button" id="applyCoupon">쿠폰 적용</button>
+  </div>
+  
+  <!-- 결과 메시지 영역 -->
+  <div id="discountMessage" class="message"></div>
+  <div id="totalPrice" class="message"></div>
+
+  <script>
+    $('#applyCoupon').click(function(){
+
+      if($('#couponInput').val() === ''){
+        $('#discountMessage').addClass('error')
+        $('#discountMessage').text('쿠폰 코드를 입력해 주세요.')
+      }else if($('#couponInput').val() === 'abcd'){
+        $('#discountMessage').addClass('ok')
+        $('#discountMessage').text('10% 할인 적용되었습니다.')
+        let price = 32000 * 0.9;
+        $('#totalPrice').text(price+'원');
+      }else {
+        $('#discountMessage').addClass('error')
+        $('#discountMessage').text('쿠폰 코드가 잘못되었습니다.')
+      }
+
+    })
+  </script>
+</body>
+</html>

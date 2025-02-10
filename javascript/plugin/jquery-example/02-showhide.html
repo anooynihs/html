@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 쇼핑몰 아코디언 예제</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <style>
+    .section {
+      border: 1px solid #ccc;
+      margin-bottom: 10px; padding: 10px;
+    }
+    .section .title {
+      font-size: 1.2em; font-weight: 700;
+      cursor: pointer;
+      padding: 5px;
+    }
+    .section .content {
+      padding: 5px; margin-top: 5px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- 섹션 1 -->
+  <div class="section">
+    <div class="title" data-target="content1">제목 1</div>
+    <div id="content1" class="content">내용 1: 쇼핑몰 소개 및 주요 서비스 안내</div>
+  </div>
+
+  <!-- 섹션 2 -->
+  <div class="section">
+    <div class="title" data-target="content2">제목 2</div>
+    <div id="content2" class="content">내용 2: 최신 상품 및 이벤트 소식</div>
+  </div>
+
+  <!-- 섹션 3 -->
+  <div class="section">
+    <div class="title" data-target="content3">제목 3</div>
+    <div id="content3" class="content">내용 3: 고객 지원 및 문의 안내</div>
+  </div>
+  <script>
+    $('.content').hide();
+    $('.title').click(function(){
+      $('.content').hide();
+      $(this).siblings('.content').fadeIn();
+    })
+  </script>
+</body>
+</html>

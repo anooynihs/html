@@ -11,11 +11,41 @@
      <link rel="stylesheet" href="./styles/reset.css">
     <style>
         /* 내부 스타일 위치 */
+        .bg {background:lightgreen; height:100vh;}
+        .target {
+            padding:50px 0;
+            opacity:0;
+            transform:translateY(100px);
+            background:#000;
+        }
+        .target h1 {font-size:3rem; font-weight:600; text-align:center;}
     </style>
 </head>
 <body>
+    <div class="bg">1</div>
+    <!-- 스크롤트리거 적용 대상 -->
+    <div class="target">
+        <h1>스크롤트리거</h1>
+    </div>
+    <div class="bg">3</div>
     <script>
         //내부 자바스크립트 작성 위치(body태그 마지막 자식 위치)
+        gsap.registerPlugin(ScrollTrigger); //★★필수연결
+        gsap.to('.target',{ //to 트리거 대상
+            scrollTrigger:{
+                trigger:'.target', //애니메이션 트리거 대상
+                markers:true,
+                start:"top 80%",
+                end:"top 20%",
+                toggleActions:"play none restart none",
+                scrub:true, //스크롤 진행에 따라서 실시간으로 동작됨 //자동재생하고 싶으면 작성X
+            },
+            //애니메이션 속성 작성 위치
+            opacity:1,
+            y:0,
+            backgroundColor:'tomato',
+            //duration:1.5, //애니메이션 진행 속도(시간)
+        });
     </script>
 </body>
 </html>
