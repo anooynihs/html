@@ -191,7 +191,7 @@ main .newsletter .swiper .slide_btn .prev img,
 main .newsletter .swiper .slide_btn .next img {}
 main .newsletter .swiper .swiper-scrollbar {
     width:1500px; height:2px; background-color:#d9d9d9;
-    left:50%; transform:translateX(-50%); bottom:2.5%;
+    left:50%; transform:translateX(-50%); bottom:2%;
 }
 main .newsletter .swiper .swiper-scrollbar-drag {background-color:#1A1A18;}
 /* =================================================== 컬렉션 소개 */
