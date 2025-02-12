@@ -10,13 +10,28 @@ header .user_wrap {text-align:right;}
 header .user_wrap a {margin-right:25px;}
 header .user_wrap a:last-child {margin:0;}
 header .user_wrap a img {}
-header h1 {text-align:center; margin-bottom:18px;}
-header h1 {}
+header h1 {
+    margin: 0 auto 18px;
+    width:122px;
+    text-align:center;
+}
 header h1 a {}
-header h1 a img {width:122px;}
+header h1 a img {width:100%;}
 header .nav {text-align:center;}
 header .nav a {margin-right:45px; font-family:'Diptyque'; color:#fff;}
 header .nav a:last-child {margin:0;}
+/* =================================================== 블랙 띠 배너 */
+main .black_line_bnr {
+    padding:15px 0;
+    background-color:#1A1A18;
+    text-align:center;
+}
+main .black_line_bnr h3 {
+    font-family:'Diptyque';
+    font-size:1.25rem;
+    letter-spacing:0;
+    color:#fff;
+}
 /* =================================================== footer */
 footer {padding:80px 160px;}
 footer .ft_container {display:flex; flex-flow:row nowrap; justify-content:space-between;}

@@ -1,0 +1,126 @@
+/* =================================================== 헤더 nav 컬러 번경 */
+header .nav {text-align:center;}
+header .nav a {margin-right:45px; font-family:'Diptyque'; color:#1A1A18;}
+header .nav a:last-child {margin:0;}
+/* =================================================== 메인배너 */
+main {max-width:100vw; margin:0 auto;}
+main .bnr {height:100vh; overflow:hidden;}
+main .bnr video {width:100%;}
+/* =================================================== 공통 CSS */
+main > * {color:#1A1A18;}
+main > * h2 {
+    font-family:'Diptyque';
+    font-size:1.88rem;
+    font-weight:700;
+    letter-spacing:0;
+    text-align:center;
+    margin-bottom:40px;
+}
+main > * .tag {
+    background-color:#1A1A18;
+    color:#fff; 
+    padding:5px 10px;
+    font-size:0.75rem; font-weight:600;
+    letter-spacing:0;
+    position:absolute; 
+    left:12px; top:12px;
+}
+main .swiper_container {
+    width:1700px;
+    margin:160px auto;
+}
+main .swiper {width:1600px;}
+main .swiper .swiper-wrapper {
+}
+main .swiper .swiper-wrapper .swiper-slide {width:300px;}
+main .swiper .swiper-wrapper .swiper-slide .item_thum {}
+main .swiper .swiper-wrapper .swiper-slide .item_thum a {}
+main .swiper .swiper-wrapper .swiper-slide .item_thum a img {
+    width:100%;
+    margin-bottom:20px;
+}
+main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .item_name {
+    display:block;
+    margin-bottom:5px;
+}
+main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn {display:block;}
+main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn img {}
+main .swiper .swiper-wrapper .swiper-slide .item_info {
+    color:#7C7C7C;
+    font-family:'Diptyque';
+    font-size:0.81rem;
+    letter-spacing:0;
+    margin-bottom:20px;
+}
+main .swiper .swiper-wrapper .swiper-slide .price {font-weight:600;}
+main .slide_btn {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    position:absolute;
+    top:50%; left:0;
+}
+main .slide_btn .prev,
+main .slide_btn .next {}
+main .slide_btn .prev img,
+main .slide_btn .next img {}
+/* =================================================== 서브페이지 타이틀 */
+main .page_title {
+    text-align:center;
+    margin:80px 0;
+}
+main .page_title h1 {
+    font-family:'Diptyque';
+    font-size:3rem;
+    margin-bottom:20px;
+}
+main .page_title p {
+    line-height:1.6;
+}
+/* =================================================== new */
+main .new {background-color: thistle;}
+main .new h2 {}
+main .new .swiper {}
+main .new .swiper .swiper-wrapper {}
+main .new .swiper .swiper-wrapper .swiper-slide {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_thum {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_thum a {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_thum a img {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .item_name {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn img {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_info {}
+main .new .swiper .swiper-wrapper .swiper-slide .price {}
+main .new .slide_btn {}
+main .new .slide_btn .prev,
+main .new .slide_btn .next {}
+main .new .slide_btn .prev img,
+main .new .slide_btn .next img {}
+/* =================================================== collections */
+main .collections {background-color: coral;}
+main .collections h2 {}
+/* =================================================== all */
+main .all {background-color: blanchedalmond;}
+main .all h2 {}
+/* =================================================== 함께 쓰면 좋은 제품 */
+main .with {background-color: lightblue;}
+main .with h2 {}
+/* =================================================== services */
+main .service {background-color: springgreen;
+    margin-bottom:80px;
+}
+main .service h2 {margin-bottom:45px;}
+main .service .content_wrap {
+    width:548px;
+    display:flex; justify-content:space-between;
+}
+main .service .content_wrap .content {width:92px;}
+main .service .content_wrap .content h3 {}
+main .service .content_wrap .content h3 img {width:100%;}
+main .service .content_wrap .content p {}

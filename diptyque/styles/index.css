@@ -9,7 +9,8 @@ main h2 {
     font-size:1.88rem;
     font-weight:700;
     letter-spacing:0;
-    text-align:center;}
+    text-align:center;
+}
 main .container {width:1600px; margin:0 auto;}
 /* =================================================== 상품 썸네일 및 정보 */
 main .products {
@@ -21,7 +22,8 @@ main .products .item {}
 main .products .item .item_thum {position:relative;}
 main .products .item .item_thum .image {}
 main .products .item .item_thum .image img {
-    width:100%; margin-bottom:20px;
+    width:100%;
+    margin-bottom:20px;
 }
 /* ============================= 태그 */
 main .products .item .item_thum .tag {
@@ -35,7 +37,8 @@ main .products .item .item_thum .tag {
 main .products .item .item_name_add_btn {
     display:flex;
     justify-content:space-between;
-    align-items:center;}
+    align-items:center;
+}
 main .products .item .item_name_add_btn .item_name {
     display:block; margin-bottom:5px;
 }
@@ -64,7 +67,7 @@ main .best .products {}
 main .best .products .item {}
 main .best .products .item .item_thum {}
 main .best .products .item .item_thum .image {}
-main .best .products .item .item_thum .image img {width:300px; height:400px;}
+main .best .products .item .item_thum .image img {width:100%;}
 main .best .products .item .item_thum .tag {}
 main .best .products .item .item_name_add_btn {}
 main .best .products .item .item_name_add_btn .item_name {}
@@ -182,7 +185,7 @@ main .special_layout .products_container .products {}
 main .special_layout .products_container .products .item {width:calc((100% - 80px) / 3);}
 main .special_layout .products_container .products .item .item_thum {}
 main .special_layout .products_container .products .item .item_thum .image {}
-main .special_layout .products_container .products .item .item_thum .image img {}
+main .special_layout .products_container .products .item .item_thum .image img {width:100%;}
 main .special_layout .products_container .products .item .item_thum .tag {}
 main .special_layout .products_container .products .item .item_name_add_btn {}
 main .special_layout .products_container .products .item .item_name_add_btn .item_name {}
@@ -207,7 +210,7 @@ main .body_bath .products_container .products {}
 main .body_bath .products_container .products .item {}
 main .body_bath .products_container .products .item .item_thum {}
 main .body_bath .products_container .products .item .item_thum .image {}
-main .body_bath .products_container .products .item .item_thum .image img {}
+main .body_bath .products_container .products .item .item_thum .image img {width:100%;}
 main .body_bath .products_container .products .item .item_thum .tag {}
 main .body_bath .products_container .products .item .item_name_add_btn {}
 main .body_bath .products_container .products .item .item_name_add_btn .item_name {}
@@ -237,7 +240,7 @@ main .candles_homefragrances .products_container .products {}
 main .candles_homefragrances .products_container .products .item {}
 main .candles_homefragrances .products_container .products .item .item_thum {}
 main .candles_homefragrances .products_container .products .item .item_thum .image {}
-main .candles_homefragrances .products_container .products .item .item_thum .image img {}
+main .candles_homefragrances .products_container .products .item .item_thum .image img {width:100%;}
 main .candles_homefragrances .products_container .products .item .item_thum .tag {}
 main .candles_homefragrances .products_container .products .item .item_name_add_btn {}
 main .candles_homefragrances .products_container .products .item .item_name_add_btn .item_name {}
@@ -392,9 +395,9 @@ main .collection h2 {margin-bottom:40px;}
 main .collection .swiper {width:1500px;}
 main .collection .swiper .swiper-wrapper {}
 main .collection .swiper .swiper-wrapper .swiper-slide {}
-main .collection .swiper .swiper-wrapper .swiper-slide a {}
+main .collection .swiper .swiper-wrapper .swiper-slide a {display:block; width:400px;}
 main .collection .swiper .swiper-wrapper .swiper-slide a img {
-    width:400px;
+    width:100%;
     margin-bottom:20px;
 }
 main .collection .swiper .swiper-wrapper .swiper-slide .texts {}
@@ -421,15 +424,3 @@ main .collection .slide_btn .prev,
 main .collection .slide_btn .next {}
 main .collection .slide_btn .prev img,
 main .collection .slide_btn .next img {}
-/* =================================================== 블랙 띠 배너 */
-main .black_line_bnr {
-    padding:15px 0;
-    background-color:#1A1A18;
-    text-align:center;
-}
-main .black_line_bnr h3 {
-    font-family:'Diptyque';
-    font-size:1.25rem;
-    letter-spacing:0;
-    color:#fff;
-}
