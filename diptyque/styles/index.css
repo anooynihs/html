@@ -38,7 +38,7 @@ main .best .products {}
 main .best .products .item {}
 main .best .products .item .item_thum {}
 main .best .products .item .item_thum .image {}
-main .best .products .item .item_thum .image img {}
+main .best .products .item .item_thum .image img {width:300px; height:400px;}
 main .best .products .item .item_thum .tag {}
 main .best .products .item .item_name_add_btn {}
 main .best .products .item .item_name_add_btn .item_name {}
