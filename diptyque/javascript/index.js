@@ -1,10 +1,17 @@
-//body,bath add 버튼 팝업창
-//candles, homefragrances add 버튼 팝업창
-const label = document.querySelector('.body_bath .candles_homefragrances .info_label');
-const addBtn = document.querySelector('.body_bath .candles_homefragrances .add_btn');
-addBtn.addEventListener('click',()=>{
-    label.style.display = 'block';
-})
+//body,bath candles, homefragrances add 버튼 팝업창
+const labels = document.querySelectorAll('.click_popup .info_label');
+const addBtns = document.querySelectorAll('.click_popup .add_btn');
+
+console.log(labels, addBtns);
+
+// 모든 버튼에 클릭 이벤트 추가
+addBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        if (labels[index]) { // 해당 인덱스의 label이 존재하는지 확인
+            labels[index].style.display = 'block';
+        }
+    });
+});
 
 
 //newsletter 슬라이드
@@ -26,4 +33,9 @@ const collection = new Swiper('.collection .card_wrap',{
     slidesPerView:3.7,
     spaceBetween:40,
     slidesPerGroup:1,
+    loop:true,
+    navigation:{
+        nextEl:'.collection .slide_btn .next',
+        prevEl:'.collection .slide_btn .prev',
+    },
 })
