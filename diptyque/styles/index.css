@@ -4,26 +4,48 @@ main .bnr {height:100vh; overflow:hidden;}
 main .bnr video {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
-main h2 {font-family:'Diptyque'; font-size:1.88rem; font-weight:700; letter-spacing:0; text-align:center;}
+main h2 {
+    font-family:'Diptyque';
+    font-size:1.88rem;
+    font-weight:700;
+    letter-spacing:0;
+    text-align:center;}
 main .container {width:1600px; margin:0 auto;}
 /* =================================================== 상품 썸네일 및 정보 */
-main .products {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .products {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
 main .products .item {}
 main .products .item .item_thum {position:relative;}
 main .products .item .item_thum .image {}
-main .products .item .item_thum .image img {width:100%; margin-bottom:20px;}
+main .products .item .item_thum .image img {
+    width:100%; margin-bottom:20px;
+}
 /* ============================= 태그 */
 main .products .item .item_thum .tag {
-    background-color:#1A1A18; color:#fff; padding:5px 10px;
+    background-color:#1A1A18;
+    color:#fff; 
+    padding:5px 10px;
     font-size:0.75rem; font-weight:600; letter-spacing:0;
-    position:absolute; left:12px; top:12px;
+    position:absolute; 
+    left:12px; top:12px;
 }
-main .products .item .item_name_add_btn {display:flex; justify-content:space-between; align-items:center;}
-main .products .item .item_name_add_btn .item_name {display:block; margin-bottom:5px;}
+main .products .item .item_name_add_btn {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;}
+main .products .item .item_name_add_btn .item_name {
+    display:block; margin-bottom:5px;
+}
 main .products .item .item_name_add_btn .add_btn {display:block;}
 main .products .item .item_name_add_btn .add_btn > img {}
 main .products .item .item_info {
-    color:#7C7C7C; font-family:'Diptyque'; font-size:0.81rem; letter-spacing:0;
+    color:#7C7C7C;
+    font-family:'Diptyque';
+    font-size:0.81rem;
+    letter-spacing:0;
     margin-bottom:20px;
 }
 main .products .item .price {font-weight:600;}
@@ -31,7 +53,11 @@ main .products .item .price {font-weight:600;}
 main .best {width:1600px; margin-top:160px;}
 main .best > h2 {margin-bottom:40px;}
 main .best .category {text-align:center; margin-bottom:40px;}
-main .best .category a {color:#7C7C7C; margin-right:30px; letter-spacing:0;}
+main .best .category a {
+    color:#7C7C7C;
+    margin-right:30px;
+    letter-spacing:0;
+}
 main .best .category a:last-child {margin:0;}
 main .best .category .active {font-weight:600; color:#1A1A18;}
 main .best .products {}
@@ -54,51 +80,104 @@ main .prefer .title_wrap h3 {font-size:1.125rem; margin:15px 0 40px;}
 main .prefer .contents {display:flex; justify-content:space-between;}
 main .prefer .contents .type {width:280px;}
 main .prefer .contents .type a {}
-main .prefer .contents .type a img {width:200px; height:200px; border-radius:50%; margin-bottom:30px;}
-main .prefer .contents .type h4 {font-family:'Diptyque'; font-weight:700; letter-spacing:0; margin-bottom:20px;}
-main .prefer .contents .type p {font-size:0.88rem; line-height:1.7; margin-bottom:50px;}
-main .prefer .contents .type .btn_discover {
-    background-color:#1A1A18; width:86px; padding:8px 0; display:inline-block;
+main .prefer .contents .type a img {
+    width:200px; height:200px; 
+    border-radius:50%; 
+    margin-bottom:30px;
 }
-main .prefer .contents .type .btn_discover a {font-size:0.81rem; color:#fff; letter-spacing:0;}
+main .prefer .contents .type h4 {
+    font-family:'Diptyque';
+    font-weight:700;
+    letter-spacing:0;
+    margin-bottom:20px;
+}
+main .prefer .contents .type p {
+    font-size:0.88rem;
+    line-height:1.7; 
+    margin-bottom:50px;
+}
+main .prefer .contents .type .btn_discover {
+    display:inline-block;
+    background-color:#1A1A18;
+    width:86px; padding:8px 0; 
+}
+main .prefer .contents .type .btn_discover a {
+    font-size:0.81rem;
+    letter-spacing:0;
+    color:#fff;
+}
 /* =================================================== 기프트배너 */
 main .gifts_bnr {margin-top:160px;}
 main .gifts_bnr h2 {}
-main .gifts_bnr h3 {font-size:1.125rem; margin:15px 0 40px; text-align:center;}
+main .gifts_bnr h3 {
+    font-size:1.125rem;
+    margin:15px 0 40px;
+    text-align:center;
+}
 main .gifts_bnr .bnr_image {}
 main .gifts_bnr .bnr_image img {width:100%;}
 /* =================================================== 바디, 홈 콘텐츠 공통 CSS */
 main .special_layout {
-    margin-top:160px; display:flex; justify-content:space-between; align-items:center;
+    margin-top:160px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 main .special_layout .bnr_container {
-    background-size:cover; background-position:center;
-    width:536px; height:700px; padding:45px 60px;
-    display:flex; align-items:end; position:relative;
+    background-size:cover;
+    background-position:center;
+    width:536px; height:700px;
+    padding:45px 60px;
+    display:flex;
+    align-items:end;
+    position:relative;
 }
-main .special_layout .bnr_container > p {font-size:1.125rem; line-height:1.5; color:#fff;}
+main .special_layout .bnr_container > p {
+    font-size:1.125rem;
+    line-height:1.5; 
+    color:#fff;
+}
 main .special_layout .bnr_container .click_popup {position:absolute;}
 main .special_layout .bnr_container .click_popup .info_label {
-    background-color:rgba(255, 255, 255, 0.7); width:152px;
-    padding:10px 12px; margin-bottom:8px;
+    background-color:rgba(255, 255, 255, 0.7);
+    width:152px;
+    padding:10px 12px;
+    margin-bottom:8px;
 }
 main .special_layout .bnr_container .click_popup .info_label p {font-size:0.69rem;}
 main .special_layout .bnr_container .click_popup .info_label span {
-    font-family:'Nuosu SIL'; font-size:0.69rem; color:#7C7C7C; margin-bottom:4px;
+    font-family:'Diptyque';
+    font-size:0.69rem;
+    letter-spacing:0;
+    color:#7C7C7C; 
+    margin-bottom:4px;
 }
 main .special_layout .bnr_container .click_popup .info_label .price {
-    font-size:0.81rem; font-weight:600; text-align:right;
+    font-size:0.81rem;
+    font-weight:600;
+    text-align:right;
 }
 main .special_layout .bnr_container .click_popup .add_btn {}
 main .special_layout .products_container {width:980px;}
 main .special_layout .products_container .title {
-    display:flex; justify-content:space-between; align-items:end; margin-bottom:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:40px;
 }
-main .special_layout .products_container .title h2 {font-size:1.5rem; letter-spacing:0;}
+main .special_layout .products_container .title h2 {
+    font-size:1.5rem;
+    letter-spacing:0;
+}
 main .special_layout .products_container .title .more_view {
-    font-size:0.81rem; font-weight:600; color:#7C7C7C; letter-spacing:0;
+    font-size:0.81rem;
+    font-weight:600;
+    letter-spacing:0;
+    color:#7C7C7C;
 }
-main .special_layout .products_container .title .more_view img {width:5px; height:10px; margin-left:10px;}
+main .special_layout .products_container .title .more_view img {
+    width:5px; height:10px; margin-left:10px;
+}
 main .special_layout .products_container .products {}
 main .special_layout .products_container .products .item {width:calc((100% - 80px) / 3);}
 main .special_layout .products_container .products .item .item_thum {}
@@ -166,91 +245,191 @@ main .candles_homefragrances .products_container .products .item .item_name_add_
 main .candles_homefragrances .products_container .products .item .item_info {}
 main .candles_homefragrances .products_container .products .item .price {}
 /* =================================================== 뉴스레터 콘텐츠 */
-main .newsletter {margin-top:160px;}
+main .newsletter {margin-top:160px; position:relative; }
 main .newsletter h2 {margin-bottom:40px;}
 main .newsletter .swiper {width:100%;}
 main .newsletter .swiper .swiper-wrapper {}
 main .newsletter .swiper .swiper-wrapper .swiper-slide {}
 main .newsletter .swiper .swiper-wrapper .swiper-slide a {
-    display:inline-block; width:435px; height:580px; text-align:center;
-    background-position:center; background-size:cover; background-repeat:no-repeat;
+    display:inline-block;
+    width:435px; height:580px;
+    text-align:center;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 main .newsletter .swiper .swiper-wrapper .swiper-slide a span {display:inline-block; margin-bottom:10px;}
 main .newsletter .swiper .swiper-wrapper .swiper-slide a h3 {}
 main .newsletter .swiper .swiper-wrapper .card1 {}
 main .newsletter .swiper .swiper-wrapper .card1 > a {background-image:url(../images/letter01.jpg);}
-main .newsletter .swiper .swiper-wrapper .card1 > a span {font-family:'Diptyque'; letter-spacing:0; padding-top:86px;}
-main .newsletter .swiper .swiper-wrapper .card1 > a h3 {font-size:1.25rem; font-weight:500;}
+main .newsletter .swiper .swiper-wrapper .card1 > a span {
+    font-family:'Diptyque';
+    letter-spacing:0;
+    padding-top:86px;
+}
+main .newsletter .swiper .swiper-wrapper .card1 > a h3 {
+    font-size:1.25rem; 
+    font-weight:500;
+}
 main .newsletter .swiper .swiper-wrapper .card2 {background-image:url(../images/letter02.jpg);}
-main .newsletter .swiper .swiper-wrapper .card2 > a {display:flex; flex-flow:column nowrap; justify-content:center}
-main .newsletter .swiper .swiper-wrapper .card2 > a span {font-family:'Diptyque'; font-size:1.25rem; font-weight:700; letter-spacing:0;}
+main .newsletter .swiper .swiper-wrapper .card2 > a {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center
+}
+main .newsletter .swiper .swiper-wrapper .card2 > a span {
+    font-family:'Diptyque';
+    font-size:1.25rem;
+    font-weight:700;
+    letter-spacing:0;
+}
 main .newsletter .swiper .swiper-wrapper .card2 > a h3 {font-size:1.25rem;}
 main .newsletter .swiper .swiper-wrapper .card3 {background-image:url(../images/letter03.jpg);}
 main .newsletter .swiper .swiper-wrapper .card3 > a {}
 main .newsletter .swiper .swiper-wrapper .card3 > a .sub_t {
-    font-family:'Diptyque'; font-size:1.25rem; letter-spacing:0;  padding-top:86px; margin-bottom:40px;}
-main .newsletter .swiper .swiper-wrapper .card3 > a span {display:block; font-family:'Diptyque'; letter-spacing:0;}
+    font-family:'Diptyque';
+    font-size:1.25rem;
+    letter-spacing:0; 
+    padding-top:86px;
+    margin-bottom:40px;
+}
+main .newsletter .swiper .swiper-wrapper .card3 > a span {
+    display:block;
+    font-family:'Diptyque';
+    letter-spacing:0;
+}
 main .newsletter .swiper .swiper-wrapper .card3 > a h3 {font-weight:500;}
 main .newsletter .swiper .swiper-wrapper .card3 .btn_discover {}
 main .newsletter .swiper .swiper-wrapper .card3 .btn_discover > a {
-    position:absolute; top:500px; left:170.5px;
-    background-color:#1A1A18; width:94px; line-height:29px; height:29px;
-    font-size:0.81rem; font-weight:500; color:#fff; letter-spacing:0;
+    position:absolute; 
+    top:500px; left:170.5px;
+    background-color:#1A1A18;
+    width:94px; height:29px;
+    line-height:29px;
+    font-size:0.81rem;
+    font-weight:500;
+    letter-spacing:0;
+    color:#fff; 
 }
 main .newsletter .swiper .swiper-wrapper .card4 {background-image:url(../images/letter04.jpg); letter-spacing:0;}
-main .newsletter .swiper .swiper-wrapper .card4 > a {display:flex; flex-flow:column nowrap; justify-content:center;}
+main .newsletter .swiper .swiper-wrapper .card4 > a {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+}
 main .newsletter .swiper .swiper-wrapper .card4 > a span {}
-main .newsletter .swiper .swiper-wrapper .card4 > a h3 {font-family:'Diptyque'; font-size:1.25rem;}
+main .newsletter .swiper .swiper-wrapper .card4 > a h3 {
+    font-family:'Diptyque';
+    font-size:1.25rem;
+    letter-spacing:0;
+}
 main .newsletter .swiper .swiper-wrapper .card5 {background-image:url(../images/letter05.jpg);}
 main .newsletter .swiper .swiper-wrapper .card5 > a {}
-main .newsletter .swiper .swiper-wrapper .card5 > a span {font-family:'Diptyque'; letter-spacing:0; padding-top:86px;}
-main .newsletter .swiper .swiper-wrapper .card5 > a h3 {font-size:1.25rem; font-weight:500;}
+main .newsletter .swiper .swiper-wrapper .card5 > a span {
+    font-family:'Diptyque'; 
+    letter-spacing:0;
+    padding-top:86px;
+}
+main .newsletter .swiper .swiper-wrapper .card5 > a h3 {
+    font-size:1.25rem;
+    font-weight:500;
+}
 main .newsletter .swiper .swiper-wrapper .card6 {background-image:url(../images/letter06.jpg);}
-main .newsletter .swiper .swiper-wrapper .card6 > a {display:flex; flex-flow:column nowrap; justify-content:end; padding-bottom:86px;}
+main .newsletter .swiper .swiper-wrapper .card6 > a {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:end;
+    padding-bottom:86px;
+}
 main .newsletter .swiper .swiper-wrapper .card6 > a span {}
-main .newsletter .swiper .swiper-wrapper .card6 > a h3 {font-family:'Diptyque'; font-size:1.25rem; letter-spacing:0;}
+main .newsletter .swiper .swiper-wrapper .card6 > a h3 {
+    font-family:'Diptyque'; 
+    font-size:1.25rem; 
+    letter-spacing:0;
+}
 main .newsletter .swiper .swiper-wrapper .card7 {background-image:url(../images/letter07.jpg);}
-main .newsletter .swiper .swiper-wrapper .card7 > a {display:flex; flex-flow:column nowrap; justify-content:end; padding-bottom:86px;}
-main .newsletter .swiper .swiper-wrapper .card7 > a span {font-family:'Diptyque'; font-weight:700; letter-spacing:0;}
+main .newsletter .swiper .swiper-wrapper .card7 > a {
+    display:flex; 
+    flex-flow:column nowrap; 
+    justify-content:end; 
+    padding-bottom:86px;
+}
+main .newsletter .swiper .swiper-wrapper .card7 > a span {
+    font-family:'Diptyque'; 
+    font-weight:700; 
+    letter-spacing:0;
+}
 main .newsletter .swiper .swiper-wrapper .card8 {background-image:url(../images/letter08.jpg);}
 main .newsletter .swiper .swiper-wrapper .card8 > a {}
-main .newsletter .swiper .swiper-wrapper .card8 > a span {font-family:'Diptyque'; font-size:1.5rem; font-weight:700; letter-spacing:0; padding-top:86px;}
+main .newsletter .swiper .swiper-wrapper .card8 > a span {
+    font-family:'Diptyque';
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:0;
+    padding-top:86px;}
 main .newsletter .swiper .swiper-wrapper .card8 > a h3 {}
-main .newsletter .swiper .slide_btn {
-    width:1600px; margin:0 auto; display:flex; justify-content:space-between;
+main .newsletter .slide_btn {
+    width:1600px; margin:0 auto; 
+    display:flex;
+    justify-content:space-between;
     margin-top:30px;
 }
-main .newsletter .swiper .slide_btn .prev img,
-main .newsletter .swiper .slide_btn .next img {}
-main .newsletter .swiper .swiper-scrollbar {
-    width:1500px; height:2px; background-color:#d9d9d9;
-    left:50%; transform:translateX(-50%); bottom:2.5%;
+main .newsletter .slide_btn .prev img {}
+main .newsletter .slide_btn .next img {}
+main .newsletter .swiper-scrollbar {
+    width:1500px; height:2px;
+    background-color:#d9d9d9;
+    left:50%; bottom:2%;
+    transform:translateX(-50%);
 }
-main .newsletter .swiper .swiper-scrollbar-drag {background-color:#1A1A18;}
+main .newsletter .swiper-scrollbar-drag {background-color:#1A1A18;}
 /* =================================================== 컬렉션 소개 */
-main .collection {width:1600px; position:relative; margin:160px auto;}
+main .collection {
+    width:1600px;
+    position:relative;
+    margin:160px auto;}
 main .collection h2 {margin-bottom:40px;}
 main .collection .swiper {width:1500px;}
 main .collection .swiper .swiper-wrapper {}
 main .collection .swiper .swiper-wrapper .swiper-slide {}
 main .collection .swiper .swiper-wrapper .swiper-slide a {}
-main .collection .swiper .swiper-wrapper .swiper-slide a img {margin-bottom:20px; width:400px;}
+main .collection .swiper .swiper-wrapper .swiper-slide a img {
+    width:400px;
+    margin-bottom:20px;
+}
 main .collection .swiper .swiper-wrapper .swiper-slide .texts {}
 main .collection .swiper .swiper-wrapper .swiper-slide .texts .kr_name {margin-bottom:8px;}
 main .collection .swiper .swiper-wrapper .swiper-slide .texts .en_name {
-    font-family:'Diptyque'; font-size:0.88rem; letter-spacing:0; margin-bottom:20px;
+    font-family:'Diptyque';
+    font-size:0.88rem;
+    letter-spacing:0;
+    margin-bottom:20px;
 }
 main .collection .swiper .swiper-wrapper .swiper-slide .texts .collection_explain {
-    font-size:0.88rem; line-height:1.6; color:#7C7C7C;
+    font-size:0.88rem;
+    line-height:1.6;
+    color:#7C7C7C;
 }
 main .collection .slide_btn {
-    width:100%; display:flex; justify-content:space-between;
-    position:absolute; top:50%;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    position:absolute;
+    top:50%; left:0;
 }
 main .collection .slide_btn .prev,
 main .collection .slide_btn .next {}
 main .collection .slide_btn .prev img,
 main .collection .slide_btn .next img {}
 /* =================================================== 블랙 띠 배너 */
-main .black_line_bnr {padding:15px 0; background-color:#1A1A18; text-align:center;}
-main .black_line_bnr h3 {font-family:'Diptyque'; font-size:1.25rem; letter-spacing:0; color:#fff;}
+main .black_line_bnr {
+    padding:15px 0;
+    background-color:#1A1A18;
+    text-align:center;
+}
+main .black_line_bnr h3 {
+    font-family:'Diptyque';
+    font-size:1.25rem;
+    letter-spacing:0;
+    color:#fff;
+}
