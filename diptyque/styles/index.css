@@ -114,7 +114,7 @@ main .special_layout .products_container .products .item .price {}
 main .body_bath {}
 main .body_bath .bnr_container {background-image:url(../images/bnr_body.jpg);}
 main .body_bath .bnr_container .click_popup {left:230px; top:170px;}
-main .body_bath .bnr_container .click_popup .info_label {}
+main .body_bath .bnr_container .click_popup .info_label {display:none;}
 main .body_bath .bnr_container .click_popup .info_label p {}
 main .body_bath .bnr_container .click_popup .info_label span {}
 main .body_bath .bnr_container .click_popup .info_label .price {}
@@ -139,11 +139,11 @@ main .body_bath .products_container .products .item .price {}
 main .candles_homefragrances {}
 main .candles_homefragrances .bnr_container {background-image:url(../images/bnr_home.jpg);}
 main .candles_homefragrances .bnr_container .click_popup {}
-main .candles_homefragrances .bnr_container .act {right:30px; top:310px;}
+main .candles_homefragrances .bnr_container .act {right:30px; top:300px;}
 main .candles_homefragrances .bnr_container .deact1 {bottom:305px;}
 main .candles_homefragrances .bnr_container .deact2 {bottom:200px; right:200px;}
 main .candles_homefragrances .bnr_container .deact3 {top:180px; right:90px;}
-main .candles_homefragrances .bnr_container .click_popup .info_label {}
+main .candles_homefragrances .bnr_container .click_popup .info_label {display:none;}
 main .candles_homefragrances .bnr_container .click_popup .info_label p {}
 main .candles_homefragrances .bnr_container .click_popup .info_label span {}
 main .candles_homefragrances .bnr_container .click_popup .info_label .price {}
