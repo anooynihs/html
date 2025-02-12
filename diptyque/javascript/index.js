@@ -1,16 +1,17 @@
-const letter = new Swiper('.card_wrap',{
+const letter = new Swiper('.newsletter .card_wrap',{
     slidesPerView:4,
     spaceBetween:73,
-    slidesPerGroup:1,
-    autoplay:{delay:2000},
-    loop:true,
     navigation:{
-        nextEl:'.slide_btn .next',
-        prevEl:'.slide_btn .prev',
+        nextEl:'.newsletter .slide_btn .next',
+        prevEl:'.newsletter .slide_btn .prev',
     },
     scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: true,
+        el: '.newsletter .swiper-scrollbar',
         dragSize:200,
       },
+})
+const collection = new Swiper('.collection .card_wrap',{
+    slidesPerView:3.7,
+    spaceBetween:40,
+    slidesPerGroup:1,
 })

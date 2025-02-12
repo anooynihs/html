@@ -2,70 +2,48 @@
 /* =================================================== header */
 header {
     width:1600px; margin:0 auto;
-    position:absolute; top:0; left:160px;
-    position:fixed; z-index:10;
+    position:absolute; top:30px; left:160px; z-index:10;
 }
-header .top_wrap {
-    display:flex; justify-content:space-between; align-items:center;
-    padding:40px 0 35px;
-}
-header .top_wrap .search_wrap {
-    width:142px; border-bottom:1px solid #fff;
-    display:flex; justify-content:space-between;
-    padding-bottom:5px;
-}
-header .top_wrap .search_wrap #search {width:100%; font-size:0.81rem; background:transparent; color:#fff;}
-header .top_wrap .search_wrap #search::placeholder {color:#fff; font-size:0.81rem;}
-header .top_wrap .search_wrap a {}
-header .top_wrap .search_wrap a img {width:12px; height:12px;}
-header .top_wrap .logo {}
-header .top_wrap .logo h1 {}
-header .top_wrap .logo h1 a {}
-header .top_wrap .logo h1 a img {}
-header .top_wrap .user_wrap {}
-header .top_wrap .user_wrap a {font-size:0.81rem; color:#fff;}
-header .top_wrap .user_wrap a:first-child {margin-right:20px;}
+header .user_wrap {text-align:right;}
+header .user_wrap a {margin-right:25px;}
+header .user_wrap a:last-child {margin:0;}
+header .user_wrap a img {}
+header h1 {text-align:center; margin-bottom:18px;}
+header h1 {}
+header h1 a {}
+header h1 a img {width:122px;}
 header .nav {text-align:center;}
-header .nav a {margin-right:45px; font-family:'Nuosu SIL'; color:#fff;}
+header .nav a {margin-right:45px; font-family:'Diptyque'; color:#fff;}
 header .nav a:last-child {margin:0;}
 /* =================================================== footer */
-footer {width:100%; padding:60px 160px; border-top:1px solid #000;}
-footer > * {font-size:0.81rem; letter-spacing:-0.02em;}
-footer .ft_container {}
-footer .ft_container .ft_top {
-    display:flex; flex-flow:row nowrap; justify-content:space-between;
-    margin-bottom:20px;
+footer {padding:80px 160px;}
+footer .ft_container {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+footer .ft_container .legal_wrap {}
+footer .ft_container .legal_wrap .terms {margin-bottom:16px;}
+footer .ft_container .legal_wrap .terms a {font-size:0.81rem; }
+footer .ft_container .legal_wrap .legal {font-size:0.69rem; line-height:2; color:#7C7C7C; margin-bottom:16px;}
+footer .ft_container .legal_wrap .legal span  {font-weight:600;}
+footer .ft_container .legal_wrap .copyright {font-size:0.69rem; line-height:1.6; color:#7C7C7C;}
+footer .ft_container .help {}
+footer .ft_container .help p {font-family:'Diptyque'; font-size:1.125rem; font-weight:700; letter-spacing:0; margin-bottom:16px;}
+footer .ft_container .help a {display:block; font-size:0.81rem; margin-bottom:16px;}
+footer .ft_container .help span {font-size:0.81rem; line-height:1.6;}
+footer .ft_container .help span em {font-size:1rem; font-weight:600;}
+footer .ft_container .store {}
+footer .ft_container .store p {font-family:'Diptyque'; font-size:1.125rem; font-weight:700; letter-spacing:0; margin-bottom:16px;}
+footer .ft_container .store a {display:block; font-size:0.81rem; margin-bottom:16px;}
+footer .ft_container .news_social {}
+footer .ft_container .news_social .newsletter {margin-bottom:84px;}
+footer .ft_container .news_social .newsletter p {font-weight:600; margin-bottom:16px;}
+footer .ft_container .news_social .newsletter .input_email {
+    width:276px; height:33px; display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-footer .ft_container .ft_top .legar {}
-footer .ft_container .ft_top .legar .row1 {margin-bottom:40px;}
-footer .ft_container .ft_top .legar .row1 a {margin-right:20px;}
-footer .ft_container .ft_top .legar .row2 {
-    color:#7C7C7C; display:flex; flex-flow:column nowrap; 
-}
-footer .ft_container .ft_top .legar .row2 span {margin-bottom:12px;}
-footer .ft_container .ft_top .legar .row2 span em {font-weight:600;}
-footer .ft_container .ft_top .left {display:flex;}
-footer .ft_container .ft_top .left .help {margin-right:150px;}
-footer .ft_container .ft_top .left .help p {font-family:'Nuosu SIL'; font-size:1.25rem; margin-bottom:20px;}
-footer .ft_container .ft_top .left .help a {display:block; margin-bottom:20px;}
-footer .ft_container .ft_top .left .help span {font-weight:600; line-height:1.4;}
-footer .ft_container .ft_top .left .store {margin-right:150px;}
-footer .ft_container .ft_top .left .store p {font-family:'Nuosu SIL'; font-size:1.25rem; margin-bottom:20px;}
-footer .ft_container .ft_top .left .store a {display:block; margin-bottom:20px;}
-footer .ft_container .ft_top .left .news_social {}
-footer .ft_container .ft_top .left .news_social .news {margin-bottom:40px; width:267px;}
-footer .ft_container .ft_top .left .news_social .news p {font-weight:600; margin-bottom:10px;}
-footer .ft_container .ft_top .left .news_social .news .input_email {
-    border:1px solid #000;
-    display:flex; flex-flow:row nowrap; justify-content:space-between;}
-footer .ft_container .ft_top .left .news_social .news .input_email #mail {margin-left:10px;}
-footer .ft_container .ft_top .left .news_social .news .input_email #mail::placeholder {font-size:0.81rem; color:#7C7C7C;}
-footer .ft_container .ft_top .left .news_social .news .input_email .join_btn {
-    font-size:0.81rem; font-weight:600;
+footer .ft_container .news_social .newsletter .input_email #mail {border:1px solid #000; padding-left:10px;}
+footer .ft_container .news_social .newsletter .input_email #mail::placeholder {font-size:0.81rem; color:#7C7C7C;}
+footer .ft_container .news_social .newsletter .input_email .join_btn {
+    font-size:0.81rem; font-weight:600; letter-spacing:0;
     padding:10px 20px; color:#fff; background:#000;
 }
-footer .ft_container .ft_top .left .news_social .social {}
-footer .ft_container .ft_top .left .news_social .social a {}
-footer .ft_container .ft_top .left .news_social .social a img {}
-footer .ft_container .copyright {}
-footer .ft_container .copyright p {color:#7C7C7C; line-height:1.6;}
+footer .ft_container .news_social .social {}
+footer .ft_container .news_social .social a {margin-right:20px;}
+footer .ft_container .news_social .social a img {}
