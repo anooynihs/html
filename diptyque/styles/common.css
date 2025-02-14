@@ -1,26 +1,62 @@
-/* header, footer 통합 CSS */
 /* =================================================== header */
 header {
     width:1600px;
-    position:absolute; top:30px; left:50%; 
+    position:absolute; top:30px; left:50%;
     transform:translateX(-50%);
-    z-index:10;
 }
+header .logo {
+    width:100%;
+    text-align:center;
+}
+header .logo a {}
+header .logo a img {width:122px; margin-bottom:18px;}
 header .user_wrap {text-align:right;}
 header .user_wrap a {margin-right:25px;}
 header .user_wrap a:last-child {margin:0;}
 header .user_wrap a img {}
-header h1 {
-    margin: 0 auto 18px;
-    width:122px;
-    text-align:center;
-}
-header h1 a {}
-header h1 a img {width:100%;}
 header .nav {text-align:center;}
-header .nav a {margin-right:45px; font-family:'Diptyque'; color:#fff;}
+header .nav a {
+    margin-right:45px;
+    font-family:'Diptyque';
+    letter-spacing:0;
+    color:#1A1A18;
+}
 header .nav a:last-child {margin:0;}
-/* =================================================== 블랙 띠 배너 */
+/* =================================================== 상품 CSS */
+main .item {width:300px;}
+main .item .item_thum {position:relative;}
+main .item .item_thum .image {}
+main .item .item_thum .image img {
+    width:100%;
+    margin-bottom:20px;
+}
+main .item .item_thum .tag {
+    background-color:#1A1A18;
+    color:#fff; 
+    padding:5px 10px;
+    font-size:0.75rem; font-weight:600; letter-spacing:0;
+    position:absolute; 
+    left:12px; top:12px;
+}
+main .item .item_name_add_btn {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+main .item .item_name_add_btn .item_name {
+    display:block; margin-bottom:5px;
+}
+main .item .item_name_add_btn .add_btn {display:block;}
+main .item .item_name_add_btn .add_btn > img {}
+main .item .item_info {
+    color:#7C7C7C;
+    font-family:'Diptyque';
+    font-size:0.81rem;
+    letter-spacing:0;
+    margin-bottom:20px;
+}
+main .item .price {font-weight:600;}
+/* =================================================== 블랙 띠배너 */
 main .black_line_bnr {
     padding:15px 0;
     background-color:#1A1A18;
@@ -34,32 +70,83 @@ main .black_line_bnr h3 {
 }
 /* =================================================== footer */
 footer {padding:80px 160px;}
-footer .ft_container {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+footer .ft_container {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
 footer .ft_container .legal_wrap {}
 footer .ft_container .legal_wrap .terms {margin-bottom:16px;}
 footer .ft_container .legal_wrap .terms a {font-size:0.81rem; }
-footer .ft_container .legal_wrap .legal {font-size:0.69rem; line-height:2; color:#7C7C7C; margin-bottom:16px;}
+footer .ft_container .legal_wrap .legal {
+    font-size:0.69rem;
+    line-height:2;
+    color:#7C7C7C;
+    margin-bottom:16px;
+}
 footer .ft_container .legal_wrap .legal span  {font-weight:600;}
-footer .ft_container .legal_wrap .copyright {font-size:0.69rem; line-height:1.6; color:#7C7C7C;}
+footer .ft_container .legal_wrap .copyright {
+    font-size:0.69rem;
+    line-height:1.6;
+    color:#7C7C7C;
+}
 footer .ft_container .help {}
-footer .ft_container .help p {font-family:'Diptyque'; font-size:1.125rem; font-weight:700; letter-spacing:0; margin-bottom:16px;}
-footer .ft_container .help a {display:block; font-size:0.81rem; margin-bottom:16px;}
-footer .ft_container .help span {font-size:0.81rem; line-height:1.6;}
-footer .ft_container .help span em {font-size:1rem; font-weight:600;}
+footer .ft_container .help p {
+    font-family:'Diptyque';
+    font-size:1.125rem;
+    font-weight:700;
+    letter-spacing:0;
+    margin-bottom:16px;
+}
+footer .ft_container .help a {
+    display:block;
+    font-size:0.81rem;
+    margin-bottom:16px;
+}
+footer .ft_container .help span {
+    font-size:0.81rem;
+    line-height:1.6;
+}
+footer .ft_container .help span em {
+    font-size:1rem;
+    font-weight:600;
+}
 footer .ft_container .store {}
-footer .ft_container .store p {font-family:'Diptyque'; font-size:1.125rem; font-weight:700; letter-spacing:0; margin-bottom:16px;}
-footer .ft_container .store a {display:block; font-size:0.81rem; margin-bottom:16px;}
+footer .ft_container .store p {
+    font-family:'Diptyque';
+    font-size:1.125rem;
+    font-weight:700;
+    letter-spacing:0;
+    margin-bottom:16px;
+}
+footer .ft_container .store a {
+    display:block;
+    font-size:0.81rem;
+    margin-bottom:16px;
+}
 footer .ft_container .news_social {}
 footer .ft_container .news_social .newsletter {margin-bottom:84px;}
 footer .ft_container .news_social .newsletter p {font-weight:600; margin-bottom:16px;}
 footer .ft_container .news_social .newsletter .input_email {
-    width:276px; height:33px; display:flex; flex-flow:row nowrap; justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
 }
-footer .ft_container .news_social .newsletter .input_email #mail {border:1px solid #000; padding-left:10px;}
-footer .ft_container .news_social .newsletter .input_email #mail::placeholder {font-size:0.81rem; color:#7C7C7C;}
+footer .ft_container .news_social .newsletter .input_email #mail {
+    border:1px solid #000;
+    padding:0 10px;
+    font-size:0.81rem;
+}
+footer .ft_container .news_social .newsletter .input_email #mail::placeholder {
+    font-size:0.81rem;
+    color:#7C7C7C;
+}
 footer .ft_container .news_social .newsletter .input_email .join_btn {
-    font-size:0.81rem; font-weight:600; letter-spacing:0;
-    padding:10px 20px; color:#fff; background:#000;
+    font-size:0.81rem;
+    font-weight:600;
+    letter-spacing:0;
+    padding:10px 20px;
+    color:#fff;
+    background:#000;
 }
 footer .ft_container .news_social .social {}
 footer .ft_container .news_social .social a {margin-right:20px;}

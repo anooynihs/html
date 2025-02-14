@@ -1,0 +1,86 @@
+/* =================================================== header */
+header {border-bottom:1px solid #D9D9D9;}
+header .nav {margin-bottom:30px;}
+/* =================================================== main, 공통 CSS */
+main {padding-top:252px;}
+main > * {color:#1A1A18; margin:0 auto;}
+/* =================================================== hero container */
+main .hero_container { background-color: antiquewhite;
+    width:1600px;
+    padding:0 162px 100px;
+    border-bottom:1px solid #D9D9D9;
+}
+/* =================================================== detail container */
+main .detail_container {
+    width:1600px;
+    padding:100px 324px 160px;
+}
+main .detail_container h2 {width:160px;}
+main .detail_container h2 img {width:100%; margin-bottom:50px;}
+main .detail_container h3 {
+    font-family:'Diptyque';
+    font-size:1.125rem;
+    letter-spacing:0;
+    margin-bottom:18px;
+}
+main .detail_container p {
+    font-size:0.83rem;
+    line-height:175%;
+}
+main .detail_container .notes {margin-bottom:60px;}
+main .detail_container .story {margin-bottom:161px;}
+/* =================================================== 탭 메뉴 */
+main .detail_container .tap {
+    display:flex;
+    justify-content:space-between;
+}
+main .detail_container .tap button {
+    width:160px;
+    text-align:center;
+    padding-bottom:12px;
+    border-bottom:1px solid #A2A2A2;
+    color:#A2A2A2;
+}
+main .detail_container .tap .active {
+    border-bottom:1px solid #1A1A18;
+    color:#1A1A18;
+}
+main .detail_container .tap .notice {}
+main .detail_container .tap .review {}
+main .detail_container .tap .review button {}
+main .detail_container .tap .qna {}
+main .detail_container .tap .qna button {}
+main .detail_container .tap .cs {}
+main .detail_container .tap .cs button {}
+/* =================================================== 함께 쓰면 좋은 제품 */
+main .with {width:1600px; margin-bottom:160px;}
+main .with h2 {
+    font-size:1.5rem;
+    font-weight:500;
+    text-align:center;
+    margin-bottom:40px;
+}
+main .with .products {
+    display:flex;
+    justify-content:space-between;
+}
+/* =================================================== services */
+main .service {width:1600px; margin-bottom:80px;}
+main .service h2 {
+    margin-bottom:40px;
+    font-family:'Diptyque';
+    font-size:1.88rem;
+    font-weight:700;
+    letter-spacing:0;
+    text-align:center;
+}
+main .service .content_wrap {
+    width:548px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+main .service .content_wrap .content {width:92px;}
+main .service .content_wrap .content h3 {}
+main .service .content_wrap .content h3 img {width:100%; margin-bottom:30px;}
+main .service .content_wrap .content p {font-size:0.88rem; font-weight:500;}

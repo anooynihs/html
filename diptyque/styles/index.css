@@ -1,5 +1,7 @@
+/* =================================================== header */
+header .nav a {color:#fff;}
 /* =================================================== 메인배너 */
-main {max-width:100vw; margin:0 auto;}
+main {margin:0 auto;}
 main .bnr {height:100vh; overflow:hidden;}
 main .bnr video {width:100%;}
 /* =================================================== 공통 CSS */
@@ -12,46 +14,11 @@ main h2 {
     text-align:center;
 }
 main .container {width:1600px; margin:0 auto;}
-/* =================================================== 상품 썸네일 및 정보 */
 main .products {
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
 }
-main .products .item {}
-main .products .item .item_thum {position:relative;}
-main .products .item .item_thum .image {}
-main .products .item .item_thum .image img {
-    width:100%;
-    margin-bottom:20px;
-}
-/* ============================= 태그 */
-main .products .item .item_thum .tag {
-    background-color:#1A1A18;
-    color:#fff; 
-    padding:5px 10px;
-    font-size:0.75rem; font-weight:600; letter-spacing:0;
-    position:absolute; 
-    left:12px; top:12px;
-}
-main .products .item .item_name_add_btn {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-main .products .item .item_name_add_btn .item_name {
-    display:block; margin-bottom:5px;
-}
-main .products .item .item_name_add_btn .add_btn {display:block;}
-main .products .item .item_name_add_btn .add_btn > img {}
-main .products .item .item_info {
-    color:#7C7C7C;
-    font-family:'Diptyque';
-    font-size:0.81rem;
-    letter-spacing:0;
-    margin-bottom:20px;
-}
-main .products .item .price {font-weight:600;}
 /* =================================================== 베스트셀러 */
 main .best {width:1600px; margin-top:160px;}
 main .best > h2 {margin-bottom:40px;}
@@ -390,7 +357,8 @@ main .newsletter .swiper-scrollbar-drag {background-color:#1A1A18;}
 main .collection {
     width:1600px;
     position:relative;
-    margin:160px auto;}
+    margin:160px auto;
+}
 main .collection h2 {margin-bottom:40px;}
 main .collection .swiper {width:1500px;}
 main .collection .swiper .swiper-wrapper {}

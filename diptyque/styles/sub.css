@@ -1,126 +1,119 @@
-/* =================================================== 헤더 nav 컬러 번경 */
-header .nav {text-align:center;}
-header .nav a {margin-right:45px; font-family:'Diptyque'; color:#1A1A18;}
-header .nav a:last-child {margin:0;}
-/* =================================================== 메인배너 */
-main {max-width:100vw; margin:0 auto;}
-main .bnr {height:100vh; overflow:hidden;}
-main .bnr video {width:100%;}
+/* =================================================== header */
+header {border-bottom:1px solid #D9D9D9;}
+header .nav {margin-bottom:30px;}
+/* =================================================== 메인 시작, 페이지타이틀 + 배너 */
+main {padding-top:252px;}
+main > * {margin:0 auto;}
+main .page_title {
+    text-align:center;
+    margin-bottom:20px;
+}
+main .page_title h1 {
+    font-family:'Diptyque';
+    font-size:3rem;
+    letter-spacing:0;
+    margin-bottom:8px;
+}
+main .page_title p {line-height:1.6;}
+main .hero_bnr {width:1200px; margin:0 auto; height:600px; text-align:center;}
+main .hero_bnr img {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
-main > * h2 {
+main h2 {
     font-family:'Diptyque';
     font-size:1.88rem;
     font-weight:700;
     letter-spacing:0;
     text-align:center;
     margin-bottom:40px;
-}
-main > * .tag {
-    background-color:#1A1A18;
-    color:#fff; 
-    padding:5px 10px;
-    font-size:0.75rem; font-weight:600;
-    letter-spacing:0;
-    position:absolute; 
-    left:12px; top:12px;
-}
-main .swiper_container {
-    width:1700px;
-    margin:160px auto;
-}
-main .swiper {width:1600px;}
-main .swiper .swiper-wrapper {
-}
-main .swiper .swiper-wrapper .swiper-slide {width:300px;}
-main .swiper .swiper-wrapper .swiper-slide .item_thum {}
-main .swiper .swiper-wrapper .swiper-slide .item_thum a {}
-main .swiper .swiper-wrapper .swiper-slide .item_thum a img {
-    width:100%;
-    margin-bottom:20px;
-}
-main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .item_name {
-    display:block;
-    margin-bottom:5px;
-}
-main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn {display:block;}
-main .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn img {}
-main .swiper .swiper-wrapper .swiper-slide .item_info {
-    color:#7C7C7C;
-    font-family:'Diptyque';
-    font-size:0.81rem;
-    letter-spacing:0;
-    margin-bottom:20px;
-}
-main .swiper .swiper-wrapper .swiper-slide .price {font-weight:600;}
-main .slide_btn {
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    position:absolute;
-    top:50%; left:0;
-}
-main .slide_btn .prev,
-main .slide_btn .next {}
-main .slide_btn .prev img,
-main .slide_btn .next img {}
-/* =================================================== 서브페이지 타이틀 */
-main .page_title {
-    text-align:center;
-    margin:80px 0;
-}
-main .page_title h1 {
-    font-family:'Diptyque';
-    font-size:3rem;
-    margin-bottom:20px;
-}
-main .page_title p {
-    line-height:1.6;
+    margin-top:160px;
 }
 /* =================================================== new */
-main .new {background-color: thistle;}
+main .new {position:relative;}
 main .new h2 {}
-main .new .swiper {}
+main .new .swiper {width:1417px;}
 main .new .swiper .swiper-wrapper {}
-main .new .swiper .swiper-wrapper .swiper-slide {}
+main .new .swiper .swiper-wrapper .swiper-slide {width:300px;}
 main .new .swiper .swiper-wrapper .swiper-slide .item_thum {}
 main .new .swiper .swiper-wrapper .swiper-slide .item_thum a {}
-main .new .swiper .swiper-wrapper .swiper-slide .item_thum a img {}
+main .new .swiper .swiper-wrapper .swiper-slide .item_thum a img {width:100%;}
 main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn {}
 main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .item_name {}
 main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn {}
 main .new .swiper .swiper-wrapper .swiper-slide .item_name_add_btn .add_btn img {}
 main .new .swiper .swiper-wrapper .swiper-slide .item_info {}
 main .new .swiper .swiper-wrapper .swiper-slide .price {}
-main .new .slide_btn {}
+main .new .slide_btn {
+    width:1600px;
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%);
+    display:flex;
+    justify-content:space-between;
+}
 main .new .slide_btn .prev,
 main .new .slide_btn .next {}
 main .new .slide_btn .prev img,
 main .new .slide_btn .next img {}
 /* =================================================== collections */
-main .collections {background-color: coral;}
+main .collections {width:1600px;}
 main .collections h2 {}
-/* =================================================== all */
-main .all {background-color: blanchedalmond;}
-main .all h2 {}
-/* =================================================== 함께 쓰면 좋은 제품 */
-main .with {background-color: lightblue;}
-main .with h2 {}
-/* =================================================== services */
-main .service {background-color: springgreen;
-    margin-bottom:80px;
+main .collections .card_wrap {
+    display:flex;
+    justify-content:space-between;
+
 }
-main .service h2 {margin-bottom:45px;}
+main .collections .card_wrap .card {
+    width:160px;
+    display:flex;
+    flex-flow:column nowrap;
+    text-align:center;
+}
+main .collections .card_wrap .card a {}
+main .collections .card_wrap .card a img {width:100%;}
+main .collections .card_wrap .card p {}
+main .collections .card_wrap .card span {
+    margin-top:8px;
+    font-family:'Diptyque';
+    font-size:0.88rem;
+    letter-spacing:0;
+    color:#7C7C7C;
+}
+/* =================================================== all */
+main .all {width:1600px; background-color: blanchedalmond;}
+main .all h2 {}
+main .all .total_option {
+    display:flex;
+    justify-content:space-between;
+}
+main .all .total_option .total {
+    font-size:0.83rem;
+    color:#7C7C7C;
+}
+main .all .total_option .option_wrap {
+    font-size:0.83rem;
+    background:url(../images/icon_arrow_down.png) no-repeat center;
+    background-position-x:right;
+    width:52px;
+}
+main .all .total_option .option_wrap option {font-size:0.83rem;}
+/* =================================================== 함께 쓰면 좋은 제품 */
+main .with {width:1600px;}
+main .with h2 {font-size:1.5rem; font-weight:500;}
+main .with .products {
+    display:flex;
+    justify-content:space-between;
+}
+/* =================================================== services */
+main .service {width:1600px; margin-bottom:80px;}
+main .service h2 {margin-bottom:40px;}
 main .service .content_wrap {
     width:548px;
-    display:flex; justify-content:space-between;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
 }
 main .service .content_wrap .content {width:92px;}
 main .service .content_wrap .content h3 {}
-main .service .content_wrap .content h3 img {width:100%;}
-main .service .content_wrap .content p {}
+main .service .content_wrap .content h3 img {width:100%; margin-bottom:30px;}
+main .service .content_wrap .content p {font-size:0.88rem; font-weight:500;}
