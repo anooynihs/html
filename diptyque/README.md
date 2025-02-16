@@ -10,6 +10,7 @@ font size
 18 font-size:1.125rem;
 20 font-size:1.25rem;
 24 font-size:1.5rem;
+28 font-size:1.75rem;
 30 font-size:1.88rem;
 
 고딕체 자간
