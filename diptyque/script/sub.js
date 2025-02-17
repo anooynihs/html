@@ -1,4 +1,4 @@
-//new item 슬라이드
+// new item 슬라이드
 const newItem = new Swiper('.new .new_item',{
     slidesPerView:4,
     spaceBetween:72,
@@ -9,7 +9,7 @@ const newItem = new Swiper('.new .new_item',{
     },
 })
 
-//all item more, less 버튼
+// all item more, less 버튼
 document.getElementById('load_more').addEventListener('click', function() {
     const hiddenItems = document.querySelector('.hidden-item');
     

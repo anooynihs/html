@@ -1,45 +1,38 @@
 /* =================================================== header */
 header {
     width:1600px;
-    position:absolute; top:30px; left:50%;
-    transform:translateX(-50%);
+    position:absolute; top:30px;
+    left:50%; transform:translateX(-50%);
+    z-index:20;
 }
-header .logo {background-color: aqua;
-    width:122px;
+header .logo {
+    display:flex;
+    justify-content:center;
     margin-bottom:18px;
 }
-header .logo a {}
+header .logo a {display:block; width:122px;}
 header .logo a img {width:100%;}
 /* =================================================== 아이콘 내비게이션 */
-header .user_wrap {background-color: greenyellow;
-    position:relative;
-    z-index:20;
-    overflow:hidden;
+header .utill-search-wrap {}
+header .utill-search-wrap .utill {
     display:flex;
-    justify-content:space-between;
+    justify-content:end;
+    align-items:center;
+    gap:25px;
 }
-header .user_wrap a {
-    display:block;
-    width:18px;
+header .utill-search-wrap .utill a {
+    display:block; width:18px;
 }
-header .user_wrap .icon a:last-child {margin:0;}
-header .user_wrap .icon a img {width:100%;}
+header .utill-search-wrap .utill a img {width:100%;}
 /* =================================================== 검색 팝업창 */
-header .user_wrap .search_popup {
-    width:400px;
-    padding:35px 40px;
+header .utill-search-wrap .search_popup {
     background-color:#fff;
-    position: absolute;
-    top: 31px;
-    right: 0;
-    z-index: 10; /* 기존보다 낮게 설정 */
-    display: none;
-    pointer-events: none; /* 기본적으로 클릭 이벤트 차단 */
+    padding:35px 40px;
+    position:absolute;
+    top:30px; right:0;
+    display:none;
 }
-header .user_wrap .search_popup.active {
-    display: block;
-}
-header .user_wrap .search_popup .search_box {
+header .utill-search-wrap .search_popup .search_box {
     margin-bottom:48px;
     display:flex;
     justify-content:space-between;
@@ -48,82 +41,78 @@ header .user_wrap .search_popup .search_box {
     padding-bottom:12px;
     border-bottom:1px solid #1A1A18;
 }
-header .user_wrap .search_popup .search_box .search_bar {
+header .utill-search-wrap .search_popup .search_box .search_bar {
     font-size:0.81rem;
-    width:100%;
-    padding-right:10px;
+    width:100%; padding-right:10px;
 }
-header .user_wrap .search_popup .search_box .search_bar::placeholder {
-    font-size:0.81rem;
-    color:#7C7C7C;
+header .utill-search-wrap .search_popup .search_box .search_bar::placeholder {
+    font-size:0.81rem; color:#7C7C7C;
 }
-header .user_wrap .search_popup .search_box .search_btn {width:12px;}
-header .user_wrap .search_popup .search_box .search_btn img {width:100%;}
-header .user_wrap .search_popup .popular_word {margin-bottom:48px;}
-header .user_wrap .search_popup .popular_word > h2 {
+header .utill-search-wrap .search_popup .search_box .search_btn {width:12px;}
+header .utill-search-wrap .search_popup .search_box .search_btn img {width:100%;}
+header .utill-search-wrap .search_popup .popular_word {margin-bottom:48px;}
+header .utill-search-wrap .search_popup .popular_word > h2 {
     font-size:0.88rem;
     font-weight:600;
     margin-bottom:20px;
 }
-header .user_wrap .search_popup .popular_word .rank {}
-header .user_wrap .search_popup .popular_word .rank li {
+header .utill-search-wrap .search_popup .popular_word .rank {}
+header .utill-search-wrap .search_popup .popular_word .rank li {
     display:flex;
     align-items:center;
     font-size:0.88rem;
     margin-bottom:12px;
 }
-header .user_wrap .search_popup .popular_word .rank li:last-child {margin-bottom:0;}
-header .user_wrap .search_popup .popular_word .rank li > span {
+header .utill-search-wrap .search_popup .popular_word .rank li:last-child {margin-bottom:0;}
+header .utill-search-wrap .search_popup .popular_word .rank li > span {
     display:flex;
     align-items:center;
     width:7px;
     margin-right:13px;
 }
-header .user_wrap .search_popup .popular_word .rank li > span > img {width:100%;}
-header .user_wrap .search_popup .popular_word .rank li > a {
+header .utill-search-wrap .search_popup .popular_word .rank li > span > img {width:100%;}
+header .utill-search-wrap .search_popup .popular_word .rank li > a {
     display:flex;
     align-items:center;
 }
-header .user_wrap .search_popup .trendy {}
-header .user_wrap .search_popup .trendy > h2 {
+header .utill-search-wrap .search_popup .trendy {}
+header .utill-search-wrap .search_popup .trendy > h2 {
     font-size:0.88rem;
     font-weight:600;
     margin-bottom:20px;
 }
-header .user_wrap .search_popup .trendy .content {}
-header .user_wrap .search_popup .trendy .content > p {
+header .utill-search-wrap .search_popup .trendy .content {}
+header .utill-search-wrap .search_popup .trendy .content > p {
     font-size:0.75rem;
     line-height:1.4;
     margin-bottom:8px;
 }
-header .user_wrap .search_popup .trendy .content > p > em {
+header .utill-search-wrap .search_popup .trendy .content > p > em {
     font-family:'Diptyque';
     letter-spacing:0;
     font-weight:600;
     font-size:0.75rem;
 }
-header .user_wrap .search_popup .trendy .content > p > span {
+header .utill-search-wrap .search_popup .trendy .content > p > span {
     font-family:'Diptyque';
     letter-spacing:0;
     font-size:0.75rem;
 }
-header .user_wrap .search_popup .trendy .content > a {
+header .utill-search-wrap .search_popup .trendy .content > a {
     display:block;
     width:320px;
 }
-header .user_wrap .search_popup .trendy .content > a img {width:100%;}
+header .utill-search-wrap .search_popup .trendy .content > a img {width:100%;}
 /* =================================================== 내비게이션 */
 header .nav {
     display:flex;
     justify-content:center;
+    gap:45px;
 }
 header .nav a {
-    margin-right:45px;
     font-family:'Diptyque';
     letter-spacing:0;
-    color:#1A1A18;
 }
-header .nav a:last-child {margin:0;}
 /* =================================================== 세컨드 내비게이션 공통 CSS */
 header .nav .second_nav {
     margin-top:22px;
@@ -131,13 +120,13 @@ header .nav .second_nav {
     flex-flow:column nowrap;
     align-items:start;
     padding:25px;
-    background-color:#1A1A18;
+    background-color:rgba(26,26,24,0.8);
     position:absolute;
-    left:0; top:0;
+    top:0; left:0;
     display:none;
 }
-header .nav .second_nav:hover {display:block;}
-header .nav .second_nav > a {
+header .nav .second_nav a {
+    display:block;
     margin-bottom:25px;
     font-size:0.88rem;
     white-space:nowrap;
@@ -145,15 +134,15 @@ header .nav .second_nav > a {
 }
 header .nav .second_nav > a:last-child {margin:0;}
 /* =================================================== 세컨드 내비게이션 */
-header .nav .fragrances {position:relative; overflow:hidden;}
+header .nav .fragrances {position:relative;}
 header .nav .fragrances a {}
 header .nav .fragrances .second_nav {}
 header .nav .fragrances .second_nav a {}
-header .nav .bodynbath {position:relative; overflow:hidden;}
+header .nav .bodynbath {position:relative;}
 header .nav .bodynbath a {}
 header .nav .bodynbath .second_nav {}
 header .nav .bodynbath .second_nav a{}
-header .nav .home {position:relative; overflow:hidden;}
+header .nav .home {position:relative;}
 header .nav .home a {}
 header .nav .home .second_nav {}
 header .nav .home .second_nav a {}

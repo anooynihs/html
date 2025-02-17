@@ -1,4 +1,4 @@
-//body,bath candles, home add 버튼 팝업창
+// body,bath candles, home add 버튼 팝업창
 const labels = document.querySelectorAll('.click_popup .info_label');
 const addBtns = document.querySelectorAll('.click_popup .add_btn');
 
@@ -14,7 +14,7 @@ addBtns.forEach((btn, index) => {
 });
 
 
-//newsletter 슬라이드
+// newsletter 슬라이드
 const letter = new Swiper('.newsletter .card_wrap',{
     slidesPerView:4,
     spaceBetween:32,
@@ -28,7 +28,7 @@ const letter = new Swiper('.newsletter .card_wrap',{
       },
 })
 
-//collection 슬라이드
+// collection 슬라이드
 const collection = new Swiper('.collection .card_wrap',{
     slidesPerView:3.7,
     spaceBetween:40,

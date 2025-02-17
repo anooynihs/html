@@ -1,21 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const searchIcon = document.querySelector(".icon .search"); // 검색 아이콘
-    const searchPopup = document.querySelector(".search_popup");
+// 검색 팝업창
+const searchBtn = document.querySelector('.search');
+const searchPopup = document.querySelector('.search_popup');
+searchBtn.addEventListener('click',()=>{
+    searchPopup.style.display = searchPopup.style.display === 'block' ? 'none' : 'block';
+})
 
-    searchIcon.addEventListener("click", function (event) {
-        event.preventDefault(); // 기본 이벤트 방지
-        searchPopup.classList.toggle("active"); // active 클래스 추가/제거
-    });
+// 내비 depth2 창
+const navItems = document.querySelectorAll('.primary');
 
-    // 바깥 클릭 시 닫기 (팝업 외부 클릭 감지)
-    document.addEventListener("click", function (event) {
-        if (!searchPopup.contains(event.target) && !searchIcon.contains(event.target)) {
-            searchPopup.classList.remove("active");
+navItems.forEach(nav => {
+    const secondNav = nav.querySelector('.second_nav');
+    let hideTimeout; // 숨기는 타이머 변수
+
+    nav.addEventListener('mouseover', () => {
+        if (secondNav) {
+            clearTimeout(hideTimeout); // 기존 숨김 타이머 제거
+            secondNav.style.display = 'block';
         }
     });
 
-    // 검색 팝업 내부 클릭 시 닫히지 않도록 처리
-    searchPopup.addEventListener("click", function (event) {
-        event.stopPropagation();
+    nav.addEventListener('mouseleave', () => {
+        if (secondNav) {
+            hideTimeout = setTimeout(() => {
+                secondNav.style.display = 'none'; // 지연 후 숨기기
+            }, 100);
+        }
+    });
+
+    secondNav.addEventListener('mouseover', () => {
+        clearTimeout(hideTimeout); // second_nav로 이동하면 숨김 취소
+    });
+
+    secondNav.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+            secondNav.style.display = 'none'; // second_nav에서 벗어나면 숨김
+        }, 300);
     });
 });

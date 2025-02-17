@@ -1,12 +1,12 @@
 /* =================================================== header */
 header .nav a, 
 header .nav div {color:#fff;}
-/* =================================================== 세컨드 내비게이션 팝업 공통 CSS */
-header .nav .second_nav {}
-header .nav .second_nav:hover {}
+header .nav .second_nav {
+    background-color:rgba(255,255,255,0.3);
+}
 /* =================================================== 메인배너 */
 main {margin:0 auto;}
-main .bnr {height:100vh; overflow:hidden;}
+main .bnr {height:100vh; overflow:hidden; z-index:10;}
 main .bnr video {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
