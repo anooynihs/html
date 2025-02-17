@@ -42,17 +42,6 @@ header .user_wrap .search_popup {
 }
 header .user_wrap .search_popup.active {
     display: block;
-    pointer-events: auto;
-}
-header .user_wrap .search_popup.search_popup::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0); /* 투명한 레이어 */
-    z-index: -1; /* 검색 팝업 아래에 위치하도록 설정 */
 }
 header .user_wrap .search_popup .search_box {
     margin-bottom:48px;
@@ -139,7 +128,7 @@ header .nav a {
     color:#1A1A18;
 }
 header .nav a:last-child {margin:0;}
-/* =================================================== 세컨드 내비게이션 팝업 공통 CSS */
+/* =================================================== 세컨드 내비게이션 공통 CSS */
 header .nav .second_nav {
     margin-top:22px;
     display:flex;
@@ -159,7 +148,7 @@ header .nav .second_nav > a {
     color:#fff;
 }
 header .nav .second_nav > a:last-child {margin:0;}
-/* =================================================== 세컨드 내비게이션 팝업 */
+/* =================================================== 세컨드 내비게이션 */
 header .nav .fragrances {position:relative; overflow:hidden;}
 header .nav .fragrances a {}
 header .nav .fragrances .second_nav {}
@@ -213,6 +202,53 @@ main .item .item_info {
     margin-bottom:20px;
 }
 main .item .price {font-weight:600;}
+/* =================================================== cart 토스트창 */
+main .cart_toast {
+    background-color: #fff;
+    padding:25px 20px;
+    border:1px solid #1A1A18;
+    display:none;
+    position:fixed;
+    top:30%;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+}
+main .cart_toast.show {
+    display:block;
+    opacity:1;
+}
+main .cart_toast > p  {
+    font-size:0.81rem;
+    margin-bottom:30px;
+}
+main .cart_toast > em {
+    display:block;
+    font-size:0.88rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+main .cart_toast > span {
+    display:block;
+    font-family:'Diptyque';
+    letter-spacing:0;
+    font-size:0.81rem;
+    margin-bottom:30px;
+}
+main .cart_toast .toast_btns {
+    font-size:0.81rem;
+    margin:0;
+}
+main .cart_toast .toast_btns .keep {
+    border:1px solid #1A1A18;
+    margin-right:8px;
+    padding:10px 33px;
+}
+main .cart_toast .toast_btns .go {
+    background-color:#1A1A18;
+    color:#fff;
+    padding:10px 33px;
+}
 /* =================================================== services */
 main .service {width:1600px; margin-bottom:80px;}
 main .service h2 {margin-bottom:40px;}

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/detail.css">
-    <script src="./javascript/detail.js" defer></script>
+    <script src="./script/detail.js" defer></script>
+    <script src="./script/common.js" defer></script>
 </head>
 <body>
     <header>
@@ -90,7 +91,7 @@
             <a href="./sub.html">BEST</a>
             <div class="fragrances">
                 <a href="./sub.html">FRAGRANCES</a>
-                <!-- 세컨드 카테고리 팝업 -->
+                <!-- 세컨드 카테고리 토스트 -->
                 <div class="second_nav">
                     <a href="./sub.html">EAU DE PERFUMES</a>
                     <a href="./sub.html">EAU DE TOILETTES</a>
@@ -99,7 +100,7 @@
             </div>
             <div class="bodynbath">
                 <a href="./sub.html">BODY&BATH</a>
-                <!-- 세컨드 카테고리 팝업 -->
+                <!-- 세컨드 카테고리 토스트 -->
                 <div class="second_nav">
                     <a href="./sub.html">HAND CARE</a>
                     <a href="./sub.html">BODY CARE</a>
@@ -108,7 +109,7 @@
             </div>
             <div class="home">
                 <a href="./sub.html">HOME</a>
-                <!-- 세컨드 카테고리 팝업 -->
+                <!-- 세컨드 카테고리 토스트 -->
                 <div class="second_nav">
                     <a href="./sub.html">CANDLES</a>
                     <a href="./sub.html">HOME FRAGRANCES</a>
@@ -134,7 +135,7 @@
                 <div class="prd_info_container">
                     <div class="thumnail_container">
                         <div class="select_thumnail">
-                            <a href="#" class="active"><img src="./images/item-fragrance/thumnail01.jpg" alt=""></a>
+                            <a href="#"><img src="./images/item-fragrance/thumnail01.jpg" alt=""></a>
                             <a href="#"><img src="./images/item-fragrance/thumnail02.jpg" alt=""></a>
                             <a href="#"><img src="./images/item-fragrance/thumnail03.jpg" alt=""></a>
                         </div>
@@ -161,8 +162,17 @@
                             </span>
                         </div>
                         <div class="action_btns">
-                            <button type="button" class="gift">선물하기</button>
-                            <button type="button" class="cart">구매하기</button>
+                            <button type="button" class="gift_btn">선물하기</button>
+                            <button type="button" class="cart_btn" onclick="addToCart()">카트담기</button>
+                            <div class="cart_toast">
+                                <p>카트에 추가되었습니다.</p>
+                                <em>플레르 드 뽀 오 드 퍼퓸</em>
+                                <span>75ML</span>
+                                <div class="toast_btns">
+                                    <button type="button" class="keep">계속쇼핑</button>
+                                    <button type="button" class="go">카트보기</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="delivery_info">
                             <p>배송안내</p>
@@ -201,54 +211,49 @@
             </div>
             <!-- 탭 메뉴 -->
             <div class="tab_wrap">
-                <div class="tab">
-                    <button type="button" class="active">상품정보제공고시</button>
-                    <button type="button">배송/교환/반품</button>
-                </div>
-                <div class="content_wrap">
-                    <div class="content notice">
-                            <div class="noti">
-                                <h3>성분</h3>
-                                <p>
-                                    변성알코올, 정제수, 향료, 에칠헥실메톡시신나메이트, 부틸메톡시디벤조일메탄, 에칠헥실살리실레이트, 리모넨, 헥실신남알, 알파-이소메칠이오논, 리날룰, 
-                                    <br>쿠마린, 시트로넬올, 제라니올, 비에이치티, 벤질살리실레이트, 유제놀, 시트랄, 이소유제놀, 디소듐이디티에이, 토코페롤
-                                </p>
-                            </div>
-                            <div class="noti">
-                                <h3>사용방법</h3>
-                                <p>맥박이 뛰는 부위, 옷깃이 스치는 곳에 분사하여 사용합니다.</p>
-                            </div>
-                            <div class="noti">
-                                <h3>용량</h3>
-                                <p>100ML</p>
-                            </div>
-                            <div class="noti">
-                                <h3>제조국</h3>
-                                <p>프랑스</p>
-                            </div>
-                            <div class="noti">
-                                <h3>주요사양</h3>
-                                <p>모든 피부 타입</p>
-                            </div>
-                            <div class="noti">
-                                <h3>사용기한</h3>
-                                <p>개봉 후 1년 (본 제품 뒷면 참조)</p>
-                            </div>
-                            <div class="noti">
-                                <h3>주의사항</h3>
-                                <p>
-                                    1. 화장품을 사용하여 다음과 같은 이상이 있는 경우에는 사용을 중지하여야 하며, 계속 사용하면 증상이 악화되므로 피부과 전문의 등에게 상담할 것 
-                                    <br>가) 사용 중 붉은반점, 부어오름, 가려움증,자극 등의 이상이 있는 경우
-                                    <br>    나) 적용 부위가직사광선에 의하여 위와 같은 이상이 있는 경우
-                                    <br>
-                                    <br>2. 상처가 있는 부위,습진 및 피부염 등의 이상이 있는 부위에는 사용을 하지 말 것
-                                    <br>
-                                    <br>3. 보관 및 취급 시의 주의사항 가) 사용 후에는반드시 마개를 닫아둘 것. 나) 유아 · 소아의손이 닿지 않는 곳에 보관할 것 다) 고온 또는 저온의장소 및 직사광선이 닿는 곳에는 보관하지 말 것
-                                </p>
-                            </div>
+                <h3 class="tab_title">상품정보제공고시</h3>
+                <div class="tab_content">
+                    <div class="noti">
+                        <h4>성분</h4>
+                        <p class="line_height">
+                            변성알코올, 정제수, 향료, 에칠헥실메톡시신나메이트, 부틸메톡시디벤조일메탄, 에칠헥실살리실레이트, 리모넨, 헥실신남알, 알파-이소메칠이오논, 리날룰, 
+                            <br>쿠마린, 시트로넬올, 제라니올, 비에이치티, 벤질살리실레이트, 유제놀, 시트랄, 이소유제놀, 디소듐이디티에이, 토코페롤
+                        </p>
                     </div>
-                    <div class="content cs">
-                        
+                    <div class="noti">
+                        <h4>사용방법</h4>
+                        <p>맥박이 뛰는 부위, 옷깃이 스치는 곳에 분사하여 사용합니다.</p>
+                    </div>
+                    <div class="noti">
+                        <h4>용량</h4>
+                        <p>100ML</p>
+                    </div>
+                    <div class="noti">
+                        <h4>제조국</h4>
+                        <p>프랑스</p>
+                    </div>
+                    <div class="noti">
+                        <h4>주요사양</h4>
+                        <p>모든 피부 타입</p>
+                    </div>
+                    <div class="noti">
+                        <h4>사용기한</h4>
+                        <p>개봉 후 1년 (본 제품 뒷면 참조)</p>
+                    </div>
+                    <div class="noti">
+                        <h4>주의사항</h4>
+                        <p class="line_height">
+                            1. 화장품을 사용하여 다음과 같은 이상이 있는 경우에는 사용을 중지하여야 하며, 계속 사용하면 증상이 악화되므로 피부과 전문의 등에게 상담할 것 
+                            <br>가) 사용 중 붉은반점, 부어오름, 가려움증,자극 등의 이상이 있는 경우
+                            <br>나) 적용 부위가직사광선에 의하여 위와 같은 이상이 있는 경우
+                            <br>
+                            <br>2. 상처가 있는 부위,습진 및 피부염 등의 이상이 있는 부위에는 사용을 하지 말 것
+                            <br>
+                            <br>3. 보관 및 취급 시의 주의사항
+                            <br>가) 사용 후에는반드시 마개를 닫아둘 것
+                            <br>나) 유아 · 소아의손이 닿지 않는 곳에 보관할 것
+                            <br>다) 고온 또는 저온의장소 및 직사광선이 닿는 곳에는 보관하지 말 것
+                        </p>
                     </div>
                 </div>
             </div>
@@ -271,7 +276,6 @@
                 <div class="item">
                     <div class="item_thum">
                         <a href="./detail.html" class="image"><img src="./images/item-body/body06.jpg" alt=""></a>
-                        <span class="tag">LIMITED</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">플레르 드  뽀 핸드 앤 바디로션</a>
@@ -305,7 +309,7 @@
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="../images/item-body/body02.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body02.jpg" alt=""></a>
                         <span class="tag">POPULAR</span>
                     </div>
                     <div class="item_name_add_btn">
