@@ -4,27 +4,23 @@ header {
     position:absolute; top:30px; left:50%;
     transform:translateX(-50%);
 }
-header .logo {
-    width:100%;
-    text-align:center;
+header .logo {background-color: aqua;
+    width:122px;
+    margin-bottom:18px;
 }
 header .logo a {}
-header .logo a img {width:122px; margin-bottom:18px;}
+header .logo a img {width:100%;}
 /* =================================================== 아이콘 내비게이션 */
-header .user_wrap {
+header .user_wrap {background-color: greenyellow;
     position:relative;
     z-index:20;
     overflow:hidden;
-}
-header .user_wrap .icon {
     display:flex;
-    justify-content:end;
-    align-items:center;
+    justify-content:space-between;
 }
-header .user_wrap .icon a {
+header .user_wrap a {
     display:block;
     width:18px;
-    margin-right:25px;
 }
 header .user_wrap .icon a:last-child {margin:0;}
 header .user_wrap .icon a img {width:100%;}

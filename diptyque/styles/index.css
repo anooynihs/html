@@ -2,28 +2,8 @@
 header .nav a, 
 header .nav div {color:#fff;}
 /* =================================================== 세컨드 내비게이션 팝업 공통 CSS */
-header .nav .second_nav {
-    margin-top:22px;
-    display:flex;
-    flex-flow:column nowrap;
-    align-items:start;
-    padding:25px;
-    background-color:rgba(255,255,255,0.3);
-    position:absolute;
-    left:0; top:0;
-    display:none;
-}
-header .nav .second_nav:hover {
-    display:block;
-}
-header .nav .second_nav > a {
-    margin-bottom:25px;
-    font-size:0.88rem;
-    white-space:nowrap;
-    color:#fff;
-}
-header .nav .second_nav > a:hover {font-weight:700;}
-header .nav .second_nav > a:last-child {margin:0;}
+header .nav .second_nav {}
+header .nav .second_nav:hover {}
 /* =================================================== 메인배너 */
 main {margin:0 auto;}
 main .bnr {height:100vh; overflow:hidden;}
