@@ -13,23 +13,110 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./javascript/index.js" defer></script>
+    <script src="./javascript/common.js" defer></script>
 </head>
 <body>
     <!-- header -->
     <header>
         <div class="user_wrap">
-            <a href="#"><img src="./images/icon_login.png" alt="로그인"></a>
-            <a href="#"><img src="./images/icon_shoppinbag.png" alt="장바구니"></a>
-            <a href="#"><img src="./images/icon_search.png" alt="제품검색"></a>
+            <div class="icon">
+                <a href="#" class="login"><img src="./images/icon/user-w.png" alt="로그인"></a>
+                <a href="#" class="shoppingbag"><img src="./images/icon/shoppinbag-w.png" alt="장바구니"></a>
+                <a href="#" class="search"><img src="./images/icon/search-w.png" alt="제품검색"></a>
+            </div>
+            <!-- 검색 아이콘 클릭 팝업 -->
+            <div class="search_popup">
+                <div class="search_box">
+                    <input type="text" name="search_bar" class="search_bar" placeholder="검색어를 입력하세요.">
+                    <button type="button" class="search_btn"><img src="./images/icon/search-b.png" alt="검색하기"></button>
+                </div>
+                <div class="popular_word">
+                    <h2>지금 가장 인기 있는</h2>
+                    <ul class="rank">
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">로 파피에</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 로즈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">플레르 드 뽀</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오르페옹</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">탐다오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">베티베리오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">34번가</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 카피탈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">도손</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">필로시코스</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trendy">
+                    <h2>지금 가장 트렌디한</h2>
+                    <div class="content">
+                        <p>머무는 공간을 봄으로 가득 채우는
+                        <br><em>ROSES</em> <span>COLLECTIONS</span></p>
+                        <a href="#"><img src="./images/card/card12.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="logo">
             <a href="./index.html"><img src="./images/logo_white.png" alt="딥티크"></a>
         </div>
         <div class="nav">
             <a href="./sub.html">BEST</a>
-            <a href="./sub.html">FRAGRANCES</a>
-            <a href="./sub.html">BODY&BATH</a>
-            <a href="./sub.html">HOME&CAR</a>
+            <div class="fragrances">
+                <a href="./sub.html">FRAGRANCES</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">EAU DE PERFUMES</a>
+                    <a href="./sub.html">EAU DE TOILETTES</a>
+                    <a href="./sub.html">SOLID PERFUMES</a>
+                </div>
+            </div>
+            <div class="bodynbath">
+                <a href="./sub.html">BODY&BATH</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">HAND CARE</a>
+                    <a href="./sub.html">BODY CARE</a>
+                    <a href="./sub.html">HAIR MIST</a>
+                </div>
+            </div>
+            <div class="home">
+                <a href="./sub.html">HOME</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">CANDLES</a>
+                    <a href="./sub.html">HOME FRAGRANCES</a>
+                    <a href="./sub.html">HOME DECO</a>
+                </div>
+            </div>
             <a href="./sub.html">ACCESSORIES</a>
             <a href="./sub.html">GIFTS</a>
             <a href="./sub.html">OUR STORY</a>
@@ -54,57 +141,57 @@
             <div class="products">
                 <div class="item item1">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item008.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-fragrance/item001.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">플레르 드 뽀 오 드 퍼퓸</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">75ML</p>
                     <p class="price">279,000</p>
                 </div>
                 <div class="item item2">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item014.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-fragrance/item002.jpg" alt=""></a>
                         <span class="tag">NEW</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">롬브르 단 로 솔리드퍼퓸</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">3G</p>
                     <p class="price">103,000</p>
                 </div>
                 <div class="item item3">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item013.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body07.jpg" alt=""></a>
                         <span class="tag">LIMITED</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">트리오 트래블 핸드크림</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">HANDWASH * 2, HAND LOTION 30ML</p>
                     <p class="price">101,000</p>
                 </div>
                 <div class="item item4">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item006.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-fragrance/item003.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">필로시코스 오 드 퍼퓸</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">75ML</p>
                     <p class="price">279,000</p>
                 </div>
                 <div class="item item5">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item012.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-home/home01.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">클래식 캔들 베이</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">190G</p>
                     <p class="price">99,000</p>
@@ -119,7 +206,7 @@
             </div>
             <div class="contents">
                 <div class="type amber">
-                    <a href="#"><img src="./images/prefer_amber.jpg" alt=""></a>
+                    <a href="#"><img src="./images/index-type/type-amber.jpg" alt=""></a>
                     <h4>AMBER</h4>
                     <p>앰버 계열은 따뜻하고 포근하며 매혹적입니다.
                         <br>바닐라, 오포포낙스, 벤조인 성분은
@@ -129,7 +216,7 @@
                     </div>
                 </div>
                 <div class="type citrus">
-                    <a href="#"><img src="./images/prefer_citrus.jpg" alt=""></a>
+                    <a href="#"><img src="./images/index-type/type-citrus.jpg" alt=""></a>
                     <h4>CITRUS</h4>
                     <p>시트러스 계열은 베르가못의 우아한 신선함,
                         <br>레몬의 상큼한 생동감, 오렌지의 과일 향과
@@ -139,7 +226,7 @@
                     </div>
                 </div>
                 <div class="type woody">
-                    <a href="#"><img src="./images/prefer_woody.jpg" alt=""></a>
+                    <a href="#"><img src="./images/index-type/type-woody.jpg" alt=""></a>
                     <h4>WOODY</h4>
                     <p>우디 계열은 숲의 강도와 밀도를 베이스로
                         <br>베티버나 샌달우드에 의해 스모키하고 우아하며
@@ -149,7 +236,7 @@
                     </div>
                 </div>
                 <div class="type floral">
-                    <a href="#"><img src="./images/prefer_floral.jpg" alt=""></a>
+                    <a href="#"><img src="./images/index-type/type-floral.jpg" alt=""></a>
                     <h4>FLORAL</h4>
                     <p>플로럴 계열은 새벽에 정원의 상쾌함,
                         <br>이슬로 구슬을 장식하는 꽃잎의 섬세한 품질
@@ -159,7 +246,7 @@
                     </div>
                 </div>
                 <div class="type herb">
-                    <a href="#"><img src="./images/prefer_herb.jpg" alt=""></a>
+                    <a href="#"><img src="./images/index-type/type-herb.jpg" alt=""></a>
                     <h4>HERB</h4>
                     <p>허브 계열은 정원이나 시골에서 가져온
                         <br>가득한 순간을 선사합니다. 버베나, 라벤더 잎, 고수
@@ -174,59 +261,67 @@
         <div class="gifts_bnr">
             <h2>THE GIFTS BY DIPTYQUE</h2>
             <h3>향기로운 순간 딥티크와 함께</h3>
-            <a href="#" class="bnr_image"><img src="./images/bnr_gift.jpg" alt="향기로운 순간 딥티크와 함께"></a>
+            <a href="#" class="bnr_image"><img src="./images/banner/bnr_gift.jpg" alt="향기로운 순간 딥티크와 함께"></a>
         </div>
         <!-- 바디&배쓰 아이템 -->
         <div class="container special_layout body_bath">
             <div class="bnr_container">
                 <!-- add 버튼 클릭 팝업창 -->
-                <div class="click_popup">
+                <div class="click_popup act">
                     <a href="./detail.html" class="info_label">
                         <p>벨벳 핸드 로션</p>
                         <span>350ML</span>
                         <p class="price">110,000</p>
                     </a>
-                    <button type="button" class="add_btn"><img src="./images/icon_add_cart.png" alt="상품정보보기"></button>
+                    <button type="button" class="add_btn"><img src="./images/icon/add-cart.png" alt="상품정보보기"></button>
+                </div>
+                <div class="click_popup deact">
+                    <a href="./detail.html" class="info_label">
+                        <p>클래식 캔들 베이</p>
+                        <span>190G</span>
+                        <p class="price">99,000</p>
+                    </a>
+                    <button type="button" class="add_btn"><img src="./images/icon/add-cart.png" alt="상품정보보기"></button>
                 </div>
             </div>
             <div class="products_container">
                 <div class="title">
                     <h2>BODY&BATH</h2>
-                    <a href="./sub.html" class="more_view">MORE VIEW <img src="./images/icon_arrow001.png" alt="바디&배쓰 제품 더보기"></a>
+                    <a href="./sub.html" class="more_view">MORE VIEW <img src="./images//icon/arrow-right-b.png" alt="바디&배쓰 제품 더보기"></a>
                 </div>
                 <div class="products">
                     <div class="item item1">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item001.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-body/body03.jpg" alt=""></a>
                             <span class="tag">POPULAR</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">럭셔리어스 핸드 밤</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">45ML</p>
                         <p class="price">69,000</p>
                     </div>
                     <div class="item item2">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item002.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-body/body10.jpg" alt=""></a>
                             <span class="tag">POPULAR</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">엑스폴리에이팅 핸드워시</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">350ML</p>
                         <p class="price">103,000</p>
                     </div>
                     <div class="item item3">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item003.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-body/body11.jpg" alt=""></a>
                             <span class="tag">NEW</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">플레르 드 뽀 바디 밤</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">200ML</p>
                         <p class="price">124,000</p>
@@ -235,45 +330,45 @@
             </div>
         </div>
         <!-- 캔들&홈프래그런스 아이템 -->
-        <div class="container special_layout candles_homefragrances">
+        <div class="container special_layout home">
             <div class="products_container">
                 <div class="title">
-                    <h2>CANDLES&HOMEFRAGRANCES</h2>
-                    <a href="./sub.html" class="more_view">MORE VIEW <img src="./images/icon_arrow001.png" alt="캔들&홈프래그런스 제품 더보기"></a>
+                    <h2>HOME</h2>
+                    <a href="./sub.html" class="more_view">MORE VIEW <img src="./images/icon/arrow-right-b.png" alt="캔들&홈프래그런스 제품 더보기"></a>
                 </div>
                 <div class="products">
                     <div class="item item1">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item009.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images//item-home/home02.jpg" alt=""></a>
                             <span class="tag">POPULAR</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">베이 리드 디퓨저</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">200ML</p>
                         <p class="price">297,000</p>
                     </div>
                     <div class="item item2">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item010.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-home/home03.jpg" alt=""></a>
                             <span class="tag">LIMITED</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">스몰캔들 세트 (베이, 휘기에, 로즈)</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">70ML * 3</p>
                         <p class="price">190,000</p>
                     </div>
                     <div class="item item3">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item011.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-home/home04.jpg" alt=""></a>
                             <span class="tag">POPULAR</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">34번가 생제르망 룸스프레이</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">150ML</p>
                         <p class="price">110,000</p>
@@ -282,21 +377,13 @@
             </div>
             <div class="bnr_container">
                 <!-- add 버튼 클릭 팝업창 -->
-                <div class="click_popup act">
-                    <a href="#" class="info_label">
-                        <p>블랙 캔들 베이</p>
-                        <span>LARGE</span>
-                        <p class="price">294,000</p>
-                    </a>
-                    <button type="button" class="add_btn"><img src="./images/icon_add_cart.png" alt="상품정보보기"></button>
-                </div>
                 <div class="click_popup deact1">
                     <a href="#" class="info_label">
                         <p>클래식 캔들 베이</p>
                         <span>190G</span>
                         <p class="price">99,000</p>
                     </a>
-                    <button type="button" class="add_btn"><img src="./images/icon_add_cart.png" alt="상품정보보기"></button>
+                    <button type="button" class="add_btn"><img src="./images/icon/add-cart.png" alt="상품정보보기"></button>
                 </div>
                 <div class="click_popup deact2">
                     <a href="#" class="info_label">
@@ -304,15 +391,15 @@
                         <span>270G</span>
                         <p class="price">379,000</p>
                     </a>
-                    <button type="button" class="add_btn"><img src="./images/icon_add_cart.png" alt="상품정보보기"></button>
+                    <button type="button" class="add_btn"><img src="./images/icon/add-cart.png" alt="상품정보보기"></button>
                 </div>
-                <div class="click_popup deact3">
+                <div class="click_popup act">
                     <a href="#" class="info_label">
                         <p>플레르 드 도랑줴 리드 디퓨저</p>
                         <span>200ML</span>
                         <p class="price">297,000</p>
                     </a>
-                    <button type="button" class="add_btn"><img src="./images/icon_add_cart.png" alt="상품정보보기"></button>
+                    <button type="button" class="add_btn"><img src="./images/icon/add-cart.png" alt="상품정보보기"></button>
                 </div>
             </div>
         </div>
@@ -322,61 +409,34 @@
             <div class="swiper card_wrap">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide card1">
-                        <a href="#">
-                            <span>DOSON COLLECTION</span>
-                            <h3>딥티크의 스테디셀러 '도손' 컬렉션</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter01.jpg" alt="딥티크 도손 컬렉션 소개"></a>
                     </div>
                     <div class="swiper-slide card2">
-                        <a href="#">
-                            <span>THE OVAL</span>
-                            <h3>딥티크의 코드 이야기</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter02.jpg" alt="THE OVAL, 딥티크의 코드 이야기"></a>
                     </div>
                     <div class="swiper-slide card3">
-                        <a href="#">
-                            <span class="sub_t">NEW</span>
-                            <span>LES ESSEBCES DE DIPTYQUE</span>
-                            <h3>레 제썽스 드 딥티크 프리미엄 프래그런스 론칭</h3>
-                        </a>
-                        <div class="btn_discover">
-                            <a href="#" class="btn_discover">DISCOVER</a>
-                        </div>
+                        <a href="#"><img src="./images/index-newsletter/letter03.jpg" alt="딥티크의 새로운 프래그런스 제품 레 제썽스 드 딥티크 프리미엄 프래그런스 론칭 소개"></a>
                     </div>
                     <div class="swiper-slide card4">
-                        <a href="#">
-                            <span>인테리어에 진심인 당신을 위한 딥티크 홈데코</span>
-                            <h3>WHITE MEDICICIS VASE</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter04.jpg" alt="딥티크의 새로운 홈데코 제품 화병 소개"></a>
                     </div>
                     <div class="swiper-slide card5">
-                        <a href="#">
-                            <span>EAU ROSE COLLECTION</span>
-                            <h3>딥티크의 스테디셀러 '오 로즈' 컬렉션</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter05.jpg" alt="딥티크 오 로즈 컬렉션 소개"></a>
                     </div>
                     <div class="swiper-slide card6">
-                        <a href="#">
-                            <span>인테리어에 진심인 당신을 위한 딥티크 홈데코</span>
-                            <h3>WHITE MEDICICIS VASE</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter06.jpg" alt="딥티크의 새로운 홈데코 제품 화병 소개"></a>
                     </div>
                     <div class="swiper-slide card7">
-                        <a href="#">
-                            <span>DIPTYQUE BODY&HAIR&HAND CARE</span>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter07.jpg" alt="딥티크의 바디, 헤어, 핸드케어 제품 소개"></a>
                     </div>
                     <div class="swiper-slide card8">
-                        <a href="#">
-                            <span>Diptyque Gift Package</span>
-                            <h3>딥티크만의 특별한 패키지 이야기</h3>
-                        </a>
+                        <a href="#"><img src="./images/index-newsletter/letter08.jpg" alt="딥티크만의 특별한 패키지 소개"></a>
                     </div>
                 </div>
             </div>
             <div class="slide_btn">
-                <button type="button" class="prev"><img src="./images/slide_prev.png" alt="이전슬라이드보기"></button>
-                <button type="button" class="next"><img src="./images/slide_next.png" alt="다음슬라이드보기"></button>
+                <button type="button" class="prev"><img src="./images/icon/slide_prev.png" alt="이전슬라이드보기"></button>
+                <button type="button" class="next"><img src="./images/icon/slide_next.png" alt="다음슬라이드보기"></button>
             </div>
             <div class="swiper-scrollbar"></div>
         </div>
@@ -386,7 +446,7 @@
             <div class="swiper card_wrap">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide baies">
-                        <a href="#"><img src="./images/card01.jpg" alt=""></a>
+                        <a href="#"><img src="./images/card/card01.jpg" alt=""></a>
                         <div class="texts">
                             <p class="kr_name">베이</p>
                             <p class="en_name">BAIES</p>
@@ -394,7 +454,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide papier">
-                        <a href="#"><img src="./images/card02.jpg" alt=""></a>
+                        <a href="#"><img src="./images/card/card02.jpg" alt=""></a>
                         <div class="texts">
                             <p class="kr_name">로 파피에</p>
                             <p class="en_name">L'EAU PAPIER</p>
@@ -402,7 +462,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide minthe">
-                        <a href="#"><img src="./images/card03.jpg" alt=""></a>
+                        <a href="#"><img src="./images/card/card03.jpg" alt=""></a>
                         <div class="texts">
                             <p class="kr_name">오 드 민떼</p>
                             <p class="en_name">EAU DE MINTHÉ</p>
@@ -410,7 +470,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide orpheon">
-                        <a href="#"><img src="./images/card04.jpg" alt=""></a>
+                        <a href="#"><img src="./images/card/card04.jpg" alt=""></a>
                         <div class="texts">
                                 <p class="kr_name">오르페옹</p>
                                 <p class="en_name">ORPHÉON</p>
@@ -418,7 +478,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide lombre">
-                        <a href="#"><img src="./images/card05.jpg" alt=""></a>
+                        <a href="#"><img src="./images//card/card05.jpg" alt=""></a>
                         <div class="texts">
                                 <p class="kr_name">롬브르 단 로</p>
                                 <p class="en_name">L'OMBRE DANS L'EAU</p>
@@ -426,7 +486,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide lesessences">
-                        <a href="#"><img src="./images/card06.jpg" alt=""></a>
+                        <a href="#"><img src="./images/card/card06.jpg" alt=""></a>
                         <div class="texts">
                                 <p class="kr_name">레 썽쓰 드 딥티크</p>
                                 <p class="en_name">LES ESSENCES DE DIPTYQUE</p>
@@ -436,14 +496,14 @@
                 </div>
             </div>
             <div class="slide_btn">
-                <button type="button" class="prev"><img src="./images/slide_prev.png" alt=""></button>
-                <button type="button" class="next"><img src="./images/slide_next.png" alt=""></button>
+                <button type="button" class="prev"><img src="./images/icon/slide_prev.png" alt=""></button>
+                <button type="button" class="next"><img src="./images/icon/slide_next.png" alt=""></button>
             </div> 
         </div>
         <!-- 블랙띠배너 -->
-         <div class="black_line_bnr">
+        <div class="black_line_bnr">
             <h3>Diptyque opens the door to a singular world: a space bridging dreams and reality, intimacy and universality, where imagination runs free and creativity is unleashed.</h3>
-         </div>
+        </div>
     </main>
     <!-- footer -->
     <footer>
@@ -484,9 +544,9 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon_instagram.png" alt="인스타그램"></a>
-                    <a href="https://www.facebook.com/diptyque/"><img src="./images/icon_facebook.png" alt="페이스북"></a>
-                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon_youtube.png" alt="유튜브"></a>
+                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon/instagram.png" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/diptyque/"><img src="./images//icon/facebook.png" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon/youtube.png" alt="유튜브"></a>
                 </div>
             </div>
         </div>

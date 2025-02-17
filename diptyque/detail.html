@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>베티베리오 오 드 뚜왈렛 - Diptyuque</title>
+    <title>플레르 드 뽀 오 드 퍼퓸 - Diptyuque</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -17,18 +17,104 @@
 <body>
     <header>
         <div class="user_wrap">
-            <a href="#"><img src="./images/icon_login2.png" alt="로그인"></a>
-            <a href="#"><img src="./images/icon_shoppinbag2.png" alt="장바구니"></a>
-            <a href="#"><img src="./images/icon_search2.png" alt="제품검색"></a>
+            <div class="icon">
+                <a href="#" class="login"><img src="./images/icon/user-b.png" alt="로그인"></a>
+                <a href="#" class="shoppingbag"><img src="./images/icon/shoppinbag-b.png" alt="장바구니"></a>
+                <a href="#" class="search"><img src="./images/icon/search-b.png" alt="제품검색"></a>
+            </div>
+            <!-- 검색 아이콘 클릭 팝업 -->
+            <div class="search_popup">
+                <div class="search_box">
+                    <input type="text" name="search_bar" class="search_bar" placeholder="검색어를 입력하세요.">
+                    <button type="button" class="search_btn"><img src="./images/icon/search-b.png" alt="검색하기"></button>
+                </div>
+                <div class="popular_word">
+                    <h2>지금 가장 인기 있는</h2>
+                    <ul class="rank">
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">로 파피에</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 로즈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">플레르 드 뽀</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오르페옹</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">탐다오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">베티베리오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">34번가</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 카피탈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">도손</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">필로시코스</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trendy">
+                    <h2>지금 가장 트렌디한</h2>
+                    <div class="content">
+                        <p>머무는 공간을 봄으로 가득 채우는
+                        <br><em>ROSES</em> <span>COLLECTIONS</span></p>
+                        <a href="#"><img src="./images/card/card12.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="logo">
             <a href="./index.html"><img src="./images/logo_black.png" alt="딥티크"></a>
         </div>
         <div class="nav">
             <a href="./sub.html">BEST</a>
-            <a href="./sub.html">FRAGRANCES</a>
-            <a href="./sub.html">BODY&BATH</a>
-            <a href="./sub.html">HOME&CAR</a>
+            <div class="fragrances">
+                <a href="./sub.html">FRAGRANCES</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">EAU DE PERFUMES</a>
+                    <a href="./sub.html">EAU DE TOILETTES</a>
+                    <a href="./sub.html">SOLID PERFUMES</a>
+                </div>
+            </div>
+            <div class="bodynbath">
+                <a href="./sub.html">BODY&BATH</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">HAND CARE</a>
+                    <a href="./sub.html">BODY CARE</a>
+                    <a href="./sub.html">HAIR MIST</a>
+                </div>
+            </div>
+            <div class="home">
+                <a href="./sub.html">HOME</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">CANDLES</a>
+                    <a href="./sub.html">HOME FRAGRANCES</a>
+                    <a href="./sub.html">HOME DECO</a>
+                </div>
+            </div>
             <a href="./sub.html">ACCESSORIES</a>
             <a href="./sub.html">GIFTS</a>
             <a href="./sub.html">OUR STORY</a>
@@ -37,78 +123,133 @@
     <!-- main -->
     <main>
         <div class="hero_container">
-            <ul class="depth">
-                <li><a href="./sub.html">FRANGRANCES</a></li>
-                <li><img src="./images/icon_arrow_right.png" alt=""></li>
-                <li><a href="./sub.html">EAU DE TOILETTE</a></li>
-            </ul>
-            <div class="prd_info_container">
-                <div class="thumnail_container">
-                    <div class="select_thumnail">
-                        <a href="#" class="active"><img src="./images/thumbnail001.jpg" alt=""></a>
-                        <a href="#"><img src="./images/thumbnail002.jpg" alt=""></a>
-                        <a href="#"><img src="./images/thumbnail003.jpg" alt=""></a>
+            <div class="size_wrap">
+                <ul class="depth">
+                    <li><a href="./sub.html">HOME</a></li>
+                    <li><img src="./images/icon/arrow-right-g.png" alt=""></li>
+                    <li><a href="./sub.html">FRANGRANCES</a></li>
+                    <li><img src="./images/icon/arrow-right-g.png" alt=""></li>
+                    <li><a href="./sub.html">EAU DE PERFUMES</a></li>
+                </ul>
+                <div class="prd_info_container">
+                    <div class="thumnail_container">
+                        <div class="select_thumnail">
+                            <a href="#" class="active"><img src="./images/item-fragrance/thumnail01.jpg" alt=""></a>
+                            <a href="#"><img src="./images/item-fragrance/thumnail02.jpg" alt=""></a>
+                            <a href="#"><img src="./images/item-fragrance/thumnail03.jpg" alt=""></a>
+                        </div>
+                        <div class="hero_thumnail">
+                            <img src="./images/item-fragrance/thumnail01.jpg" alt="상품이미지">
+                        </div>
                     </div>
-                    <div class="hero_thumnail">
-                        <img src="./images/thumbnail_hero.jpg" alt="상품이미지">
-                    </div>
-                </div>
-                <div class="information_container">
-                    <h2>VETYVERIO</h2>
-                    <h1>베티베리오 오 드 뚜왈렛</h1>
-                    <span class="meta">EDT 100ML</span>
-                    <p class="price">₩ 241,000</p>
-                    <span class="exp">
-                        나무의 강렬함이 느껴지는 베티버가 신선하고 스모키하며
-                        <br>미묘한 꽃내음에 이르기까지 예상치 못한 다양한 양상을 드러내는 향입니다.
-                        <br>특히 장미와 베티버의 흔치 않은 조합으로 이색적인 향을 느낄 수 있습니다.
-                    </span>
-                    <div class="action_btns">
-                        <button type="button" class="wish"><img src="" alt="위시리스트 저장하기"></button>
-                        <button type="button" class="gift">선물하기</button>
-                        <button type="button" class="cart">장바구니</button>
-                    </div>
-                    <div class="delivery_info">
-                        <p>배송안내</p>
-                        <span>20시 30분까지 결제 시 오늘 출발</span>
-                        <span>평균 도착 예정일 2일</span>
-                    </div>
-                    <div class="service_info">
-                        <p>Try it first</p>
-                        <span>향수 구매 시 샘플을 제공합니다. 시향 후 구매를 확정해 보세요.</span>
+                    <div class="information_container">
+                        <h2>FLEUR DE PEAU</h2>
+                        <h1>플레르 드 뽀 오 드 퍼퓸</h1>
+                        <span class="meta">EDP 75ML</span>
+                        <p class="price">₩ 279,000</p>
+                        <p class="notes_title">NOTES</p>
+                        <div class="notes">
+                            <span class="dep">
+                                TOP
+                                <br>MIDDLE
+                                <br>BASE
+                            </span>
+                            <span class="material">
+                                베르가못, 이탈리안 만다린
+                                <br>아이리스, 암브레트 씨앗, 암브레트 페어, 풀럼, 핑크 페퍼
+                                <br>머스크
+                            </span>
+                        </div>
+                        <div class="action_btns">
+                            <button type="button" class="gift">선물하기</button>
+                            <button type="button" class="cart">구매하기</button>
+                        </div>
+                        <div class="delivery_info">
+                            <p>배송안내</p>
+                            <span>20시 30분까지 결제 시 오늘 출발</span>
+                            <span>평균 도착 예정일 2일</span>
+                        </div>
+                        <div class="service_info">
+                            <p>Try it first</p>
+                            <span>향수 구매 시 샘플을 제공합니다. 시향 후 구매를 확정해 보세요.</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="detail_container">
-            <h2><img src="./images/graphic-vetyverio.jpg" alt="베티베리오를 대표하는 그림"></h2>
+            <h2>FLEUR DE PEAU : COSY MUSKS AND POWDERY IRIS</h2>
             <h3>NOTES</h3>
-            <p class="notes">
-                EDT 베티베리오는
-                <br>남성과 여성 모두를 위한 플로리다 산 자몽과 터키산 장미의 향기로운 조화를 이룹니다.
-                <br>시트러스한 탑 노트에서 시작되어 플로럴한 장미향, 따스한 머스크 향으로 이어져 봄과 여름에 더욱 빛납니다.
-                <br>베티베리오(VETYVERIO)의 주성분인 베티베르(VETIVER-풀의 한 종류)는
-                <br>지구에서 가장 활동적인 화산 지역인 아이티에서 자라고 있으며 맹렬한 지역적 특색으로 
-                <br>다른 향과 차별화되는 독특한 향을 가지게 되었습니다. 
-                <br>보틀 그림은 주성분이 된 베티베르로써 울창한 숲 안에서 자라는 베티베르를 나타냅니다.
+            <p class="exp">
+                고대 그리스 신화 중 가장 정열적이고 관능적인 프시케와 에로스의 사랑 이야기를 자연스러운 살 내음을 연상시키는 향으로 표현했습니다.
+                <br>파우더리한 아이리스와 앰버리, 프루티한 암브레트 시드로 강조되는 머스크향은 구름처럼 폭신하고, 솜털처럼 보드라우며 촉각적인 차원에서 그 진가를 발휘합니다.
             </p>
-            <h3>STORY</h3>
-            <p class="story">
-                아이티산 베티버 에센스는 ESR(공정성, 연대감, 책임감) 인증을 받았습니다.
-                <br>이 에센스는 하이티(Haiti)의 마쎄(Massey), 포코(Faucault), 바즐레(Bazelais) 3개의 마을에서 생산됩니다.
-            </p>
-            <div class="tap">
-                <div class="notice">
+            <div class="notes">
+                <span class="dep">
+                    TOP
+                    <br>MIDDLE
+                    <br>BASE
+                </span>
+                <span class="material">
+                    베르가못, 이탈리안 만다린
+                    <br>아이리스, 암브레트 씨앗, 암브레트 페어, 풀럼, 핑크 페퍼
+                    <br>머스크
+                </span>
+            </div>
+            <div class="video">
+                <video src="./videos/Fleur_de_peau-4080x2295.mp4" autoplay muted loop></video>
+            </div>
+            <!-- 탭 메뉴 -->
+            <div class="tab_wrap">
+                <div class="tab">
                     <button type="button" class="active">상품정보제공고시</button>
-                </div>
-                <div class="review">
-                    <button type="button">REVIEW</button>
-                </div>
-                <div class="qna">
-                    <button type="button">Q&A</button>
-                </div>
-                <div class="cs">
                     <button type="button">배송/교환/반품</button>
+                </div>
+                <div class="content_wrap">
+                    <div class="content notice">
+                            <div class="noti">
+                                <h3>성분</h3>
+                                <p>
+                                    변성알코올, 정제수, 향료, 에칠헥실메톡시신나메이트, 부틸메톡시디벤조일메탄, 에칠헥실살리실레이트, 리모넨, 헥실신남알, 알파-이소메칠이오논, 리날룰, 
+                                    <br>쿠마린, 시트로넬올, 제라니올, 비에이치티, 벤질살리실레이트, 유제놀, 시트랄, 이소유제놀, 디소듐이디티에이, 토코페롤
+                                </p>
+                            </div>
+                            <div class="noti">
+                                <h3>사용방법</h3>
+                                <p>맥박이 뛰는 부위, 옷깃이 스치는 곳에 분사하여 사용합니다.</p>
+                            </div>
+                            <div class="noti">
+                                <h3>용량</h3>
+                                <p>100ML</p>
+                            </div>
+                            <div class="noti">
+                                <h3>제조국</h3>
+                                <p>프랑스</p>
+                            </div>
+                            <div class="noti">
+                                <h3>주요사양</h3>
+                                <p>모든 피부 타입</p>
+                            </div>
+                            <div class="noti">
+                                <h3>사용기한</h3>
+                                <p>개봉 후 1년 (본 제품 뒷면 참조)</p>
+                            </div>
+                            <div class="noti">
+                                <h3>주의사항</h3>
+                                <p>
+                                    1. 화장품을 사용하여 다음과 같은 이상이 있는 경우에는 사용을 중지하여야 하며, 계속 사용하면 증상이 악화되므로 피부과 전문의 등에게 상담할 것 
+                                    <br>가) 사용 중 붉은반점, 부어오름, 가려움증,자극 등의 이상이 있는 경우
+                                    <br>    나) 적용 부위가직사광선에 의하여 위와 같은 이상이 있는 경우
+                                    <br>
+                                    <br>2. 상처가 있는 부위,습진 및 피부염 등의 이상이 있는 부위에는 사용을 하지 말 것
+                                    <br>
+                                    <br>3. 보관 및 취급 시의 주의사항 가) 사용 후에는반드시 마개를 닫아둘 것. 나) 유아 · 소아의손이 닿지 않는 곳에 보관할 것 다) 고온 또는 저온의장소 및 직사광선이 닿는 곳에는 보관하지 말 것
+                                </p>
+                            </div>
+                    </div>
+                    <div class="content cs">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,58 +259,58 @@
             <div class="products">
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item018.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body04.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
-                        <a href="./detail.html" class="item_name">오르페옹 바디 앤 핸드워시</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="./detail.html" class="item_name">플레르 드 뽀 바디 앤 핸드워시</a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">200ML</p>
                     <p class="price">77,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item013.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body06.jpg" alt=""></a>
                         <span class="tag">LIMITED</span>
                     </div>
                     <div class="item_name_add_btn">
-                        <a href="./detail.html" class="item_name">트리오 트래블 핸드케어 세트</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="./detail.html" class="item_name">플레르 드  뽀 핸드 앤 바디로션</a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
-                    <p class="item_info">Handwash * 2, hand lotion 30ML</p>
-                    <p class="price">101,000</p>
+                    <p class="item_info">200ML</p>
+                    <p class="price">95,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item019.jpg" alt=""></a>
-                    </div>
-                    <div class="item_name_add_btn">
-                        <a href="./detail.html" class="item_name">새틴 바디 앤 헤어오일</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
-                    </div>
-                    <p class="item_info">100ML</p>
-                    <p class="price">279,000</p>
-                </div>
-                <div class="item">
-                    <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item003.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body11.jpg" alt=""></a>
                         <span class="tag">NEW</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">플레르 드 뽀 바디 밤</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">200ML</p>
                     <p class="price">124,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item020.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body05.jpg" alt=""></a>
+                    </div>
+                    <div class="item_name_add_btn">
+                        <a href="./detail.html" class="item_name">플레르 드 뽀 헤어미스트</a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
+                    </div>
+                    <p class="item_info">30ML</p>
+                    <p class="price">101,000</p>
+                </div>
+                <div class="item">
+                    <div class="item_thum">
+                        <a href="./detail.html" class="image"><img src="../images/item-body/body02.jpg" alt=""></a>
                         <span class="tag">POPULAR</span>
                     </div>
                     <div class="item_name_add_btn">
-                        <a href="./detail.html" class="item_name">오 카피탈 핸드크림</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="./detail.html" class="item_name">플레르 드 뽀 핸드크림</a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">45ML</p>
                     <p class="price">66,000</p>
@@ -181,19 +322,19 @@
             <h2>AT YOUR SERVICE</h2>
             <div class="content_wrap">
                 <div class="content">
-                    <h3><img src="./images/service01.png" alt="무료배송 서비스"></h3>
+                    <h3><img src="./images/service/service01.png" alt="무료배송 서비스"></h3>
                     <p>무료배송</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service02.png" alt="무료반품 서비스"></h3>
+                    <h3><img src="./images/service/service02.png" alt="무료반품 서비스"></h3>
                     <p>무료반품</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service03.png" alt="향수 샘플 증정 서비스"></h3>
+                    <h3><img src="./images/service/service03.png" alt="향수 샘플 증정 서비스"></h3>
                     <p>향수 샘플 증정</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service04.png" alt="웰컴기프트 증정 서비스"></h3>
+                    <h3><img src="./images/service/service04.png" alt="웰컴기프트 증정 서비스"></h3>
                     <p>웰컴기프트 증정</p>
                 </div>
             </div>
@@ -201,7 +342,7 @@
         <!-- 블랙띠배너 -->
         <div class="black_line_bnr">
             <h3>Diptyque opens the door to a singular world: a space bridging dreams and reality, intimacy and universality, where imagination runs free and creativity is unleashed.</h3>
-         </div>
+        </div>
     </main>
     <!-- footer -->
     <footer>
@@ -242,9 +383,9 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon_instagram.png" alt="인스타그램"></a>
-                    <a href="https://www.facebook.com/diptyque/"><img src="./images/icon_facebook.png" alt="페이스북"></a>
-                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon_youtube.png" alt="유튜브"></a>
+                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon/instagram.png" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/diptyque/"><img src="./images//icon/facebook.png" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon/youtube.png" alt="유튜브"></a>
                 </div>
             </div>
         </div>

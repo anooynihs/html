@@ -1,4 +1,4 @@
-//body,bath candles, homefragrances add 버튼 팝업창
+//body,bath candles, home add 버튼 팝업창
 const labels = document.querySelectorAll('.click_popup .info_label');
 const addBtns = document.querySelectorAll('.click_popup .add_btn');
 
@@ -17,7 +17,7 @@ addBtns.forEach((btn, index) => {
 //newsletter 슬라이드
 const letter = new Swiper('.newsletter .card_wrap',{
     slidesPerView:4,
-    spaceBetween:73,
+    spaceBetween:32,
     navigation:{
         nextEl:'.newsletter .slide_btn .next',
         prevEl:'.newsletter .slide_btn .prev',

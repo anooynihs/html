@@ -52,9 +52,9 @@ main .new .slide_btn {
     justify-content:space-between;
 }
 main .new .slide_btn .prev,
-main .new .slide_btn .next {}
+main .new .slide_btn .next {width:13px;}
 main .new .slide_btn .prev img,
-main .new .slide_btn .next img {}
+main .new .slide_btn .next img {width:100%;}
 /* =================================================== collections */
 main .collections {width:1600px;}
 main .collections h2 {}
@@ -92,7 +92,7 @@ main .all .total_option .total {
 }
 main .all .total_option .option_wrap {
     font-size:0.83rem;
-    background:url(../images/icon_arrow_down.png) no-repeat center;
+    background:url(../images/icon/arrow-right-b.png) no-repeat center;
     background-position-x:right;
     width:52px;
 }
@@ -104,16 +104,3 @@ main .with .products {
     display:flex;
     justify-content:space-between;
 }
-/* =================================================== services */
-main .service {width:1600px; margin-bottom:80px;}
-main .service h2 {margin-bottom:40px;}
-main .service .content_wrap {
-    width:548px;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-}
-main .service .content_wrap .content {width:92px;}
-main .service .content_wrap .content h3 {}
-main .service .content_wrap .content h3 img {width:100%; margin-bottom:30px;}
-main .service .content_wrap .content p {font-size:0.88rem; font-weight:500;}

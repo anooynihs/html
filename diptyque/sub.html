@@ -18,18 +18,104 @@
     <!-- header -->
     <header>
         <div class="user_wrap">
-            <a href="#"><img src="./images/icon_login2.png" alt="로그인"></a>
-            <a href="#"><img src="./images/icon_shoppinbag2.png" alt="장바구니"></a>
-            <a href="#"><img src="./images/icon_search2.png" alt="제품검색"></a>
+            <div class="icon">
+                <a href="#" class="login"><img src="./images/icon/user-b.png" alt="로그인"></a>
+                <a href="#" class="shoppingbag"><img src="./images/icon/shoppinbag-b.png" alt="장바구니"></a>
+                <a href="#" class="search"><img src="./images/icon/search-b.png" alt="제품검색"></a>
+            </div>
+            <!-- 검색 아이콘 클릭 팝업 -->
+            <div class="search_popup">
+                <div class="search_box">
+                    <input type="text" name="search_bar" class="search_bar" placeholder="검색어를 입력하세요.">
+                    <button type="button" class="search_btn"><img src="./images/icon/search-b.png" alt="검색하기"></button>
+                </div>
+                <div class="popular_word">
+                    <h2>지금 가장 인기 있는</h2>
+                    <ul class="rank">
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">로 파피에</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 로즈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">플레르 드 뽀</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오르페옹</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">탐다오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">베티베리오</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">34번가</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">오 카피탈</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">도손</a>
+                        </li>
+                        <li>
+                            <span><img src="./images/icon/line.png" alt=""></span>
+                            <a href="#">필로시코스</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trendy">
+                    <h2>지금 가장 트렌디한</h2>
+                    <div class="content">
+                        <p>머무는 공간을 봄으로 가득 채우는
+                        <br><em>ROSES</em> <span>COLLECTIONS</span></p>
+                        <a href="#"><img src="./images/card/card12.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="logo">
             <a href="./index.html"><img src="./images/logo_black.png" alt="딥티크"></a>
         </div>
         <div class="nav">
             <a href="./sub.html">BEST</a>
-            <a href="./sub.html">FRAGRANCES</a>
-            <a href="./sub.html">BODY&BATH</a>
-            <a href="./sub.html">HOME&CAR</a>
+            <div class="fragrances">
+                <a href="./sub.html">FRAGRANCES</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">EAU DE PERFUMES</a>
+                    <a href="./sub.html">EAU DE TOILETTES</a>
+                    <a href="./sub.html">SOLID PERFUMES</a>
+                </div>
+            </div>
+            <div class="bodynbath">
+                <a href="./sub.html">BODY&BATH</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">HAND CARE</a>
+                    <a href="./sub.html">BODY CARE</a>
+                    <a href="./sub.html">HAIR MIST</a>
+                </div>
+            </div>
+            <div class="home">
+                <a href="./sub.html">HOME</a>
+                <!-- 세컨드 카테고리 팝업 -->
+                <div class="second_nav">
+                    <a href="./sub.html">CANDLES</a>
+                    <a href="./sub.html">HOME FRAGRANCES</a>
+                    <a href="./sub.html">HOME DECO</a>
+                </div>
+            </div>
             <a href="./sub.html">ACCESSORIES</a>
             <a href="./sub.html">GIFTS</a>
             <a href="./sub.html">OUR STORY</a>
@@ -46,7 +132,7 @@
         </div>
         <!-- 메인 배너 -->
         <div class="hero_bnr">
-            <img src="./images/subpage_bnr.jpg" alt="">
+            <img src="./images/banner/subpage_bnr.jpg" alt="">
         </div>
         <!-- NEW -->
         <div class="new">
@@ -55,101 +141,102 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item015.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item004.jpg" alt=""></a>
                             <span class="tag">LIMITED</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">오 드 뚜왈렛 디스커버리 세트</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">7.5ml * 5</p>
                         <p class="price">189,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item016.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item005.jpg" alt=""></a>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">템뽀 오 드 퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">75ML</p>
                         <p class="price">279,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item014.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item002.jpg" alt=""></a>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">롬브르 단 로 솔리드퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">3G</p>
                         <p class="price">103,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item017.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item009.jpg" alt=""></a>
                             <span class="tag">EXCLUSIVE</span>
                         </div>
                         <div class="item_name_add_btn">
                             <a href="./detail.html" class="item_name">코라이 오스쿠로 오 드 퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">100ML</p>
                         <p class="price">474,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item015.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item010.jpg" alt=""></a>
                             <span class="tag">LIMITED</span>
                         </div>
                         <div class="item_name_add_btn">
-                            <a href="./detail.html" class="item_name">오 드 뚜왈렛 디스커버리 세트</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="./detail.html" class="item_name">부아 꼬르세 오 드 퍼퓸</a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
-                        <p class="item_info">7.5ml * 5</p>
-                        <p class="price">189,000</p>
+                        <p class="item_info">100ML</p>
+                        <p class="price">474,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item016.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item007.jpg" alt=""></a>
+                            <span class="tag">LIMITED</span>
                         </div>
                         <div class="item_name_add_btn">
-                            <a href="./detail.html" class="item_name">템뽀 오 드 퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="./detail.html" class="item_name">루나마리</a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
-                        <p class="item_info">75ML</p>
-                        <p class="price">279,000</p>
+                        <p class="item_info">100ML</p>
+                        <p class="price">474,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item014.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item012.jpg" alt=""></a>
                         </div>
                         <div class="item_name_add_btn">
-                            <a href="./detail.html" class="item_name">롬브르 단 로 솔리드퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="./detail.html" class="item_name">로 파피에 솔리드퍼퓸</a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">3G</p>
                         <p class="price">103,000</p>
                     </div>
                     <div class="swiper-slide item">
                         <div class="item_thum">
-                            <a href="./detail.html" class="image"><img src="./images/item017.jpg" alt=""></a>
+                            <a href="./detail.html" class="image"><img src="./images/item-fragrance/item013.jpg" alt=""></a>
                             <span class="tag">EXCLUSIVE</span>
                         </div>
                         <div class="item_name_add_btn">
-                            <a href="./detail.html" class="item_name">코라이 오스쿠로 오 드 퍼퓸</a>
-                            <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                            <a href="./detail.html" class="item_name">로 파피에 오 드 뚜왈렛</a>
+                            <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                         </div>
                         <p class="item_info">100ML</p>
-                        <p class="price">474,000</p>
+                        <p class="price">241,000</p>
                     </div>
                 </div>
             </div>
             <div class="slide_btn">
-                <button type="button" class="prev"><img src="./images/slide_prev.png" alt=""></button>
-                <button type="button" class="next"><img src="./images/slide_next.png" alt=""></button>
+                <button type="button" class="prev"><img src="./images//icon/slide_prev.png" alt="이전슬라이드보기"></button>
+                <button type="button" class="next"><img src="./images/icon/slide_next.png" alt="다음슬라이드보기"></button>
             </div> 
         </div>
         <!-- COLLECTIONS -->
@@ -157,44 +244,44 @@
             <h2>COLLECTIONS</h2>
             <div class="card_wrap">
                 <div class="card">
-                    <a href="#"><img src="./images/graphic-34.jpg" alt=""></a>
+                    <a href="#"><img src="./images/graphic/graphic-34.jpg" alt=""></a>
                     <p>34번가</p>
                     <span>34 boulevard</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/graphic-vetyverio.jpg" alt=""></a>
-                    <p>베티베리오</p>
-                    <span>VETYVERIO</span>
+                    <a href="#"><img src="./images/graphic/graphic-doson.jpg" alt=""></a>
+                    <p>도손</p>
+                    <span>DOSON</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/grapic-oyedo.jpg" alt=""></a>
-                    <p>오에도</p>
-                    <span>OYÉDO</span>
-                </div>
-                <div class="card">
-                    <a href="#"><img src="./images/grapic-eaudessens.jpg" alt=""></a>
+                    <a href="#"><img src="./images/graphic/graphic-eaudessens.jpg" alt=""></a>
                     <p>오 데 썽</p>
                     <span>Eau des Sens</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/grapic-eaurose.jpg" alt=""></a>
+                    <a href="#"><img src="./images/graphic/graphic-eaurose.jpg" alt=""></a>
                     <p>오 로즈</p>
                     <span>EAU ROSE</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/grapic-papier.jpg" alt=""></a>
+                    <a href="#"><img src="./images/graphic/graphic-papier.jpg" alt=""></a>
                     <p>로 파피에</p>
                     <span>L'EAU PAPIER</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/grapic-tamdao.jpg" alt=""></a>
+                    <a href="#"><img src="./images/graphic/graphic-philosykos.jpg" alt=""></a>
+                    <p>필로시코스</p>
+                    <span>PHILOSYKOS</span>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./images/graphic/graphic-tamdao.jpg" alt=""></a>
                     <p>탐다오</p>
                     <span>TAMDAO</span>
                 </div>
                 <div class="card">
-                    <a href="#"><img src="./images/grapic-philosykos.jpg" alt=""></a>
-                    <p>필로시코스</p>
-                    <span>PHILOSYKOS</span>
+                    <a href="#"><img src="./images/graphic/graphic-vetyverio.jpg" alt=""></a>
+                    <p>베티베리오</p>
+                    <span>VETYVERIO</span>
                 </div>
             </div>
         </div>
@@ -219,58 +306,58 @@
             <div class="products">
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item018.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body08.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">오르페옹 바디 앤 핸드워시</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">200ML</p>
                     <p class="price">77,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item013.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body07.jpg" alt=""></a>
                         <span class="tag">LIMITED</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">트리오 트래블 핸드케어 세트</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">Handwash * 2, hand lotion 30ML</p>
                     <p class="price">101,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item019.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body09.jpg" alt=""></a>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">새틴 바디 앤 헤어오일</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">100ML</p>
                     <p class="price">279,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item003.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body11.jpg" alt=""></a>
                         <span class="tag">NEW</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">플레르 드 뽀 바디 밤</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">200ML</p>
                     <p class="price">124,000</p>
                 </div>
                 <div class="item">
                     <div class="item_thum">
-                        <a href="./detail.html" class="image"><img src="./images/item020.jpg" alt=""></a>
+                        <a href="./detail.html" class="image"><img src="./images/item-body/body01.jpg" alt=""></a>
                         <span class="tag">POPULAR</span>
                     </div>
                     <div class="item_name_add_btn">
                         <a href="./detail.html" class="item_name">오 카피탈 핸드크림</a>
-                        <a href="#" class="add_btn"><img src="./images/icon_add_cart.png" alt="장바구니담기"></a>
+                        <a href="#" class="add_btn"><img src="./images/icon/add-cart.png" alt="장바구니담기"></a>
                     </div>
                     <p class="item_info">45ML</p>
                     <p class="price">66,000</p>
@@ -282,19 +369,19 @@
             <h2>AT YOUR SERVICE</h2>
             <div class="content_wrap">
                 <div class="content">
-                    <h3><img src="./images/service01.png" alt="무료배송 서비스"></h3>
+                    <h3><img src="./images/service/service01.png" alt="무료배송 서비스"></h3>
                     <p>무료배송</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service02.png" alt="무료반품 서비스"></h3>
+                    <h3><img src="./images/service/service02.png" alt="무료반품 서비스"></h3>
                     <p>무료반품</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service03.png" alt="향수 샘플 증정 서비스"></h3>
+                    <h3><img src="./images/service/service03.png" alt="향수 샘플 증정 서비스"></h3>
                     <p>향수 샘플 증정</p>
                 </div>
                 <div class="content">
-                    <h3><img src="./images/service04.png" alt="웰컴기프트 증정 서비스"></h3>
+                    <h3><img src="./images/service/service04.png" alt="웰컴기프트 증정 서비스"></h3>
                     <p>웰컴기프트 증정</p>
                 </div>
             </div>
@@ -343,9 +430,9 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon_instagram.png" alt="인스타그램"></a>
-                    <a href="https://www.facebook.com/diptyque/"><img src="./images/icon_facebook.png" alt="페이스북"></a>
-                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon_youtube.png" alt="유튜브"></a>
+                    <a href="https://www.instagram.com/diptyque/"><img src="./images/icon/instagram.png" alt="인스타그램"></a>
+                    <a href="https://www.facebook.com/diptyque/"><img src="./images//icon/facebook.png" alt="페이스북"></a>
+                    <a href="https://www.youtube.com/@DiptyqueParis"><img src="./images/icon/youtube.png" alt="유튜브"></a>
                 </div>
             </div>
         </div>

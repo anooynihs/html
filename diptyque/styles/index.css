@@ -1,5 +1,29 @@
 /* =================================================== header */
-header .nav a {color:#fff;}
+header .nav a, 
+header .nav div {color:#fff;}
+/* =================================================== 세컨드 내비게이션 팝업 공통 CSS */
+header .nav .second_nav {
+    margin-top:22px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:start;
+    padding:25px;
+    background-color:rgba(255,255,255,0.3);
+    position:absolute;
+    left:0; top:0;
+    display:none;
+}
+header .nav .second_nav:hover {
+    display:block;
+}
+header .nav .second_nav > a {
+    margin-bottom:25px;
+    font-size:0.88rem;
+    white-space:nowrap;
+    color:#fff;
+}
+header .nav .second_nav > a:hover {font-weight:700;}
+header .nav .second_nav > a:last-child {margin:0;}
 /* =================================================== 메인배너 */
 main {margin:0 auto;}
 main .bnr {height:100vh; overflow:hidden;}
@@ -48,10 +72,18 @@ main .prefer .title_wrap {}
 main .prefer .title_wrap h2 {}
 main .prefer .title_wrap h3 {font-size:1.125rem; margin:15px 0 40px;}
 main .prefer .contents {display:flex; justify-content:space-between;}
-main .prefer .contents .type {width:280px;}
-main .prefer .contents .type a {}
+main .prefer .contents .type {
+    width:280px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .prefer .contents .type > a {
+    display:block;
+    width:200px;
+}
 main .prefer .contents .type a img {
-    width:200px; height:200px; 
+    width:100%;
     border-radius:50%; 
     margin-bottom:30px;
 }
@@ -67,11 +99,10 @@ main .prefer .contents .type p {
     margin-bottom:50px;
 }
 main .prefer .contents .type .btn_discover {
-    display:inline-block;
     background-color:#1A1A18;
-    width:86px; padding:8px 0; 
+    width:86px; padding:8px 0;
 }
-main .prefer .contents .type .btn_discover a {
+main .prefer .contents .type .btn_discover > a {
     font-size:0.81rem;
     letter-spacing:0;
     color:#fff;
@@ -84,7 +115,7 @@ main .gifts_bnr h3 {
     margin:15px 0 40px;
     text-align:center;
 }
-main .gifts_bnr .bnr_image {}
+main .gifts_bnr .bnr_image {max-width:1920px;}
 main .gifts_bnr .bnr_image img {width:100%;}
 /* =================================================== 바디, 홈 콘텐츠 공통 CSS */
 main .special_layout {
@@ -109,6 +140,7 @@ main .special_layout .bnr_container > p {
 }
 main .special_layout .bnr_container .click_popup {position:absolute;}
 main .special_layout .bnr_container .click_popup .info_label {
+    display:none;
     background-color:rgba(255, 255, 255, 0.7);
     width:152px;
     padding:10px 12px;
@@ -127,7 +159,10 @@ main .special_layout .bnr_container .click_popup .info_label .price {
     font-weight:600;
     text-align:right;
 }
-main .special_layout .bnr_container .click_popup .add_btn {}
+main .special_layout .bnr_container .click_popup .add_btn {
+    display:block; width:18px;
+}
+main .special_layout .bnr_container .click_popup .add_btn img {width:100%;}
 main .special_layout .products_container {width:980px;}
 main .special_layout .products_container .title {
     display:flex;
@@ -161,13 +196,17 @@ main .special_layout .products_container .products .item .item_info {}
 main .special_layout .products_container .products .item .price {}
 /* =================================================== 바디&배쓰 제품 */
 main .body_bath {}
-main .body_bath .bnr_container {background-image:url(../images/bnr_body.jpg);}
-main .body_bath .bnr_container .click_popup {left:230px; top:170px;}
-main .body_bath .bnr_container .click_popup .info_label {display:none;}
+main .body_bath .bnr_container {background-image:url(../images/banner/bnr_body.jpg);}
+main .body_bath .bnr_container .click_popup {}
+main .body_bath .bnr_container .click_popup .info_label {}
 main .body_bath .bnr_container .click_popup .info_label p {}
 main .body_bath .bnr_container .click_popup .info_label span {}
 main .body_bath .bnr_container .click_popup .info_label .price {}
 main .body_bath .bnr_container .click_popup .add_btn {}
+main .body_bath .bnr_container > .act {bottom:539px; left:203px;}
+main .body_bath .bnr_container > .act .add_btn {}
+main .body_bath .bnr_container > .deact {bottom:367px; right:99px;}
+main .body_bath .bnr_container > .deact .add_btn {float:right;}
 main .body_bath .products_container {}
 main .body_bath .products_container .title {margin-bottom:40px;}
 main .body_bath .products_container .title h2 {font-size:1.5rem; letter-spacing:0;}
@@ -177,7 +216,7 @@ main .body_bath .products_container .products {}
 main .body_bath .products_container .products .item {}
 main .body_bath .products_container .products .item .item_thum {}
 main .body_bath .products_container .products .item .item_thum .image {}
-main .body_bath .products_container .products .item .item_thum .image img {width:100%;}
+main .body_bath .products_container .products .item .item_thum .image img {}
 main .body_bath .products_container .products .item .item_thum .tag {}
 main .body_bath .products_container .products .item .item_name_add_btn {}
 main .body_bath .products_container .products .item .item_name_add_btn .item_name {}
@@ -185,167 +224,52 @@ main .body_bath .products_container .products .item .item_name_add_btn .add_btn 
 main .body_bath .products_container .products .item .item_info {}
 main .body_bath .products_container .products .item .price {}
 /* =================================================== 캔들&홈프래그런스 제품 */
-main .candles_homefragrances {}
-main .candles_homefragrances .bnr_container {background-image:url(../images/bnr_home.jpg);}
-main .candles_homefragrances .bnr_container .click_popup {}
-main .candles_homefragrances .bnr_container .act {right:30px; top:300px;}
-main .candles_homefragrances .bnr_container .deact1 {bottom:305px;}
-main .candles_homefragrances .bnr_container .deact2 {bottom:200px; right:200px;}
-main .candles_homefragrances .bnr_container .deact3 {top:180px; right:90px;}
-main .candles_homefragrances .bnr_container .click_popup .info_label {display:none;}
-main .candles_homefragrances .bnr_container .click_popup .info_label p {}
-main .candles_homefragrances .bnr_container .click_popup .info_label span {}
-main .candles_homefragrances .bnr_container .click_popup .info_label .price {}
-main .candles_homefragrances .bnr_container .act .add_btn {float:right;}
-main .candles_homefragrances .bnr_container .click_popup .add_btn {}
-main .candles_homefragrances .products_container {}
-main .candles_homefragrances .products_container .title {}
-main .candles_homefragrances .products_container .title h2 {}
-main .candles_homefragrances .products_container .title .more_view {}
-main .candles_homefragrances .products_container .title .more_view img {}
-main .candles_homefragrances .products_container .products {}
-main .candles_homefragrances .products_container .products .item {}
-main .candles_homefragrances .products_container .products .item .item_thum {}
-main .candles_homefragrances .products_container .products .item .item_thum .image {}
-main .candles_homefragrances .products_container .products .item .item_thum .image img {width:100%;}
-main .candles_homefragrances .products_container .products .item .item_thum .tag {}
-main .candles_homefragrances .products_container .products .item .item_name_add_btn {}
-main .candles_homefragrances .products_container .products .item .item_name_add_btn .item_name {}
-main .candles_homefragrances .products_container .products .item .item_name_add_btn .add_btn {}
-main .candles_homefragrances .products_container .products .item .item_info {}
-main .candles_homefragrances .products_container .products .item .price {}
+main .home {}
+main .home .bnr_container {background-image:url(../images//banner/bnr_home.jpg);}
+main .home .bnr_container .click_popup {}
+main .home .bnr_container .click_popup .info_label {}
+main .home .bnr_container .click_popup .info_label p {}
+main .home .bnr_container .click_popup .info_label span {}
+main .home .bnr_container .click_popup .info_label .price {}
+main .home .bnr_container .click_popup .add_btn {}
+main .home .bnr_container .deact1 {bottom:289px; left:45px;}
+main .home .bnr_container .deact2 {bottom:195px; left:239px;}
+main .home .bnr_container .act {bottom:345px; right:44px;}
+main .home .bnr_container .act .add_btn {float:right;}
+main .home .products_container {}
+main .home .products_container .title {}
+main .home .products_container .title h2 {}
+main .home .products_container .title .more_view {}
+main .home .products_container .title .more_view img {}
+main .home .products_container .products {}
+main .home .products_container .products .item {}
+main .home .products_container .products .item .item_thum {}
+main .home .products_container .products .item .item_thum .image {}
+main .home .products_container .products .item .item_thum .image img {}
+main .home .products_container .products .item .item_thum .tag {}
+main .home .products_container .products .item .item_name_add_btn {}
+main .home .products_container .products .item .item_name_add_btn .item_name {}
+main .home .products_container .products .item .item_name_add_btn .add_btn {}
+main .home .products_container .products .item .item_info {}
+main .home .products_container .products .item .price {}
 /* =================================================== 뉴스레터 콘텐츠 */
 main .newsletter {margin-top:160px; position:relative; }
 main .newsletter h2 {margin-bottom:40px;}
-main .newsletter .swiper {width:100%;}
+main .newsletter .swiper {width:100vw; height:608px;}
 main .newsletter .swiper .swiper-wrapper {}
 main .newsletter .swiper .swiper-wrapper .swiper-slide {}
-main .newsletter .swiper .swiper-wrapper .swiper-slide a {
-    display:inline-block;
-    width:435px; height:580px;
-    text-align:center;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-}
-main .newsletter .swiper .swiper-wrapper .swiper-slide a span {display:inline-block; margin-bottom:10px;}
-main .newsletter .swiper .swiper-wrapper .swiper-slide a h3 {}
-main .newsletter .swiper .swiper-wrapper .card1 {}
-main .newsletter .swiper .swiper-wrapper .card1 > a {background-image:url(../images/letter01.jpg);}
-main .newsletter .swiper .swiper-wrapper .card1 > a span {
-    font-family:'Diptyque';
-    letter-spacing:0;
-    padding-top:86px;
-}
-main .newsletter .swiper .swiper-wrapper .card1 > a h3 {
-    font-size:1.25rem; 
-    font-weight:500;
-}
-main .newsletter .swiper .swiper-wrapper .card2 {background-image:url(../images/letter02.jpg);}
-main .newsletter .swiper .swiper-wrapper .card2 > a {
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content:center
-}
-main .newsletter .swiper .swiper-wrapper .card2 > a span {
-    font-family:'Diptyque';
-    font-size:1.25rem;
-    font-weight:700;
-    letter-spacing:0;
-}
-main .newsletter .swiper .swiper-wrapper .card2 > a h3 {font-size:1.25rem;}
-main .newsletter .swiper .swiper-wrapper .card3 {background-image:url(../images/letter03.jpg);}
-main .newsletter .swiper .swiper-wrapper .card3 > a {}
-main .newsletter .swiper .swiper-wrapper .card3 > a .sub_t {
-    font-family:'Diptyque';
-    font-size:1.25rem;
-    letter-spacing:0; 
-    padding-top:86px;
-    margin-bottom:40px;
-}
-main .newsletter .swiper .swiper-wrapper .card3 > a span {
-    display:block;
-    font-family:'Diptyque';
-    letter-spacing:0;
-}
-main .newsletter .swiper .swiper-wrapper .card3 > a h3 {font-weight:500;}
-main .newsletter .swiper .swiper-wrapper .card3 .btn_discover {}
-main .newsletter .swiper .swiper-wrapper .card3 .btn_discover > a {
-    position:absolute; 
-    top:500px; left:170.5px;
-    background-color:#1A1A18;
-    width:94px; height:29px;
-    line-height:29px;
-    font-size:0.81rem;
-    font-weight:500;
-    letter-spacing:0;
-    color:#fff; 
-}
-main .newsletter .swiper .swiper-wrapper .card4 {background-image:url(../images/letter04.jpg); letter-spacing:0;}
-main .newsletter .swiper .swiper-wrapper .card4 > a {
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content:center;
-}
-main .newsletter .swiper .swiper-wrapper .card4 > a span {}
-main .newsletter .swiper .swiper-wrapper .card4 > a h3 {
-    font-family:'Diptyque';
-    font-size:1.25rem;
-    letter-spacing:0;
-}
-main .newsletter .swiper .swiper-wrapper .card5 {background-image:url(../images/letter05.jpg);}
-main .newsletter .swiper .swiper-wrapper .card5 > a {}
-main .newsletter .swiper .swiper-wrapper .card5 > a span {
-    font-family:'Diptyque'; 
-    letter-spacing:0;
-    padding-top:86px;
-}
-main .newsletter .swiper .swiper-wrapper .card5 > a h3 {
-    font-size:1.25rem;
-    font-weight:500;
-}
-main .newsletter .swiper .swiper-wrapper .card6 {background-image:url(../images/letter06.jpg);}
-main .newsletter .swiper .swiper-wrapper .card6 > a {
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content:end;
-    padding-bottom:86px;
-}
-main .newsletter .swiper .swiper-wrapper .card6 > a span {}
-main .newsletter .swiper .swiper-wrapper .card6 > a h3 {
-    font-family:'Diptyque'; 
-    font-size:1.25rem; 
-    letter-spacing:0;
-}
-main .newsletter .swiper .swiper-wrapper .card7 {background-image:url(../images/letter07.jpg);}
-main .newsletter .swiper .swiper-wrapper .card7 > a {
-    display:flex; 
-    flex-flow:column nowrap; 
-    justify-content:end; 
-    padding-bottom:86px;
-}
-main .newsletter .swiper .swiper-wrapper .card7 > a span {
-    font-family:'Diptyque'; 
-    font-weight:700; 
-    letter-spacing:0;
-}
-main .newsletter .swiper .swiper-wrapper .card8 {background-image:url(../images/letter08.jpg);}
-main .newsletter .swiper .swiper-wrapper .card8 > a {}
-main .newsletter .swiper .swiper-wrapper .card8 > a span {
-    font-family:'Diptyque';
-    font-size:1.5rem;
-    font-weight:700;
-    letter-spacing:0;
-    padding-top:86px;}
-main .newsletter .swiper .swiper-wrapper .card8 > a h3 {}
+main .newsletter .swiper .swiper-wrapper .swiper-slide a {display:block; width:456px;}
+main .newsletter .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
 main .newsletter .slide_btn {
-    width:1600px; margin:0 auto; 
+    width:1600px;
+    margin:15px auto 0;
     display:flex;
     justify-content:space-between;
-    margin-top:30px;
 }
-main .newsletter .slide_btn .prev img {}
-main .newsletter .slide_btn .next img {}
+main .newsletter .slide_btn .prev,
+main .newsletter .slide_btn .next {width:13px;}
+main .newsletter .slide_btn .prev img,
+main .newsletter .slide_btn .next img {width:100%;}
 main .newsletter .swiper-scrollbar {
     width:1500px; height:2px;
     background-color:#d9d9d9;
@@ -389,6 +313,6 @@ main .collection .slide_btn {
     top:50%; left:0;
 }
 main .collection .slide_btn .prev,
-main .collection .slide_btn .next {}
+main .collection .slide_btn .next {width:13px;}
 main .collection .slide_btn .prev img,
-main .collection .slide_btn .next img {}
+main .collection .slide_btn .next img {width:100%;}
