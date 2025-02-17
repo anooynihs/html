@@ -2,20 +2,20 @@
 header {border-bottom:1px solid #D9D9D9;}
 header .nav {margin-bottom:30px;}
 /* =================================================== 메인 시작, 페이지타이틀 + 배너 */
-main {padding-top:252px;}
+main {padding-top:272px;}
 main > * {margin:0 auto;}
 main .page_title {
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 main .page_title h1 {
     font-family:'Diptyque';
-    font-size:3rem;
+    font-size:1.75rem;
     letter-spacing:0;
     margin-bottom:8px;
 }
 main .page_title p {line-height:1.6;}
-main .hero_bnr {width:1200px; margin:0 auto; height:600px; text-align:center;}
+main .hero_bnr {max-width:1920px; margin:0 auto; text-align:center;}
 main .hero_bnr img {width:100%;}
 /* =================================================== 공통 CSS */
 main > * {color:#1A1A18;}
@@ -26,10 +26,10 @@ main h2 {
     letter-spacing:0;
     text-align:center;
     margin-bottom:40px;
-    margin-top:160px;
+    margin-top:100px;
 }
 /* =================================================== new */
-main .new {position:relative;}
+main .new {position:relative; margin-bottom:160px;}
 main .new h2 {}
 main .new .swiper {width:1417px;}
 main .new .swiper .swiper-wrapper {}
@@ -56,7 +56,7 @@ main .new .slide_btn .next {width:13px;}
 main .new .slide_btn .prev img,
 main .new .slide_btn .next img {width:100%;}
 /* =================================================== collections */
-main .collections {width:1600px;}
+main .collections {width:1600px; margin-bottom:160px;}
 main .collections h2 {}
 main .collections .card_wrap {
     display:flex;
@@ -80,11 +80,12 @@ main .collections .card_wrap .card span {
     color:#7C7C7C;
 }
 /* =================================================== all */
-main .all {width:1600px; background-color: blanchedalmond;}
+main .all {width:1600px; margin-bottom:160px;}
 main .all h2 {}
 main .all .total_option {
     display:flex;
     justify-content:space-between;
+    margin-bottom:20px;
 }
 main .all .total_option .total {
     font-size:0.83rem;
@@ -92,14 +93,38 @@ main .all .total_option .total {
 }
 main .all .total_option .option_wrap {
     font-size:0.83rem;
-    background:url(../images/icon/arrow-right-b.png) no-repeat center;
+    background:url(../images/icon/arrow-down-b.png) no-repeat center;
     background-position-x:right;
+    background-size:8px 4px;
     width:52px;
 }
 main .all .total_option .option_wrap option {font-size:0.83rem;}
+/* =================================================== item container - show */
+main .all .item_container {}
+main .all .item_container .show-item .item-list,
+main .all .item_container .hidden-item .item-list {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    margin-bottom:60px;
+}
+main .all .item_container .show-item {}
+main .all .item_container .show-item .item-list {}
+/* =================================================== item container - hidden */
+main .all .item_container .hidden-item {display:none;}
+main .all .item_container .hidden-item .item-list {}
+/* =================================================== item container - load more 버튼 */
+main .all .item_container .load_btn {text-align:center;}
+main .all .item_container .load_btn #load_more {
+    background-color:#1A1A18;
+    padding:12px 25px;
+    color:#fff;
+    letter-spacing:0;
+    font-size:0.88rem;
+}
 /* =================================================== 함께 쓰면 좋은 제품 */
-main .with {width:1600px;}
-main .with h2 {font-size:1.5rem; font-weight:500;}
+main .with {width:1600px; margin-bottom:160px;}
+main .with > h2 {font-size:1.5rem; font-weight:500; margin-top:0;}
 main .with .products {
     display:flex;
     justify-content:space-between;
